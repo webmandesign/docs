@@ -4,13 +4,23 @@ This repository contains documentation for all [WebMan Design](https://www.webma
 
 ## WordPress themes:
 
-* [**Auberge (Plus)**, free (and premium) restaurant WordPress theme](https://webmandesign.github.io/docs/auberge/)
-* [**Forstron**, premium legal business WordPress theme](https://webmandesign.github.io/docs/forstron/)
-* [**Icelander**, premium accessibility ready portfolio & e-commerce WordPress theme](https://webmandesign.github.io/docs/icelander/)
-* [**Modern**, free portfolio & blogging WordPress theme](https://webmandesign.github.io/docs/modern/)
-* [**Monument Valley**, premium accessibility ready business & e-commerce WordPress theme](https://webmandesign.github.io/docs/monument-valley/)
-* [**Mustang (Lite)**, premium (and free) business, forum & e-commerce WordPress theme](https://webmandesign.github.io/docs/mustang/)
-* [**Polyclinic**, premium accessibility ready medical WordPress theme](https://webmandesign.github.io/docs/polyclinic/)
-* [**Q'Tron**, premium business WordPress theme](https://webmandesign.github.io/docs/qtron/)
-* [**Receptar**, free blogging WordPress theme](https://webmandesign.github.io/docs/receptar/)
-* [**Reykjavik**, free accessibility ready WordPress theme](https://webmandesign.github.io/docs/reykjavik/)
+* [**Auberge (Plus)**](https://webmandesign.github.io/docs/auberge/)  
+  Free (and premium) restaurant WordPress theme
+* [**Forstron**](https://webmandesign.github.io/docs/forstron/)  
+  Premium legal business WordPress theme
+* [**Icelander**](https://webmandesign.github.io/docs/icelander/)  
+  Premium accessibility ready portfolio & e-commerce WordPress theme
+* [**Modern**](https://webmandesign.github.io/docs/modern/)  
+  Free portfolio & blogging WordPress theme
+* [**Monument Valley**](https://webmandesign.github.io/docs/monument-valley/)  
+  Premium accessibility ready business & e-commerce WordPress theme
+* [**Mustang (Lite)**](https://webmandesign.github.io/docs/mustang/)  
+  Premium (and free) business, forum & e-commerce WordPress theme
+* [**Polyclinic**](https://webmandesign.github.io/docs/polyclinic/)  
+  Premium accessibility ready medical WordPress theme
+* [**Q'Tron**](https://webmandesign.github.io/docs/qtron/)  
+  Premium business WordPress theme
+* [**Receptar**](https://webmandesign.github.io/docs/receptar/)  
+  Free blogging WordPress theme
+* [**Reykjavik**](https://webmandesign.github.io/docs/reykjavik/)  
+  Free accessibility ready WordPress theme
