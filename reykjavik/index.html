@@ -12,7 +12,7 @@ Documentation uses the `theme_name`, `theme_slug`, `version_since` and `version`
 For on-line documentation rename the file to `index.php` and enable GZIP compression by including the `ob_start( 'ob_gzhandler' );` PHP before the HTML doctype declaration.
 
 @since    1.0.0
-@version  1.1.0
+@version  1.3.0
 
 -->
 
@@ -607,7 +607,7 @@ Content Container
 							<li><label><input type="checkbox" />
 								<h5>Archive page title</h5>
 								<p>Intro section on archive pages display the archive title and archive description (a taxonomy term description, such as category description, or author biographical info, if it is an author archive).</p>
-								<p>You can customize the archive title in <strong><em>Appearance &raquo; Customize &raquo; Theme Options &raquo; Others</em></strong>.</p>
+								<p>You can customize the archive title using <a href="https://wordpress.org/plugins/archive-title/" target="_blank">Archive Title</a> plugin.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -1174,6 +1174,9 @@ Content Container
 
 					<dl class="list indented">
 
+						<dt><a href="https://wordpress.org/plugins/archive-title/" target="_blank"><strong>Archive Title</strong></a></dt>
+						<dd>Remove archive page title labels completely, or just hide them accessibly.</dd>
+
 						<dt><a href="https://wordpress.org/plugins/business-profile/" target="_blank"><strong>Business Profile</strong></a></dt>
 						<dd>Display your <a href="https://www.youtube.com/watch?v=ndhdTCY-YXE" target="_blank">business's contact details</a> with seo-friendly Schema.org markup.</dd>
 
@@ -1540,7 +1543,7 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 
 						<h3>Archive Title Prefix</h3>
 
-							<p>By default WordPress adds some general caption, prefix to the archive page title, such as "Category:" in front of a category name on category archive page. You can disable these in <strong><em>Appearance &raquo; Customize &raquo; Theme Options &raquo; Others</em></strong></p>
+							<p>By default WordPress adds some general caption, prefix to the archive page title, such as "Category:" in front of a category name on category archive page. You can disable these using <a href="https://wordpress.org/plugins/archive-title/" target="_blank">Archive Title</a> plugin.</p>
 
 					</div>
 
