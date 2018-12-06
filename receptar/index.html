@@ -490,24 +490,64 @@ Content Container
 
 		-->
 		<h2 id="localization">Localization</h2>
-			<div class="section indented">
+			<div class="section indented row">
+
+				<p>
+					<strong>TIP:</strong> <a href="http://www.wpbeginner.com/wp-tutorials/how-to-install-wordpress-in-other-languages/" target="_blank">How to Install WordPress in Other Languages &raquo;</a>
+				</p>
+
+				<p>Every WordPress theme contains some texts that need to be translated into your language if you are building a non-English website. This theme if fully translation ready.</p>
+				<p>To enable your language on your website, please <a href="https://codex.wordpress.org/Installing_WordPress_in_Your_Language" target="_blank">switch WordPress into the desired language localization</a>.</p>
 
 				<h3>How to Translate the Theme?</h3>
 
-				<div class="alert alert-warning">
-					Any translation files placed in the <code>receptar/languages</code> folder will be deleted when you update the theme.
+				<div class="col-sm-12 col-md-8">
+
+					<h4><strong>Translating using <a href="http://www.poedit.net/" target="_blank">Poedit</a></strong></h4>
+
+						<ol>
+							<li>
+								<p>Make a copy of the original <code>receptar/languages/receptar.pot</code> file.</p>
+							</li>
+							<li>
+								<p>You need to rename the copied file now: add hyphen followed with <a href="https://translate.wordpress.org/" target="_blank">your language code locale</a>, and change file extension to "po". So, the British English file would be named <code>receptar-en_GB.po</code>.</p>
+							</li>
+							<li>
+								<p>Use <a href="http://www.poedit.net/" target="_blank"><strong>Poedit</strong></a> to translate the file and export (save) translation in "mo" file format.</p>
+							</li>
+							<li>
+								<p>Upload translated <code>receptar-en_GB.mo</code> file into your WordPress languages directory, into <code>themes</code> folder (such as <code>/wp-content/languages/themes/receptar-en_GB.mo</code> - if the <code>themes</code> folder does not exist in your WordPress languages directory, create it).</p>
+
+								<div class="alert alert-danger mt0">
+									<strong>REMINDER:</strong> When you update the theme, all custom translation files will be deleted from <code>/wp-content/themes/receptar/languages</code> folder. Do not place your custom translation files into that folder!
+								</div>
+							</li>
+						</ol>
+
+					<h4 class="mt"><strong>Translating directly in your WordPress dashboard</strong></h4>
+
+						<p>If you would like translate the theme directly in your WordPress dashboard you need to use a specialized plugin for that. Please install and activate <a href="https://wordpress.org/plugins/loco-translate/" target="_blank"><strong>Loco Translate</strong> plugin</a>. For instructions on how to use the plugin please refer to <a href="https://localise.biz/wordpress/plugin/beginners" target="_blank">beginner's guide</a> and/or <a href="https://localise.biz/wordpress/plugin/overview" target="_blank">technical overview</a>.</p>
+
+					<h4 class="mt"><strong>Don't forget to translate your plugins too!</strong></h4>
+
+						<p>WordPress website is built from WordPress system itself, a theme and plugin(s). There is a very high probability that <a href="https://codex.wordpress.org/Installing_WordPress_in_Your_Language" target="_blank">WordPress system is already translated into your language</a>, so, you don't have to do it on your own. You have also learned how to translate the theme into your language above. But what about plugins and their texts?</p>
+						<p>If you are lucky, your plugin contains your language localization files already and you don't have to do anything. But if you need to translate the plugin into your language, the best advice is to check the plugin's documentation for instructions (you can <a href="https://github.com/webmandesign/webman-amplifier/blob/master/languages/readme.md" target="_blank">check the instructions for WebMan Amplifier plugin localization</a> procedure).</p>
+						<p>Alternatively you can also use <a href="https://wordpress.org/plugins/loco-translate/" target="_blank"><strong>Loco Translate</strong> plugin</a> (again) to translate your plugins directly in your WordPress dashboard.</p>
+
 				</div>
 
-				<ol>
-					<li>Make a copy of the original <code>xx_XX.pot</code> file.</li>
-					<li>You need to rename the coppied file now. The naming convention is based on the language code (e.g. "pt" for Portuguese) followed with underscore and the country code (e.g. "BR" for Brazil). Also, rename the file extension to "po". So, the Brazilian Portuguese file would be named as <code>pt_BR.po</code>.</li>
-					<li>Use <a href="http://www.poedit.net/" target="_blank"><strong>Poedit</strong></a> to translate the file and export (save) translation also in <code>MO</code> translation file format.</li>
-					<li>Upload translated <code>pt_BR.mo</code> file into your WordPress language directory, such as <code>/wp-content/languages/themes/receptar/pt_BR.mo</code>. Alternatively you can put translations in your child theme: <code>/wp-content/themes/your-child-theme/languages/pt_BR.mo</code>.</li>
-				</ol>
+				<div class="col-sm-12 col-md-4">
 
-				<div class="alert alert-info">
-					<h4>Contributing your translations back to the theme</h4>
-					If you would like to help out translating the theme, please contribute on our <a href="http://support.webmandesign.eu/">support forum</a>.
+					<div class="alert alert-warning mt0">
+						<h4>Free WordPress.org themes translation</h4>
+						<p>If you have obtained the theme from <a href="https://wordpress.org/themes/author/webmandesign/" target="_blank"><strong>WordPress.org themes repository</strong></a>, please translate the theme by clicking the <a href="https://translate.wordpress.org/projects/wp-themes/receptar" target="_blank">Translate Receptar</a> link in theme page sidebar.</p>
+					</div>
+
+					<div class="alert alert-info">
+						<h4>Help us translate the theme :)</h4>
+						<p>If you would like to help out translating the theme, please contribute on <a href="https://www.webmandesign.eu/reference/#links-support">WebMan Design Support Center</a>.<br>If you have translated the theme at WordPress.org repository, you don't have to do anything :)</p>
+					</div>
+
 				</div>
 
 			</div>
