@@ -10,7 +10,7 @@ Development:
 Documentation uses the `theme_name`, `theme_slug`, `version_since` and `version` from development notes (`development.md` file) to be replaced.
 
 @since    1.0.0
-@version  1.1.5
+@version  1.4.0
 
 -->
 
@@ -453,7 +453,7 @@ Content Container
 								<h5>Header Widgets</h5>
 								<p>A <a href="#widgets">widgetized area</a>, its content can be set in <strong><em>Appearance &raquo; Customize &raquo; Widgets</em></strong>.</p>
 								<p>Colors can be <a href="#customizer">customized</a> in <strong><em>Appearance &raquo; Customize &raquo; Theme Options &raquo; Colors: Header</em></strong>.</p>
-								<p>You can control the appearance with <a href="#woosidebars">WooSidebars plugin</a>.</p>
+								<p>You can control the appearance with <a href="#content-aware-sidebars">Content Aware Sidebars plugin</a>.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -471,7 +471,7 @@ Content Container
 
 							<li><label><input type="checkbox" />
 								<h5>Subtitle</h5>
-								<p>Please use <a href="#subtitles"><strong>Subtitles</strong> plugin</a> to allow this feature.</p>
+								<p>Please use <a href="#wp-subtitle"><strong>WP Subtitle</strong> plugin</a> to allow this feature.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -483,7 +483,7 @@ Content Container
 								<h5>Intro Widgets</h5>
 								<p>A <a href="#widgets">widgetized area</a>, its content can be set in <strong><em>Appearance &raquo; Customize &raquo; Widgets</em></strong>.</p>
 								<p>Colors can be <a href="#customizer">customized</a> in <strong><em>Appearance &raquo; Customize &raquo; Theme Options &raquo; Colors: Intro</em></strong>.</p>
-								<p>You can control the appearance with a <a href="#page-templates">page template</a> or a <a href="#custom-fields">custom field</a> and <a href="#woosidebars">WooSidebars plugin</a>.</p>
+								<p>You can control the appearance with a <a href="#page-templates">page template</a> or a <a href="#custom-fields">custom field</a> and <a href="#content-aware-sidebars">Content Aware Sidebars plugin</a>.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -521,13 +521,13 @@ Content Container
 								<h5>Footer Secondary Widgets</h5>
 								<p>A <a href="#widgets">widgetized area</a>, its content can be set in <strong><em>Appearance &raquo; Customize &raquo; Widgets</em></strong>.</p>
 								<p>Colors can be <a href="#customizer">customized</a> in <strong><em>Appearance &raquo; Customize &raquo; Theme Options &raquo; Colors: Footer</em></strong>.</p>
-								<p>You can control the appearance with <a href="#woosidebars">WooSidebars plugin</a>.</p>
+								<p>You can control the appearance with <a href="#content-aware-sidebars">Content Aware Sidebars plugin</a>.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
 								<h5>Footer Widgets</h5>
 								<p>Main content of footer consist of <a href="#widgets">Footer Widgets area</a>, where you can add widgets in <strong><em>Appearance &raquo; Customize &raquo; Widgets</em></strong>.</p>
-								<p>You can control the appearance with <a href="#woosidebars">WooSidebars plugin</a>.</p>
+								<p>You can control the appearance with <a href="#content-aware-sidebars">Content Aware Sidebars plugin</a>.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -577,14 +577,14 @@ Content Container
 								<h5>Intro Widgets</h5>
 								<p>A <a href="#widgets">widgetized area</a>, its content can be set in <strong><em>Appearance &raquo; Customize &raquo; Widgets</em></strong>.</p>
 								<p>Colors can be <a href="#customizer">customized</a> in <strong><em>Appearance &raquo; Customize &raquo; Theme Options &raquo; Colors: Intro</em></strong>.</p>
-								<p>You can control the appearance with a <a href="#page-templates">page template</a> or a <a href="#custom-fields">custom field</a> and <a href="#woosidebars">WooSidebars plugin</a>.</p>
+								<p>You can control the appearance with a <a href="#page-templates">page template</a> or a <a href="#custom-fields">custom field</a> and <a href="#content-aware-sidebars">Content Aware Sidebars plugin</a>.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
 								<h5>Page content & sidebar</h5>
 								<p>For more info please see <a href="#pages">Pages</a> section of this user manual.</p>
 								<p>You can optionally <a href="#page-templates">display a sidebar on a page</a>, which is a <a href="#widgets">widgetized area</a> and its content can be set in <strong><em>Appearance &raquo; Customize &raquo; Widgets</em></strong>.</p>
-								<p>If you would like to replace sidebar on a specific page with a different one or just remove it, use <a href="#woosidebars"><strong>WooSidebars</strong> plugin</a>. It is a great way to control and alter your website layout.</p>
+								<p>If you would like to replace sidebar on a specific page with a different one or just remove it, use <a href="#content-aware-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -626,7 +626,7 @@ Content Container
 							<li><label><input type="checkbox" />
 								<h5>Archive page title</h5>
 								<p>Intro section on archive pages display the archive title and archive description (a taxonomy term description, such as category description, or author biographical info, if it is an author archive).</p>
-								<p>You can customize the archive title in <strong><em>Appearance &raquo; Customize &raquo; Theme Options &raquo; Others</em></strong>.</p>
+								<p>You can customize the archive title using <a href="https://wordpress.org/plugins/archive-title/" target="_blank">Archive Title</a> plugin.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -638,7 +638,7 @@ Content Container
 							<li><label><input type="checkbox" />
 								<h5>Post title and subtitle</h5>
 								<p>Title of the post.</p>
-								<p>If you would like to display subtitles, use <a href="#subtitles"><strong>Subtitles</strong> plugin</a>.</p>
+								<p>If you would like to display subtitles, use <a href="#wp-subtitle"><strong>WP Subtitle</strong> plugin</a>.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -655,7 +655,7 @@ Content Container
 								<h5>Sidebar</h5>
 								<p>The theme displays sidebar on each single post page, single custom post type page, blog page, archive page and search results page.</p>
 								<p>Sidebar is a <a href="#widgets">widgetized area</a>, its content can be set in <strong><em>Appearance &raquo; Customize &raquo; Widgets</em></strong>.</p>
-								<p>If you would like to replace sidebar on a specific page with a different one or just remove it, use <a href="#woosidebars"><strong>WooSidebars</strong> plugin</a>. It is a great way to control and alter your website layout.</p>
+								<p>If you would like to replace sidebar on a specific page with a different one or just remove it, use <a href="#content-aware-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -694,7 +694,7 @@ Content Container
 							<li><label><input type="checkbox" />
 								<h5>Post title and subtitle</h5>
 								<p>Title of the post.</p>
-								<p>If you would like to display subtitles, use <a href="#subtitles"><strong>Subtitles</strong> plugin</a>.</p>
+								<p>If you would like to display subtitles, use <a href="#wp-subtitle"><strong>WP Subtitle</strong> plugin</a>.</p>
 								<p>You can also display intro widgets here or hide the post intro section altogether using <a href="#page-templates">post type page templates</a>.</p>
 							</label></li>
 
@@ -745,7 +745,7 @@ Content Container
 								<h5>Sidebar</h5>
 								<p>The theme displays sidebar on each single post page, blog page and archive page.</p>
 								<p>Sidebar is a <a href="#widgets">widgetized area</a>, its content can be set in <strong><em>Appearance &raquo; Customize &raquo; Widgets</em></strong>.</p>
-								<p>If you would like to replace sidebar on a specific post with a different one <strong>or just remove it</strong>, use <a href="#woosidebars"><strong>WooSidebars</strong> plugin</a>. It is a great way to control and alter your website layout.</p>
+								<p>If you would like to replace sidebar on a specific post with a different one <strong>or just remove it</strong>, use <a href="#content-aware-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -797,7 +797,7 @@ Content Container
 							<li><label><input type="checkbox" />
 								<h5>Post title</h5>
 								<p>By default the Testimonial posts display their title as a cite source. You can override this by setting a custom source, though.</p>
-								<p>If you would like to display subtitles, use <a href="#subtitles"><strong>Subtitles</strong> plugin</a>.</p>
+								<p>If you would like to display subtitles, use <a href="#wp-subtitle"><strong>WP Subtitle</strong> plugin</a>.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -835,7 +835,7 @@ Content Container
 								<h5>Sidebar</h5>
 								<p>The theme displays sidebar on each single custom post type page and archive page.</p>
 								<p>Sidebar is a <a href="#widgets">widgetized area</a>, its content can be set in <strong><em>Appearance &raquo; Customize &raquo; Widgets</em></strong>.</p>
-								<p>If you would like to replace sidebar on a specific post with a different one or just remove it, use <a href="#woosidebars"><strong>WooSidebars</strong> plugin</a>. It is a great way to control and alter your website layout.</p>
+								<p>If you would like to replace sidebar on a specific post with a different one or just remove it, use <a href="#content-aware-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.</p>
 							</label></li>
 						</ol>
 						<p><a href="#anatomy">&uarr; Back to anatomy selection</a></p>
@@ -862,7 +862,7 @@ Content Container
 								<h5>Intro section</h5>
 								<p><strong>Product archive pages</strong> (such as a product category page) intro section display is set according to your <a href="https://docs.woocommerce.com/document/woocommerce-pages/" target="_blank"><strong>Shop page</strong></a> setup.</p>
 								<p><strong>Single product page</strong> intro section contains shop breadcrumbs navigation, product title, product price. It does not display a product featured image. If you want to display an image in intro section on single product page, you need to use a dedicated <a href="#custom-fields">custom field</a>.</p>
-								<p>If you would like to display subtitles for products, use <a href="#subtitles"><strong>Subtitles</strong> plugin</a>.</p>
+								<p>If you would like to display subtitles for products, use <a href="#wp-subtitle"><strong>WP Subtitle</strong> plugin</a>.</p>
 							</label></li>
 
 							<li><label><input type="checkbox" />
@@ -1155,9 +1155,9 @@ Content Container
 
 							<p>Use this plugin to create <a href="#custom-fields">advanced page/post options metaboxes</a> automatically for better user experience and easier setup of page/post options.</p>
 
-						<h4 id="woosidebars">
-							<strong>WooSidebars</strong><br />
-							<small>(<a href="https://wordpress.org/plugins/woosidebars/" target="_blank">https://wordpress.org/plugins/woosidebars/</a>)</small>
+						<h4 id="content-aware-sidebars">
+							<strong>Content Aware Sidebars</strong><br>
+							<small>(<a href="https://wordpress.org/plugins/content-aware-sidebars/" target="_blank">https://wordpress.org/plugins/content-aware-sidebars/</a>)</small>
 						</h4>
 
 							<p class="uppercase">For creating unlimited number of widget areas (sidebars) and using them anywhere on the website.</p>
@@ -1167,25 +1167,15 @@ Content Container
 								<li>
 									<p><strong>Want to remove a sidebar from certain page(s)?</strong></p>
 									<p>Just create a new custom widget area (let's call it <em>"Empty"</em>) and set it to replace the <a href="#widgets"><em>"Sidebar"</em> widget area</a> on the specific pages. Once you leave this new widget area empty, with no widgets in it, the sidebar will simply not be displayed on the affected pages.</p>
-									<p><strong>Tip:</strong> Any <em>custom-created sidebar in WordPress needs to be initiated</em> first. This is done by adding widgets to the sidebar. You need to do this even for empty sidebar, though - just add a widget and then remove it so the sidebar can be properly recognized by WordPress.</p>
+									<p><strong>Tip:</strong> If you only want to display sidebar on some pages, you can use reverse logic: leave the theme's "Sidebar" empty and create a "Sidebar with widgets" using the plugin and set it to display on the specific pages only.</p>
 								</li>
 								<li>
 									<p><strong>Want to display a different widgets in intro section on certain page?</strong></p>
-									<p>Just create a new custom widget area (let's call it <em>"About page intro widgets"</em>, for example) and set it to replace the <a href="#widgets"><em>"Intro Widgets"</em> widget area</a> on the specific page (the <em>"About"</em>, for example). Then go ahead and add some widgets into the <em>"About page intro widgets"</em> area in <strong><em>Appearance &raquo; Widgets</em></strong>.</p>
+									<p>Just create a new custom widget area (let's call it <em>"About page intro widgets"</em>, for example) and set it to replace the <a href="#widgets"><em>"Intro Widgets"</em> widget area</a> on the specific page (the <em>"About"</em>, for example). Then go ahead and add some widgets into the <em>"About page intro widgets"</em> area in <strong><em>Appearance &rarr; Widgets</em></strong>.</p>
 								</li>
 							</ul>
 
-							<div class="alert alert-info">
-								<h5>Additional resources</h5>
-								<ul>
-									<li>
-										<strong>Tutorial</strong>: For preview and tutorial on how to use the plugin please <a href="https://vimeo.com/107358849" target="_blank">watch an instructional video</a>.
-									</li>
-									<li>
-										<strong>Documentation</strong>: You can read more on how to use the plugin at <a href="https://docs.woocommerce.com/document/woosidebars-2/" target="_blank">online documentation</a> page.
-									</li>
-								</ul>
-							</div>
+							<p>Alternatively, you can also <a href="https://wordpress.org/plugins/search/sidebars/">try using a similar plugin</a>.</p>
 
 							<div class="alert alert-info">
 								<h5>TIP: Controlling a single widget</h5>
@@ -1211,9 +1201,9 @@ Content Container
 							<p class="uppercase">With this plugin you can create a perfect <a href="http://en.wikipedia.org/wiki/Breadcrumb_%28navigation%29" target="_blank">breadcrumbs navigation</a>.</p>
 							<p>Read the instructions on <a href="#breadcrumbs">custom plugin setup below</a>.</p>
 
-						<h4 id="subtitles">
-							<strong>Subtitles</strong><br />
-							<small>(<a href="https://wordpress.org/plugins/subtitles/" target="_blank">https://wordpress.org/plugins/subtitles/</a>)</small>
+						<h4 id="wp-subtitle">
+							<strong>WP Subtitle</strong><br>
+							<small>(<a href="https://wordpress.org/plugins/wp-subtitle/" target="_blank">https://wordpress.org/plugins/wp-subtitle/</a>)</small>
 						</h4>
 
 							<p>You can easily add posts and pages subtitles with this plugin.</p>
@@ -1232,6 +1222,9 @@ Content Container
 					<p>You can use any plugin with this theme. Here are some tested, used and recommended plugins by the <a href="https://www.webmandesign.eu">theme author</a>:</p>
 
 					<dl class="list indented">
+
+						<dt><a href="https://wordpress.org/plugins/archive-title/" target="_blank"><strong>Archive Title</strong></a></dt>
+						<dd>Remove archive page title labels completely, or just hide them accessibly.</dd>
 
 						<dt><a href="https://wordpress.org/plugins/business-profile/" target="_blank"><strong>Business Profile</strong></a></dt>
 						<dd>Display your <a href="https://www.youtube.com/watch?v=ndhdTCY-YXE" target="_blank">business's contact details</a> with seo-friendly Schema.org markup.</dd>
@@ -1443,7 +1436,7 @@ Content Container
 
 						<div class="col-sm-12 col-md-8">
 
-							<p>Page intro is basically a main title area of the page, post or archive page. By default it displays <strong>intro image</strong> (and video), <strong>page title</strong> (optionally with a <a href="#subtitles">subtitle</a>) and <strong>page excerpt</strong>:</p>
+							<p>Page intro is basically a main title area of the page, post or archive page. By default it displays <strong>intro image</strong> (and video), <strong>page title</strong> (optionally with a <a href="#wp-subtitle">subtitle</a>) and <strong>page excerpt</strong>:</p>
 
 							<h4 class="mt-s"><strong>Page excerpt</strong></h4>
 
@@ -1615,7 +1608,7 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 
 						<h3>Archive Title Prefix</h3>
 
-							<p>By default WordPress adds some general caption, prefix to the archive page title, such as "Category:" in front of a category name on category archive page. You can disable these in <strong><em>Appearance &raquo; Customize &raquo; Theme Options &raquo; Others</em></strong></p>
+							<p>By default WordPress adds some general caption, prefix to the archive page title, such as "Category:" in front of a category name on category archive page. You can disable these using <a href="https://wordpress.org/plugins/archive-title/" target="_blank">Archive Title</a> plugin.</p>
 
 					</div>
 
@@ -2137,7 +2130,7 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 
 							<dl>
 								<dt><strong>Sidebar</strong></dt>
-								<dd>This widget area is displayed on all posts, archive and search results pages, unless you leave it empty, with no widgets in it. If you want to display a sidebar on a page, use a <a href="#page-templates">"With sidebar" page template</a>. If you want to remove a sidebar from certain page(s) only, use <a href="#woosidebars">WooSidebars plugin</a> for that.</dd>
+								<dd>This widget area is displayed on all posts, archive and search results pages, unless you leave it empty, with no widgets in it. If you want to display a sidebar on a page, use a <a href="#page-templates">"With sidebar" page template</a>. If you want to remove a sidebar from certain page(s) only, use <a href="#content-aware-sidebars">Content Aware Sidebars plugin</a> for that.</dd>
 
 								<dt><strong>Header Widgets</strong></dt>
 								<dd>Use this widget area to display information in the website header area. It's useful for placing a search form and additional links (menu), for example.</dd>
@@ -2167,7 +2160,7 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 
 							<div class="alert alert-info mt0">
 								<h4>Custom sidebars & website layout control</h4>
-								<p>You can create a custom widget areas (sidebars) and use them anywhere on the website with a help of <a href="#woosidebars"><strong>WooSidebars</strong></a> plugin.</p>
+								<p>You can create a custom widget areas (sidebars) and use them anywhere on the website with a help of <a href="#content-aware-sidebars"><strong>Content Aware Sidebars</strong></a> plugin.</p>
 								<p>That way you can control even displaying of the sidebar, effectively altering the page layout - limitless options, great flexibility!</p>
 							</div>
 
