@@ -229,10 +229,14 @@
 
 		.alert { margin: 1.62em 0; }
 
+			.alert h3,
 			.alert h4 {
+				margin-top: 0;
+				padding: 0;
 				text-transform: uppercase;
 				font-size: 1em;
 				font-weight: 700;
+				border: 0;
 			}
 
 		.badge {

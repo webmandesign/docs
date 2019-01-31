@@ -4,10 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="WebMan Design, www.webmandesign.eu">
 
 	<title>Receptar WordPress Theme User Manual</title>
 
@@ -207,21 +204,36 @@ Content Container
 		Demo Content Installation
 
 		-->
-		<h2 id="demo-content">Installing Demo Content <a href="https://www.dropbox.com/s/bef86hc5vo4ub7f/demo-content-receptar.xml?dl=1" class="btn btn-success alignright">Download the theme demo content XML file</a></h2>
+		<h2 id="demo-content">Installing Demo Content</h2>
 			<div class="section indented row">
 
-				<h3>How to Install Theme Demo Content?</h3>
+				<div class="alert alert-danger">
+					<h3>Warning</h3>
+					<ol>
+						<li>It is recommended to install the theme demo content into an <strong>empty, fresh WordPress site</strong> only. Otherwise it might mess up your existing content!</li>
+						<li>Please note that the theme demo contains a lot of pages. You will certainly end up not using most of them. In that case it is highly recommended to <strong>delete the pages, posts, custom posts and media that you no longer need</strong> on your website.</li>
+					</ol>
+				</div>
 
-				<p>Import <a href="https://www.dropbox.com/s/bef86hc5vo4ub7f/demo-content-receptar.xml?dl=1"><strong>downloaded demo content XML file</strong></a> according to <a href="http://codex.wordpress.org/Importing_Content#WordPress">WordPress Codex instructions</a>.</p>
-				<p>The import process might take a while if you decide to import a demo attachments (images, audio and video files).</p>
+				<div class="alert alert-info">
+					<h3>Demo Images and Other Media Quality</h3>
+					<p>Please understand that <strong>demo images, audio and video files are <em>low</em> quality</strong> due to copyright protection and you should replace them with your own, <a href="#credits">properly licensed images</a>.</p>
+				</div>
 
 				<div class="alert alert-warning">
-					<p>Couple of posts in the theme demo content were created using <a href="https://wordpress.org/plugins/beaver-builder-lite-version/" target="_blank">the <strong>Beaver Builder</strong> page builder plugin</a>. You might consider installing this plugin to display all the demo content correctly.</p>
+					<h3>Demo Content Import Issues</h3>
+					<p>Please note that there <em>might</em> occur some connection issues when downloading demo attachments (media files) from demo content servers during the demo content import process.</p>
+					<p>These, however, are just demo attachments (images, videos, audio files) and you are perfectly fine (actually, you should) replacing them with your own assets.</p>
+					<p>Other demo content (posts, pages and custom posts content) will be imported without any issues.</p>
 				</div>
 
-				<div class="alert alert-danger">
-					Please note that there might occur some connection issues when downloading demo attachments from my servers. These, however, are just demo attachments (images, videos, audio files) and you are perfectly fine replacing them with your own assets in case there is some import issue related to these attachments. Other demo content (posts and pages) will be imported without any issues.
-				</div>
+				<h3 class="mt-s">Manual Installation</h3>
+
+				<p>For detailed instructions regarding each demo content file installation and download, please visit the <strong><a href="https://github.com/webmandesign/demo-content/tree/master/receptar/" target="_blank">theme demo files repository</a></strong> at Github.</p>
+
+				<p>You can use this procedure in case the One-click Installation procedure fails. In that case it is recommended to delete (permanently) the imported media files from your media library and run the database reset with a plugin such as <a href="https://wordpress.org/plugins/advanced-wp-reset/screenshots/" target="_blank"><strong>Advanced WordPress Reset</strong></a>.</p>
+
+				<p>Please check WordPress codex for <a href="https://codex.wordpress.org/FAQ_Working_with_WordPress#How_do_I_Import_a_WordPress_WXR_file_when_it_says_it_is_too_large_to_import.3F" target="_blank">information about manual demo XML file import issues</a>.</p>
 
 			</div>
 
@@ -559,14 +571,30 @@ Content Container
 		Child Theme
 
 		-->
-		<h2 id="child-theme">Child theme</h2>
+		<h2 id="child-theme">Theme Modifications <small>and Child Theme</small> <a href="https://github.com/webmandesign/child-theme" class="btn btn-success alignright">Download a sample child theme</a></h2>
 			<div class="section indented">
 
-				<h3>When and How to Use a Child Theme?</h3>
+				<div class="alert alert-danger">
+					<h3>Important</h3>
+					<p><strong>Please note that <a href="https://www.webmandesign.eu/reference/#links-support">we do not provide support for custom theme modifications</a>!</strong></p>
+					<p>You are responsible for all the changes you apply to the theme on your website.</p>
+					<p>If you don't feel comfortable enough coding, please, <a href="https://support.webmandesign.eu/modifications/" target="_blank">consider hiring someone who could help</a>.</p>
+				</div>
+
+				<h3 class="mt-m">When and How to Use a Child Theme?</h3>
 
 				<p>If you need to make any styling or functional changes to the theme, please use the WordPress native <strong>child theme</strong> functionality. This way you can continue updating the parent (original) <strong>Receptar</strong> theme without any worry of your changes being overwritten as all your custom styles and functionality are kept in a child theme. You can read more about <a href="http://codex.wordpress.org/Child_Themes" target="_blank">child themes on WordPress Codex pages</a>.</p>
-				<p>You can put all your custom CSS styles into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/YOUR_CHILD_THEME/style.css</code> file. (You can <a href="http://support.webmandesign.eu/forums/topic/css/" target="_blank">alternatively use a different way to insert a custom CSS</a>.)</p>
-				<p>If you also want to change the functionality of the original <strong>Receptar</strong> theme, do so in <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/YOUR_CHILD_THEME/functions.php</code> file. You can freely modify any theme's function here as they are all pluggable. Plus, you can use any <a href="http://codex.wordpress.org/Plugin_API/Filter_Reference" target="_blank">filter</a> and <a href="http://codex.wordpress.org/Plugin_API/Action_Reference" target="_blank">action</a> hooks available in the theme source code.</p>
+				<p>You can put all your custom CSS styles into <code>YOUR_CHILD_THEME/style.css</code> file. (You can alternatively use <strong>Appearance &rarr; Customize &rarr; Additional CSS</strong> for that.)</p>
+				<p>If you also want to change the functionality of the original <strong>Receptar</strong> theme, do so in <code>YOUR_CHILD_THEME/functions.php</code> file. You can freely modify any theme function or class method there by hooking onto the specific "pre" filter or unhooking the function altogether (see below for how to use filter and action hooks).</p>
+
+				<h3 class="mt-m">Additional resources</h3>
+
+				<ul>
+					<li><a href="https://github.com/webmandesign/child-theme" target="_blank"><strong>Download a sample child theme</strong></a></li>
+					<li><a href="https://wordpress.org/plugins/child-theme-check/" target="_blank"><strong>Child Theme Check</strong> plugin</a> (<a href="https://wptavern.com/child-theme-check-plugin-helps-wordpress-users-navigate-parent-theme-updates" target="_blank">how it works?</a>)</li>
+					<li><a href="http://codex.wordpress.org/Child_Themes" target="_blank">WordPress Codex on child themes</a></li>
+					<li><a href="http://www.woothemes.com/2015/07/why-child-themes-matter/" target="_blank">Why child themes are so important</a></li>
+				</ul>
 
 			</div>
 
@@ -634,11 +662,6 @@ Content Container
 						</div>
 
 					</div>
-
-				<h3 id="css">Custom CSS and JavaScript</h3>
-
-					<p>The theme can apply custom CSS styles and/or JavaScript scripts on singular pages or posts. All you need to do is set up a <code>custom_css</code> and/or <code>custom_js</code> (these are the names for custom fields) <a href="http://codex.wordpress.org/Custom_Fields#Usage" target="_blank">custom meta field in Custom Fields metabox</a> for a page/post.</p>
-					<p>If you need to apply custom CSS globally, please use a <a href="#child-theme" target="_blank">child theme or custom CSS plugin</a>.</p>
 
 				<h3 id="hooks">Development: Action and Filter Hooks</h3>
 
@@ -739,23 +762,6 @@ Content Container
 
 
 </div></div>
-
-
-
-
-
-<!--
-
-JavaScript
-
--->
-
-	<!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 </body>
 
