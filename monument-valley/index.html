@@ -1027,6 +1027,12 @@ Content Container
 							<p>It also provides seamless integration with <a href="#beaver-builder"><strong>Beaver Builder</strong></a> page builder plugin.</p>
 							<p>This is essential plugin to provide advanced functionality for the theme and you will be prompted to install it after theme activation.</p>
 
+							<div class="alert alert-warning">
+								<h5>Warning: Inaccessible elements</h5>
+								<p>Please note that <strong>WM Accordion</strong> and <strong>WM Tabs</strong> page builder modules/shortcodes provided by WebMan Amplifier plugin are not accessible elements currently and are not recommended for use on accessible websites! They can be replaced with <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">HTML <code>&lt;details></code> tag</a> if needed.</p>
+								<p>Please don't forget to <a href="https://support.webmandesign.eu/accessibility/">test your accessible websites</a> thoroughly.</p>
+							</div>
+
 						<h4 id="beaver-builder">
 							<strong>Beaver Builder</strong><br />
 							<small>(<a href="https://www.wpbeaverbuilder.com?fla=67" target="_blank">https://www.wpbeaverbuilder.com <span class="badge">Pro</span></a>, <a href="https://wordpress.org/plugins/beaver-builder-lite-version/" target="_blank">https://wordpress.org/plugins/beaver-builder-lite-version/ <span class="badge">Free</span></a>)</small>
@@ -2476,7 +2482,9 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 							<p>Below you can find a list of default heading levels used in page builder elements (shortcodes):</p>
 							<dl class="list">
 								<dt><strong>WM Accordion</strong> and <strong>WM Tabs item</strong></dt>
-								<dd>Default accordion item title heading level is set to <code>h3</code>. The tabs items are also titled with heading level <code>h3</code>, though the heading is visible for screen readers only (it is hidden with <code>.screen-reader-text</code> CSS class).</dd>
+								<dd>Default accordion item title heading level is set to <code>h3</code>. The tabs items are also titled with heading level <code>h3</code>, though the heading is visible for screen readers only (it is hidden with <code>.screen-reader-text</code> CSS class).
+								<br><br>
+								(Please note that WM Accordion and WM Tabs are not accessible elements currently and are not recommended for use on accessible websites. They can be replaced with <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">HTML <code>&lt;details></code> tag</a>. Please <a href="https://support.webmandesign.eu/accessibility/">test your accessible websites</a> thoroughly.)</dd>
 
 								<dt><strong>WM Call to action</strong></dt>
 								<dd>Default call to action caption heading level is set to <code>h2</code>.</dd>
