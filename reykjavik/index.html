@@ -12,7 +12,7 @@ Documentation uses the `theme_name`, `theme_slug`, `version_since` and `version`
 For on-line documentation rename the file to `index.php` and enable GZIP compression by including the `ob_start( 'ob_gzhandler' );` PHP before the HTML doctype declaration.
 
 @since    1.0.0
-@version  1.4.0
+@version  2.0.0
 
 -->
 
@@ -1173,6 +1173,9 @@ Content Container
 						<dt><a href="https://wordpress.org/plugins/caldera-forms/" target="_blank"><strong>Caldera Forms</strong></a></dt>
 						<dd>A great form builder plugin for WordPress.</dd>
 
+						<dt><a href="https://wordpress.org/plugins/classic-editor/" target="_blank"><strong>Classic Editor</strong></a></dt>
+						<dd>In case you can not use WordPress 5+ block editor, you can restore the previous ("classic") editor with this plugin.</dd>
+
 						<dt><a href="https://wordpress.org/plugins/cpt-editor/" target="_blank"><strong>Custom Post Type Editor</strong></a></dt>
 						<dd>Allows you to rename any post type.</dd>
 
@@ -1324,6 +1327,10 @@ Content Container
 
 				<h3 id="page-layout">Outdented Page Content</h3>
 
+					<div class="alert alert-danger">
+						This information is only relevant when using a <a href="https://wordpress.org/plugins/classic-editor/"><strong>Classic Editor</strong> plugin</a> or an older version of WordPress, older then version 5.
+					</div>
+
 					<p>By default the theme displays the page content in 2 columns: <strong>H2 level headings in first</strong> and all the <strong>other page content in second</strong> column. This is to make the layout of the page not only prettier, but also <a href="#accessibility">more readable</a>.</p>
 					<p>You can then use <a href="#formats">"Outdented content" in Formats button</a> to make specific sections of your page content fullwidth (span the both columns), if you will.</p>
 					<p>If you, however, decide you would like to use more traditional, single column, fullwidth page content layout, you can set this in theme options in <strong><em>Appearance &raquo; Customize &raquo; Theme Options &raquo; Layout &raquo; Content</em></strong>.</p>
@@ -1360,7 +1367,8 @@ Content Container
 							<p>The theme adds support for excerpts also to WordPress pages. Page excerpt will be displayed in page intro section as well as in child pages list (read more in section about <a href="#page-templates">page templates</a>).</p>
 
 							<div class="alert alert-warning">
-								<p>If the "Excerpt" field is <strong>not displayed on a page edit screen</strong>, please enable it in the <a href="http://www.wpbeginner.com/glossary/screen-options/" target="_blank"><strong>"Screen Options"</strong></a> tab in the upper right corner of the screen.</p>
+								<h4>WordPress older then version 5:</h4>
+								<p>If the "Excerpt" field is not displayed on a page edit screen, please enable it in the <a href="http://www.wpbeginner.com/glossary/screen-options/" target="_blank"><strong>"Screen Options"</strong></a> tab in the upper right corner of the screen.</p>
 							</div>
 
 							<div class="alert alert-info">
@@ -1382,7 +1390,7 @@ Content Container
 							<h4 class="mt-s"><strong>Page excerpt</strong></h4>
 
 								<p><strong>Page Excerpt</strong> content depends on the page you are on.<br>
-								If it is an actual WordPress Page or Post or any custom post type, you can set the <em>"Excerpt"</em> field (enable it in <a href="http://www.wpbeginner.com/glossary/screen-options/" target="_blank"><strong>"Screen Options"</strong></a>).<br>
+								If it is an actual WordPress Page or Post or any custom post type, you can set the <em>"Excerpt"</em> field.<br>
 								On taxonomy archive pages it displays the taxonomy (such as post category or tag) term description which you can set for any/all taxonomy terms in WordPress.<br>
 								If you want to display some description text for the custom post type archive pages too, you need to <a href="https://wordpress.org/plugins/post-type-archive-descriptions/" target="_blank">use a plugin for that</a>.</p>
 
@@ -1469,7 +1477,7 @@ Content Container
 							<p>Please set this page template <strong>for a parent page only</strong>.</p>
 							<p>It will display a list of child pages below the actual (parent) page content. You can tweak each child page display by <a href="#custom-fields">setting the corresponding page options</a>.</p>
 							<p>There will be a page <strong>featured image</strong> (you can then even set a different intro image displayed on the actual page with a dedicated <a href="#custom-fields">custom field</a>), page <strong>title</strong>, page <strong>excerpt</strong> and optional <strong>"Continue reading" button</strong> displayed. "Continue reading" button is displayed only if the page has some actual content.</p>
-							<p>To set up a child page excerpt please use the "Excerpt" field on page edit screen (if the field is not displayed below the page content editor, enable it in <a href="http://www.wpbeginner.com/glossary/screen-options/" target="_blank"><strong>"Screen Options"</strong></a> tab in the upper right corner of the screen).</p>
+							<p>To set up a child page excerpt please use the "Excerpt" field on page edit screen.</p>
 							<p>If you would like to custom order your child pages, use <a href="https://codex.wordpress.org/Pages_Add_New_Screen" target="_blank">page "Order" attribute</a>. Or you can <a href="#plugins-others">use a plugin</a> for this, such as <em>Nested Pages</em> or <em>Intuitive Custom Post Order</em>.</p>
 						</dd>
 					</dl>
@@ -1501,7 +1509,8 @@ Content Container
 						<p>If you set the <a href="http://codex.wordpress.org/Customizing_the_Read_More" target="_blank">"Read more" tag</a> inside the post content and you also set a post excerpt, first the post excerpt followed with post content (until "Read More" tag) will be displayed in posts list.</p>
 
 						<div class="alert alert-warning">
-							<p>If the "Excerpt" field is <strong>not displayed on a post edit screen</strong>, please enable it in the <a href="http://www.wpbeginner.com/glossary/screen-options/" target="_blank"><strong>"Screen Options"</strong></a> tab in the upper right corner of the screen.</p>
+							<h4>WordPress older then version 5:</h4>
+							<p>If the "Excerpt" field is not displayed on a post edit screen, please enable it in the <a href="http://www.wpbeginner.com/glossary/screen-options/" target="_blank"><strong>"Screen Options"</strong></a> tab in the upper right corner of the screen.</p>
 						</div>
 
 						<div class="alert alert-info">
@@ -1865,10 +1874,14 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 
 						<p>For links starting with <code>mailto:</code> an <em>envelope</em> icon is applied. For unrecognized links a <em>link chain</em> icon is used.</p>
 
+						<div class="alert alert-info">
+							<h4>Multiple social links menus</h4>
+							<p>If you want to set multiple social links menus and display them on various locations of your website, you can force the social links appearance for each menu by appending <code>[soc]</code> into a menu title.</p>
+						</div>
+
 						<div class="alert alert-warning">
 							<h4>Can I use a custom social icon?</h4>
 							<p>If you want to set a custom social icon, please read <a href="https://support.webmandesign.eu/how-to-set-a-custom-social-icon/" target="_blank">dedicated support article</a>.</p>
-
 						</div>
 
 					</div>
@@ -2270,7 +2283,6 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 						<li><a href="#error404"><em>How to customize error 404 page?</em></a></li>
 						<li><a href="#admin"><em>How to customize WordPress admin?</em></a></li>
 						<li><a href="#breadcrumbs"><em>How to set up breadcrumbs?</em></a></li>
-						<li><a href="#tables"><em>How to create tables easily?</em></a></li>
 						<li><a href="#image-sizes"><em>My images are blurry/small/of bad quality, what can I do?</em></a></li>
 						<li><a href="#formats"><em>How to use the <strong>Formats</strong> button in post editor?</em></a></li>
 						<li><a href="#custom-fields"><em>What are custom fields and how to use them?</em></a></li>
@@ -2332,8 +2344,9 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 
 						<div class="col-sm-12 col-md-6">
 
-							<p>Yes, this theme predefines some useful CSS classes for you so you can use them in your page builder elements, shortcodes or directly in the HTML of your page or post. These custom special CSS classes will modify the appearance of your website elements.</p>
-							<p>For full, up-to-date list of these classes and instructions on how to use them, please, refer to the <a href="https://themedemos.webmandesign.eu/reykjavik/theme-features/css-classes/" target="_blank">"Helper CSS classes" page at the theme demo website</a>.</p>
+							<p>Yes, this theme predefines some useful CSS classes for you so you can use them <a href="https://technicalsupport.blog/2019/01/04/how-to-add-a-custom-css-class-to-gutenberg-blocks/">in the block editor</a>, in your page builder, or directly in the HTML. These custom special CSS classes will modify the appearance of your website elements.</p>
+							<p>For full, up-to-date list of these classes and instructions on how to use them, please, refer to the <a href="https://themedemos.webmandesign.eu/reykjavik/theme-features/css-classes/" target="_blank">"Helper CSS classes" page on the theme demo website</a>.</p>
+
 							<p>All of these classes are integrated with <a href="#beaver-builder">Beaver Builder page builder</a> CSS field for easier usage.</p>
 
 							<a href="https://themedemos.webmandesign.eu/reykjavik/theme-features/css-classes/" target="_blank" class="btn btn-primary btn-lg mt-s"><strong>List of CSS classes</strong> you can use &raquo;</a>
@@ -2428,14 +2441,6 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 						</dd>
 					</dl>
 
-				<h3 id="tables">
-					How to create tables easily?
-					<a href="#faq" class="btn alignright">Back to FAQ list &uarr;</a>
-					<span class="badge alignleft"></span>
-				</h3>
-
-					<p>There are times you need to display tabular data in your posts and/or pages. This is not an easy task in WordPress if you are not familiar with HTML coding as there is no out-of-the-box tool to create HTML tables in post editor. But, there is an easy fix for the issue: try using <a href="https://wordpress.org/plugins/tablepress/" target="_blank"><strong>TablePress</strong></a> plugin.</p>
-
 				<h3 id="image-sizes">
 					My images are blurry/small/of bad quality, what can I do?
 					<a href="#faq" class="btn alignright">Back to FAQ list &uarr;</a>
@@ -2497,11 +2502,15 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 					<span class="badge alignleft"></span>
 				</h3>
 
+					<div class="alert alert-danger">
+						This information is not relevant for WordPress 5+ block editor. In WordPress version 5 and newer the information can be applied only when using <a href="https://wordpress.org/plugins/classic-editor/"><strong>Classic Editor</strong> plugin</a>.
+					</div>
+
 					<div class="row">
 
 						<div class="col-sm-12 col-md-8">
 
-							<p>The theme adds a new <strong>Formats</strong> button to the visual editor of WordPress posts/pages. Please use this button to create a special elements, such as pullquotes, cite source, inline code, super/sub-scripts, uppercase text, highlighted (marked) text, outdented content.</p>
+							<p>The theme adds a new <strong>Formats</strong> button to the visual editor of WordPress posts/pages. Please use this button to create a special elements, such as pullquotes, cite source, inline code, super/sub-scripts, uppercase text, highlighted (marked) text, <a href="#page-layout">outdented content</a>.</p>
 
 							<div class="alert alert-info">
 								For all the formats please select a text in post/page content first. The format will be applied on this selected text then.
@@ -2532,7 +2541,8 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 							</div>
 
 							<div class="alert alert-success">
-								<h4>Outdented content</h4>
+								<h4><a href="#page-layout">Outdented content</a></h4>
+								<p><em>(This information is only relevant when using a <a href="https://wordpress.org/plugins/classic-editor/"><strong>Classic Editor</strong> plugin</a> or an older version of WordPress, older then version 5.)</em></p>
 								<p>Please note that content outdentation will <strong>only be visible on your website front-end and not in the content editor</strong>. This is due to limitations of the content editor size.</p>
 								<p>However, the outdented content will get emphasized in the content editor for easier identification:</p>
 								<p style="overflow: hidden;">
