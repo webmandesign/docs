@@ -98,7 +98,7 @@ dl.list dd { margin-left: 1.62em; }
 code.wrap { white-space: normal; }
 
 /* FILE: __header.scss */
-.navbar { background-color: #111; }
+.navbar { background-color: #000010; }
 
 .navbar a { text-decoration: none; }
 
@@ -107,22 +107,22 @@ code.wrap { white-space: normal; }
 .navbar-right { font-size: .9em; }
 
 /* FILE: __sidebar.scss */
-.sidebar { top: 50px; font-size: .9em; font-weight: 400; background-color: #222; color: #fff; border: 0; }
+.sidebar { top: 50px; font-size: .9em; font-weight: 400; background-color: #111120; color: #aaaab0; border: 0; }
 
 .sidebar a { text-decoration: none; }
 
-.sidebar .nav { border-top: 1px solid #333; }
+.sidebar .nav { border-top: 1px solid #222230; }
 
-.sidebar .nav > li { border-bottom: 1px solid #333; }
+.sidebar .nav > li { border-bottom: 1px solid #222230; }
 
 .sidebar .nav > li > a { padding-top: 0.38em; padding-bottom: 0.38em; color: inherit; }
 
 .sidebar .nav > li.active > a { font-weight: 600; }
 
-.sidebar .nav > li.active > a, .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover { background-color: #333; color: #fff; }
+.sidebar .nav > li.active > a, .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover { background-color: #222230; color: #fff; }
 
 /* FILE: __intro.scss */
-.main-header { position: relative; padding: 40px 40px 400px; padding: 40px 40px 38vh; margin: -20px -40px -3.62em; font-weight: 300; background-color: #333; color: #fff; }
+.main-header { position: relative; padding: 40px 40px 400px; padding: 40px 40px 38vh; margin: -20px -40px -3.62em; font-weight: 300; background-color: #dddde0; color: #000010; }
 
 .main-header::before { content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: inherit; opacity: .8; }
 
@@ -198,6 +198,6 @@ small .badge { vertical-align: baseline; }
 #faq ~ h3 { font-weight: 700; }
 
 /* FILE: __footer.scss */
-.footer { padding: 3.62em 40px; margin: 3.62em -40px -20px; font-size: .9em; background-color: #111; color: #999; }
+.footer { padding: 3.62em 40px; margin: 3.62em -40px -20px; font-size: .9em; background-color: #000010; color: #999; }
 
 .footer a { color: #fff; }
