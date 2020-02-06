@@ -483,33 +483,6 @@ Content Container
 								<p>This theme resolves this issue by introducing a special <code>%wc_title%</code> placeholder you can use in page or page builder content to display a dynamic page title.</p>
 							</div>
 
-						<h4 id="content-aware-sidebars">
-							<strong>Content Aware Sidebars</strong><br>
-							<small>(<a href="https://wordpress.org/plugins/content-aware-sidebars/" target="_blank">https://wordpress.org/plugins/content-aware-sidebars/</a>)</small>
-						</h4>
-
-							<p class="uppercase">For creating unlimited number of widget areas (sidebars) and using them anywhere on the website.</p>
-							<p>This plugin is actually also suitable for <strong>controlling and altering your website layout</strong> with ease. Here are some example usecases:</p>
-
-							<ul>
-								<li>
-									<p><strong>Want to remove a sidebar from certain page(s)?</strong></p>
-									<p>Just create a new custom widget area (let's call it <em>"Empty"</em>) and set it to replace the <a href="#widgets"><em>"Sidebar"</em> widget area</a> on the specific pages. Once you leave this new widget area empty, with no widgets in it, the sidebar will simply not be displayed on the affected pages.</p>
-									<p><strong>Tip:</strong> If you only want to display sidebar on some pages, you can use reverse logic: leave the theme's "Sidebar" empty and create a "Sidebar with widgets" using the plugin and set it to display on the specific pages only.</p>
-								</li>
-								<li>
-									<p><strong>Want to display a different widgets in footer section on certain page?</strong></p>
-									<p>Just create a new custom widget area (let's call it <em>"About page footer widgets"</em>, for example) and set it to replace the <a href="#widgets"><em>"Footer Widgets"</em> widget area</a> on the specific page (the <em>"About"</em>, for example). Then go ahead and add some widgets into the <em>"About page footer widgets"</em> area in <strong><em>Appearance &rarr; Widgets</em></strong>.</p>
-								</li>
-							</ul>
-
-							<p>Alternatively, you can also <a href="https://wordpress.org/plugins/search/sidebars/">try using a similar plugin</a>.</p>
-
-							<div class="alert alert-info">
-								<h5>TIP: Controlling a single widget</h5>
-								<p>If you would like to control a single widget display instead of the whole widget area, you can use <a href="https://jetpack.com/support/widget-visibility/?aff=6509&cid=588078" target="_blank"><strong>Jetpack</strong> plugin's "Widget Visibility" feature</a> (or try <a href="https://wordpress.org/plugins/widget-options/" target="_blank"><strong>Widget Options</strong> plugin</a>).</p>
-							</div>
-
 						<h4 id="jetpack">
 							<strong>Jetpack</strong><br>
 							<small>(<a href="https://wordpress.org/plugins/jetpack/" target="_blank">https://wordpress.org/plugins/jetpack/</a>)</small>
@@ -525,14 +498,6 @@ Content Container
 								<h5>Infinite scroll issue</h5>
 								<p>If you are using Jetpack's Infinite Scroll feature and also using some post reordering plugin, <a href="https://support.webmandesign.eu/forums/topic/infinite-scroll-problem/" target="_blank">you might experience a compatibility issue</a>. Please note that such issue is related to plugins incompatibility, not a theme. Contact your plugin support for possible solution.</p>
 							</div>
-
-						<h4 id="breadcrumbs-navxt">
-							<strong>Breadcrumbs NavXT</strong><br>
-							<small>(<a href="https://wordpress.org/plugins/breadcrumb-navxt/" target="_blank">https://wordpress.org/plugins/breadcrumb-navxt/</a>)</small>
-						</h4>
-
-							<p class="uppercase">With this plugin you can create a perfect <a href="http://en.wikipedia.org/wiki/Breadcrumb_%28navigation%29" target="_blank">breadcrumbs navigation</a>.</p>
-							<p>Read the instructions on <a href="#breadcrumbs">custom plugin setup below</a>.</p>
 
 						<h4 id="envato-market">
 							<strong>Envato Market</strong><br>
@@ -555,6 +520,9 @@ Content Container
 						<dt><a href="https://wordpress.org/plugins/atomic-blocks/" target="_blank"><strong>Atomic Blocks</strong></a></dt>
 						<dd>Great, easy to use content blocks library.</dd>
 
+						<dt><a href="https://wordpress.org/plugins/breadcrumb-navxt/" target="_blank"><strong>Breadcrumbs NavXT</strong></a></dt>
+						<dd>With this plugin you can create a perfect <a href="http://en.wikipedia.org/wiki/Breadcrumb_%28navigation%29" target="_blank">breadcrumbs navigation</a>. Read the instructions on <a href="#breadcrumbs">custom plugin setup below</a>.</dd>
+
 						<dt><a href="https://wordpress.org/plugins/business-profile/" target="_blank"><strong>Business Profile</strong></a></dt>
 						<dd>Display your <a href="https://www.youtube.com/watch?v=ndhdTCY-YXE" target="_blank">business's contact details</a> with seo-friendly Schema.org markup.</dd>
 
@@ -566,6 +534,9 @@ Content Container
 
 						<dt><a href="https://wordpress.org/plugins/coblocks/" target="_blank"><strong>CoBlocks</strong></a></dt>
 						<dd>Easy to use content blocks library.</dd>
+
+						<dt><a href="https://wordpress.org/plugins/content-aware-sidebars/" target="_blank"><strong>Content Aware Sidebars</strong></a></dt>
+						<dd>For creating unlimited number of widget areas (sidebars) and using them anywhere on the website.</dd>
 
 						<dt><a href="https://wordpress.org/plugins/cpt-editor/" target="_blank"><strong>Custom Post Type Editor</strong></a></dt>
 						<dd>Allows you to rename any post type.</dd>
@@ -763,7 +734,7 @@ Content Container
 
 					<h4 class="mt-s"><strong>Image</strong></h4>
 
-						<p><strong>Intro image</strong> is taken from your website header images that can be set in <strong><em>Appearance &rarr; Customize &rarr; Header Media</em></strong> (this image is displayed on archive pages and is disabled by default). Image can be overridden by setting a post/page featured image on singular pages. There is no intro image displayed on singular pages unless you actually set a featured image. Furthermore you can control on which post types the featured image is displayed in theme options in <strong><em>Appearance &rarr; Customize &rarr; Theme Options &rarr; Others</em></strong>.</p>
+						<p><strong>Intro image</strong> post/page featured image on singular pages. There is no intro image displayed on singular pages unless you actually set a featured image. Also, no image is displayed on archive pages. Furthermore you can control on which post types the featured image is displayed in theme options in <strong><em>Appearance &rarr; Customize &rarr; Theme Options &rarr; Others</em></strong>.</p>
 
 						<p>If you are using <a href="#woocommerce">WooCommerce plugin</a>, intro image is not displayed on single product pages even if you set a product featured image.</p>
 
@@ -1119,9 +1090,6 @@ Content Container
 							<p>The content of widget areas can be customized in <strong><em>Appearance &rarr; Customize &rarr; Widgets</em></strong> or <strong><em>Appearance &rarr; Widgets</em></strong>. The theme predefines these widget areas:</p>
 
 							<dl>
-								<dt><strong>Header Widgets</strong></dt>
-								<dd>Use this widget area to display information in the website header. It's useful for placing a search form and additional links (menu), for example.</dd>
-
 								<dt><strong>Footer Widgets</strong></dt>
 								<dd>Displays widgets in footer area of the website. This is actually your main footer section.</dd>
 
@@ -1129,7 +1097,7 @@ Content Container
 								<dd>(A <a href="#woocommerce">WooCommerce</a> specific widget area.) This widget area is displayed on shop page and product archive pages. If there are no widgets in this sidebar, it won't be displayed and shop page will take the full width.</dd>
 
 								<dt><strong>Product</strong></dt>
-								<dd>(A <a href="#woocommerce">WooCommerce</a> specific widget area.) This widget area is displayed on single product page, just above the related products list.</dd>
+								<dd>(A <a href="#woocommerce">WooCommerce</a> specific widget area.) This widget area is displayed on single product page.</dd>
 							</dl>
 
 						</div>
@@ -1138,7 +1106,7 @@ Content Container
 
 							<div class="alert alert-info mt0">
 								<h4>Custom sidebars & website layout control</h4>
-								<p>You can create a custom widget areas (sidebars) and use them anywhere on the website with a help of <a href="#content-aware-sidebars"><strong>Content Aware Sidebars</strong></a> plugin.</p>
+								<p>You can create a custom widget areas (sidebars) and use them anywhere on the website with a help of <a href="#plugins-others"><strong>Content Aware Sidebars</strong></a> plugin.</p>
 								<p>That way you can control even displaying of the sidebar, effectively altering the page layout - limitless options, great flexibility!</p>
 							</div>
 
@@ -1510,7 +1478,7 @@ Content Container
 					<p>Yes, this theme predefines some useful CSS classes for you so you can use them <a href="https://technicalsupport.blog/2019/01/04/how-to-add-a-custom-css-class-to-gutenberg-blocks/">in the block editor</a>, in your page builder, or directly in the HTML. These custom special CSS classes will modify the appearance of your website elements.</p>
 					<p>For full, up-to-date list of these classes and instructions on how to use them, please, refer to the <a href="https://themedemos.webmandesign.eu/michelle/css-classes/" target="_blank">"Helper CSS classes" page on the theme demo website</a>.</p>
 
-					<a href="https://themedemos.webmandesign.eu/michelle/theme-features/css-classes/" target="_blank" class="btn btn-primary btn-lg mt-s"><strong>List of CSS classes</strong> you can use &raquo;</a>
+					<a href="https://themedemos.webmandesign.eu/michelle/css-classes/" target="_blank" class="btn btn-primary btn-lg mt-s"><strong>List of CSS classes</strong> you can use &raquo;</a>
 
 				<h3 id="cookies">
 					How to set up cookies notification?
@@ -1648,7 +1616,7 @@ Content Container
 					<span class="badge alignleft"></span>
 				</h3>
 
-					<p>If you need to apply a custom CSS to override theme styles, since <strong>WordPress 4.7</strong> you can add your custom CSS into <strong><em>Appearance &rarr; Customize &rarr; Additional CSS</em></strong>.</p>
+					<p>If you need to apply a custom CSS to override the theme styles you can add your custom CSS into <strong><em>Appearance &rarr; Customize &rarr; Additional CSS</em></strong>.</p>
 					<p>Alternatively use a <a href="#child-theme" >child theme</a>.</p>
 
 			</div>
