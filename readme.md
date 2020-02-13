@@ -10,7 +10,7 @@ This repository contains documentation for all [WebMan Design](https://www.webma
   Premium legal business WordPress theme
 * [**Icelander**](https://webmandesign.github.io/docs/icelander/)  
   Premium accessibility ready portfolio & e-commerce WordPress theme
-* [**Michelle**](https://webmandesign.github.io/docs/michelle/)  
+* [**Björk**](https://webmandesign.github.io/docs/bjork/)  
   Premium accessibility ready business portfolio & e-commerce WordPress theme
 * [**Modern**](https://webmandesign.github.io/docs/modern/)  
   Free portfolio & blogging WordPress theme
