@@ -4,6 +4,8 @@ This repository contains documentation for all [WebMan Design](https://www.webma
 
 ## WordPress themes:
 
+* [**Angelica**](https://webmandesign.github.io/docs/angelica/)  
+  Premium accessibility ready e-commerce WordPress theme
 * [**Auberge (Plus)**](https://webmandesign.github.io/docs/auberge/)  
   Free (and premium) restaurant WordPress theme
 * [**Forstron**](https://webmandesign.github.io/docs/forstron/)  
