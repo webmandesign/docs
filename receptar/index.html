@@ -610,18 +610,21 @@ Content Container
 
 				<h3 id="image-sizes">Image Sizes</h3>
 
-					<p>The theme uses these image sizes:</p>
+					<p>For the information about what image sizes are declared in the theme and how you should set up the WordPress native image sizes, please navigate to <strong><em>Settings &rarr; Media</em></strong> and read the <em>"Recommended image sizes"</em> section.</p>
+					<p>WordPress will rescale and crop the images to selected formats automatically during the image upload process. If you already have some images on your website, these need to be rescaled when using the theme. Please use a plugin such as <a href="https://wordpress.org/plugins/force-regenerate-thumbnails/" target="_blank"><strong>Force Regenerate Thumbnails</strong></a> to do the rescaling for you. (Don't forget to run the plugin after its activation under <strong>Tools &rarr; Force Regenerate Thumbnails</strong>!)</p>
+
+					<p>The theme uses these image sizes (set Thumbnail, Medium and Large size in your WordPress dashboard manually):</p>
 					<ul>
 						<li>
 							<strong>Thumbnail</strong> <code>480 &times; 640</code> (cropped)<br />
 							This image size is used in posts lists.
 						</li>
 						<li>
-							<strong>Medium</strong> <code>595 &times; 0</code> (scaled)<br />
+							<strong>Medium</strong> <code>595 &times; 9999</code> (scaled)<br />
 							This size actually depends on your website content width setting (<code>$content_width &times; 0.62</code>).
 						</li>
 						<li>
-							<strong>Large</strong> <code>960 &times; 0</code> (scaled)<br />
+							<strong>Large</strong> <code>960 &times; 9999</code> (scaled)<br />
 							This image size is used on single post page as a background for the right side of the screen.
 						</li>
 						<li>
@@ -633,13 +636,6 @@ Content Container
 							Used in single post page on mobile devices only.
 						</li>
 					</ul>
-					<p>WordPress will rescale and crop the images to selected formats automatically during the image upload process.</p>
-					<p>If you already have some images on your wesbsite, these need to be rescaled when using the theme. Please use a plugin such as <a href="https://wordpress.org/plugins/force-regenerate-thumbnails/" target="_blank"><strong>Force Regenerate Thumbnails</strong></a> to do this for you. (Don't forget to run the Force Regenerate Thumbnails plugin after its activation under <strong>Tools &rarr; Force Regenerate Thumbnails</strong>!)</p>
-
-					<div class="alert alert-info">
-						<h4>Tip:</h4>
-						<p>You can change the basic WordPress image sizes (the Thumbnail, Medium and Large image size) settings in <strong><em>Settings &raquo; Media</em></strong> dashboard page.</p>
-					</div>
 
 				<h3 id="formats">WordPress Visual Editor Formats</h3>
 
