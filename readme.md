@@ -8,6 +8,8 @@ This repository contains documentation for all [WebMan Design](https://www.webma
   Premium accessibility ready e-commerce WordPress theme
 * [**Auberge (Plus)**](https://webmandesign.github.io/docs/auberge/)  
   Free (and premium) restaurant WordPress theme
+* [**Cindy**](https://webmandesign.github.io/docs/cindy/)  
+  Premium accessibility ready multipurpose WordPress theme
 * [**Forstron**](https://webmandesign.github.io/docs/forstron/)  
   Premium legal business WordPress theme
 * [**Icelander**](https://webmandesign.github.io/docs/icelander/)  
