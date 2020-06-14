@@ -2,28 +2,28 @@
 // Documentation stylesheet setup
 //
 
-$font_family_body : 'Merriweather Sans', sans-serif;
-$font_family_headings : 'Merriweather', serif;
+$font_family_body : system-ui, sans-serif;
+$font_family_headings : system-ui, sans-serif;
 
 $content_width    : 1200px;
 $nav_item_padding : .38em;
 
-$color_header_bg : #0a0825;
+$color_header_bg : #111;
 $color_logo      : #fff;
 
-$color_sidebar_bg  : #26244c;
-$color_sidebar_txt : #b6b4dc;
-$color_sidebar_bd  : rgba( #b6b4dc, .30 );
+$color_sidebar_bg  : #bb060f;
+$color_sidebar_txt : #fff;
+$color_sidebar_bd  : rgba( #fff, .30 );
 
-$color_nav_active_bg  : #bb060f;
+$color_nav_active_bg  : #db262f;
 $color_nav_active_txt : #fff;
 
-$color_intro_bg  : #0a0825;
-$color_intro_txt : #fff;
+$color_intro_bg  : #f5f5f5;
+$color_intro_txt : #111;
 
-$color_content_txt     : #444444;
-$color_content_bd      : rgba( #444444, .30 );
-$color_content_heading : #111111;
+$color_content_txt     : #666;
+$color_content_bd      : rgba( #666, .30 );
+$color_content_heading : #111;
 
 $color_figure_bg : #fff;
 
