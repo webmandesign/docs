@@ -1312,7 +1312,7 @@ Content Container
 						<dd>The best free image lightbox (zooming) plugin that just works!</dd>
 
 						<dt><a href="https://wordpress.org/plugins/wpforms-lite/" target="_blank"><strong>WPForms</strong></a></dt>
-						<dd>A <strong>great and easy to use</strong> drag & drop form builder for WordPress.</dd>
+						<dd>A great and easy to use drag & drop form builder for WordPress.</dd>
 
 					</dl>
 
@@ -1369,7 +1369,7 @@ Content Container
 
 						<p>For detailed instructions regarding each demo content file installation and download, please visit the <strong><a href="https://github.com/webmandesign/demo-content/tree/master/{%= theme_slug %}/" target="_blank">theme demo files repository</a></strong> at Github.</p>
 
-						<p>You can use this procedure in case the One-click Installation procedure fails. In that case it is recommended to delete (permanently) the imported media files from your media library and run the database reset with a plugin such as <a href="https://wordpress.org/plugins/advanced-wp-reset/screenshots/" target="_blank"><strong>Advanced WordPress Reset</strong></a>.</p>
+						<p>You can use this procedure in case the One-click Installation procedure fails. In that case it is recommended to delete (permanently) the imported media files from your media library and run the database <a href="https://wordpress.org/plugins/search/reset/" target="_blank">reset with a plugin</a>.</p>
 
 						<p>Please check WordPress codex for <a href="https://codex.wordpress.org/FAQ_Working_with_WordPress#How_do_I_Import_a_WordPress_WXR_file_when_it_says_it_is_too_large_to_import.3F" target="_blank">information about manual demo XML file import issues</a>.</p>
 
@@ -2389,7 +2389,7 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 					<p>The theme is <strong>coded semantically, with best <abbr title="Search Engine Optimization">SEO</abbr> practices in mind</strong>, meaning it is ready to be displayed on top of search results in search engines such as Google.</p>
 					<p>Please note though, that this is just a basic SEO optimization and you will have to push it further to make the real deal with SEO. For such cases I recommend using <a href="http://wordpress.org/extend/plugins/wordpress-seo/" target="_blank"><strong>Yoast SEO</strong></a> plugin.</p>
 					<p>You can furthermore integrate support for <a href="https://kinsta.com/blog/schema-markup-wordpress/" target="_blank">Schema JSON-LD microformats</a> using a plugin such as <a href="https://wordpress.org/plugins/schema/" target="_blank"><strong>Schema</strong></a>.
-					<em>(Note that <a href="#woocommerce"><strong>WooCommerce</strong> plugin</a> already contains Schema microformats for its products.)</em></p>
+					<em>(Note that some plugins already contains Schema microformats for their custom post types. Such as WooCommerce plugin, for example.)</em></p>
 
 				</div>
 
@@ -2397,7 +2397,7 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 
 					<h3>Traffic Tracking</h3>
 
-					<p>I recommend using <a href="http://wordpress.org/plugins/google-analytics-for-wordpress/" target="_blank"><strong>Google Analytics by MonsterInsights</strong></a> plugin as it offers advanced customization of tracking of you website.</p>
+					<p>You can use <a href="http://wordpress.org/plugins/google-analytics-for-wordpress/" target="_blank"><strong>Google Analytics by MonsterInsights</strong></a> plugin as it offers advanced customization for tracking you website traffic.</p>
 
 					<p>You can also consider using <a href="https://jetpack.com/support/wordpress-com-stats/?aff=6509&cid=588078" target="_blank"><strong>Jetpack</strong> plugin's Stats module</a> instead.</p>
 
@@ -2540,7 +2540,7 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 								<p>The theme outputs only one first-level heading (HTML tag <code>&lt;h1></code>) on each page. This is set up for the main page/post/archive title in the main content area of the page.</p>
 
 								<div class="alert alert-danger">
-									<p>Please read more about exception when using <a href="#pages">"No intro" page template</a>.</p>
+								<p>Please read more about exception when using certain <a href="#page-templates">page templates</a>.</p>
 								</div>
 
 								<div class="alert alert-info">
@@ -2934,24 +2934,8 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 					</div>
 
 					<div class="alert alert-warning">
-						<h4>Image file size</h4>
-						<p>It is recommended to use the <a href="https://wordpress.org/plugins/imsanity/" target="_blank"><strong>Imsanity</strong></a> plugin to keep the sane size of the uploaded images on your server automatically.</p>
-						<p>Set the plugin to your (boxed) website container width (you can tweak this in <a href="#customizer">theme customizer</a>) and lower the image quality to value of 70 (or to your preference).</p>
-					</div>
-
-					<div class="alert alert-info">
-						<h4>"Lightbox" image zooming</h4>
-						<p>If you would like to use a lightbox effect (image zooming), try using great <a href="https://wordpress.org/plugins/wp-featherlight/" target="_blank"><strong>WP Featherlight</strong></a> plugin.</p>
-					</div>
-
-					<div class="alert alert-info">
-						<h4>High DPI (Retina) screen images</h4>
-						<p>To keep your images high DPI (Retina) screen ready, consider using <a href="https://wordpress.org/plugins/wp-retina-2x/" target="_blank"><strong>WP Retina 2x</strong></a> plugin.</p>
-					</div>
-
-					<div class="alert alert-info">
-						<h4>Website speed and performance</h4>
-						<p>To speed up the website loading time consider using a <abbr title="Content Deliver Network">CDN</abbr> on your images. You can try <a href="https://jetpack.me/support/photon/" target="_blank"><strong>Jetpack's Photon</strong></a> or <a href="https://www.cloudflare.com/" target="_blank"><strong>CloudFlare</strong> (or any other CDN)</a>.</p>
+						<h4>Image file size optimization</h4>
+						<p>It is recommended to use an <a href="https://wordpress.org/plugins/search/image+optimization/" target="_blank">image optimization plugin</a> to keep the sane size of the uploaded image files on your server automatically.</p>
 					</div>
 
 				<h3 id="custom-fields">
@@ -3162,8 +3146,12 @@ add_filter( 'excerpt_length', 'child_theme_excerpt_length', 20 );</pre>
 	-->
 	<footer class="footer"><div class="container-fluid">
 
-		<p>Once again, thank you for using {%= theme_name %} WordPress theme. If you have any questions that are beyond the scope of this user manual, please join <a target="_blank" href="https://www.webmandesign.eu/reference/#links-support">WebMan Design Support Center</a>. I will do my best to assist you.</p>
-		<p>If you like the theme, please rate it on the website where you've obtained the theme from. Thank you!</p>
+		<p>
+			Once again, thank you for using {%= theme_name %} WordPress theme!<br>
+			If you have any questions that are beyond the scope of this user manual, please join <a target="_blank" href="https://www.webmandesign.eu/reference/#links-support">WebMan Design Support Center</a>.<br>
+			If you like this theme, please rate it on the website where you've obtained the theme from. Thank you!
+		</p>
+
 		<p>&copy; <a href="https://www.webmandesign.eu">WebMan Design</a> | <a href="#">Back to top &uarr;</a></p>
 
 	</div></footer><!-- /Footer -->
