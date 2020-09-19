@@ -8,16 +8,18 @@ This repository contains documentation for all [WebMan Design](https://www.webma
   Premium accessibility ready e-commerce WordPress theme
 * [**Auberge (Plus)**](https://webmandesign.github.io/docs/auberge/)  
   Free (and premium) restaurant WordPress theme
+* [**Björk**](https://webmandesign.github.io/docs/bjork/)  
+  Premium accessibility ready business portfolio & e-commerce WordPress theme* 
 * [**Cindy**](https://webmandesign.github.io/docs/cindy/)  
   Premium accessibility ready multipurpose WordPress theme
 * [**Deborah**](https://webmandesign.github.io/docs/deborah/)  
+  Premium accessibility ready multipurpose WordPress theme
+* [**Eimear**](https://webmandesign.github.io/docs/eimear/)  
   Premium accessibility ready multipurpose WordPress theme
 * [**Forstron**](https://webmandesign.github.io/docs/forstron/)  
   Premium legal business WordPress theme
 * [**Icelander**](https://webmandesign.github.io/docs/icelander/)  
   Premium accessibility ready portfolio & e-commerce WordPress theme
-* [**Björk**](https://webmandesign.github.io/docs/bjork/)  
-  Premium accessibility ready business portfolio & e-commerce WordPress theme
 * [**Modern**](https://webmandesign.github.io/docs/modern/)  
   Free portfolio & blogging WordPress theme
 * [**Monument Valley**](https://webmandesign.github.io/docs/monument-valley/)  
