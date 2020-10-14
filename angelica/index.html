@@ -10,7 +10,7 @@ Development:
 Documentation uses the `theme_name`, `theme_slug`, `version_since` and `version` from development notes (`development.md` file) to be replaced.
 
 @since    1.0.0
-@version  1.0.0
+@version  1.0.3
 
 -->
 
@@ -913,43 +913,38 @@ Content Container
 
 				<h3 id="megamenu">Megamenu</h3>
 
-					<div class="row">
-
-						<div class="col-sm-12 col-md-6">
-
-							<div class="alert alert-warning">
-								For this functionality you will need to set the menu item <em>CSS Classes</em> attributes. To enable this attribute, check it in <a href="http://www.wpbeginner.com/glossary/screen-options/" target="_blank"><strong>"Screen Options"</strong></a> tab in the upper right corner of the screen.
-							</div>
-
-							<p class="uppercase">With built in simple megamenu functionality you can display submenu items laid out into multiple columns.</p>
-
-							<ol>
-								<li>
-									<p>To create a megamenu from submenu items just set a <code>megamenu</code> class on the <strong style="color: #c66a53;">1st level menu item</strong>. This <strong style="color: #c66a53;">1st level menu item</strong> essentially becomes a wrapper and trigger for your megamenu. Number of columns will be set automatically.</p>
-									<img src="https://www.dropbox.com/s/6d62gfzxs018bmv/megamenu-1.png?dl=1" class="frame" alt="" title="Megamenu 1st level menu item display on the website" />
-								</li>
-								<li>
-									<p>Then the <strong style="color: #0aac8e;">2nd level menu items</strong> (first children) becomes captions/titles/headings of the megamenu columns.</p>
-
-									<img src="https://www.dropbox.com/s/g1vp0m5o9e58mna/megamenu-2.png?dl=1" class="frame" alt="" title="Megamenu 2nd level menu item display on the website" />
-								</li>
-								<li>
-									<p>Finally, the <strong style="color: #3b89af;">3rd level menu items</strong> (second children) within your megamenu are the actual column menu items. So, you should set these for each column (for each 2nd level menu item).</p>
-									<img src="https://www.dropbox.com/s/oh6f8hpsahfh2qp/megamenu-3.png?dl=1" class="frame" alt="" title="Megamenu 3rd level menu item display on the website" />
-								</li>
-							</ol>
-
-						</div>
-
-						<div class="col-sm-12 col-md-6">
-
-							<a href="https://www.dropbox.com/s/2y5kw9kg3uip9k5/megamenu-setup.png" target="_blank">
-								<img src="https://www.dropbox.com/s/2y5kw9kg3uip9k5/megamenu-setup.png?dl=1" class="frame" alt="" title="Megamenu setup - read below for instructions" />
-							</a>
-
-						</div>
-
+					<div class="alert alert-warning">
+						For this functionality you will need to set the menu item <em>CSS Classes</em> attributes. To enable this attribute, check it in <a href="http://www.wpbeginner.com/glossary/screen-options/" target="_blank"><strong>"Screen Options"</strong></a> tab in the upper right corner of the screen.
 					</div>
+
+					<p class="uppercase">With built in simple megamenu functionality you can display submenu items laid out into multiple columns.</p>
+
+					<ol>
+						<li>
+							<p>To create a megamenu from submenu items just set a <code>megamenu</code> class on the <strong>1st level menu item</strong> (see the image below for procedure). This <strong>1st level menu item</strong> essentially becomes a wrapper and trigger for your megamenu. Number of columns will be set automatically.</p>
+
+							<div class="alert alert-info mt0">
+								<strong>Tip:</strong> Setting additional <code>fullwidth</code> CSS class will make the megemenu full width of the screen (while keeping the megamenu content within theme's content width).
+							</div>
+						</li>
+						<li>
+							<p>Then the <strong>2nd level menu items</strong> (first children) becomes captions/titles/headings of the megamenu columns.</p>
+
+							<div class="alert alert-info mt0">
+								<strong>Tip:</strong> Setting <code>disable-link</code> CSS class on menu item will make the link inactive.
+							</div>
+						</li>
+						<li>
+							<p>Finally, the <strong>3rd level menu items</strong> (second children) within your megamenu are the actual column menu items. So, you should set these for each column (for each 2nd level menu item).</p>
+						</li>
+					</ol>
+
+					<h4 class="mt-m">How to set up a menu item class?</h4>
+					<figure>
+						<a href="https://easycaptures.com/fs/uploaded/1404/8369568540.png" target="_blank">
+							<img src="https://easycaptures.com/fs/uploaded/1404/8369568540.png" alt="" title="Megamenu setup" />
+						</a>
+					</figure>
 
 			</div>
 
