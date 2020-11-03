@@ -10,7 +10,7 @@ Development:
 Documentation uses the `theme_name`, `theme_slug`, `version_since` and `version` from development notes (`development.md` file) to be replaced.
 
 @since    1.0.0
-@version  1.0.0
+@version  1.0.4
 
 -->
 
@@ -337,7 +337,7 @@ Content Container
 						<ul>
 							<li>
 								<p><strong>Have you obtained the theme from <a href="http://themeforest.net/user/webmandesign/portfolio" target="_blank">ThemeForest (Envato Market)</a>?</strong></p>
-								<p>You can obtain automatic theme updates with help of <a href="http://envato.github.io/wp-envato-market/" target="_blank"><strong>Envato Market</strong></a> plugin.<br>You can <a href="https://www.youtube.com/watch?v=aPm3D78rJDY" target="_blank">watch an instructional <strong>video</strong> on how to use the plugin</a>, read about the plugin at <a href="https://forums.envato.com/t/envato-market-wordpress-plugin-beta/21639" target="_blank">Envato forum article</a> or read a <a href="http://www.wpexplorer.com/envato-market-plugin-guide/" target="_blank">complete, illustrated instructions on how to use it</a>.</p>
+								<p>You can obtain automatic theme updates with help of <a href="https://envato.com/market-plugin/" target="_blank"><strong>Envato Market</strong></a> plugin.<br>You can <a href="https://www.youtube.com/watch?v=aPm3D78rJDY" target="_blank">watch an instructional <strong>video</strong> on how to use the plugin</a>, read about the plugin at <a href="https://forums.envato.com/t/envato-market-wordpress-plugin-beta/21639" target="_blank">Envato forum article</a> or read a <a href="http://www.wpexplorer.com/envato-market-plugin-guide/" target="_blank">complete, illustrated instructions on how to use it</a>.</p>
 							</li>
 							<li>
 								<p><strong>Have you obtained the theme for free from <a href="https://wordpress.org/themes/author/webmandesign/" target="_blank">WordPress.org themes repository</a>?</strong></p>
@@ -501,7 +501,7 @@ Content Container
 
 						<h4 id="envato-market">
 							<strong>Envato Market</strong><br>
-							<small>(<a href="http://envato.github.io/wp-envato-market/" target="_blank">http://envato.github.io/wp-envato-market/</a>)</small>
+							<small>(<a href="https://envato.com/market-plugin/" target="_blank">https://envato.com/market-plugin/</a>)</small>
 						</h4>
 
 							<p>If you <a href="http://themeforest.net/user/webmandesign/portfolio" target="_blank">obtained the theme from ThemeForest</a>, you can use this plugin for easy <a href="#update">automatic theme updates</a>.</p>
@@ -975,7 +975,7 @@ Content Container
 					<dl>
 						<dt><strong>Primary</strong></dt>
 						<dd>
-							The main navigation area in the header of the website. Can be nested and hierarchically organized (up to 4 levels deep). This is mobile-ready main site navigation menu, but you can disable the mobile menu in <strong>Appearance → Customize → Theme Options → Others</strong> if needed. It is also a keyboard accessible navigation.
+							The main navigation area in the header of the website. Can be nested and hierarchically organized (up to 4 levels deep) and you can use a simple <a href="#megamenu">megamenu</a> here. This is a mobile-ready main site navigation menu, but you can disable the mobile menu in <strong>Appearance → Customize → Theme Options → Others</strong> if needed. It is also a keyboard accessible navigation.
 						</dd>
 
 						<dt><strong>Social Links</strong></dt>
@@ -1010,6 +1010,42 @@ Content Container
 					</div>
 
 				</div>
+
+				<h3 id="megamenu">Megamenu</h3>
+
+					<div class="alert alert-warning">
+						For this functionality you will need to set the menu item <em>CSS Classes</em> attributes. To enable this attribute, check it in <a href="http://www.wpbeginner.com/glossary/screen-options/" target="_blank"><strong>"Screen Options"</strong></a> tab in the upper right corner of the screen.
+					</div>
+
+					<p class="uppercase">With built in simple megamenu functionality you can display submenu items laid out into multiple columns.</p>
+
+					<ol>
+						<li>
+							<p>To create a megamenu from submenu items just set a <code>megamenu</code> class on the <strong>1st level menu item</strong> (see the image below for procedure). This <strong>1st level menu item</strong> essentially becomes a wrapper and trigger for your megamenu. Number of columns will be set automatically.</p>
+
+							<div class="alert alert-info mt0">
+								<strong>Tip:</strong> Setting additional <code>fullwidth</code> CSS class will make the megemenu full width of the screen (while keeping the megamenu content within theme's content width).
+							</div>
+						</li>
+						<li>
+							<p>Then the <strong>2nd level menu items</strong> (first children) becomes captions/titles/headings of the megamenu columns.</p>
+
+							<div class="alert alert-info mt0">
+								<strong>Tip:</strong> Setting <code>disable-link</code> CSS class on menu item will make the link inactive.
+							</div>
+						</li>
+						<li>
+							<p>Finally, the <strong>3rd level menu items</strong> (second children) within your megamenu are the actual column menu items. So, you should set these for each column (for each 2nd level menu item).</p>
+						</li>
+					</ol>
+
+					<h4 class="mt-m">How to set up a menu item class?</h4>
+					<figure>
+						<a href="https://easycaptures.com/fs/uploaded/1404/8369568540.png" target="_blank">
+							<img src="https://easycaptures.com/fs/uploaded/1404/8369568540.png" alt="" title="Megamenu setup" />
+						</a>
+					</figure>
+
 
 			</div>
 
