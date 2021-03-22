@@ -1,0 +1,67 @@
+- title   = 'Theme Updates';
+- id      = 'update';
+- nav[id] = title;
+
++section( title, id )
+
+<h2 id="update">Theme Update</h2>
+	<div class="section indented">
+
+		<h3>How to Update the Theme?</h3>
+
+			<p>You will be notified in the WordPress admin bar each time a new updated theme version is released. To install this updated theme version please follow the steps below.</p>
+
+			<div class="alert alert-warning">
+				<h4>IMPORTANT:</h4>
+				If there is a specific procedure required for the theme update, this will be clearly stated on the WebMan's <a href="http://www.facebook.com/webmandesigneu/" target="blank"><strong>Facebook</strong></a> and <a href="http://www.twitter.com/webmandesigneu/" target="blank"><strong>Twitter</strong></a> pages.
+			</div>
+
+			<div class="alert alert-danger">
+				<h4>Back Up!</h4>
+				<p>It is strongly recommended to back up your theme settings before you update the theme. This is only a precaution procedure and a good practice.</p>
+				<p>For backing up the theme (<a href="#customizer">customizer</a>) settings, please use the <a href="https://wordpress.org/plugins/customizer-export-import/" target="_blank"><strong>Customizer Export/Import</strong> plugin</a>.</p>
+			</div>
+
+			<h4 class="mt"><strong>Automatic Theme Update</strong></h4>
+
+				<ul>
+					<li>
+						<p><strong>Have you obtained the theme from <a href="https://wordpress.org/themes/author/webmandesign/" target="_blank">WordPress.org themes repository</a>?</strong></p>
+						<p>The WordPress itself will notify you about a new theme update. The only thing you need to do now is to proceed with update procedure suggested in your WordPress dashboard.</p>
+					</li>
+					<li>
+						<p><strong>Have you obtained the theme from <a href="http://themeforest.net/user/webmandesign/portfolio" target="_blank">ThemeForest</a>?</strong></p>
+						<p>You can obtain automatic theme updates with help of <a href="https://envato.com/market-plugin/" target="_blank"><strong>Envato Market</strong></a> plugin.<br>You can <a href="https://www.youtube.com/watch?v=aPm3D78rJDY" target="_blank">watch an instructional <strong>video</strong> on how to use the plugin</a>, read about the plugin at <a href="https://forums.envato.com/t/envato-market-wordpress-plugin-beta/21639" target="_blank">Envato forum article</a> or read a <a href="http://www.wpexplorer.com/envato-market-plugin-guide/" target="_blank">complete, illustrated instructions on how to use it</a>.</p>
+					</li>
+				</ul>
+
+				<div class="alert alert-warning">
+					<strong>If none of these apply to you</strong>, you need to update the theme manually (see below).
+				</div>
+
+			<h4 class="mt"><strong>Manual Theme Update</strong></h4>
+
+				<div class="alert alert-info">
+					First you need to <strong>download the theme ZIP package from your marketplace.</strong>
+				</div>
+
+				<ul>
+					<li>
+						<p><strong>Updating via WordPress dashboard</strong></p>
+						<p>A simple way of doing a manual theme update would be deleting and reinstalling the theme directly via WordPress dashboard. You can <a href="http://wptheming.com/2016/02/how-to-overwrite-a-theme/" target="_blank"><strong>read an article</strong></a> or <a href="https://www.youtube.com/watch?v=W3ntxBYZhg4" target="_blank"><strong>watch a video</strong></a> on how to do this.</p>
+					</li>
+					<li>
+						<p><strong>Updating via FTP</strong></p>
+						<p>This is a more advanced manual theme update procedure and you will need an FTP client (such as <a href="https://filezilla-project.org/" target="_blank">FileZilla</a>) to connect to your server:</p>
+						<ol>
+							<li>(Re)download the theme ZIP file from the marketplace where you've purchased the theme at and unpack the ZIP file on your computer.</li>
+							<li>Now you will need an FTP client to connect to your server.</li>
+							<li>On your server navigate to <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code> folder.</li>
+							<li>Delete the existing <code>#{theme_slug}</code> folder (or create a backup just in case).</li>
+							<li>Copy the unpacked theme <code>#{theme_slug}</code> folder from your computer (from step 1. above) to the <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code> on your server.</li>
+							<li>Log into your WordPress admin area and check the version of the theme in <strong><em>Appearance &raquo; Themes</em></strong>. Your theme should be updated now.</li>
+						</ol>
+					</li>
+				</ul>
+
+	</div>

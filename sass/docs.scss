@@ -1,5 +1,3 @@
-/* FILE: docs.scss */
-
 //
 // Documentation stylesheet
 //
@@ -10,14 +8,6 @@
 // @version  {%= version %}
 //
 
-
-
-
-
-// Imports
-
-	@import 'setup';
-
-	@import 'bootstrap-base';
-
-	@import 'custom';
+@import '_setup';
+@import '_bootstrap-base';
+@import 'parts/_index';

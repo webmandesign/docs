@@ -1,0 +1,51 @@
+//
+// Documentation stylesheet setup
+//
+
+$fonts_system : (
+	-apple-system,
+	BlinkMacSystemFont,
+	'Segoe UI',
+	Roboto,
+	Oxygen-Sans,
+	Ubuntu,
+	Cantarell,
+	'Helvetica Neue',
+	sans-serif,
+);
+
+$font_family_body : $fonts_system;
+$font_family_headings : $fonts_system;
+
+$content_width    : 1200px;
+$nav_item_padding : .5em;
+
+$color_header_bg : #030507;
+$color_logo      : #fff;
+
+$color_sidebar_bg  : #fff;
+$color_sidebar_txt : #030507;
+$color_sidebar_bd  : rgba( #030507, .2 );
+
+$color_nav_active_bg  : #f5df4d;
+$color_nav_active_txt : #030507;
+
+$color_intro_bg  : #f5df4d;
+$color_intro_txt : #030507;
+
+$color_content_txt     : #434547;
+$color_content_bd      : rgba( #434547, .2 );
+$color_content_heading : #030507;
+
+$color_figure_bg : #fff;
+
+$color_anatomy_heading      : #0e0e0f;
+$color_anatomy_bd           : #dededf;
+$color_anatomy_active_bg    : #ce1e0f;
+$color_anatomy_active_txt   : #fff;
+$color_anatomy_inactive_bg  : #dededf;
+$color_anatomy_inactive_txt : #2e2e2f;
+
+$color_footer_bg  : $color_header_bg;
+$color_footer_txt : #9e9d9a;
+$color_footer_lnk : $color_logo;

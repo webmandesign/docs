@@ -1,0 +1,59 @@
+include _vars.pug
+include includes/mixins/_index.pug
+
+doctype html
+
+html( lang="en" )
+	include includes/head.pug
+
+	body( data-spy="scroll" )
+		include includes/header.pug
+
+		div( class="container-fluid" )
+			div( class="row" )
+				section( id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" )
+					include includes/intro.pug
+
+					div( class="main-content" )
+						div( class="container-fluid" )
+							//-
+							//- CONTENT START.
+							//-
+
+							//- include includes/content/wordpress/_index.pug
+							//- include includes/content/installation/_index.pug
+							//- include includes/content/update/_index.pug
+							//- include includes/content/demo-content/_index.pug
+
+							//- include includes/content/anatomy/_index.pug
+
+							//- include includes/content/plugins/_index.pug
+
+							//- include includes/content/pages/_index.pug
+							//- include includes/content/posts/_index.pug
+							//- include includes/content/products/_index.pug
+							//- include includes/content/portfolio/_index.pug
+							//- include includes/content/testimonials/_index.pug
+
+							//- include includes/content/navigation/_index.pug
+							//- include includes/content/social-links/_index.pug
+
+							//- include includes/content/sidebars/_index.pug
+							//- include includes/content/widgets/_index.pug
+
+							//- include includes/content/customizer/_index.pug
+
+							//- include includes/content/localization/_index.pug
+							//- include includes/content/accessibility/_index.pug
+
+							//- include includes/content/child-theme/_index.pug
+
+							//- include includes/content/tips/_index.pug
+
+							include includes/content/credits/_index.pug
+
+							//-
+							//- CONTENT END.
+							//-
+					include includes/footer.pug
+				include includes/nav.pug
