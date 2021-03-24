@@ -1,24 +1,22 @@
 - var update_auto_more = false;
-mixin update_auto_title()
-	h3 <strong>Automatic Theme Update</strong>
 
 if config.is_free
 	if 'wporg' === config.source
-		+update_auto_title()
-		include wporg.pug
-		- update_auto_more = true;
+		+sub_section( 'Automatic Theme Update' )
+			include wporg.pug
+			- update_auto_more = true;
 	else
-		+update_auto_title()
-		include github.pug
-		- update_auto_more = true;
+		+sub_section( 'Automatic Theme Update' )
+			include github.pug
+			- update_auto_more = true;
 else
 	if 'envato' === config.source
-		+update_auto_title()
-		include envato.pug
-		- update_auto_more = true;
+		+sub_section( 'Automatic Theme Update' )
+			include envato.pug
+			- update_auto_more = true;
 	else
 		include other.pug
 
 if update_auto_more
 	+tip()
-		p If automatic update fails for any reason, please update the theme manually &rarr; see below.
+		p If automatic update fails for whatever reason, please update the theme manually &rarr; see below.

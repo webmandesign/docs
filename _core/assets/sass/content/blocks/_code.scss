@@ -3,6 +3,14 @@
 $code_font_size: 14px;
 $code_line_height: 21px;
 
+code {
+	padding: .15em .5em;
+	font-size: 16px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: var(--border_radius);
+}
+
 pre {
 	padding: 0;
 
@@ -18,6 +26,8 @@ pre {
 			rgba( #fff, .10 ) $code_line_height,
 			rgba( #fff, .10 ) $code_line_height*2
 		);
+		border: 0;
+		border-radius: 0;
 	}
 
 }

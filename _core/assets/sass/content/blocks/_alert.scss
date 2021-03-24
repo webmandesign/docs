@@ -20,12 +20,15 @@
 
 		strong {
 			padding: .25em .5em;
+			margin-#{$left}: calc( -3rem - 2px );
 			margin-#{$right}: .5em;
 			font-size: .75em;
 			text-transform: uppercase;
+			background: var(--color_content_background);
 			border: 2px solid;
 			border-color: inherit;
 			border-radius: var(--border_radius);
+			box-shadow: var(--drop_shadow_alert);
 		}
 
 	}

@@ -2,6 +2,8 @@
 
 	// Theme/customize options.
 
+		--border_opacity: .25;
+
 		--color_header_background: #f3f5f7;
 		--color_header_text: #030507;
 		--color_header_border: transparent;
@@ -10,12 +12,12 @@
 		--color_nav_text: #fff;
 		--color_nav_background_active: #f5df4d;
 		--color_nav_text_active: #030507;
-		--color_nav_border: #{ rgba( #fff, .2 ) };
+		--color_nav_border: #{ rgba( #fff, var(--border_opacity) ) };
 
 		--color_content_background: #fff;
 		--color_content_text: #434547;
 		--color_content_headings: #030507;
-		--color_content_border: #{ rgba( #434547, .2 ) };
+		--color_content_border: #{ rgba( #434547, var(--border_opacity) ) };
 
 		--color_intro_background: #f5df4d;
 		--color_intro_text: #030507;
@@ -130,6 +132,8 @@
 		--border_radius: .2rem;
 
 		--drop_shadow_header: 0 0 #{ $golden_minor +em } #{ rgba( #000, $golden_minor ) };
+		--drop_shadow_main: var(--drop_shadow_header);
+		--drop_shadow_nav: none;
 		--drop_shadow_footer: var(--drop_shadow_header);
 		--drop_shadow_alert: 0 #{ $golden_minor +em } #{ $golden +em } #{ rgba( #000, .15 ) };
 
