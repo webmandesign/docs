@@ -1,0 +1,73 @@
+h4( id="woocommerce" ).
+	<strong>WooCommerce</strong><br>
+	<small>(<a href="https://wordpress.org/plugins/woocommerce/">https://wordpress.org/plugins/woocommerce/</a>, <a href="https://woocommerce.com/?aff=6509&cid=588078">https://woocommerce.com</a>)</small>
+
+p WooCommerce is the world's most favorite eCommerce solution that allows you to sell anything, beautifully.
+
+p This theme is fully compatible with WooCommerce e-commerce plugin out of the box, so you can start selling immediately. Just install, activate and setup the plugin and you are ready to go!
+
+p Once you set up your main shop page, by <a href="#custom-fields">tweaking its options</a> and/or <a href="#pages">setting the page template</a>, you can actually change the layout and appearance of all shop archive pages. Additional shop related settings can be found in <strong><em>Appearance &rarr; Customize &rarr; Theme Options &rarr; Shop</em></strong>.
+
+p Since WordPress 4.7 you can set a custom <a href="#page-templates">post type page template</a> for WooCommerce config.. It supports "With intro widgets" and "No intro" page templates.
+
+<div class="row">
+
+	<div class="col-sm-12 col-md-6">
+
+		<div class="alert alert-warning">
+			<h5>Tip: Image sizes</h5>
+			p Set up these WooCommerce config.image sizes for the best compatibility with the theme:<br><br>
+
+			<table class="table">
+				<tr><th>Catalog Images</th><td>480&nbsp;px &times; Use any custom height<br>Cropped</td></tr>
+				<tr><th>Single config.Image</th><td>1200&nbsp;px &times; Use any custom height<br>Cropped</td></tr>
+				<tr><th>config.Thumbnails</th><td>120&nbsp;&times;&nbsp;120&nbsp;px<br>Cropped</td></tr>
+			</table>
+		</div>
+
+	</div>
+
+	<div class="col-sm-12 col-md-6">
+
+		<div class="alert alert-warning">
+			<h5>Tip: Custom config.intro image</h5>
+			p If you would like to override the default Intro section background image on a single config.page, use an <a href="#custom-fields"><code>intro_image</code> custom field</a> for that.
+
+		</div>
+
+		<div class="alert alert-warning">
+			<h5>Tip: Shop stretched layout</h5>
+			p You can set a special shop stretched layout (when the content of shop archive pages stretches the full width of the website container, and you can still use a sidebar) simply by setting a <a href="#custom-fields"><code>layout_stretched</code> custom field</a> on your shop page edit screen.
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="alert alert-info">
+	<h5>Additional resources</h5>
+	<ul>
+		<li>
+			<strong>Tutorials</strong>: If you are new to WooCommerce, you can <a href="https://docs.woocommerce.com/document/woocommerce-101-video-series/?aff=6509&cid=588078">watch instructional <strong>WooCommerce 101 video series</strong></a>, or read the <a href="https://docs.woocommerce.com/documentation/plugins/woocommerce/?aff=6509&cid=588078">plugin's documentation</a>.
+		</li>
+		<li>
+			<strong>Extensions</strong>: If you would like to extend the plugin with some fancy new functionality, check out the <a href="https://woocommerce.com/config.category/woocommerce-extensions/?aff=6509&cid=588078"><strong>official WooCommerce extensions list</strong></a>.<br>
+			Here are some free extensions picks for you:
+			<ul>
+				<li><a href="https://wordpress.org/plugins/woocommerce-cart-tab/">WooCommerce Cart Tab</a></li>
+				<li><a href="https://wordpress.org/plugins/woocommerce-config.image-flipper/">WooCommerce config.Image Flipper</a></li>
+				<li><a href="https://wordpress.org/plugins/wp-menu-cart/">WP Menu Cart</a></li>
+				<li><a href="https://wordpress.org/plugins/woocommerce-config.-per-page/">WooCommerce config. Per Page</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div class="alert alert-warning">
+	<h5>Tip: Dynamic WooCommerce page title with page builders</h5>
+	p When using a <a href="#beaver-builder">page builder</a> and <a href="#page-templates">hiding the default page title</a> on a special WooCommerce pages (such as Cart, Checkout and My Account page), you loose the ability to adapt your custom page title to an actual page being displayed (such as when previewing orders on your "My Account" page, the page title should read "Orders" instead).
+
+	p This theme resolves this issue by introducing a special <code>%wc_title%</code> placeholder you can use in page or page builder content to display a dynamic page title.
+
+</div>

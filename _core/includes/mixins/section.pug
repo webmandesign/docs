@@ -1,0 +1,5 @@
+mixin section( title, id )
+	//- section( class="section-" + id )
+	h2( id=id )= title
+	div( class="section indented section-" + id )
+		block

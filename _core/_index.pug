@@ -1,0 +1,28 @@
+//-
+//- @link  https://pugjs.org/api/getting-started.html
+//- @link  https://devhints.io/pug
+//-
+
+- var nav = {};
+
+include includes/mixins/_index.pug
+
+doctype html
+
+html( lang="en" )
+	include includes/head.pug
+
+	body( data-spy="scroll" )
+		include includes/header.pug
+
+		div( class="container-fluid" )
+			div( class="row" )
+				main( id="content" class="col-md-10 col-md-offset-2 main" )
+					include includes/intro.pug
+
+					div( class="main-content" )
+						div( class="container-fluid" )
+							include includes/content.pug
+
+					include includes/footer.pug
+				include includes/nav.pug

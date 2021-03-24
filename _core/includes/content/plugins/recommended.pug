@@ -1,0 +1,28 @@
+h3( id="plugins-recommended" ) Recommended Plugins
+
+p The theme uses the <a href="http://tgmpluginactivation.com/">TGM Plugin Activation</a> script that prompts you to install recommended plugins after you activate the theme.
+
+p The suggested recommended plugins are essential to provide the core functionality the theme relies on and/or to ease out the process of editing your website pages. <strong>You can still use the theme without these plugins, however, its functionality and your user experience would be limited.</strong>
+
+p Bellow you'll find a list of plugins that were successfully tested with the theme and works with it without any conflicts:
+
+div( class="section indented plugins" )
+	block plugins/recommended/list
+		each plugin in config.plugins
+			case plugin
+				when 'accessibility': include recommend/accessibility.pug
+				when 'acf': include recommend/acf.pug
+				when 'beaver-builder': include recommend/beaver-builder.pug
+				when 'beaver-themer': include recommend/beaver-themer.pug
+				when 'breadcrumbs': include recommend/breadcrumbs.pug
+				when 'envato-market': include recommend/envato-market.pug
+				when 'integration-bt': include recommend/integration-bt.pug
+				when 'integration-wc': include recommend/integration-wc.pug
+				when 'jetpack': include recommend/jetpack.pug
+				when 'manage-sidebars': include recommend/manage-sidebars.pug
+				when 'subtitle': include recommend/subtitle.pug
+				when 'webman-amplifier': include recommend/webman-amplifier.pug
+				when 'webman-templates': include recommend/webman-templates.pug
+				when 'woocommerce': include recommend/woocommerce.pug
+				default
+					- break

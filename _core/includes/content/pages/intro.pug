@@ -1,0 +1,31 @@
+block pages/intro
+	h3( id="page-intro" ) Page Intro Section
+
+	block pages/intro/info
+		p Page intro is basically a main title area of the page, post or archive page. By default it displays <strong>intro image</strong>, <strong>page title</strong> and <strong>page excerpt</strong>:
+
+	dl
+		block pages/intro/list
+			dt Page excerpt
+			dd
+				p.
+					<strong>Page Excerpt</strong> content depends on the page you are on.
+					<br>
+					If it is an actual WordPress Page or Post or any custom post type, you can set the <em>"Excerpt"</em> field text.
+					<br>
+					On taxonomy archive pages it displays the taxonomy term (such as post category or tag) description which you can set for any/all taxonomy terms in WordPress.
+					<br>
+					If you want to display some description text for the custom post type archive pages too, you need to <a href="https://wordpress.org/plugins/post-type-archive-descriptions/">use a plugin for that</a>.
+
+			dt Image
+			dd
+				p.
+					<strong>Intro image</strong> is taken from your website header images that can be set in <strong><em>Appearance &rarr; Customize &rarr; Header Media</em></strong>.
+					<br>
+					This image can be subsequently overridden by setting up a post/page featured image.
+
+				p On single pages and posts the image is not displayed by default, unless you set a featured image.
+
+	p If you would like to remove the intro section (to set up your own with a page builder, for example), use a dedicated page template.
+
+	p Colors of intro section can be customized in <strong><em>Appearance &rarr; Customize &rarr; Theme Options &rarr; Colors: Intro</em></strong>.

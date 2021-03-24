@@ -1,0 +1,25 @@
+each section in config.content
+	case section
+		when 'accessibility': include content/accessibility/_index.pug
+		when 'anatomy': include content/anatomy/_index.pug
+		when 'cpt/portfolio': include content/cpt/portfolio/_index.pug
+		when 'cpt/products': include content/cpt/products/_index.pug
+		when 'cpt/testimonials': include content/cpt/testimonials/_index.pug
+		when 'credits': include content/credits/_index.pug
+		when 'customizer': include content/customizer/_index.pug
+		when 'demo': include content/demo/_index.pug
+		when 'faq': include content/faq/_index.pug
+		when 'install': include content/install/_index.pug
+		when 'localization': include content/localization/_index.pug
+		when 'menu': include content/menu/_index.pug
+		when 'mods': include content/mods/_index.pug
+		when 'pages': include content/pages/_index.pug
+		when 'plugins': include content/plugins/_index.pug
+		when 'posts': include content/posts/_index.pug
+		when 'sidebars': include content/sidebars/_index.pug
+		when 'social': include content/social/_index.pug
+		when 'update': include content/update/_index.pug
+		when 'widgets': include content/widgets/_index.pug
+		when 'wordpress': include content/wordpress/_index.pug
+		default
+			- break
