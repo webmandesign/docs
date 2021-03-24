@@ -1,0 +1,15 @@
++sub_section( 'When and How to Use a Child Theme?' )
+	p If you need to make any styling or functional changes to the theme, please use the WordPress native <strong>child theme</strong> functionality. This way you can continue updating the parent (original) <strong>#{config.name}</strong> theme without any worry of your changes being overwritten as all your custom styles and functionality are kept in a child theme. You can read more about <a href="http://codex.wordpress.org/Child_Themes">child themes on WordPress Codex pages</a>.
+
+	p You can put all your custom CSS styles into <code>YOUR_CHILD_THEME/style.css</code> file. (You can alternatively use #[+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' )] for that.)
+
+	p If you also want to change the functionality of the original <strong>#{config.name}</strong> theme, do so in <code>YOUR_CHILD_THEME/functions.php</code> file. You can freely modify any theme function or class method there by hooking onto the specific "pre" filter or unhooking the function altogether (see below for how to use filter and action hooks).
+
+
+	h4 Additional resources
+
+	ul
+		li <a href="https://github.com/webmandesign/child-theme"><strong>Download a sample child theme</strong></a></li>
+		li <a href="https://wordpress.org/plugins/child-theme-check/"><strong>Child Theme Check</strong> plugin</a> (<a href="https://wptavern.com/child-theme-check-plugin-helps-wordpress-users-navigate-parent-theme-updates">how it works?</a>)</li>
+		li <a href="http://codex.wordpress.org/Child_Themes">WordPress Codex on child themes</a></li>
+		li <a href="http://www.woothemes.com/2015/07/why-child-themes-matter/">Why child themes are so important</a></li>

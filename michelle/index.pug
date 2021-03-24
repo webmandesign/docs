@@ -1,0 +1,60 @@
+//-
+//- Configuration object:
+//-
+-
+	var config = {
+		name     : 'Michelle',
+		slug     : 'michelle',
+		is_free  : true,
+		source   : 'wporg', //- wporg/envato/github/other
+		articles : [
+			'wordpress',
+			'install',
+			'update',
+			'demo',
+			'anatomy',
+			'plugins',
+			'pages',
+			'posts',
+			'cpt/products',
+			'cpt/portfolio',
+			'cpt/testimonials',
+			'menu',
+			'social',
+			'sidebars',
+			'widgets',
+			'customizer',
+			'localization',
+			'accessibility',
+			'mods',
+			'faq',
+			'credits',
+		],
+
+		plugins : [
+			'beaver-builder',
+			'breadcrumbs',
+			'envato-market',
+			'jetpack',
+			'manage-sidebars',
+			'woocommerce',
+			'integration-wc',
+		],
+
+		version : {
+			wp  : '5.0',
+			php : '7.0',
+		},
+
+		url : {
+			author  : 'https://www.webmandesign.eu',
+			support : 'https://support.webmandesign.eu',
+			videos  : 'https://vimeo.com/webmandesigneu/videos',
+			logo    : 'https://raw.githubusercontent.com/webmandesign/demo-content/img/logo-webmandesign.eu.png',
+		},
+	};
+- var debug_css = true;
+- var debug_js  = true;
+
+//- STOP EDITING NOW!
+include content.pug

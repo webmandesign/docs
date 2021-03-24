@@ -1,0 +1,31 @@
+/* FILE: content/header/_base.scss */
+
+.site-header {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4vmax 6vw;
+	background: var(--color_header_background);
+	color: var(--color_header_text);
+	border-bottom: 1px solid var(--color_header_border);
+	box-shadow: var(--drop_shadow_header);
+	z-index: 2;
+
+	a {
+		color: inherit;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		margin: 0;
+	}
+
+	li {
+		margin-#{$left}: 2em;
+	}
+
+}

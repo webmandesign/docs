@@ -1,0 +1,17 @@
++sub_section( 'How to use action and filter hooks?' )
+	+danger()
+		p.
+			This topic is dedicated to WordPress developers who would like to modify the theme and alter or expand its functionality.
+			<br>
+			<strong>Please note that <a href="https://www.webmandesign.eu/reference/#links-support">we do not provide support for custom theme modifications</a>, though.</strong>
+
+	p The theme is <a href="https://wordpress.org/plugins/theme-check/">coded according to WordPress coding standards</a> and is full of action and filter hooks. You can easily hook onto these to alter functions outputs (or short-circuit the whole functions - the <code>wmhook_HOOKNAME_pre</code> filter hooks) or alter parameters and variables, to add your own meta data, theme or design options, layouts and much more!
+
+	p Please check the theme's source code for which hook to use(you can simply search for "<code>do_action(</code>" or "<code>apply_filters(</code>", respectively), or contact <a href="https://www.webmandesign.eu/reference/#links-support">WebMan Design Support Center</a> for more details and tips.
+
+	p <strong>#{config.name}</strong> theme also uses the <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance</a> hooks too. This is useful to entirely rebuild the theme structure or add your own sections anywhere in the theme. The whole theme front-end structure setup can be found in files inside the <code>#{config.slug}/includes/frontend</code> folder.
+
+	p You can also watch an <a href="https://www.youtube.com/watch?v=AQrXcsc4CIw">instructional video on how to use WordPress hooks</a>.
+
+	p To show all theme hooks you may try using <a href="https://wordpress.org/plugins/simply-show-hooks/"><strong>Simply Show Hooks</strong></a> plugin or <a href="https://wordpress.org/plugins/wp-inspect/"><strong>WP Inspect</strong></a> plugin.
+

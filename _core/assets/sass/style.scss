@@ -1,0 +1,11 @@
+$left: left;
+$right: right;
+
+@import 'tools/_index';
+@import 'setup/_index';
+
+@import 'custom-properties';
+
+@import 'content/_index';
+
+@import 'extend';

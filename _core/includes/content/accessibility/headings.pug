@@ -1,0 +1,25 @@
++sub_section( 'Headings structure' )
+	p To comply to best accessibility guidelines, the theme follows this headings structure:
+
+	dl
+		dt Only one <code>h1</code> on the page
+		dd
+			p The theme outputs only one first-level heading (HTML tag <code>&lt;h1></code>) on each page. This is set up for the main page/post/archive title in the main content area of the page.
+
+			+warning()
+				p Please read more about exception when using certain <a href="#page-templates">page templates</a>.
+
+		dt Site title heading
+		dd
+			p Page's HTML body title (the site title set in #[+mark( 'nav', 'Settings', 'General' )]) is outputted with <code>h2</code> heading size or even <code>p</code> tag, leaving the <code>h1</code> size for the main page/post/archive title in the actual website main content area.
+
+		dt Headings hierarchy
+		dd
+			p The theme follows the best practice by hierarchically organizing heading levels, not skipping any of them. For example, <code>h3</code> headings can be found only in a section titled with level <code>h2</code> heading (and not <code>h1</code>). This rule is applied also in <a href="#demo-content">the theme demo content</a> and <strong>you should do the same in your website content</strong> too.
+
+			+tip( 'Test it!')
+				p In case you would like to test your website headings hierarchy, there is a great Chrome browser extension for this called <a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi"><strong>HeadingsMap</strong></a>.
+
+		dt Decorative headings
+		dd
+			p You should never use heading levels to style the text for decorative purposes! In case this is required, please <a href="#formats">use helper CSS classes</a> such as <code>.h1</code>, <code>.h2</code>, <code>.h3</code> or <code>.display-1</code>, <code>.display-2</code>, <code>.display-3</code>, <code>.display-4</code> to override any HTML heading or paragraph default styling.

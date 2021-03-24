@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michelle WordPress Theme Documentation</title>
+    <link rel="stylesheet" href="../_core/assets/css/style.css">
+  </head>
+  <body><a name="top"></a>
+    <header class="site-header">
+      <div class="site-branding"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/logo-webmandesign.eu.png" alt="WebMan Design logo"><strong>Michelle</strong> User Manual</div>
+      <ul>
+        <li><a href="https://vimeo.com/webmandesigneu/videos">Video tutorials</a></li>
+        <li><a href="https://www.webmandesign.eu">WordPress themes</a></li>
+        <li><a href="https://support.webmandesign.eu">Support forum</a></li>
+      </ul>
+    </header>
+    <div class="site-content">
+      <main class="site-main">
+        <header class="intro">
+          <div class="intro-content">
+            <h1><strong>Michelle</strong>
+              <small>WordPress Theme User Manual</small>
+              
+            </h1>
+            <p class="thank-you has-large-font-size">Thank you and congratulations for choosing a product by <a href="https://www.webmandesign.eu">WebMan Design</a>!</p>
+            <p>This user manual will teach you how to set up and use the theme. In case you have any questions that are beyond the scope of this documentation, please join <a href="https://support.webmandesign.eu/"><strong>WebMan Design support forum</strong></a>. Enjoy your <strong>Michelle</strong> WordPress theme!</p>
+            <div class="stars"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="m3.08977,15.12881l4.91023,-15.12881l4.91023,15.12881l-12.87276,-9.35597l15.92506,0" /></svg><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="m3.08977,15.12881l4.91023,-15.12881l4.91023,15.12881l-12.87276,-9.35597l15.92506,0" /></svg><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="m3.08977,15.12881l4.91023,-15.12881l4.91023,15.12881l-12.87276,-9.35597l15.92506,0" /></svg><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="m3.08977,15.12881l4.91023,-15.12881l4.91023,15.12881l-12.87276,-9.35597l15.92506,0" /></svg><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="m3.08977,15.12881l4.91023,-15.12881l4.91023,15.12881l-12.87276,-9.35597l15.92506,0" /></svg>
+            </div>
+            <p><em>If you like this theme, please support it by <a href="https://wordpress.org/support/theme/michelle/reviews/?filter=5">leaving a review at WordPress.org repository</a>.</em></p>
+          </div>
+        </header>
+        <article class="entry entry-wordpress" id="wordpress" tabindex="-1">
+          <h2 class="entry-title">WordPress</h2>
+          <h3>What is WordPress?</h3>
+          <p><a href="http://wordpress.org">WordPress</a> is a free content management system (CMS) that <a href="https://wordpress.org/showcase/">powers more than quarter of the internet</a>.</p>
+          <p>It can scale with your business when you're ready to grow and is easy to learn with many free and low-cost tutorials for beginners. No matter your level of knowledge, there is a WordPress tutorial to help you create, update, and fix your site.</p>
+          <h3>What is a theme?</h3>
+          <p>A WordPress theme changes the way your site looks and affects the style of the content displayed on it. WordPress themes are built so you can change your site's design without losing content.</p>
+          <p>There are themes out there that can lock you into their ecosystem, unfortunately. But we play nice and <strong>Michelle</strong> is not one of them :)</p>
+          <h3>Installing WordPress</h3>
+          <p>You can run WordPress <a href="https://support.webmandesign.eu/testing-a-theme-on-your-computer/">locally on your computer</a>, or install and use it <a href="https://codex.wordpress.org/Installing_WordPress">on your web hosting account</a> (what kind of <a href="#speed">web hosting should you use</a>?).</p>
+          <aside class="alert alert-orange">
+            <h3><strong>Warning:</strong> Theme requirements</h3>
+            <p>Please note that Michelle requires at least <strong>WordPress of version 5.0</strong> and <strong>PHP of version 7.0</strong> to work properly.</p>
+          </aside>
+          <h3>Securing WordPress</h3>
+          <p>You can improve your WordPress installation security taking these steps:</p>
+          <ul>
+            <li>Set the <span class="label label-info">Authentication Unique Keys and Salts</span> in <code>wp-config.php</code> file.</li>
+            <li>Do not use <code>admin</code> as user name and set strong passwords!</li>
+            <li>After installation is done, remove <code>wp-admin/install.php</code> file.</li>
+            <li>Keep backups of the database and WordPress files.</li>
+            <li>Keep your WordPress installation, plugins and themes up to date!</li>
+            <li>You can further strengthen the security of your site by using a specialized plugins and services.</li>
+          </ul>
+          <h3>First Steps With WordPress</h3>
+          <p>Additional resources for WordPress beginners:</p>
+          <ul>
+            <li><a title="Getting Started with WordPress" href="http://codex.wordpress.org/Getting_Started_with_WordPress">Getting Started with WordPress</a></li>
+            <li><a title="WordPress Glossary Terms for Beginners" href="http://www.wpbeginner.com/glossary/">WordPress Glossary Terms for Beginners</a></li>
+            <li><a title="Most Frequently Asked Questions by WordPress Beginners" href="http://www.wpbeginner.com/beginners-guide/15-most-frequently-asked-questions-by-wordpress-beginners">Most Frequently Asked Questions by WordPress Beginners</a></li>
+            <li>Selection of Video courses:
+              <ul>
+                <li><a href="https://www.youtube.com/playlist?list=PLfOXCtnURNbZjLUyU_Isp39VdAjqEctNw">WordPress for Beginners</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLtaXuX0nEZk-rRfsl8lclMY5TncDmAUBm">The WordPress Beginner Tutorial Class</a></li>
+                <li><a href="https://thenewboston.com/videos.php?cat=105">WordPress Basics</a></li>
+                <li><a href="http://videos.wpbeginner.com/">WordPress Beginner Videos - Free WordPress Video Tutorials</a></li>
+                <li><a href="https://webdesign.tutsplus.com/courses/a-beginners-guide-to-using-wordpress">A Beginner's Guide to Using WordPress</a></li>
+                <li><a href="https://www.udemy.com/getting-started-with-wordpress-a-beginners-guide/">Getting Started With WordPress - A Beginners Guide</a></li>
+                <li><a href="https://www.youtube.com/user/wpbeginner/videos">Useful WordPress tips</a></li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        <article class="entry entry-installation" id="installation" tabindex="-1">
+          <h2 class="entry-title">Theme Installation</h2>
+          <section class="entry-section" id="">
+            <h3>Free theme available via WordPress repository</h3>
+            <p>Use this procedure when you obtained the theme for free from <a href="https://profiles.wordpress.org/webmandesign#content-themes">WordPress themes repository</a>.</p>
+            <ol>
+              <li>Log into your WordPress admin.</li>
+              <li>In WordPress admin navigate to 
+                <mark class="nav-path">Appearance → Themes</mark> and click the <strong class="button dummy">Add New</strong> button next to "Themes" page title.
+              </li>
+              <li>On "Add Themes" screen use a search field to search for "Michelle".</li>
+              <li>Once you've found the theme in the search results list, click the <strong class="button dummy">Install</strong> button when hovering over the theme.
+              </li>
+              <li>After the theme is installed, activate it by clicking the <strong>"Activate"</strong> link.</li>
+              <li>Now you can go to 
+                <mark class="nav-path">Appearance → Welcome</mark> page for information on how to set up your website (and the theme). Also, please <strong>pay special attention to your <a href="#image-sizes">website image sizes setup</a></strong>.
+              </li>
+            </ol>
+          </section>
+          <aside class="alert alert-green">
+            <h3><strong>Tip:</strong> Welcome page</h3>
+            <p>After activating the theme, you can read the theme's welcome page navigating to 
+              <mark class="nav-path">Appearance → Welcome</mark> (you can disable this page in 
+              <mark class="nav-path">Appearance → Customize → Theme Options → Others</mark>).
+            </p>
+          </aside>
+          <aside class="alert alert-blue">
+            <h3>Subscribe for update alerts</h3>
+            <p>It is strongly recommended to follow or subscribe to WebMan on <a href="http://www.facebook.com/webmandesigneu/" target="blank"><strong>Facebook</strong></a> or <a href="http://www.twitter.com/webmandesigneu/" target="blank"><strong>Twitter</strong></a> to get the most recent theme update notices as fast as possible.</p>
+            <p><em>You should always keep your WordPress, themes and plugins up to date!</em></p>
+          </aside>
+        </article>
+        <article class="entry entry-update" id="update" tabindex="-1">
+          <h2 class="entry-title">Theme Updates</h2>
+          <p>You will be notified in the WordPress admin each time a new updated theme version is available. To install a theme update please follow the steps below.</p>
+          <aside class="alert alert-green">
+            <h3><strong>Tip:</strong> </h3>
+            <p>If there is a specific procedure required for the theme update, this will be clearly stated on the WebMan's <a href="http://www.facebook.com/webmandesigneu/" target="blank"><strong>Facebook</strong></a> and <a href="http://www.twitter.com/webmandesigneu/" target="blank"><strong>Twitter</strong></a> pages.</p>
+          </aside>
+          <aside class="alert alert-orange">
+            <h3><strong>Important:</strong> Back up your website</h3>
+            <p>It is strongly recommended to back up your theme settings before you update the theme. This is only a precaution procedure and a good practice.</p>
+            <p>For backing up the theme (<a href="#customizer">customizer</a>) settings, please use the <a href="https://wordpress.org/plugins/customizer-export-import/"><strong>Customizer Export/Import</strong> plugin</a>.</p>
+          </aside>
+          <h3><strong>Automatic Theme Update</strong></h3>
+          <p>The WordPress itself will notify you about a new theme update. The only thing you need to do now is to proceed with update procedure suggested in your WordPress dashboard.</p>
+          <aside class="alert alert-green">
+            <h3><strong>Tip:</strong> </h3>
+            <p>If automatic update fails for any reason, please update the theme manually &rarr; see below.</p>
+          </aside>
+          <h3><strong>Manual Theme Update</strong></h3>
+          <p>First you need to <strong>download the theme ZIP package</strong> from where you've obtained the theme.</p>
+          <h4><strong>Updating via WordPress dashboard</strong></h4>
+          <p>A simple way of doing a manual theme update would be deleting and reinstalling the theme directly via WordPress dashboard. You can <a href="http://wptheming.com/2016/02/how-to-overwrite-a-theme/"><strong>read an article</strong></a> or <a href="https://www.youtube.com/watch?v=W3ntxBYZhg4"><strong>watch a video</strong></a> on how to do this.</p>
+          <h4><strong>Updating via FTP</strong></h4>
+          <p>This is a more advanced manual theme update procedure and you will need an FTP client (such as <a href="https://filezilla-project.org/">FileZilla</a>) to connect to your server:</p>
+          <ol>
+            <li>(Re)download the theme ZIP file from the marketplace where you've purchased the theme at and unpack the ZIP file on your computer.</li>
+            <li>Now you will need an FTP client to connect to your server.</li>
+            <li>On your server navigate to <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code> folder.</li>
+            <li>Delete the existing <code>michelle</code> folder (or create a backup just in case).</li>
+            <li>Copy the unpacked theme <code>michelle</code> folder from your computer (from step 1. above) to the <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code> on your server.</li>
+            <li>Log into your WordPress admin area and check the version of the theme in <strong><em>Appearance &raquo; Themes</em></strong>. Your theme should be updated now.</li>
+          </ol>
+        </article>
+        <article class="entry entry-demo-content" id="demo-content" tabindex="-1">
+          <h2 class="entry-title">Installing Demo Content</h2>
+          <aside class="alert alert-green">
+            <h3><strong>Tip:</strong> </h3>
+            <ol>
+              <li>It is recommended to install the theme demo content into an <strong>empty, fresh WordPress site</strong> only. Otherwise it might mess up your existing content! (If you are testing a website on your own computer and not your existing website, you can always <a href="https://wordpress.org/plugins/search/reset/">reset your WordPress</a> to fresh state.</li>
+              <li>Please note that the theme demo contains a lot of pages. You will certainly end up not using most of them. In that case it is highly recommended to <strong>delete the pages, posts, custom posts and media that you no longer need</strong> on your website. It improves your website <a href="#seo">SEO</a>, <a href="#speed">speed</a> and relevance.</li>
+            </ol>
+          </aside>
+          <aside class="alert alert-orange">
+            <h3><strong>Important:</strong> Demo Images and Other Media Quality</h3>
+            <p>Please understand that <strong>demo images, audio and video files are <em>low</em> quality</strong> due to copyright protection and you should replace them with your own, <a href="#credits">properly licensed images</a>.</p>
+          </aside>
+          <p>For detailed instructions regarding theme demo content import please visit <strong><a href="https://github.com/webmandesign/demo-content/tree/master/michelle/">theme demo files repository at GitHub</a></strong>.</p>
+          <section class="entry-section" id="">
+            <h3>Starter Content</h3>
+            <p>This theme supports and contains its own <a href="https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/">WordPress starter content</a> for easy and fast small website deployment.</p>
+            <p>The starter content is displayed in the <a href="#customizer">theme customizer</a> <strong>on clear WordPress installation only</strong>. Once you save the customizer settings, the starter content will be ported into your website automatically then.</p>
+            <p>If you have already created some posts or pages beforehand, you will not see the theme starter content in theme customizer.</p>
+            <p>Please note that <strong>this is only a very basic starter content</strong> suitable for small websites and if you want a more robust solution, install the full theme demo content instead.</p>
+          </section>
+        </article>
+        <article class="entry entry-anatomy" id="anatomy" tabindex="-1">
+          <h2 class="entry-title">Theme Anatomy</h2>
+        </article>
+        <article class="entry entry-plugins" id="plugins" tabindex="-1">
+          <h2 class="entry-title">Plugins</h2>
+          <p><a href="#plugins-recommended">Main recommended plugins</a> | <a href="#plugins-others">Other useful plugins</a></small></p>
+          <section class="entry-section" id="">
+            <h3>What are Plugins and Why Do I Need Them?</h3>
+            <p>Do you ask why do you need to use plugins when you expected the theme to have all the functionality in it?</p>
+            <p>According to WordPress guidelines, the <strong>themes are meant for presentational purposes only</strong>, while <strong>plugins provide website functionality</strong>.</p>
+            <p>The reason is simple. When you decide to update your website look in the future, you simply change the theme without loosing your website content and additional functionality such as shortcodes, e-shop or forum functionality among others.</p>
+            <p><strong>This theme follows this basic WordPress philosophy and you can sleep assured your website is as future-proof as possible!</strong></p>
+            <p>While you get beautiful look for your website with this theme, it also supports and integrates seamlessly with various plugins. For more info please read on.</p>
+            <aside class="alert alert-blue">
+              <h3>Compatibility</h3>
+              <p>Other plugins than the recommended ones should work with the theme with no issues, though some <em>might</em> require additional tweaks to integrate them 100% with the theme (this is usually the case of more robust plugins such as e-shop or directory plugins).</p>
+              <p>Please understand that there are thousands of plugins available for WordPress and it is not possible for any theme developer to test the theme with all of them. <strong>Michelle</strong> was tested with most of the popular plugins. You can install any custom plugin <a href="https://codex.wordpress.org/Managing_Plugins">following the WordPress instructions</a> (or following the plugin documentation).</p>
+              <p>In case of any plugin incompatibility or error, please, <strong>contact the plugin support first</strong> before contacting <a href="https://www.webmandesign.eu/reference/#links-support">WebMan Design Support Center</a>.</p>
+            </aside>
+          </section>
+          <section class="entry-section" id="plugins-recommended">
+            <h3>Recommended Plugins</h3>
+            <p>The theme uses the <a href="http://tgmpluginactivation.com/">TGM Plugin Activation</a> script that prompts you to install recommended plugins after you activate the theme.</p>
+            <p>The suggested recommended plugins are essential to provide the core functionality the theme relies on and/or to ease out the process of editing your website pages. <strong>You can still use the theme without these plugins, however, its functionality and your user experience would be limited.</strong></p>
+            <p>Bellow you'll find a list of plugins that were successfully tested with the theme and works with it without any conflicts:</p>
+            <dl class="list-featured">
+              <dt id="beaver-builder">Beaver Builder</dt>
+              <dd>
+                <p class="plugin-page"><a href="https://wordpress.org/plugins/beaver-builder-lite-version/">Plugin page &rarr;</a></p>
+                <p>If you need a page builder plugin to create complex page layouts with ease with a <strong>front-end drag and drop editor</strong>, I highly recommend using the Beaver Builder plugin. The plugin is available both in free Lite version and payed Pro version. The theme is 100% compatible with this plugin.</p>
+                <p>For more info on the plugin please visit the <a href="https://www.wpbeaverbuilder.com?fla=67">Beaver Builder website</a> where you can also find the instructional videos for this page builder plugin.</p>
+                <p>When you <a href="#webman-amplifier">install a <strong>WebMan Amplifier</strong> plugin</a>, it will enhance the free (and also the paid) version of Beaver Builder with <strong>custom theme page builder elements</strong>. You can then create the exact same website as <a href="https://themedemos.webmandesign.eu/michelle">the theme demo website</a> with a free Beaver Builder only!</p>
+                <p><strong>The theme is fully compatible also with <a href="#beaver-themer">Beaver Themer</a> to create your own custom header, footer, post, archive, config.&hellip; layouts!</strong> Check out the <a href="#beaver-themer">plugin information below</a>.</p>
+                <aside class="alert alert-blue">
+                  <h3>WebMan Templates</h3>
+                  <p>If you are using Beaver Builder page builder, you can benefit from predefined theme page builder row templates. Just install and activate the <strong>WebMan Templates</strong> plugin and all the predefined templates will be available in Beaver Builder when you edit the page. The plugin automatic installation will be suggested to you after you activate the theme, alternatively you can <a href="https://wordpress.org/plugins/webman-templates/">install the plugin via your WordPress dashboard</a>.</p>
+                </aside>
+                <aside class="alert alert-green">
+                  <h3><strong>Tip:</strong> Tutorials</h3>
+                  <p><strong>Tutorials</strong>: If you are new to Beaver Builder page builder, you can <a href="https://vimeo.com/beaverbuilder">watch instructional videos</a> (check out <a href="https://www.wpbeaverbuilder.com/6-beaver-builder-tutorial-videos-awesome-community/?fla=67">alternative courses</a>), or read the plugin's <a href="http://kb.wpbeaverbuilder.com/?fla=67">knowledge base</a>.</p>
+                </aside>
+              </dd>
+              <dt id="breadcrumb-navxt">Breadcrumb NavXT</dt>
+              <dd>
+                <p class="plugin-page"><a href="https://wordpress.org/plugins/breadcrumb-navxt/">Plugin page &rarr;</a></p>
+                <p>With this plugin you can create a perfect <a href="http://en.wikipedia.org/wiki/Breadcrumb_%28navigation%29">breadcrumbs navigation</a>.</p>
+                <p>Read the instructions on <a href="#breadcrumbs">custom plugin setup below</a>.</p>
+              </dd>
+              <dt id="envato-market">Envato Market</dt>
+              <dd>
+                <p class="plugin-page"><a href="https://envato.com/market-plugin/">Plugin page &rarr;</a></p>
+                <p>If you <a href="http://themeforest.net/user/webmandesign/portfolio">obtained the theme from ThemeForest</a>, you can use this plugin for easy <a href="#update">automatic theme updates</a>.</p>
+              </dd>
+              <dt id="jetpack">Jetpack</dt>
+              <dd>
+                <p class="plugin-page"><a href="https://wordpress.org/plugins/jetpack/">Plugin page &rarr;</a></p>
+                <p>This plugin was built by <a href="http://automattic.com/">Automattic</a> (the company behind the WordPress) and contains a lot of very useful tools for your website.</p>
+                <p>To choose some of the features included in this plugin: <strong>tiled galleries</strong>, image lightbox zooming effect, contact form, extra widgets, infinite scroll, better search, <strong>social networks sharing buttons</strong>, <strong>related posts display</strong>, <abbr title="Content Delivery Network">CDN</abbr>, site verification and others.</p>
+                <p>Please note that you will need to <a href="https://jetpack.com/support/getting-started-with-jetpack/?aff=6509&cid=588078">connect your Jetpack powered website</a> once the plugin is active to use its features. For more info on the plugin usage and functionality please visit the <a href="http://jetpack.me/"><strong>Jetpack.me</strong></a> website.</p>
+                <p>This theme also supports advanced Jetpack features such as <a href="#portfolio"><strong>Portfolio</strong></a> and <a href="testimonials"><strong>Testimonials</strong></a> content types and <a href="http://easycaptures.com/fs/uploaded/1196/7847277416.png">customizer content options</a> (found under 
+                  <mark class="nav-path">Appearance → Customize → Content Options</mark>).
+                </p>
+                <aside class="alert alert-orange">
+                  <h3><strong>Warning:</strong> Infinite scroll issue</h3>
+                  <p>If you are using Jetpack's Infinite Scroll feature and also using some post reordering plugin, <a href="https://support.webmandesign.eu/forums/topic/infinite-scroll-problem/">you might experience a compatibility issue</a>. Please note that such issue is related to plugins incompatibility, not a theme. Contact your plugin support for possible solution.</p>
+                </aside>
+              </dd>
+              <dt id="content-aware-sidebars">Content Aware Sidebars</dt>
+              <dd>
+                <p class="plugin-page"><a href="https://wordpress.org/plugins/content-aware-sidebars/">Plugin page &rarr;</a></p>
+                <p>For creating unlimited number of widget areas (sidebars) and using them anywhere on the website.</p>
+                <p>This plugin is actually also suitable for <strong>controlling and altering your website layout</strong> with ease. Here are some example usecases:</p>
+                <ul>
+                  <li>
+                    <p><strong>Want to remove a sidebar from certain page(s)?</strong></p>
+                    <p>Just create a new custom widget area (let's call it <em>"Empty"</em>) and set it to replace the <a href="#sidebars"><em>"Sidebar"</em> widget area</a> on the specific pages. Once you leave this new widget area empty, with no widgets in it, the sidebar will simply not be displayed on the affected pages.</p>
+                    <p><strong>Tip:</strong> If you only want to display sidebar on some pages, you can use reverse logic: leave the theme's "Sidebar" empty and create a "Sidebar with widgets" using the plugin and set it to display on the specific pages only.</p>
+                  </li>
+                  <li>
+                    <p><strong>Want to display a different widgets in intro section on certain page?</strong></p>
+                    <p>Just create a new custom widget area (let's call it <em>"About page intro widgets"</em>, for example) and set it to replace the <a href="#sidebars"><em>"Intro Widgets"</em> widget area</a> on the specific page (the <em>"About"</em>, for example). Then go ahead and add some widgets into the <em>"About page intro widgets"</em> area in 
+                      <mark class="nav-path">Appearance → Widgets</mark>.
+                    </p>
+                  </li>
+                </ul>
+                <p>Alternatively, you can also <a href="https://wordpress.org/plugins/search/sidebars/">try using a similar plugin</a>.</p>
+                <aside class="alert alert-green">
+                  <h3><strong>Tip:</strong> Controlling a single widget</h3>
+                  <p>If you would like to control a single widget display instead of the whole widget area, you can use <a href="https://jetpack.com/support/widget-visibility/?aff=6509&cid=588078"><strong>Jetpack</strong> plugin's "Widget Visibility" feature</a> (or try <a href="https://wordpress.org/plugins/widget-options/"><strong>Widget Options</strong> plugin</a>).</p>
+                </aside>
+              </dd>
+              <dt id="woocommerce">WooCommerce</dt>
+              <dd>
+                <p class="plugin-page"><a href="https://wordpress.org/plugins/woocommerce/">Plugin page &rarr;</a></p>
+                <p>WooCommerce is the world's most favorite eCommerce solution that allows you to sell anything, beautifully.</p>
+                <p>This theme is fully compatible with WooCommerce e-commerce plugin out of the box, so you can start selling immediately. Just install, activate and setup the plugin and you are ready to go!</p>
+                <p>Once you set up your main shop page, by <a href="#custom-fields">tweaking its options</a> and/or <a href="#pages">setting the page template</a>, you can actually change the layout and appearance of all shop archive pages. Additional shop related settings can be found in 
+                  <mark class="nav-path">Appearance → Customize → Theme Options → Shop</mark>.
+                </p>
+                <p>Since WordPress 4.7 you can set a custom <a href="#page-templates">post type page template</a> for WooCommerce config.. It supports "With intro widgets" and "No intro" page templates.</p>
+                <aside class="alert alert-green">
+                  <h3><strong>Tip:</strong> Tutorials</h3>
+                  <p>If you are new to WooCommerce, you can <a href="https://docs.woocommerce.com/document/woocommerce-101-video-series/?aff=6509&cid=588078">watch instructional <strong>WooCommerce 101 video series</strong></a>, or read the <a href="https://docs.woocommerce.com/documentation/plugins/woocommerce/?aff=6509&cid=588078">plugin's documentation</a>.</p>
+                </aside>
+                <aside class="alert alert-green">
+                  <h3><strong>Tip:</strong> Dynamic WooCommerce page title</h3>
+                  <p>When using a <a href="#beaver-builder">page builder</a> and <a href="#page-templates">hiding the default page title</a> on a special WooCommerce pages (such as Cart, Checkout and My Account page), you loose the ability to adapt your custom page title to an actual page being displayed (such as when previewing orders on your "My Account" page, the page title should read "Orders" instead).</p>
+                  <p>This theme resolves this issue by introducing a special <code>%wc_title%</code> placeholder you can use in page or page builder content to display a dynamic page title.</p>
+                </aside>
+              </dd>
+              <dt id="integration-wc">Theme Integration for WooCommerce</dt>
+              <dd>
+                <p class="plugin-page"><a href="https://wordpress.org/plugins/wc-theme-integration/">Plugin page &rarr;</a></p>
+                <p>Provides deeper design integration for WooCommerce in the theme.</p>
+              </dd>
+            </dl>
+          </section>
+          <section class="entry-section" id="plugins-others">
+            <h3>Other Useful Plugins</h3>
+            <p>You can use any plugin with the theme. Here are some tested, used and recommended plugins by the <a href="https://www.webmandesign.eu">theme author</a>:</p>
+            <dl class="list-default">
+              <dt><a href="https://wordpress.org/plugins/archive-title/">Archive Title</a></dt>
+              <dd>Remove archive page title labels completely, or just hide them accessibly.</dd>
+              <dt><a href="https://wordpress.org/plugins/caldera-forms/">Caldera Forms</a></dt>
+              <dd>A great form builder plugin for WordPress.</dd>
+              <dt><a href="https://wordpress.org/plugins/classic-editor/">Classic Editor</a></dt>
+              <dd>In case you can not use WordPress 5+ block editor, you can restore the previous ("classic") editor with this plugin.</dd>
+              <dt><a href="https://wordpress.org/plugins/cpt-editor/">Custom Post Type Editor</a></dt>
+              <dd>Allows you to rename any post type.</dd>
+              <dt><a href="https://wordpress.org/plugins/customizer-export-import/">Customizer Export/Import</a></dt>
+              <dd>Perfect plugin for backing up your theme's <a href="#customizer">customizer</a> settings.</dd>
+              <dt><a href="https://wordpress.org/plugins/disable-comments/">Disable Comments</a></dt>
+              <dd>Disables comments site-wide per post type.</dd>
+              <dt><a href="https://wordpress.org/plugins/improving-search-form-accessibility/">Improve Search Form Accessibility</a></dt>
+              <dd>This plugin fixes common accessibility issue of WordPress search form.</dd>
+              <dt><a href="https://wordpress.org/plugins/imsanity/">Imsanity</a></dt>
+              <dd>Automatically resizes huge image uploads.</dd>
+              <dt><a href="https://wordpress.org/plugins/intuitive-custom-post-order/">Intuitive Custom Post Order</a></dt>
+              <dd>For easy posts ordering.</dd>
+              <dt><a href="https://wordpress.org/plugins/better-wp-security/">iThemes Security</a></dt>
+              <dd>A great plugin to keep your WordPress site secure.</dd>
+              <dt><a href="https://wordpress.org/plugins/my-eyes-are-up-here/">My Eyes Are Up Here</a></dt>
+              <dd>Helps you control how WordPress generates thumbnails.</dd>
+              <dt><a href="https://wordpress.org/plugins/wp-nested-pages/">Nested Pages</a></dt>
+              <dd>Provides a drag & drop interface for managing pages and posts in the WordPress admin, while maintaining quick edit functionality.</dd>
+              <dt><a href="https://wordpress.org/plugins/page-links-to/">Page Links To</a></dt>
+              <dd>Lets you make a WordPress page (or other content type) link to a custom URL of your choosing.</dd>
+              <dt><a href="https://wordpress.org/plugins/polylang/">Polylang</a></dt>
+              <dd>Making your WordPress website multilingual.</dd>
+              <dt><a href="https://wordpress.org/plugins/post-type-archive-descriptions/">Post Type Archive Descriptions</a></dt>
+              <dd>Allows you to add a description to post type archive pages.</dd>
+              <dt><a href="https://wordpress.org/plugins/rename-taxonomies/">Rename Taxonomies</a></dt>
+              <dd>Allows you to rename any taxonomy.</dd>
+              <dt><a href="https://wordpress.org/plugins/wp-featherlight/">WP Featherlight</a></dt>
+              <dd>The best free image lightbox (zooming) plugin that just works!</dd>
+              <dt><a href="https://wordpress.org/plugins/wpforms-lite/">WPForms</a></dt>
+              <dd>A great and easy to use drag & drop form builder for WordPress.</dd>
+            </dl>
+          </section>
+        </article>
+        <article class="entry entry-pages" id="pages" tabindex="-1">
+          <h2 class="entry-title">Pages</h2>
+          <section class="entry-section" id="">
+            <h3>Setting Up Home and Blog Page</h3>
+            <ol>
+              <li>
+                <p>In WordPress admin navigate to 
+                  <mark class="nav-path">Appearance → Customize → Homepage Settings</mark> (or to 
+                  <mark class="nav-path">Settings → Reading</mark>).
+                </p>
+              </li>
+              <li>
+                <p>For <em>"Your homepage displays"</em> option set <em>"A static page (select below)"</em>.</p>
+              </li>
+              <li>
+                <p>Select the homepage from dropdown list. This page will become your home/front page. Then select the posts page from dropdown list, which will become your blog page.</p>
+              </li>
+            </ol>
+            <aside class="alert alert-green">
+              <h3><strong>Tip:</strong> </h3>
+              <p>You can also do this in <a href="#customizer">Customizer</a> where you get live preview of your settings.</p>
+            </aside>
+          </section>
+          <section class="entry-section" id="page-templates">
+            <h3>Templates</h3>
+            <p>You can use all of the templates below on any publicly accessible post type.</p>
+            <dl class="list-default">
+              <dt>
+                Blank
+                <a href="https://themedemos.webmandesign.eu/michelle/theme-features/template-blank/" class="alignright btn btn-default">Demo</a>
+                
+              </dt>
+              <dd>
+                <p>There is no header, no intro section, no H1 heading tag and no footer on this page template. This page template works best with a <a href="#beaver-builder">page builder</a> and is suitable for creating custom <a href="https://en.wikipedia.org/wiki/Landing_page">landing pages</a>.</p>
+              </dd>
+              <dt>
+                No intro
+                <a href="https://themedemos.webmandesign.eu/michelle/theme-features/template-no-intro/" class="alignright btn btn-default">Demo</a>
+                
+              </dt>
+              <dd>
+                <p>Use this page template to remove the page intro title section (when you want to set up your own). Only the page content will be displayed.</p>
+                <p>For standard pages, the title will be <a href="#accessibility">accessibly</a> hidden.</p>
+                <p>On the other hand, if you are using a Beaver Builder page builder, please, <strong>do not forget</strong> to set up your custom <code>H1</code> heading, as it is being completely removed from the page in this case! The same applies for pages that you <a href="#any-page-builder">set to be ready for any other page builder</a>.</p>
+                <p>This page template works best with a <a href="#beaver-builder">page builder</a>.</p>
+              </dd>
+              <dt>
+                Page builder
+                <a href="https://themedemos.webmandesign.eu/michelle/theme-features/template-page-builder" class="alignright btn btn-default">Demo</a>
+                
+              </dt>
+              <dd>
+                <p>This is a special page/post template designed for use with a page builder plugin. You can specify the correct content area layout for this page/post template in 
+                  <mark class="nav-path">Appearance → Customize → Theme Options → Layout → Page builders</mark> and tweak it for needs of your page builder plugin.
+                </p>
+                <p>(Note that using this page template will remove the page intro area (just like "No intro" page template above), so you need to create it with your page builder then, if needed.)</p>
+              </dd>
+              <dt>
+                With sidebar
+                <a href="https://themedemos.webmandesign.eu/michelle/theme-features/template-sidebar/" class="alignright btn btn-default">Demo</a>
+                
+              </dt>
+              <dd>
+                <p>By default, there is no sidebar displayed on pages. However, if you would like to display a sidebar on a page, use this page template with it.</p>
+              </dd>
+            </dl>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Page Excerpt</h3>
+            <p>The theme adds support for excerpts also to WordPress pages. Page excerpt will be displayed in page intro section as well as in child pages list (read more in section about <a href="#page-templates">page templates</a>).</p>
+          </section>
+          <section class="entry-section" id="page-intro">
+            <h3>Page Intro</h3>
+            <p>Page intro is basically a main title area of the page, post or archive page. By default it displays <strong>intro image</strong>, <strong>page title</strong> and <strong>page excerpt</strong>:</p>
+            <dl class="list-default">
+              <dt>Page excerpt</dt>
+              <dd>
+                <p>
+                  <strong>Page Excerpt</strong> content depends on the page you are on.
+                  <br>
+                  If it is an actual WordPress Page or Post or any custom post type, you can set the <em>"Excerpt"</em> field text.
+                  <br>
+                  On taxonomy archive pages it displays the taxonomy term (such as post category or tag) description which you can set for any/all taxonomy terms in WordPress.
+                  <br>
+                  If you want to display some description text for the custom post type archive pages too, you need to <a href="https://wordpress.org/plugins/post-type-archive-descriptions/">use a plugin for that</a>.
+                  
+                </p>
+              </dd>
+              <dt>Image</dt>
+              <dd>
+                <p><strong>Intro image</strong> is taken from your website header images that can be set in 
+                  <mark class="nav-path">Appearance → Customize → Header Media</mark>.
+                  <br>
+                  This image can be subsequently overridden by setting up a post/page featured image.
+                  
+                </p>
+                <p>On single pages and posts the image is not displayed by default, unless you set a featured image.</p>
+              </dd>
+            </dl>
+            <p>If you would like to remove the intro section (to set up your own with a page builder, for example), use a dedicated page template.</p>
+            <p>Colors of intro section can be customized in 
+              <mark class="nav-path">Appearance → Customize → Theme Options → Colors: Intro</mark>.
+            </p>
+          </section>
+        </article>
+        <article class="entry entry-posts" id="posts" tabindex="-1">
+          <h2 class="entry-title">Posts</h2>
+          <section class="entry-section" id="">
+            <h3>Post Excerpt</h3>
+            <p>Post excerpt will be displayed in posts list. If no excerpt is set, a portion of post content will take its place in posts list (if set, until <a href="https://codex.wordpress.org/Customizing_the_Read_More">more tag</a>).</p>
+            <p>If you set the <a href="https://codex.wordpress.org/Customizing_the_Read_More">more tag</a> inside the post content and you also set a post excerpt, first the post excerpt followed with post content (until more tag) will be displayed in posts list.</p>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Archive Page Title</h3>
+            <p>By default WordPress adds some general caption to the archive page title (such as <em>"Category:"</em> in front of a category name on category archive page). You can disable these using <a href="https://wordpress.org/plugins/archive-title/">Archive Title</a> plugin.</p>
+          </section>
+        </article>
+        <article class="entry entry-products" id="products" tabindex="-1">
+          <h2 class="entry-title">Products</h2><h3>What Are They and How to Use Them?</h3>
+<div class="col-sm-12 col-md-4">
+<p class="uppercase">Shop products are added to your website when you are using a <a href="#woocommerce"><strong>WooCommerce</strong> e-commerce plugin</a>.</p>
+<p>You can sell anything on your website: physical goods, downloadable content, services or external/affiliate products.</p>
+<p>Please refer to <a href="https://docs.woocommerce.com/document/managing-products/?aff=6509&cid=588078">WooCommerce documentation for how to create and manage your online shop products</a>.</p>
+</div>
+<div class="col-sm-12 col-md-8">
+<div class="alert alert-info mt0">
+          <This>custom post type is provided via <a href="#woocommerce"><strong>WooCommerce</strong></a> plugin.</This></div>
+<div class="alert alert-success">
+          <Use><a href="https://docs.woocommerce.com/document/woocommerce-shortcodes/#section-6">WooCommerce products shortcodes</a> to display products in your page builder layout.</Use></div>
+<div class="alert alert-warning">
+          <Before>using <a href="#beaver-builder"><strong>Beaver Builder</strong> (or other) page builder</a> with this custom post type you need to enable it in your page builder's settings first.<br></Before>
+          <Navigate>to 
+            <mark class="nav-path">Settings → Page Builder → Post Types</mark>.
+          </Navigate></div>
+<div class="alert alert-info">
+          <Since>WordPress 4.7 you can set a custom <a href="#page-templates">post type page template</a> for these posts. It supports "With intro widgets" and "No intro" page templates.</Since></div>
+<div class="alert alert-info">
+<strong>TIP:</strong> For custom posts order you can use a plugin, such as <a href="https://wordpress.org/plugins/intuitive-custom-post-order/"><strong>Intuitive Custom Post Order</strong></a>.
+</div>
+</div>
+        </article>
+        <article class="entry entry-portfolio" id="portfolio" tabindex="-1">
+          <h2 class="entry-title">Portfolio</h2><h3>What Are They and How to Use Them?</h3>
+<div class="col-sm-12 col-md-4">
+<p class="uppercase">The Portfolio custom post type gives you an easy way to manage and showcase projects on your site.</p>
+<p>First you will need to enable this post type in <a href="#jetpack">Jetpack plugin's</a> options in 
+          <mark class="nav-path">Jetpack → Settings → Writing</mark> in order to use it.</p>
+<p>For more information about Jetpack Portfolios please <a href="https://jetpack.com/support/custom-content-types/?aff=6509&cid=588078">visit dedicated information page</a>.</p>
+<p>To display all portfolio projects on your site, you can use a portfolio <a href="#menu">archive page link in the navigation</a>.</p>
+</div>
+<div class="col-sm-12 col-md-8">
+<div class="alert alert-info mt0">
+          <This>custom post type is provided via <a href="#jetpack"><strong>Jetpack</strong></a> plugin.</This></div>
+<div class="alert alert-success">
+          <Use><a href="https://en.support.wordpress.com/portfolios/portfolio-shortcode/">Jetpack <code>[portfolio]</code> shortcode</a> to display portfolio projects on your page or in your page builder layout.</Use></div>
+<div class="alert alert-warning">
+          <Before>using <a href="#beaver-builder"><strong>Beaver Builder</strong> (or other) page builder</a> with this custom post type you need to enable it in your page builder's settings first.<br></Before>
+          <Navigate>to 
+            <mark class="nav-path">Settings → Page Builder → Post Types</mark>.
+          </Navigate></div>
+<div class="alert alert-info">
+          <Since>WordPress 4.7 you can set a custom <a href="#page-templates">post type page template</a> for these posts. It supports "With intro widgets" and "No intro" page templates.</Since></div>
+<div class="alert alert-info">
+<strong>TIP:</strong> If you would like to point the post to a custom URL, try using a <a href="https://wordpress.org/plugins/page-links-to/"><strong>Page Links To</strong></a> plugin.
+</div>
+<div class="alert alert-info">
+<strong>TIP:</strong> If you would like to rename this post type, use the <a href="https://wordpress.org/plugins/cpt-editor/"><strong>Custom Post Type Editor</strong></a> plugin. To rename the custom taxonomies related to this post type, use the <a href="https://wordpress.org/plugins/rename-taxonomies/"><strong>Rename Taxonomies</strong></a> plugin.
+</div>
+<div class="alert alert-info">
+<strong>TIP:</strong> For custom posts order you can use a plugin, such as <a href="https://wordpress.org/plugins/intuitive-custom-post-order/"><strong>Intuitive Custom Post Order</strong></a>.
+</div>
+</div>
+        </article>
+        <article class="entry entry-testimonials" id="testimonials" tabindex="-1">
+          <h2 class="entry-title">Testimonials</h2><h3>What Are They and How to Use Them?</h3>
+<div class="col-sm-12 col-md-4">
+<p class="uppercase">The Testimonial custom post type allows you to add, organize, and display your testimonials.</p>
+<p>First you will need to enable this post type in <a href="#jetpack">Jetpack plugin's</a> options in 
+          <mark class="nav-path">Jetpack → Settings → Writing</mark> in order to use it.</p>
+<p>For more information about Jetpack Testimonials please <a href="https://jetpack.com/support/custom-content-types/?aff=6509&cid=588078">visit dedicated information page</a>.</p>
+<p>To display all testimonials on your site, you can use a testimonials <a href="#menu">archive page link in the navigation</a>.</p>
+</div>
+<div class="col-sm-12 col-md-8">
+<div class="alert alert-info mt0">
+          <This>custom post type is provided via <a href="#jetpack"><strong>Jetpack</strong></a> plugin.</This></div>
+<div class="alert alert-success">
+          <Use><a href="https://en.support.wordpress.com/testimonials-shortcode/">Jetpack <code>[testimonials]</code> shortcode</a> to display testimonials on your page or in your page builder layout.</Use></div>
+<div class="alert alert-info">
+<strong>TIP:</strong> If you would like to rename this post type, use the <a href="https://wordpress.org/plugins/cpt-editor/"><strong>Custom Post Type Editor</strong></a> plugin. To rename the custom taxonomies related to this post type, use the <a href="https://wordpress.org/plugins/rename-taxonomies/"><strong>Rename Taxonomies</strong></a> plugin.
+</div>
+<div class="alert alert-info">
+<strong>TIP:</strong> For custom posts order you can use a plugin, such as <a href="https://wordpress.org/plugins/intuitive-custom-post-order/"><strong>Intuitive Custom Post Order</strong></a>.
+</div>
+</div>
+        </article>
+        <article class="entry entry-navigation" id="navigation" tabindex="-1">
+          <h2 class="entry-title">Navigational Menus</h2>
+          <section class="entry-section" id="">
+            <h3>Using Navigational Menus</h3>
+            <p>You can easily create custom navigational menus in 
+              <mark class="nav-path">Appearance → Menus</mark>.
+            </p>
+            <p>Menus may contain links to pages, categories, custom links or other content types (use the <a href="https://www.wpbeginner.com/glossary/screen-options/"><strong>"Screen Options"</strong></a> tab to enable menu content types and attributes).</p>
+            <p>You can specify a different navigation label for a menu item as well as other attributes. The theme also supports menu item description text.</p>
+            <p>To display menus on your website you need to assign them to a menu location (or use a <strong>Navigation Menu</strong> widget in a sidebar, for example). The theme defines these menu locations for you:</p>
+            <dl class="list-default">
+              <dt>Primary</dt>
+              <dd>
+                <p>The main navigation area in the header of the website displayed next to site logo. Can be nested and hierarchically organized (up to 4 levels deep) and you can use a <a href="#megamenu">megamenu</a> here. This is mobile-ready main site navigation menu, but you can disable the mobile menu in 
+                  <mark class="nav-path">Appearance → Customize → Theme Options → Others</mark></strong> if needed.
+                </p>
+              </dd>
+              <dt>Social Links</dt>
+              <dd>
+                <p>Please read the <a href="#social-links">"Social Links" documentation section</a> below for more info.</p>
+              </dd>
+            </dl>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Creating a Menu</h3>
+            <p>Please follow the <a href="https://codex.wordpress.org/WordPress_Menu_User_Guide">instructions in WordPress codex on how to create a menu</a>.</p>
+            <aside class="alert alert-green">
+              <h3><strong>Tip:</strong> Post type archive link</h3>
+              <p>You can add any custom post type archive page link into the menu. <a href="http://easycaptures.com/fs/uploaded/1023/6040881305.png">Please see the image for the instructions &raquo;</a></p>
+            </aside>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Megamenu</h3>
+            <p>@TODO</p>
+          </section>
+        </article>
+        <article class="entry entry-social-links" id="social-links" tabindex="-1">
+          <h2 class="entry-title">Social Links</h2>
+          <section class="entry-section" id="">
+            <h3>Adding Social Network Links and Icons</h3>
+            <p>Social icons linked to your social network profiles can be displayed anywhere on the website. But beforehand you must <a href="#menu">create and set up a social links menu</a>:</p>
+            <ol>
+              <li>Go to 
+                <mark class="nav-path">Appearance → Menus</mark> in the WordPress admin.
+              </li>
+              <li>Click <em>create a new menu</em> link.</li>
+              <li>Give the menu a name, such as "Social Menu".</li>
+              <li>Click <strong class="button dummy">Create Menu</strong> button.
+              </li>
+              <li>Click the <em>Custom Links</em> header on the left side of the page.</li>
+              <li>Type a link (such as <code>https://www.facebook.com/webmandesigneu</code>) in the <em>URL</em> field.</li>
+              <li>Give the link a label by typing in the <em>Link Text</em> field. (This label text will be accessibly hidden.)</li>
+              <li>Click <strong class="button dummy">Add to Menu</strong>.
+              </li>
+              <li>Repeat the above steps for additional social links.</li>
+              <li>In the <em>Menu Settings</em> section at the bottom, check the "Social Links" box for <em>Theme locations</em>.</li>
+              <li>Click <strong class="button dummy">Save Menu</strong> button.
+              </li>
+            </ol>
+            <p>Adding your social links as a custom menu allows you to sort your profiles and add as many as you want. Once you assign a social links menu this way, feel free to use a <strong>Navigation Menu</strong> widget to display it in sidebars of your website.</p>
+            <p>The theme displays icons as SVG images. For full list of supported icons please refer to <code>assets/images/svg</code> folder of your theme.</p>
+            <p>For links starting with <code>mailto:</code> an <em>envelope</em> icon is applied. For unrecognized links a <em>link chain</em> icon is used.</p>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Social sharing buttons</h3>
+            <p>If you want to add a social sharing buttons to your website to allow your visitors to share your content, please consider enabling the <a href="https://jetpack.com/support/sharing/?aff=6509&cid=588078">Sharing module</a> of <a href="#jetpack">Jetpack plugin</a>, or use different <a href="https://wordpress.org/plugins/search/share/">dedicated plugin</a>.</p>
+          </section>
+        </article>
+        <article class="entry entry-sidebars" id="sidebars" tabindex="-1">
+          <h2 class="entry-title">Widgetized Areas</h2>
+          <section class="entry-section" id="">
+            <h3>Predefined Widget Areas</h3>
+            <p>The content of widget areas can be customized in 
+              <mark class="nav-path">Appearance → Customize → Widgets</mark> or 
+              <mark class="nav-path">Appearance → Widgets</mark>. The theme predefines these widget areas:
+            </p>
+            <dl class="list-default">
+              <dt>Sidebar</dt>
+              <dd>This widget area is displayed on all posts, archive and search results pages, unless you leave it empty, with no widgets in it. If you want to display a sidebar on a page, use a <a href="#page-templates">"With sidebar" page template</a>. If you want to remove a sidebar from certain page(s) only, use <a href="#content-aware-sidebars">Content Aware Sidebars plugin</a> for that.</dd>
+              <dt>Footer Widgets</dt>
+              <dd>Displays widgets in footer area of the website. This is actually your main footer section.</dd>
+            </dl>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Custom sidebars &amp; website layout control</h3>
+            <p>You can create a custom widget areas (sidebars) and use them anywhere on the website with a help of <a href="#content-aware-sidebars"><strong>Content Aware Sidebars</strong></a> plugin.</p>
+            <p>That way you can control even displaying of the sidebar, effectively altering the page layout - limitless options, great flexibility!</p>
+          </section>
+        </article>
+        <article class="entry entry-widgets" id="widgets" tabindex="-1">
+          <h2 class="entry-title">Widgets</h2>
+        </article>
+        <article class="entry entry-customizer" id="customizer" tabindex="-1">
+          <h2 class="entry-title">Customizer</h2>
+          <p>The theme seamlessly integrates its options into the <strong>WordPress Customizer</strong>.</p>
+          <p>You can access it navigating to 
+            <mark class="nav-path">Appearance → Customize</mark>. All the changes you make in Customizer will be immediately displayed in the preview. However, these changes will not be saved until you press the <strong class="button dummy">Publish</strong> button.
+          </p>
+          <p>You can set up your site's title, tagline and logo, header images and video, manage <a href="#navigation">navigational menu locations</a> and <a href="#sidebars">widget areas</a>, set up a <a href="#pages">homepage and blog page</a>, theme colors, layout, predefined texts and typography.</p>
+          <p>All the custom theme options can be found under 
+            <mark class="nav-path">Appearance → Customize → Theme Options</mark> section.
+          </p>
+        </article>
+        <article class="entry entry-localization" id="localization" tabindex="-1">
+          <h2 class="entry-title">Localization</h2>
+          <p><strong>TIP:</strong> <a href="http://www.wpbeginner.com/wp-tutorials/how-to-install-wordpress-in-other-languages/">How to Install WordPress in Other Languages &raquo;</a></p>
+          <p>Every WordPress theme contains some texts that need to be translated into your language if you are building a non-English website. This theme if fully translation ready (and supports even Right-To-Left languages) and is also translated into multiple languages out of the box. (For reference of pre-packed language packs please check the list of translation files within <code>michelle/languages</code> folder of the theme.)</p>
+          <p>To enable your language on your website, please <a href="https://codex.wordpress.org/Installing_WordPress_in_Your_Language">switch WordPress into the desired language localization</a>.</p>
+          <section class="entry-section" id="">
+            <h3>How to Translate the Theme?</h3>
+            <h4>Translating using <a href="http://www.poedit.net/">Poedit</a></h4>
+            <ol>
+              <li>
+                <p>Make a copy of the original <code>michelle/languages/michelle.pot</code> file.</p>
+              </li>
+              <li>
+                <p>You need to rename the copied file now: add hyphen followed with <a href="https://translate.wordpress.org/">your language code locale</a>, and change file extension to "po". So, the British English file would be named <code>michelle-en_GB.po</code>.</p>
+              </li>
+              <li>
+                <p>Use <a href="http://www.poedit.net/"><strong>Poedit</strong></a> to translate the file and export (save) translation in "mo" file format.</p>
+              </li>
+              <li>
+                <p>Upload translated <code>michelle-en_GB.mo</code> file into your WordPress languages directory, into <code>themes</code> folder (such as <code>/wp-content/languages/themes/michelle-en_GB.mo</code> - if the <code>themes</code> folder does not exist in your WordPress languages directory, create it).</p>
+                <aside class="alert alert-orange">
+                  <h3><strong>Warning:</strong> REMINDER:</h3>
+                  <p>When you update the theme, all custom translation files will be deleted from <code>/wp-content/themes/michelle/languages</code> folder. Do not place your custom translation files into that folder!</p>
+                </aside>
+              </li>
+            </ol>
+            <h4>Translating directly in your WordPress dashboard</h4>
+            <p>If you would like translate the theme directly in your WordPress dashboard you need to use a specialized plugin for that. Please install and activate <a href="https://wordpress.org/plugins/loco-translate/"><strong>Loco Translate</strong> plugin</a>. For instructions on how to use the plugin please refer to <a href="https://localise.biz/wordpress/plugin/beginners">beginner's guide</a> and/or <a href="https://localise.biz/wordpress/plugin/overview">technical overview</a>.</p>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Don't forget to translate your plugins too!</h3>
+            <p>WordPress website is built from WordPress system itself, a theme and plugin(s). There is a very high probability that <a href="https://codex.wordpress.org/Installing_WordPress_in_Your_Language">WordPress system is already translated into your language</a>, so, you don't have to do it on your own. You have also learned how to translate the theme into your language above. But what about plugins and their texts?</p>
+            <p>If you are lucky, your plugin contains your language localization files already and you don't have to do anything. But if you need to translate the plugin into your language, the best advice is to check the plugin's documentation for instructions (you can <a href="https://github.com/webmandesign/webman-amplifier/blob/master/languages/readme.md">check the instructions for WebMan Amplifier plugin localization</a> procedure).</p>
+            <p>Alternatively you can also use <a href="https://wordpress.org/plugins/loco-translate/"><strong>Loco Translate</strong> plugin</a> (again) to translate your plugins directly in your WordPress dashboard.</p>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Help us with translations</h3>
+            <p>Please make your translation available for everyone by submitting it to <a href="https://translate.wordpress.org/projects/wp-themes/michelle">WordPress translations repository</a>. Thank you!</p>
+          </section>
+        </article>
+        <article class="entry entry-accessibility" id="accessibility" tabindex="-1">
+          <h2 class="entry-title">Accessibility</h2>
+          <section class="entry-section" id="">
+            <h3>What is accessibility</h3>
+            <p><strong>Accessibility</strong> in web design means creating web pages that everyone can use, regardless of hardware, software, or any sensory or physical impairment.</p>
+            <p>While this is a <em>complex process that includes a website content strategy</em>, the <strong>Michelle</strong> theme helps you with being accessibility ready. It complies to and surpasses the <a href="https://make.wordpress.org/themes/handbook/review/accessibility/">WordPress accessibility requirements</a> and was built to pass the <a href="http://webaim.org/standards/wcag/checklist">WCAG 2.0 level AA</a> and <a href="http://webaim.org/standards/508/checklist">Section 508</a> requirements.</p>
+            <p>The theme itself contains and applies <strong>proper headings structure</strong>, uses <strong>ARIA landmark roles</strong> and attributes, adds <strong>informative "read more" links</strong>, <strong>keyboard accessible navigation</strong> (applied also on mobile navigation), <strong>skip links</strong>, the <strong>default color scheme complies to WCAG 2.0 level AA color contrast ratio</strong>, and others.</p>
+            <p>Please note that to make your website fully accessible, <strong>you need to apply accessibility guidelines also to your website content</strong>. For further information please read <a href="https://codex.wordpress.org/Accessibility">WordPress Codex on accessibility</a>.</p>
+            <h4>Helpful resources</h4>
+            <p>For more information on accessibility please have a look at this selection of websites:</p>
+            <ul>
+              <li><a href="https://codex.wordpress.org/Accessibility">WordPress Codex on accessibility</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Accessibility">Accessibility explained on Wikipedia</a></li>
+              <li><a href="https://wordpress.tv/tag/accessibility/">WordPress.tv videos about accessibility</a></li>
+              <li><a href="https://www.w3.org/WAI/gettingstarted/Overview.html">Getting started with web accessibility by W3.org</a></li>
+              <li><a href="https://webaim.org/">WebAIM: Web Accessibility In Mind</a></li>
+              <li><a href="https://support.webmandesign.eu/accessibility/">Accessibility website evaluation</a></li>
+            </ul>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Focus on Readability</h3>
+            <p>The single post page (and the actual default page layout) was designed very carefully to provide <strong>the best reading experience</strong> for your visitors. The <strong title="Depending on the text font, text size, browser window width and your website content width setup." style="border-bottom: 1px dotted; cursor: help;">maximum line width is around 70 characters</strong> with properly set line height and spacing around elements to provide great readability of your content.</p>
+          </section>
+          <section class="entry-section" id="">
+            <h3>Headings structure</h3>
+            <p>To comply to best accessibility guidelines, the theme follows this headings structure:</p>
+            <dl>
+              <dt>Only one <code>h1</code> on the page</dt>
+              <dd>
+                <p>The theme outputs only one first-level heading (HTML tag <code>&lt;h1></code>) on each page. This is set up for the main page/post/archive title in the main content area of the page.</p>
+                <aside class="alert alert-orange">
+                  <h3><strong>Warning:</strong> </h3>
+                  <p>Please read more about exception when using certain <a href="#page-templates">page templates</a>.</p>
+                </aside>
+              </dd>
+              <dt>Site title heading</dt>
+              <dd>
+                <p>Page's HTML body title (the site title set in 
+                  <mark class="nav-path">Settings → General</mark>) is outputted with <code>h2</code> heading size or even <code>p</code> tag, leaving the <code>h1</code> size for the main page/post/archive title in the actual website main content area.
+                </p>
+              </dd>
+              <dt>Headings hierarchy</dt>
+              <dd>
+                <p>The theme follows the best practice by hierarchically organizing heading levels, not skipping any of them. For example, <code>h3</code> headings can be found only in a section titled with level <code>h2</code> heading (and not <code>h1</code>). This rule is applied also in <a href="#demo-content">the theme demo content</a> and <strong>you should do the same in your website content</strong> too.</p>
+                <aside class="alert alert-green">
+                  <h3><strong>Tip:</strong> Test it!</h3>
+                  <p>In case you would like to test your website headings hierarchy, there is a great Chrome browser extension for this called <a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi"><strong>HeadingsMap</strong></a>.</p>
+                </aside>
+              </dd>
+              <dt>Decorative headings</dt>
+              <dd>
+                <p>You should never use heading levels to style the text for decorative purposes! In case this is required, please <a href="#formats">use helper CSS classes</a> such as <code>.h1</code>, <code>.h2</code>, <code>.h3</code> or <code>.display-1</code>, <code>.display-2</code>, <code>.display-3</code>, <code>.display-4</code> to override any HTML heading or paragraph default styling.</p>
+              </dd>
+            </dl>
+          </section>
+        </article>
+        <article class="entry entry-child-theme" id="child-theme" tabindex="-1">
+          <h2 class="entry-title">Modifications</h2>
+          <aside class="alert alert-orange">
+            <h3><strong>Warning:</strong> Important!</h3>
+            <p><strong>Please note that <a href="https://www.webmandesign.eu/reference/#links-support">we do not provide support for custom theme modifications</a>!</strong></p>
+            <p>You are responsible for all the changes you apply to the theme on your website.</p>
+            <p>If you don't feel comfortable enough coding, please, <a href="https://support.webmandesign.eu/modifications/">consider hiring someone who could help</a>.</p>
+          </aside>
+          <section class="entry-section" id="">
+            <h3>When and How to Use a Child Theme?</h3>
+            <p>If you need to make any styling or functional changes to the theme, please use the WordPress native <strong>child theme</strong> functionality. This way you can continue updating the parent (original) <strong>Michelle</strong> theme without any worry of your changes being overwritten as all your custom styles and functionality are kept in a child theme. You can read more about <a href="http://codex.wordpress.org/Child_Themes">child themes on WordPress Codex pages</a>.</p>
+            <p>You can put all your custom CSS styles into <code>YOUR_CHILD_THEME/style.css</code> file. (You can alternatively use 
+              <mark class="nav-path">Appearance → Customize → Additional CSS</mark> for that.)
+            </p>
+            <p>If you also want to change the functionality of the original <strong>Michelle</strong> theme, do so in <code>YOUR_CHILD_THEME/functions.php</code> file. You can freely modify any theme function or class method there by hooking onto the specific "pre" filter or unhooking the function altogether (see below for how to use filter and action hooks).</p>
+            <h4>Additional resources</h4>
+            <ul>
+              <li><a href="https://github.com/webmandesign/child-theme"><strong>Download a sample child theme</strong></a></li></li>
+              <li><a href="https://wordpress.org/plugins/child-theme-check/"><strong>Child Theme Check</strong> plugin</a> (<a href="https://wptavern.com/child-theme-check-plugin-helps-wordpress-users-navigate-parent-theme-updates">how it works?</a>)</li></li>
+              <li><a href="http://codex.wordpress.org/Child_Themes">WordPress Codex on child themes</a></li></li>
+              <li><a href="http://www.woothemes.com/2015/07/why-child-themes-matter/">Why child themes are so important</a></li></li>
+            </ul>
+          </section>
+          <section class="entry-section" id="">
+            <h3>How to use action and filter hooks?</h3>
+            <aside class="alert alert-red">
+              <p>
+                This topic is dedicated to WordPress developers who would like to modify the theme and alter or expand its functionality.
+                <br>
+                <strong>Please note that <a href="https://www.webmandesign.eu/reference/#links-support">we do not provide support for custom theme modifications</a>, though.</strong>
+                
+              </p>
+            </aside>
+            <p>The theme is <a href="https://wordpress.org/plugins/theme-check/">coded according to WordPress coding standards</a> and is full of action and filter hooks. You can easily hook onto these to alter functions outputs (or short-circuit the whole functions - the <code>wmhook_HOOKNAME_pre</code> filter hooks) or alter parameters and variables, to add your own meta data, theme or design options, layouts and much more!</p>
+            <p>Please check the theme's source code for which hook to use(you can simply search for "<code>do_action(</code>" or "<code>apply_filters(</code>", respectively), or contact <a href="https://www.webmandesign.eu/reference/#links-support">WebMan Design Support Center</a> for more details and tips.</p>
+            <p><strong>Michelle</strong> theme also uses the <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance</a> hooks too. This is useful to entirely rebuild the theme structure or add your own sections anywhere in the theme. The whole theme front-end structure setup can be found in files inside the <code>michelle/includes/frontend</code> folder.</p>
+            <p>You can also watch an <a href="https://www.youtube.com/watch?v=AQrXcsc4CIw">instructional video on how to use WordPress hooks</a>.</p>
+            <p>To show all theme hooks you may try using <a href="https://wordpress.org/plugins/simply-show-hooks/"><strong>Simply Show Hooks</strong></a> plugin or <a href="https://wordpress.org/plugins/wp-inspect/"><strong>WP Inspect</strong></a> plugin.</p>
+          </section>
+        </article>
+        <article class="entry entry-tips" id="tips" tabindex="-1">
+          <h2 class="entry-title">FAQ &amp; Tips</h2>
+          <ol class="list-table-of-contents">
+            <li><a href="#seo"><em><strong>SEO</strong> - Search Engine Optimization</em></a></li>
+            <li><a href="#any-page-builder"><em>How to use <strong>any page builder</strong> plugin?</em></a></li>
+            <li><a href="#css-classes"><em>How to restyle elements with ease? <small>Using special predefined <strong>CSS classes</strong>.</small></em></a></li>
+            <li><a href="#fonts"><em>How to set up and use a <strong>custom font</strong>? <small>Google Fonts or Typekit setup.</small></em></a></li>
+            <li><a href="#icons"><em>How to set up custom <strong>icons</strong> set?</em></a></li>
+            <li><a href="#cookies"><em>How to set up <strong>cookies notification</strong>?</em></a></li>
+            <li><a href="#error404"><em>How to customize <strong>error 404</strong> page?</em></a></li>
+            <li><a href="#admin"><em>How to customize WordPress <strong>admin</strong>?</em></a></li>
+            <li><a href="#breadcrumbs"><em>How to set up <strong>breadcrumbs</strong>?</em></a></li>
+            <li><a href="#image-sizes"><em>My <strong>images</strong> are blurry/small/of bad quality, what can I do?</em></a></li>
+            <li><a href="#custom-fields"><em>What are <strong>custom fields</strong> and how to use them?</em></a></li>
+            <li><a href="#speed"><em>How to <strong>speed</strong> up the website?</em></a></li>
+            <li><a href="#css"><em>How to <strong>edit CSS</strong> or add your own?</em></a></li>
+          </ol>
+        </article>
+        <article class="entry entry-credits" id="credits" tabindex="-1">
+          <h2 class="entry-title">Sources and Credits</h2>
+          <p>For sources and credits related to theme code and assets, please check the <code>readme.txt</code> file within your theme folder.</p>
+          <section class="entry-section" id="">
+            <h3>Free Images</h3>
+            <p>
+              You can get free images for your website at these sources:
+              <a href="https://www.pexels.com">Pexels</a>,
+              <a href="https://unsplash.com">Unsplash</a>,
+              <a href="https://stocksnap.io/">StockSnap</a>,
+              <a href="https://www.canva.com/">Canva</a>.
+              Also check out <a href="https://make.wordpress.org/themes/handbook/review/resources/#recommended-websites-for-images">WordPress resources</a> for 100% GPL compatible image sources.
+            </p>
+          </section>
+        </article>
+      </main>
+      <nav class="site-menu" id="site-menu">
+        <ul>
+          <li><a href="#wordpress">WordPress</a></li>
+          <li><a href="#installation">Theme Installation</a></li>
+          <li><a href="#update">Theme Updates</a></li>
+          <li><a href="#demo-content">Installing Demo Content</a></li>
+          <li><a href="#anatomy">Theme Anatomy</a></li>
+          <li><a href="#plugins">Plugins</a></li>
+          <li><a href="#pages">Pages</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#navigation">Navigational Menus</a></li>
+          <li><a href="#social-links">Social Links</a></li>
+          <li><a href="#sidebars">Widgetized Areas</a></li>
+          <li><a href="#widgets">Widgets</a></li>
+          <li><a href="#customizer">Customizer</a></li>
+          <li><a href="#localization">Localization</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#child-theme">Modifications</a></li>
+          <li><a href="#tips">FAQ & Tips</a></li>
+          <li><a href="#credits">Sources and Credits</a></li>
+        </ul>
+      </nav>
+    </div>
+    <footer class="site-footer">
+      <p><a href="#top" title="Back to top of the page"><img src="https://raw.githubusercontent.com/webmandesign/demo-content/img/logo-webmandesign.eu.png" alt="Back to top of the page"></a></p>
+      <p>Once again, thank you for using Michelle WordPress theme!<br>&copy; <a href="https://www.webmandesign.eu">WebMan Design</a>
+        &bull; <a href="#top">Back to top &uarr;</a>
+      </p>
+    </footer>
+    <script src="../_core/assets/js/scripts.js"></script>
+  </body>
+</html>

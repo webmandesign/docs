@@ -1,0 +1,12 @@
+/* FILE: content/classes/_icons.scss */
+
+.svg-icon {
+	fill: currentColor;
+	width: 1.5em;
+	height: 1.5em;
+
+	.button & {
+		vertical-align: middle;
+	}
+
+}

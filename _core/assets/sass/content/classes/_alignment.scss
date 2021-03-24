@@ -1,0 +1,41 @@
+/* FILE: content/wp/_alignment.scss */
+
+.alignleft,
+.alignright {
+
+	&,
+	&:last-child {
+		margin-bottom: 1rem;
+	}
+
+}
+
+.alignleft {
+	float: left;
+	margin-right: 1rem;
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		margin-right: 2rem;
+	}
+
+}
+
+.alignright {
+	float: right;
+	margin-left: 1rem;
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		margin-left: 2rem;
+	}
+
+}
+
+.aligncenter {
+	float: none;
+	clear: both;
+	display: block;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}

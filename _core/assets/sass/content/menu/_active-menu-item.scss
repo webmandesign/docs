@@ -1,0 +1,11 @@
+/* FILE: content/menu/_active-menu-item.scss */
+
+.site-menu {
+
+	.is-active {
+		font-weight: 700;
+		background: var(--color_nav_background_active);
+		color: var(--color_nav_text_active);
+	}
+
+}

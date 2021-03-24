@@ -1,0 +1,37 @@
+/* FILE: content/modifiers/_colors.scss */
+
+// Color classes
+
+	body {
+
+		@each $color, $value in $colors {
+			.has-palette-#{ $color }-background-color {
+				background-color: var(--color_palette_#{ $color });
+			}
+			.has-palette-#{ $color }-text-color {
+				color: var(--color_palette_#{ $color });
+			}
+			.has-palette-#{ $color }-border-color {
+				border-color: var(--color_palette_#{ $color });
+			}
+		}
+
+	}
+
+// Has background
+
+	[class*="-background-color"] {
+		padding: $golden +rem;
+
+		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+			padding-left: 6vw;
+			padding-right: 6vw;
+		}
+
+	}
+
+// Force link color inheritance
+
+	[class*="-text-color"] a {
+		color: inherit;
+	}

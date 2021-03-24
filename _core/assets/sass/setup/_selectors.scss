@@ -1,0 +1,18 @@
+$selectors_margin_bottom: (
+	'p',
+	'ol', 'ul', 'dl',
+	'hr',
+	'blockquote',
+	'table',
+	'figure',
+	'iframe',
+	'address',
+	'pre',
+	'.alert',
+	'.column',
+);
+
+$selectors_button: (
+	'.button',
+	'button',
+);

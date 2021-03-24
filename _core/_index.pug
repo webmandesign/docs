@@ -1,0 +1,31 @@
+//-
+//- @link  https://pugjs.org/api/getting-started.html
+//- @link  https://devhints.io/pug
+//-
+
+- var nav = {};
+include includes/mixins/_index.pug
+
+doctype html
+
+html( lang="en" )
+	include includes/head.pug
+
+	body
+		a( name="top" )
+
+		header.site-header
+			include includes/header.pug
+
+		div.site-content
+			main.site-main
+				include includes/intro.pug
+				include includes/articles.pug
+
+			nav#site-menu.site-menu
+				include includes/nav.pug
+
+		footer.site-footer
+			include includes/footer.pug
+
+		include includes/scripts.pug

@@ -1,0 +1,136 @@
+:root {
+
+	// Theme/customize options.
+
+		--color_header_background: #f3f5f7;
+		--color_header_text: #030507;
+		--color_header_border: transparent;
+
+		--color_nav_background: #232527;
+		--color_nav_text: #fff;
+		--color_nav_background_active: #f5df4d;
+		--color_nav_text_active: #030507;
+		--color_nav_border: #{ rgba( #fff, .2 ) };
+
+		--color_content_background: #fff;
+		--color_content_text: #434547;
+		--color_content_headings: #030507;
+		--color_content_border: #{ rgba( #434547, .2 ) };
+
+		--color_intro_background: #f5df4d;
+		--color_intro_text: #030507;
+		--color_intro_link: var(--color_intro_text);
+
+		--color_footer_background: #f3f5f7;
+		--color_footer_text: #030507;
+		--color_footer_border: transparent;
+
+		--color_accent: #6340a7;
+		--color_button_background: #f5df4d;
+		--color_button_text: #030507;
+		@each $color, $value in $colors {
+			--color_#{ $color }: #{ $value };
+		}
+
+		--color_mark: #{ rgba( #f5df4d, .33 ) };
+
+	// Typography.
+
+		// Base.
+
+			--typography_font_global: #{ (
+				-apple-system,
+				BlinkMacSystemFont,
+				'Segoe UI',
+				Roboto,
+				Oxygen-Sans,
+				Ubuntu,
+				Cantarell,
+				'Helvetica Neue',
+				sans-serif,
+			) };
+			--typography_font_headings: var(--typography_font_global);
+
+			--typography_font_size_base: 16px;
+			@include media( map_get( $breakpoint, 'l' ) ) {
+				--typography_font_size_base: 17px;
+			}
+			@include media( map_get( $breakpoint, 'xl' ) ) {
+				--typography_font_size_base: 18px;
+			}
+
+		// Headings.
+
+			--typography_heading_size_multiplier: .75;
+			@include media( map_get( $breakpoint, 'm' ) ) {
+				--typography_heading_size_multiplier: .875;
+			}
+			@include media( map_get( $breakpoint, 'l' ) ) {
+				--typography_heading_size_multiplier: 1;
+			}
+
+			// @link  https://www.modularscale.com/?1&em&1.2
+			$heading_sizes : ( 2.488, 1.728, 1.44, 1.2 );
+			@each $size in $heading_sizes {
+				$value : $size +em;
+				@if .98 < ( .75 * $size ) {
+					$value : calc( var(--typography_heading_size_multiplier) * #{ $value } );
+				}
+				--typography_heading_size_#{ index( $heading_sizes, $size ) }: #{ $value };
+			}
+			@include media( map_get( $breakpoint, 'xl' ) ) {
+				--typography_heading_size_1: 3.583em;
+			}
+			@include media( map_get( $breakpoint, 'xxl' ) ) {
+				--typography_heading_size_1: 4.3em;
+			}
+
+		// Modifiers.
+
+			--typography_font_size_extra_small: .618em;
+			--typography_font_size_small: .75em;
+			--typography_font_size_large: var(--typography_heading_size_4);
+			--typography_font_size_extra_large: var(--typography_heading_size_3);
+			--typography_font_size_huge: var(--typography_heading_size_1);
+			--typography_font_size_gigantic: calc( var(--typography_heading_size_multiplier) * 5.61em );
+
+	// Spacing and size.
+
+		// White spaces.
+
+			--white_space: 90px;
+			@include media( map_get( $breakpoint, 'l' ) ) {
+				--white_space: 120px;
+			}
+			@include media( map_get( $breakpoint, 'xl' ) ) {
+				--white_space: 150px;
+			}
+
+		// Widths & heights.
+
+			--content_width: 40rem;
+
+			--menu_width: 25%;
+			@include media( map_get( $breakpoint, 'xl' ) ) {
+				--menu_width: 33.33%;
+			}
+			@include media( map_get( $breakpoint, 'xxl' ) ) {
+				--menu_width: 38%;
+			}
+
+		// Others.
+
+			--content_padding: 4vw;
+			--letter_spacing: .05em;
+
+	// Miscellaneous.
+
+		--pseudo_background_opacity: .05;
+
+		--border_radius: .2rem;
+
+		--drop_shadow_header: 0 0 #{ $golden_minor +em } #{ rgba( #000, $golden_minor ) };
+		--drop_shadow_footer: var(--drop_shadow_header);
+		--drop_shadow_alert: 0 #{ $golden_minor +em } #{ $golden +em } #{ rgba( #000, .15 ) };
+
+}

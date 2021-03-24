@@ -1,0 +1,10 @@
+/* FILE: content/header/_branding.scss */
+
+.site-branding {
+	font-size: $golden +em;
+
+	img {
+		margin-#{$right}: 1em;
+	}
+
+}

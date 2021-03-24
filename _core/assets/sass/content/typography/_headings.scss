@@ -1,0 +1,44 @@
+/* FILE: content/typography/_headings.scss */
+
+h1, h2, h3, h4 {
+	clear: both;
+	margin-top: 0;
+	margin-bottom: calc( var(--typography_font_size_base) * #{ $golden } );
+	font-family: var(--typography_font_headings);
+	font-weight: 700;
+	line-height: 1.25;
+	word-wrap: break-word;
+	color: var(--color_content_headings);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+
+	}
+
+}
+
+h2, h3, h4 {
+	margin-top: calc( var(--white_space) / 2 );
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+}
+
+@for $heading from 1 through 4 {
+	h#{ $heading },
+	.h#{ $heading } {
+		font-size: var(--typography_heading_size_#{ $heading });
+	}
+}
