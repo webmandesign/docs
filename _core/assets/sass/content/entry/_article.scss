@@ -23,43 +23,20 @@
 	&-title {
 		padding: 2rem;
 		margin-#{$left}: -2rem;
+		margin-#{$right}: -4vw;
 		margin-bottom: calc( var(--white_space) / 2 );
 		background: var(--color_nav_background);
 		color: var(--color_nav_text);
 		border-width: 1px;
 		border-style: solid;
 		border-radius: var(--border_radius);
-
-		a {
-			position: relative;
-
-			&::before {
-				content: '#';
-				position: absolute;
-				width: 2rem;
-				#{$right}: 100%;
-				top: .15em;
-				text-align: center;
-				opacity: 0;
-				transition: opacity .3s;
-			}
-
-			&:hover,
-			&:focus,
-			&:active {
-
-				&::before {
-					opacity: 1;
-				}
-
-			}
-
-		}
-
+		border-top-#{right}-radius: 0;
+		border-bottom-#{right}-radius: 0;
 	}
 
 	&-section {
-		margin-top: var(--white_space);
+		padding-top: calc( var(--white_space) / 2 );
+		margin-top: calc( var(--white_space) / 2 );
 	}
 
 }

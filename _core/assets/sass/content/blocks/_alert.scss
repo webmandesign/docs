@@ -1,10 +1,10 @@
 /* FILE: content/blocks/_alert.scss */
 
 .alert {
-	padding: 2em;
-	margin-#{$left}: -2rem;
+	padding: 1em 2em 2em;
+	// margin-#{$left}: -2rem;
 	border: 2px solid;
-	border-#{$left}-width: 2rem;
+	border-#{$left}-width: 1rem;
 	border-color: inherit;
 	border-radius: var(--border_radius);
 	box-shadow: var(--drop_shadow_alert);
@@ -20,7 +20,7 @@
 
 		strong {
 			padding: .25em .5em;
-			margin-#{$left}: calc( -3rem - 2px );
+			margin-#{$left}: calc( -2.5rem - 2px );
 			margin-#{$right}: .5em;
 			font-size: .75em;
 			text-transform: uppercase;

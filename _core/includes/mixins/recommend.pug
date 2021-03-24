@@ -1,0 +1,5 @@
+mixin recommend( title, id )
+	dt( id=id )
+		a( class="heading-anchor" href="#"+id )!= title
+	dd
+		block

@@ -1,0 +1,40 @@
+
+
+	<h3 id="image-sizes">
+		My images are blurry/small/of bad quality, what can I do?
+		<a href="#faq" class="btn alignright">Back to FAQ list &uarr;</a>
+		<span class="badge alignleft"></span>
+	</h3>
+
+		<div class="row">
+
+			<div class="col-sm-12 col-md-6">
+
+				<p>For the information about what image sizes are declared in the theme and how you should set up the WordPress native image sizes, please navigate to #[+mark( 'nav', 'Settings', 'Media' )] and read the <em>"Recommended image sizes"</em> section.</p>
+				<p>WordPress will rescale and crop the images to selected formats automatically during the image upload process. If you already have some images on your website, these need to be rescaled when using the theme. Please use a plugin such as <a href="https://wordpress.org/plugins/force-regenerate-thumbnails/"><strong>Force Regenerate Thumbnails</strong></a> to do the rescaling for you. (Don't forget to run the Force Regenerate Thumbnails plugin after its activation under <strong>Tools &rarr; Force Regenerate Thumbnails</strong>!)</p>
+
+				<div class="alert alert-danger">
+					<h4>Blurred images</h4>
+					<p>To prevent blurred images, please <strong>make sure you upload images of minimal recommended size</strong> (see <em>"Recommended image sizes"</em> section on #[+mark( 'nav', 'Settings', 'Media' )] WordPress admin page).</p>
+				</div>
+
+			</div>
+
+			<div class="col-sm-12 col-md-6">
+
+				<h4><strong><a href="#woocommerce">WooCommerce</a> Image sizes</strong></h4>
+				<p>If you are using WooCommerce plugin, set up these config.image sizes for the best compatibility with the theme:</p>
+				<table class="table mt-s">
+					<tr><th>Catalog Images</th><td>480&nbsp;px &times; Use any custom height<br>Cropped</td></tr>
+					<tr><th>Single config.Image</th><td>1200&nbsp;px &times; Use any custom height<br>Cropped</td></tr>
+					<tr><th>config.Thumbnails</th><td>120&nbsp;&times;&nbsp;120&nbsp;px<br>Cropped</td></tr>
+				</table>
+
+			</div>
+
+		</div>
+
+		<div class="alert alert-warning">
+			<h4>Image file size optimization</h4>
+			<p>It is recommended to use an <a href="https://wordpress.org/plugins/search/image+optimization/">image optimization plugin</a> to keep the sane size of the uploaded image files on your server automatically.</p>
+		</div>

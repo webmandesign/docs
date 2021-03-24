@@ -1,3 +1,6 @@
++danger( 'Theme requirements' )
+	p Please note that #{config.name} theme requires at least <strong>WordPress of version #{config.version.wp}</strong> and <strong>PHP of version #{config.version.php}</strong> to work properly.
+
 if config.is_free
 	include free.pug
 else
@@ -6,5 +9,5 @@ else
 +tip( 'Welcome page' )
 	p After activating the theme please read the theme welcome page under #[+mark( 'nav', 'Appearance', 'Welcome' )].
 
-+info( 'Get info about updates' )
++tip( 'Get info about updates' )
 	p If you want to get fast information about new theme updates, please subscribe to WebMan Design on <a href="https://www.facebook.com/webmandesigneu/"><strong>Facebook</strong></a> and/or <a href="https://www.twitter.com/webmandesigneu/"><strong>Twitter</strong></a>. <em>Don't forget: you should always keep your WordPress, themes and plugins up to date!</em>

@@ -1,0 +1,6 @@
+mixin image( url, caption )
+	figure
+		a( href=url )
+			img( src=url alt=caption )
+			if caption
+				figcaption= caption

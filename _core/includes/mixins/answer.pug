@@ -1,4 +1,5 @@
-mixin answer( question, id )
-	h3( id=id )= question
+mixin answer( title, id )
+	h3( id=id )
+		a( class="heading-anchor" href="#"+id )!= title
 	block
 	p <a href="#faq">Back to questions list &uarr;</a>

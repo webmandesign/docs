@@ -1,17 +1,16 @@
-+sub_section( 'How to use action and filter hooks?' )
-	+danger()
-		p.
-			This topic is dedicated to WordPress developers who would like to modify the theme and alter or expand its functionality.
-			<br>
-			<strong>Please note that <a href="https://www.webmandesign.eu/reference/#links-support">we do not provide support for custom theme modifications</a>, though.</strong>
++sub_section( 'Hooks: Actions and Filters', 'hooks' )
+	+danger( 'Very limited help support!' )
+		p This topic is meant for WordPress developers who would like to modify the theme and alter or expand its functionality. Please understand that <a href="https://support.webmandesign.eu/modifications/">we do not provide support for custom theme modifications</a>, though.
 
-	p The theme is <a href="https://wordpress.org/plugins/theme-check/">coded according to WordPress coding standards</a> and is full of action and filter hooks. You can easily hook onto these to alter functions outputs (or short-circuit the whole functions - the <code>wmhook_HOOKNAME_pre</code> filter hooks) or alter parameters and variables, to add your own meta data, theme or design options, layouts and much more!
+	p The theme is <a href="https://wordpress.org/plugins/theme-check/">coded following WordPress coding standards</a> and is full of action and filter hooks. You can easily hook onto these to alter any functionality of the theme.
 
-	p Please check the theme's source code for which hook to use(you can simply search for "<code>do_action(</code>" or "<code>apply_filters(</code>", respectively), or contact <a href="https://www.webmandesign.eu/reference/#links-support">WebMan Design Support Center</a> for more details and tips.
+	p Please check the theme's source code for which hook to use (you can simply search for "<code>do_action(</code>" or "<code>apply_filters(</code>", respectively), or contact <a href="#{config.url.support}">WebMan Design support</a> for help.
 
-	p <strong>#{config.name}</strong> theme also uses the <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance</a> hooks too. This is useful to entirely rebuild the theme structure or add your own sections anywhere in the theme. The whole theme front-end structure setup can be found in files inside the <code>#{config.slug}/includes/frontend</code> folder.
+	p <strong>#{config.name}</strong> theme also uses <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance</a> hooks too. This is useful to entirely rebuild the theme structure or add your own section anywhere in the theme.
 
-	p You can also watch an <a href="https://www.youtube.com/watch?v=AQrXcsc4CIw">instructional video on how to use WordPress hooks</a>.
+	if true === config.theme_builder_compatible
+		+tip( 'Theme builder compatibility' )
+			p This theme is fully editable also with a theme builder plugin such as <strong>Beaver Themer</strong> or <strong>Elementor Pro</strong> Theme Builder. You will most likely need to install an <a href="https://profiles.wordpress.org/webmandesign/#content-plugins">additional compatibility layer plugin</a> though (if you are not sure, please search or ask at <a href="#{config.url.support}">support forum</a>).
 
-	p To show all theme hooks you may try using <a href="https://wordpress.org/plugins/simply-show-hooks/"><strong>Simply Show Hooks</strong></a> plugin or <a href="https://wordpress.org/plugins/wp-inspect/"><strong>WP Inspect</strong></a> plugin.
-
+	+tip( 'Display awailable hooks' )
+		p To show all theme hooks you may try using <a href="https://wordpress.org/plugins/simply-show-hooks/"><strong>Simply Show Hooks</strong></a> plugin or <a href="https://wordpress.org/plugins/wp-inspect/"><strong>WP Inspect</strong></a> plugin.

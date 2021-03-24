@@ -22,3 +22,30 @@ a {
 	}
 
 }
+
+.heading-anchor {
+	position: relative;
+	color: inherit; // Required for `dt`.
+
+	&::before {
+		content: '#';
+		position: absolute;
+		width: 2rem;
+		#{$right}: 100%;
+		top: .15em;
+		text-align: center;
+		opacity: 0;
+		transition: opacity .3s;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		&::before {
+			opacity: 1;
+		}
+
+	}
+
+}

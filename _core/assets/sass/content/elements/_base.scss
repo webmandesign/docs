@@ -47,12 +47,41 @@ video {
 }
 
 figure {
-	margin: 0;
+	@extend %shaded_background;
+	position: relative;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	border: 2em solid transparent;
+	border-radius: var(--border_radius);
+
+	body &::before {
+		left: -2em;
+		right: -2em;
+		top: -2em;
+		bottom: -2em;
+	}
+
+	img {
+		border-radius: var(--border_radius);
+		box-shadow: var(--drop_shadow_alert);
+	}
+
 }
 
 figcaption {
-	font-size: var(--typography_font_size_small);
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	padding: 1em;
+	font-size: .9em;
+	font-style: italic;
 	text-align: center;
+	background: rgba( #000, .75 );
+	color: #fff;
+	border-radius: var(--border_radius);
+	backdrop-filter: blur( 10px );
 }
 
 img {
@@ -92,9 +121,12 @@ ol {
 
 dl {
 	margin-top: 0;
-	border-top: 3px solid;
-	border-bottom: 3px solid;
-	border-color: inherit;
+
+	&[class] {
+		border-top: 3px solid;
+		border-bottom: 3px solid;
+		border-color: inherit;
+	}
 
 	// position: relative;
 	// padding: 2px 0;

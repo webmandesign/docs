@@ -1,4 +1,8 @@
-mixin sub_section( title, id='' )
-	section( id=id class="entry-section" )
-		h3= title
+mixin sub_section( title, id )
+	section( class="entry-section" id=id )
+		if id
+			h3
+				a( class="heading-anchor" href="#"+id )!= title
+		else
+			h3= title
 		block
