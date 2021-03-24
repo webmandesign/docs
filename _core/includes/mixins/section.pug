@@ -1,5 +1,4 @@
 mixin section( title, id )
-	//- section( class="section-" + id )
-	h2( id=id )= title
-	div( class="section indented section-" + id )
+	article( id=id class="entry entry-"+id tabindex="-1" )
+		h2.entry-title= title
 		block

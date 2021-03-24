@@ -1,5 +1,7 @@
-mixin alert( title = '', context = 'tip', headingtag = 'h3' )
+mixin alert( title = '', context = 'default', tag = 'h3', label = '' )
 	aside( class="alert alert-" + context )
+		if label
+			- title = label + ' ' + title;
 		if title
-			#{headingtag}!= title
+			#{tag}!= title
 		block

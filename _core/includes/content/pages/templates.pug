@@ -1,8 +1,7 @@
 block pages/templates
-	h3( id="page-templates" ) Page & Post Templates
+	+sub_section( 'Templates', 'page-templates' )
+		block pages/templates/info
+			p You can use all of the templates below on any publicly accessible post type.
 
-	block pages/templates/info
-		p You can use all of the templates below on any publicly accessible post type.
-
-	dl
-		block pages/templates/list
+		dl.list-default
+			block pages/templates/list

@@ -8,11 +8,9 @@ mixin mark( type = 'nav', ...content )
 					- output = output + ' → ' + item;
 				else
 					- output = item;
-			strong
-				em= output
+			mark.nav-path= output
 		when 'btn'
 		when 'button'
-			- output = '[' + content + ']';
-			strong= output
+			strong.button.dummy= content
 		default
 			mark= output

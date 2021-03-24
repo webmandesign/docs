@@ -7,9 +7,9 @@ head
 
 	title #{config.name} WordPress Theme Documentation
 
-	block head/scripts
-		link( rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" )
-		link( rel="stylesheet" href="../_core/assets/css/docs.css" )
-
-	style
-		block head/inline_style
+	if true === debug_css
+		link( rel="stylesheet" href="../_core/assets/css/style.css")
+	else
+		style
+			block styles
+				include ../assets/css/style.css

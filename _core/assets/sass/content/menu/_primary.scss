@@ -1,0 +1,36 @@
+/* FILE: content/menu/_primary.scss */
+
+.site-menu {
+	width: var(--menu_width);
+	padding: var(--white_space) 0;
+	background: var(--color_nav_background);
+	color: var(--color_nav_text);
+	border-color: var(--color_nav_border);
+
+	ul {
+		position: sticky;
+		max-height: 100vh;
+		top: 0;
+		padding: 1em 0;
+		margin: 0;
+		list-style: none;
+		overflow-y: auto;
+	}
+
+	li {
+
+		&:not(:first-child) {
+			border-top-width: 1px;
+			border-top-style: solid;
+		}
+
+	}
+
+	a {
+		display: block;
+		padding: 1.5vh var(--content_padding);
+		text-decoration: none;
+		color: inherit;
+	}
+
+}

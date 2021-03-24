@@ -1,0 +1,124 @@
+/* FILE: content/modifiers/_box-model.scss */
+
+// Padding
+
+	.has-phi-padding,
+	.has-golden-padding {
+		padding: ( $golden +em );
+	}
+
+	.has-no-padding,
+	.p-0 {
+		padding: 0;
+	}
+
+	.has-no-padding-top,
+	.pt-0 {
+		padding-top: 0;
+	}
+
+	.has-no-padding-right,
+	.pr-0 {
+		padding-right: 0;
+	}
+
+	.has-no-padding-bottom,
+	.pb-0 {
+		padding-bottom: 0;
+	}
+
+	.has-no-padding-left,
+	.pl-0 {
+		padding-left: 0;
+	}
+
+	.has-no-padding-horizontal,
+	.plr-0 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.has-no-padding-vertical,
+	.ptb-0 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.has-extra-small-padding {
+		padding: .8em;
+	}
+
+	.has-small-padding {
+		padding: 1em;
+	}
+
+	.has-regular-padding,
+	.has-medium-padding {
+		padding: 1.5em;
+	}
+
+	.has-large-padding {
+		padding: 2em;
+	}
+
+	.has-huge-padding,
+	.has-extra-large-padding {
+		padding: 3em;
+	}
+
+	.has-phi-padding,
+	.has-golden-padding,
+	.has-regular-padding,
+	.has-medium-padding,
+	.has-large-padding,
+	.has-huge-padding,
+	.has-extra-large-padding {
+		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
+			padding-left: 6vw;
+			padding-right: 6vw;
+		}
+	}
+
+// Margin
+
+	.has-no-margin,
+	.m-0 {
+		margin: 0;
+	}
+
+	.has-no-margin-top,
+	.mt-0 {
+		margin-top: 0;
+	}
+
+	.has-no-margin-right,
+	.mr-0 {
+		margin-right: 0;
+	}
+
+	.has-no-margin-bottom,
+	.mb-0 {
+		margin-bottom: 0;
+	}
+
+	.has-no-margin-left,
+	.ml-0 {
+		margin-left: 0;
+	}
+
+	.has-no-margin-horizontal,
+	.mlr-0 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.has-no-margin-vertical,
+	.mtb-0 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.has-regular-margin-bottom,
+	.has-normal-margin-bottom {
+		margin-bottom: $golden +rem;
+	}

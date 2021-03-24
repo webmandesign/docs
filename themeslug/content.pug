@@ -10,9 +10,9 @@ extends ../_core/_index.pug
 //-
 	Some additional partial content blocks for more flexibility:
 
-//- block head/scripts
-block head/inline_style
-	include includes/styles.pug
+block append styles
+	include includes/style.css
+//- block scripts
 
 //- block demo/starter_content
 

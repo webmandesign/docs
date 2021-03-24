@@ -1,0 +1,39 @@
+/* FILE: content/entry/_intro.scss */
+
+.intro {
+	background: var(--color_intro_background);
+	color: var(--color_intro_text);
+	padding: var(--white_space) 6vw calc( 1.5 * var(--white_space) );
+	margin-left: calc( -1 * var(--content_padding) );
+	margin-right: calc( -1 * var(--content_padding) );
+
+	&-content{
+		max-width: var(--content_width);
+		margin: 0 auto;
+		margin-#{$left}: 0;
+	}
+
+	h1 {
+		color: inherit;
+
+		small {
+			display: block;
+			font-size: .5em;
+			font-weight: 400;
+		}
+
+	}
+
+	a {
+		color: var(--color_intro_link);
+	}
+
+	.thank-you {
+		margin-top: calc( var(--white_space) / 2 );
+	}
+
+	.svg-icon {
+		margin-#{$right}: .25em;
+	}
+
+}

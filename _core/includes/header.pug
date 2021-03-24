@@ -1,32 +1,8 @@
-nav( class="navbar navbar-inverse navbar-fixed-top" )
+div.site-branding
+	img( src=config.url.logo alt="WebMan Design logo")
+	| <strong>#{config.name}</strong> User Manual
 
-	div( class="container-fluid" )
-
-		div( class="navbar-header" )
-
-			button(
-				type="button"
-				class="navbar-toggle collapsed"
-				data-toggle="collapse"
-				data-target="#navbar"
-				aria-expanded="false"
-				aria-controls="navbar"
-			)
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-
-			a( class="navbar-brand" href="#" ) #{config.name}
-
-		div(
-			id="navbar"
-			class="navbar-collapse collapse"
-		)
-
-			ul( class="nav navbar-nav navbar-right" )
-				li <a href="https://vimeo.com/webmandesigneu/videos">Instructional videos</a>
-				li <a href="https://www.webmandesign.eu">Premium WordPress themes</a>
-				li <a href="https://profiles.wordpress.org/webmandesign#content-themes">Free WordPress themes</a>
-				li <a href="https://www.webmandesign.eu/reference/#links-support">Support Center</a>
-
+ul
+	li <a href="#{config.url.videos}">Video tutorials</a>
+	li <a href="#{config.url.author}">WordPress themes</a>
+	li <a href="#{config.url.support}">Support forum</a>

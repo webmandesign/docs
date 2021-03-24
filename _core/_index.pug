@@ -4,7 +4,6 @@
 //-
 
 - var nav = {};
-
 include includes/mixins/_index.pug
 
 doctype html
@@ -12,17 +11,21 @@ doctype html
 html( lang="en" )
 	include includes/head.pug
 
-	body( data-spy="scroll" )
-		include includes/header.pug
+	body
+		a( name="top" )
 
-		div( class="container-fluid" )
-			div( class="row" )
-				main( id="content" class="col-md-10 col-md-offset-2 main" )
-					include includes/intro.pug
+		header.site-header
+			include includes/header.pug
 
-					div( class="main-content" )
-						div( class="container-fluid" )
-							include includes/content.pug
+		div.site-content
+			main.site-main
+				include includes/intro.pug
+				include includes/articles.pug
 
-					include includes/footer.pug
+			nav#site-menu.site-menu
 				include includes/nav.pug
+
+		footer.site-footer
+			include includes/footer.pug
+
+		include includes/scripts.pug

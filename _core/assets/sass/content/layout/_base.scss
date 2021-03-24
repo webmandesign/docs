@@ -1,0 +1,13 @@
+/* FILE: content/layout/_base.scss */
+
+.site-content {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 1;
+}
+
+.site-main {
+	width: calc( 100% - var(--menu_width) );
+	padding: 0 var(--content_padding);
+}

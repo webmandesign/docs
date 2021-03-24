@@ -1,0 +1,38 @@
+/* FILE: content/entry/_content.scss */
+
+.entry {
+	max-width: var(--content_width);
+	padding: calc( var(--white_space) / 2 ) 0;
+	margin: var(--white_space) auto;
+	margin-#{$right}: 0;
+	// transition: outline-color 5s;
+
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+		table-layout: fixed;
+	}
+
+	&:focus {
+		outline: 0;
+		// outline-offset: 1em;
+		// outline-color: transparent;
+	}
+
+	&-title {
+		padding: 2rem;
+		margin-#{$left}: -2rem;
+		margin-bottom: calc( var(--white_space) / 2 );
+		background: var(--color_nav_background);
+		color: var(--color_nav_text);
+		border-width: 1px;
+		border-style: solid;
+		border-radius: var(--border_radius);
+	}
+
+	&-section {
+		margin-top: var(--white_space);
+	}
+
+}

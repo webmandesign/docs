@@ -1,0 +1,24 @@
+/* FILE: content/elements/_links.scss */
+
+a {
+	// From @link  https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	text-underline-offset: .15em;
+	color: var(--color_accent);
+
+	&:hover,
+	&:active {
+		outline: none;
+	}
+
+	&:hover {
+		text-decoration-style: dotted;
+		text-decoration-skip-ink: none;
+	}
+
+	&:focus {
+		text-decoration: none;
+	}
+
+}
