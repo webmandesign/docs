@@ -1,0 +1,25 @@
+/* FILE: content/blocks/_video.scss */
+
+.link-video {
+	@extend %shaded_background;
+	position: relative;
+	padding: 1em;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: var(--border_radius);
+	box-shadow: var(--box_shadow--large);
+
+	.label {
+		margin-right: $golden_minor +rem;
+		font-size: .8em;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	svg {
+		margin-top: -.15em;
+		margin-right: $golden_minor +rem;
+		vertical-align: middle;
+	}
+
+}

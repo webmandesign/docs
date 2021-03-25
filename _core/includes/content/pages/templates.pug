@@ -1,7 +1,9 @@
 block pages/templates
 	+sub_section( 'Templates', 'page-templates' )
-		block pages/templates/info
-			p You can use all of the templates below on any publicly accessible post type.
+		block pages/templates/about
+			p <strong>#{config.name}</strong> theme supports <a href="https://developer.wordpress.org/themes/template-files-section/page-template-files/">WordPress page/post templates functionality</a> and contains selection of predefined templates for you (see the list below).
+
+			+video( 'https://vimeo.com/517486241' ) How to assign a template?
 
 		dl.list-default
 			block pages/templates/list

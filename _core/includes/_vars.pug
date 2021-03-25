@@ -1,0 +1,21 @@
+- var nav = {};
+
+-
+	var url_global = {
+		accessibility : 'https://support.webmandesign.eu/accessibility/',
+		author        : 'https://www.webmandesign.eu',
+		facebook      : 'https://www.facebook.com/webmandesigneu/',
+		twitter       : 'https://www.twitter.com/webmandesigneu/',
+		child_theme   : 'https://github.com/webmandesign/child-theme',
+		themeforest   : 'https://themeforest.net/user/webmandesign/portfolio',
+		wporg_plugins : 'https://profiles.wordpress.org/webmandesign/#content-plugins',
+		wporg_themes  : 'https://profiles.wordpress.org/webmandesign#content-themes',
+		logo          : 'https://raw.githubusercontent.com/webmandesign/demo-content/img/logo-webmandesign.eu.png',
+		modifications : 'https://support.webmandesign.eu/modifications/',
+		testing       : 'https://support.webmandesign.eu/testing-a-theme-on-your-computer/',
+		videos        : 'https://vimeo.com/webmandesigneu/videos',
+	};
+
+each value, key in url_global
+	if ! config.url[ key ]
+		- config.url[ key ] = value

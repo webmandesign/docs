@@ -56,7 +56,7 @@
 		border-radius: var(--border_radius);
 
 		h2 + & {
-			margin-top: calc( var(--white_space) / -2 );
+			margin-top: calc( var(--white_space) * -1 );
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 		}

@@ -1,6 +1,8 @@
 /* FILE: content/blocks/_alert.scss */
 
 .alert {
+	@extend %shaded_background;
+	position: relative;
 	padding: 2em;
 	border: 2px solid;
 	border-left-width: 1rem;
@@ -39,6 +41,10 @@
 	@each $color, $value in $colors {
 		&-#{ $color } {
 			border-color: var(--color_#{ $color });
+
+			body &::before {
+				background: var(--color_#{ $color });
+			}
 		}
 	}
 
