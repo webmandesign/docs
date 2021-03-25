@@ -1,5 +1,6 @@
 mixin answer( title, id )
-	h3( id=id )
-		a( class="heading-anchor" href="#"+id )!= title
-	block
-	p <a href="#faq">Back to questions list &uarr;</a>
+	div.answer
+		h3( id=id class="answer-title")
+			a( class="heading-anchor" href="#"+id )!= title
+		block
+		p <a href="#faq" class="back-to-questions">&uarr; Back to questions list</a>

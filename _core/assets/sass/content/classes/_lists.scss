@@ -71,3 +71,16 @@
 	}
 
 }
+
+.answer {
+	padding-top: calc( var(--white_space) / 2 );
+
+	&-title {
+		padding-top: calc( var(--white_space) / 2 );
+	}
+
+	h4 {
+		margin-top: $golden +rem;
+	}
+
+}
