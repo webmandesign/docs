@@ -8,6 +8,11 @@
 	border-style: solid;
 	border-radius: var(--border_radius);
 	box-shadow: var(--box_shadow--large);
+	transition: box-shadow .3s;
+
+	&:hover {
+		box-shadow: none;
+	}
 
 	.label {
 		margin-right: $golden_minor +rem;
