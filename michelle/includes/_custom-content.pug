@@ -1,11 +1,15 @@
 extends ../../_core/_index.pug
 
 //-
-	Every content section has predefined `{section}` content block.
-	This content block contains main section content. You can either
-	completely overwrite it, or prepend/append to it.
-
+	Section have predefined `{section}` and `{section}/about` content blocks.
+	These content blocks contain entire and basic about contents for the section.
+	You can either completely overwrite them, or prepend/append to them.
 	@link  https://pugjs.org/language/inheritance.html
+
+block append posts
+	include posts-featured.pug
+block append customizer/about
+	include customizer.pug
 
 //-
 	Some additional partial content blocks for more flexibility:
@@ -13,26 +17,19 @@ extends ../../_core/_index.pug
 block append styles
 	include style.css
 //- block scripts
-
 //- block demo/starter_content
-
 //- block pages/intro
-
 //- block pages/templates
-//- block pages/templates/info
+//- block pages/templates/about
 block pages/templates/list
 	include template-content-only.pug
 	include template-no-intro.pug
 	include template-header-overlaid.pug
 	include template-page-builder.pug
-
 //- block plugins/recommended/list
 //- block plugins/others/list
-
 block menu/list
 	include menu-primary.pug
-
 //- block sidebars/list
-
 //- block faq/questions/list
 //- block faq/answers/list

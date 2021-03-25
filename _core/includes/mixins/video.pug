@@ -1,0 +1,8 @@
+mixin video( url )
+	p.link-video.has-svg-icon
+		span.label
+			include ../../assets/images/dashicons/format-video.svg
+			| Watch a video:
+			|
+		a( href=url )
+			block
