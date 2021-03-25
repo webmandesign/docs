@@ -1,8 +1,20 @@
-dt.
-	Page builder
-	<a href="https://themedemos.webmandesign.eu/#{config.slug}/theme-features/template-page-builder" class="alignright btn btn-default">Demo</a>
-
+dt
+	| Page builder
+	br
+	| Page builder (overlay header light)
+	br
+	| Page builder (overlay header dark)
 dd
-	p This is a special page/post template designed for use with a page builder plugin. You can specify the correct content area layout for this page/post template in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Page builders' )] and tweak it for needs of your page builder plugin.
+	p These 3 templates prepare content area for use with a page builder plugin. You can specify the correct content area layout for these templates in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Page builders' )], depending on what page builder plugin you use.
 
-	p (Note that using this page template will remove the page intro area (just like "No intro" page template above), so you need to create it with your page builder then, if needed.)
+	p Using these templates will remove page intro title section and there will be no <code>h1</code> heading tag added by the theme onto the page.
+
+	p Variations with overlaid header behaves the same as previously mentioned templates on top of page builder ready layout preparation.
+
+	p <em>These templates work with every public post type.</em>
+
+	+tip( 'Automatic selection' )
+		p If you are using Beaver Builder or Elementor page builder plugin, you don't even have to select this template when editing a page with the plugin. The theme will recognize them and applies the "Page builder" template layout automatically for you.
+
+	+tip( 'Theme builders!' )
+		p With additional help of <a href="https://wordpress.org/plugins/integration-for-beaver-themer/">Integration for Beaver Themer</a> or <a href="https://wordpress.org/plugins/integration-for-elementor-theme-builder/">Integration for Elementor Theme Builder</a> plugin you can use the specific theme builder plugin with <strong>#{config.name}</strong> theme. And it opens limitless possibilities!

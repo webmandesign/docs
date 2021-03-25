@@ -23,21 +23,18 @@ block append styles
 //- block pages/templates
 //- block pages/templates/info
 block pages/templates/list
-	include includes/template-blank.pug
+	include includes/template-content-only.pug
 	include includes/template-no-intro.pug
+	include includes/template-header-overlaid.pug
 	include includes/template-page-builder.pug
-	include includes/template-sidebar.pug
 
 //- block plugins/recommended/list
 //- block plugins/others/list
 
 block menu/list
 	include includes/menu-primary.pug
-	include includes/menu-social.pug
 
-block sidebars/list
-	include includes/sidebar.pug
-	include includes/sidebar-footer.pug
+//- block sidebars/list
 
 //- block faq/questions/list
 //- block faq/answers/list
