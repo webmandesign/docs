@@ -17,7 +17,23 @@
 			php : '7.0',
 		},
 
-		//- Documentation content sections:
+		//- URLs:
+		url : {
+			//- Theme specific:
+			demo    : 'https://themedemos.webmandesign.eu/michelle/',
+			info    : 'https://www.webmandesign.eu/portfolio/michelle-wordpress-theme/',
+			support : 'https://support.webmandesign.eu/forum/michelle/',
+			//- Generic:
+			accessibility : 'https://support.webmandesign.eu/accessibility/',
+			author        : 'https://www.webmandesign.eu',
+			logo          : 'https://raw.githubusercontent.com/webmandesign/demo-content/img/logo-webmandesign.eu.png',
+			modifications : 'https://support.webmandesign.eu/modifications/',
+			testing       : 'https://support.webmandesign.eu/testing-a-theme-on-your-computer/',
+			videos        : 'https://vimeo.com/webmandesigneu/videos',
+		},
+
+		//- Content sections:
+		//- For custom content see below.
 		content : [
 			//- For the list of core contents refer to `_core/includes/content.pug`.
 			//- Basically, these match sub-folder names in `_core/includes/content`.
@@ -38,7 +54,8 @@
 			'credits',
 		],
 
-		//- Recommended plugins info list:
+		//- Recommended plugins list:
+		//- For custom content see below.
 		plugins : [
 			//- For the list of core recommended plugin refer to `_core/includes/content.pug`.
 			//- Reorder these how you please.
@@ -47,27 +64,16 @@
 			'woocommerce',
 			'integration-wc',
 		],
-
-		//- Others
-		url : {
-			author  : 'https://www.webmandesign.eu',
-			info    : 'https://www.webmandesign.eu/portfolio/michelle-wordpress-theme/',
-			demo    : 'https://themedemos.webmandesign.eu/michelle/',
-			support : 'https://support.webmandesign.eu',
-			videos  : 'https://vimeo.com/webmandesigneu/videos',
-			logo    : 'https://raw.githubusercontent.com/webmandesign/demo-content/img/logo-webmandesign.eu.png',
-		},
-
 	};
 
 //-
-//- Custom content:
+//- Debugging:
+//- IMPORTANT: Don't forget to set `false` before deployment!
 //-
-include includes/_custom-content.pug
+- var debug = true;
 
 //-
-//- Debugging:
+//- Custom content:
+//- This has to be here, after all the above variables declarations.
 //-
-//- IMPORTANT:
-//- Don't forget to set `false` before deployment!
-- var debug = false;
+include includes/_custom-content.pug
