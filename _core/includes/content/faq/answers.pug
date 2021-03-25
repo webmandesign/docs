@@ -1,8 +1,14 @@
-block faq/answers/list
-	include answer/css.pug
-	include answer/helper-classes.pug
-	include answer/images.pug
-	include answer/page-builder.pug
-	include answer/performance.pug
-	include answer/seo.pug
-
+ol.list-answers
+	block faq/answers/list
+		li
+			include answer/page-builder.pug
+		li
+			include answer/helper-classes.pug
+		li
+			include answer/images.pug
+		li
+			include answer/seo.pug
+		li
+			include answer/performance.pug
+		li
+			include answer/css.pug

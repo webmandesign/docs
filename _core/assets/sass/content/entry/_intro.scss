@@ -10,7 +10,7 @@
 	&-content{
 		max-width: var(--content_width);
 		margin: 0 auto;
-		margin-#{$left}: 0;
+		margin-left: 0;
 	}
 
 	h1 {
@@ -33,7 +33,7 @@
 	}
 
 	.svg-icon {
-		margin-#{$right}: .25em;
+		margin-right: .25em;
 	}
 
 }

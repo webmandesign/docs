@@ -11,9 +11,9 @@
 		&::before {
 			content: '\2192'; // &rarr;
 			position: absolute;
-			#{$right}: calc( 100% - 4vw );
+			right: calc( 100% - 4vw );
 			top: 49%;
-			margin-#{$right}: 1em;
+			margin-right: 1em;
 			transform: translateY( -50% );
 		}
 

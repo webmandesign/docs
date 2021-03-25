@@ -15,7 +15,7 @@ table {
 
 caption {
 	padding: ( $golden_major +em ) 0;
-	text-align: $left;
+	text-align: left;
 	font-style: italic;
 	caption-side: bottom;
 }
@@ -31,6 +31,6 @@ td {
 th,
 tfoot td {
 	font-weight: 700;
-	text-align: $left;
+	text-align: left;
 	border-width: 2px;
 }

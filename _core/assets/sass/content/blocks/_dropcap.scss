@@ -3,9 +3,9 @@
 .has-drop-cap {
 
 	&:first-letter {
-		float: $left;
+		float: left;
 		padding: .5em;
-		margin-#{$right}: .25em;
+		margin-right: .25em;
 		font-family: var(--typography_font_headings);
 		font-size: $golden +em;
 		line-height: .8;

@@ -5,25 +5,22 @@
 
 	p This type of plugin is also great to alter you website layout with ease. Here are couple of example usecases:
 
-	ul
-		li
-			h4 Remove sidebar on specific pages
+	h4 Remove sidebar on specific pages
 
-			p Simply create a new custom sidebar, let's call it <em>"Empty"</em>, and set it to replace the actual theme's <a href="#sidebars"><em>"Sidebar"</em></a> on specific pages.
+	p Simply create a new custom sidebar, let's call it <em>"Empty"</em>, and set it to replace the actual theme's <a href="#sidebars"><em>"Sidebar"</em></a> on specific pages.
 
-			p Then just leave this new custom sidebar empty, with no widgets in it. It will cause the theme to adapt the layout when it detects there is no sidebar on those specific pages displayed. This way you've effectively removed sidebar.
+	p Then just leave this new custom sidebar empty, with no widgets in it. It will cause the theme to adapt the layout when it detects there is no sidebar on those specific pages displayed. This way you've effectively removed sidebar.
 
-			+tip( 'Reverse approach' )
-				p If you, on the other hand, want to display the sidebar on some pages only, you can use reverse logic:
+	+tip( 'Reverse approach' )
+		p If you, on the other hand, want to display the sidebar on some pages only, you can use reverse logic:
 
-				p Leave the theme's "Sidebar" empty and create a "Sidebar with widgets" using the plugin. Then set it to display on the specific pages and add some widgets into it.
+		p Leave the theme's "Sidebar" empty and create a "Sidebar with widgets" using the plugin. Then set it to display on the specific pages and add some widgets into it.
 
-		li
-			h4 Display a different footer on specific page
+	h4 Display a different footer on specific page
 
-			p Create a new custom sidebar, let's call it <em>"About page intro widgets"</em>, and set it to replace the actual theme's <a href="#sidebars"><em>"Footer Widgets"</em> widget area</a> on the specific page (on the "About" page in our case).
+	p Create a new custom sidebar, let's call it <em>"About page intro widgets"</em>, and set it to replace the actual theme's <a href="#sidebars"><em>"Footer Widgets"</em> widget area</a> on the specific page (on the "About" page in our case).
 
-			p Then go ahead and add some widgets into the <em>"About page intro widgets"</em> sidebar in #[+mark( 'nav', 'Appearance', 'Widgets' )]. This new custom sidebar will be displayed in the footer on your "About" page.
+	p Then go ahead and add some widgets into the <em>"About page intro widgets"</em> sidebar in #[+mark( 'nav', 'Appearance', 'Widgets' )]. This new custom sidebar will be displayed in the footer on your "About" page.
 
 	+tip( 'Controlling a single widget' )
 		p If you would like to control a single widget display instead of the whole sidebar, you can use <a href="https://jetpack.com/support/widget-visibility/"><strong>Jetpack</strong> plugin's "Widget Visibility" feature</a> (or try <a href="https://wordpress.org/plugins/widget-options/"><strong>Widget Options</strong> plugin</a>).

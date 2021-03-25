@@ -8,7 +8,7 @@
 
 	p <strong>#{config.name}</strong> theme also uses <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance</a> hooks too. This is useful to entirely rebuild the theme structure or add your own section anywhere in the theme.
 
-	if true === config.theme_builder_compatible
+	if true === config.compatibility.theme_builder
 		+tip( 'Theme builder compatibility' )
 			p This theme is fully editable also with a theme builder plugin such as <strong>Beaver Themer</strong> or <strong>Elementor Pro</strong> Theme Builder. You will most likely need to install an <a href="https://profiles.wordpress.org/webmandesign/#content-plugins">additional compatibility layer plugin</a> though (if you are not sure, please search or ask at <a href="#{config.url.support}">support forum</a>).
 
