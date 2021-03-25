@@ -1,6 +1,6 @@
 mixin image( url, caption )
 	figure
-		a( href=url )
+		a( href=url title="Click to open large image" )
 			img( src=url alt=caption )
-			if caption
-				figcaption= caption
+		if caption
+			figcaption= caption

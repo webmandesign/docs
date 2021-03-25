@@ -82,6 +82,11 @@ figcaption {
 	color: #fff;
 	border-radius: var(--border_radius);
 	backdrop-filter: blur( 10px );
+
+	a {
+		color: inherit;
+	}
+
 }
 
 img {
