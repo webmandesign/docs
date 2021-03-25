@@ -3,9 +3,20 @@
 .site-menu {
 
 	.is-active {
+		position: relative;
 		font-weight: 700;
 		background: var(--color_nav_background_active);
 		color: var(--color_nav_text_active);
+
+		&::before {
+			content: '\2192'; // &rarr;
+			position: absolute;
+			right: calc( 100% - 4vw );
+			top: 49%;
+			margin-right: 1em;
+			transform: translateY( -50% );
+		}
+
 	}
 
 }

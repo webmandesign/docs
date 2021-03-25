@@ -1,30 +1,23 @@
 block pages/intro
 	+sub_section( 'Page Intro', 'page-intro' )
-		block pages/intro/info
-			p Page intro is basically a main title area of the page, post or archive page. By default it displays <strong>intro image</strong>, <strong>page title</strong> and <strong>page excerpt</strong>:
+		p Page intro is basically a main title area of the page. Appearance of this section can be set in <a href="#customizer">customizer</a>.
 
-		dl.list-default
-			block pages/intro/list
-				dt Page excerpt
-				dd
-					p.
-						<strong>Page Excerpt</strong> content depends on the page you are on.
-						<br>
-						If it is an actual WordPress Page or Post or any custom post type, you can set the <em>"Excerpt"</em> field text.
-						<br>
-						On taxonomy archive pages it displays the taxonomy term (such as post category or tag) description which you can set for any/all taxonomy terms in WordPress.
-						<br>
-						If you want to display some description text for the custom post type archive pages too, you need to <a href="https://wordpress.org/plugins/post-type-archive-descriptions/">use a plugin for that</a>.
+		p If you would like to remove the intro section (to set up your own page title directly in page content) use a dedicated <a href="page-templates">page template</a>.
 
-				dt Image
-				dd
-					p.
-						<strong>Intro image</strong> is taken from your website header images that can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Header Media' )].
-						<br>
-						This image can be subsequently overridden by setting up a post/page featured image.
+		p By default page intro displays <strong>image</strong>, <strong>title</strong> and <strong>excerpt</strong>:
 
-					p On single pages and posts the image is not displayed by default, unless you set a featured image.
+		h4 Excerpt
+		p.
+			Excerpt content depends on the page you are on.
+			<br>
+			If it is an actual WordPress Page or Post (or any custom post type) you can <a href="https://vimeo.com/523023144">set it in dedicated <em>"Excerpt"</em> field</a>.
+			<br>
+			On taxonomy archive page (such as post category or tag) it displays term description which you can set in WordPress admin area.
+			<br>
+			If you also want to display a description text for a custom post type archive page, <a href="https://wordpress.org/plugins/post-type-archive-descriptions/">use a plugin for that</a>.
 
-		p If you would like to remove the intro section (to set up your own with a page builder, for example), use a dedicated page template.
-
-		p Colors of intro section can be customized in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Colors: Intro' )].
+		h4 Image
+		p.
+			Intro image is taken from your website header images that can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Header Media' )].
+			<br>
+			This image can be subsequently overridden by setting up a post/page featured image..

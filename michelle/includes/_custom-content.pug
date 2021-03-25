@@ -1,4 +1,4 @@
-extends ../_core/_index.pug
+extends ../../_core/_index.pug
 
 //-
 	Every content section has predefined `{section}` content block.
@@ -11,28 +11,26 @@ extends ../_core/_index.pug
 	Some additional partial content blocks for more flexibility:
 
 block append styles
-	include includes/style.css
+	include style.css
 //- block scripts
 
 //- block demo/starter_content
 
 //- block pages/intro
-//- block pages/intro/info
-//- block pages/intro/list
 
 //- block pages/templates
 //- block pages/templates/info
 block pages/templates/list
-	include includes/template-content-only.pug
-	include includes/template-no-intro.pug
-	include includes/template-header-overlaid.pug
-	include includes/template-page-builder.pug
+	include template-content-only.pug
+	include template-no-intro.pug
+	include template-header-overlaid.pug
+	include template-page-builder.pug
 
 //- block plugins/recommended/list
 //- block plugins/others/list
 
 block menu/list
-	include includes/menu-primary.pug
+	include menu-primary.pug
 
 //- block sidebars/list
 

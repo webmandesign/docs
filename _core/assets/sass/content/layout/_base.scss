@@ -8,6 +8,9 @@
 }
 
 .site-main {
+	position: relative;
 	width: calc( 100% - var(--menu_width) );
 	padding: 0 var(--content_padding);
+	box-shadow: var(--drop_shadow_main);
+	z-index: 1;
 }

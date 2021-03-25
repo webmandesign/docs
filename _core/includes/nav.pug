@@ -1,4 +1,6 @@
 ul
+	li
+		a( href="#intro" ) Introduction
 	each title, id in nav
 		li
-			a( href='#'+id ) !{title}
+			a( href="#"+id ) !{title}

@@ -1,24 +1,26 @@
-+sub_section( 'How to Translate the Theme?' )
++sub_section( 'How to Translate a Theme?' )
 
-	h4 Translating using <a href="http://www.poedit.net/">Poedit</a>
+	h4 Using <a href="http://www.poedit.net/">Poedit</a> software
 
 	ol
 		li
-			p Make a copy of the original <code>#{config.slug}/languages/#{config.slug}.pot</code> file.
+			p Create a copy of the original <code>#{config.slug}/languages/#{config.slug}.pot</code> file.
 
 		li
-			p You need to rename the copied file now: add hyphen followed with <a href="https://translate.wordpress.org/">your language code locale</a>, and change file extension to "po". So, the British English file would be named <code>#{config.slug}-en_GB.po</code>.
+			p Rename the copied file now: add hyphen followed with <a href="https://translate.wordpress.org/">your language code locale</a>, and change file extension to "po". <br>(So, the British English file would be named <code>#{config.slug}-en_GB.po</code>.)
 
 		li
 			p Use <a href="http://www.poedit.net/"><strong>Poedit</strong></a> to translate the file and export (save) translation in "mo" file format.
 
 		li
-			p Upload translated <code>#{config.slug}-en_GB.mo</code> file into your WordPress languages directory, into <code>themes</code> folder (such as <code>/wp-content/languages/themes/#{config.slug}-en_GB.mo</code> - if the <code>themes</code> folder does not exist in your WordPress languages directory, create it).
+			p Upload translated <code>#{config.slug}-en_GB.mo</code> file into your WordPress languages directory, into <code>themes</code> folder (such as <code>/wp-content/languages/themes/#{config.slug}-en_GB.mo</code> (if the <code>themes</code> folder does not exist in your WordPress languages directory, create it).
 
-			+warning( 'REMINDER:' )
-				p When you update the theme, all custom translation files will be deleted from <code>/wp-content/themes/#{config.slug}/languages</code> folder. Do not place your custom translation files into that folder!
+			+danger( 'Don\'t loose your files!' )
+				p When you update the theme, all custom translation files will be deleted from <code>/wp-content/themes/#{config.slug}/languages</code> folder. Do not place your custom translation files into that folder! Basically, you should never modify the theme files and folders &rarr; use a <a href="#child-theme">child theme</a> instead.
 
 
-	h4 Translating directly in your WordPress dashboard
+	h4 Translating in WordPress admin
 
-	p If you would like translate the theme directly in your WordPress dashboard you need to use a specialized plugin for that. Please install and activate <a href="https://wordpress.org/plugins/loco-translate/"><strong>Loco Translate</strong> plugin</a>. For instructions on how to use the plugin please refer to <a href="https://localise.biz/wordpress/plugin/beginners">beginner's guide</a> and/or <a href="https://localise.biz/wordpress/plugin/overview">technical overview</a>.
+	p If you would like translate the theme directly in your WordPress dashboard you need to use a specialized plugin for that. Please install and activate <a href="https://wordpress.org/plugins/loco-translate/"><strong>Loco Translate</strong> plugin</a>.
+
+	p For instructions on how to use the plugin please refer to <a href="https://localise.biz/wordpress/plugin/beginners">beginner's guide</a> and/or <a href="https://localise.biz/wordpress/plugin/overview">technical overview</a>.

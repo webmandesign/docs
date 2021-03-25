@@ -2,9 +2,8 @@
 
 .alert {
 	padding: 2em;
-	margin-#{$left}: -2rem;
 	border: 2px solid;
-	border-#{$left}-width: 2rem;
+	border-left-width: 1rem;
 	border-color: inherit;
 	border-radius: var(--border_radius);
 	box-shadow: var(--drop_shadow_alert);
@@ -14,18 +13,21 @@
 	}
 
 	h3, h4 {
-		font-size: 1.2em;
-		font-weight: 600;
-		margin-bottom: 1rem;
+		margin-bottom: $golden +rem;
+		font-size: 1em;
+		text-transform: uppercase;
 
 		strong {
 			padding: .25em .5em;
-			margin-#{$right}: .5em;
-			font-size: .75em;
+			margin-left: calc( -2.5rem - 2px );
+			margin-right: .5em;
+			font-size: .9em;
 			text-transform: uppercase;
+			background: var(--color_content_background);
 			border: 2px solid;
 			border-color: inherit;
 			border-radius: var(--border_radius);
+			box-shadow: var(--drop_shadow_alert);
 		}
 
 	}

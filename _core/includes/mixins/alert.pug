@@ -1,5 +1,5 @@
 mixin alert( title = '', context = 'default', tag = 'h3', label = '' )
-	aside( class="alert alert-" + context )
+	div( class="alert alert-" + context )
 		if label
 			- title = label + ' ' + title;
 		if title

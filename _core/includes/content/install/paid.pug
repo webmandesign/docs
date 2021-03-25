@@ -1,15 +1,22 @@
-+sub_section( 'Theme purchased on a marketplace' )
-	ol
-		li (Re)download the theme package ZIP folder from the marketplace where you've purchased the theme from.
+ol
+	li (Re)download the theme package ZIP folder from the marketplace where you've purchased the theme from.
 
-		li Log into your WordPress admin.
+	li Log into your WordPress admin.
 
-		li In WordPress admin navigate to #[+mark( 'nav', 'Appearance', 'Themes' )] and click the #[+mark( 'btn', 'Add New' )] button next to "Themes" page title.
+	li In WordPress admin navigate to #[+mark( 'nav', 'Appearance', 'Themes' )] and click the #[+mark( 'btn', 'Add New' )] button next to "Themes" page title.
 
-		li On "Add Themes" screen click the #[+mark( 'btn', 'Upload Theme' )] button next to page title.
+	li On "Add Themes" screen click the #[+mark( 'btn', 'Upload Theme' )] button next to page title.
 
-		li On the next screen choose the theme ZIP package file you've downloaded in step 1 above and click the #[+mark( 'btn', 'Install Now' )] button.
+	li On the next screen choose the theme ZIP package file you've downloaded in step 1 above and click the #[+mark( 'btn', 'Install Now' )] button.
 
-		li After the theme is installed, activate it by clicking the <strong>"Activate"</strong> link.
+	li After the theme is installed, activate it by clicking the <strong>"Activate"</strong> link.
 
-		li Now you can go to #[+mark( 'nav', 'Appearance', 'Welcome' )] page for information on how to set up your website (and the theme). Also, please <strong>pay special attention to your <a href="#image-sizes">website image sizes setup</a></strong>.
+	li Now you can go to #[+mark( 'nav', 'Appearance', 'Welcome' )] page for information on how to set up your website (and the theme). Also, please <strong>pay special attention to your <a href="#image-sizes">website image sizes setup</a></strong>.
+
+if 'envato' === config.source
+	+important( 'Envato Market' )
+		p If you've obtained the theme from ThemeForest (Envato Market), please make sure to unpack the downloaded ZIP package on your computer first and check if you are uploading the correct theme ZIP file (or the whole theme folder).
+
+		p Basically, the theme installation ZIP file or folder is named with your theme slug only, so only <code>#{config.slug}</code>.
+
+		p Do not install a whole ZIP package that contains other files such as documentation, child theme, licencing and others. Install only the file under <code>#{config.slug}-package/theme</code> folder. Otherwise you might experience <a href="https://help.market.envato.com/hc/en-us/articles/202821510">a common issue</a>.

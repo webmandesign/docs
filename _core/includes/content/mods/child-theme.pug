@@ -1,15 +1,19 @@
-+sub_section( 'When and How to Use a Child Theme?' )
-	p If you need to make any styling or functional changes to the theme, please use the WordPress native <strong>child theme</strong> functionality. This way you can continue updating the parent (original) <strong>#{config.name}</strong> theme without any worry of your changes being overwritten as all your custom styles and functionality are kept in a child theme. You can read more about <a href="http://codex.wordpress.org/Child_Themes">child themes on WordPress Codex pages</a>.
++sub_section( 'Use a Child Theme' )
+	+danger( 'Very limited help support!' )
+		p Please note that <a href="https://support.webmandesign.eu/modifications/">we do not provide support for theme modifications</a>. Responsibility for a code lies on shoulders of the code author. If you don't feel comfortable coding, please <a href="https://support.webmandesign.eu/modifications/">consider hiring a developer to help</a>.
 
-	p You can put all your custom CSS styles into <code>YOUR_CHILD_THEME/style.css</code> file. (You can alternatively use #[+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' )] for that.)
+	p If you need to make any styling or functional changes to the theme, please use a WordPress native <strong>child theming</strong> functionality. This way you can continue updating the parent (original) <strong>#{config.name}</strong> theme without worrying your changes would get overwritten with theme updates. All your custom code is kept safe in your child theme. You can read more about <a href="https://developer.wordpress.org/themes/advanced-topics/child-themes/">child themes in WordPress documentation</a>.
 
-	p If you also want to change the functionality of the original <strong>#{config.name}</strong> theme, do so in <code>YOUR_CHILD_THEME/functions.php</code> file. You can freely modify any theme function or class method there by hooking onto the specific "pre" filter or unhooking the function altogether (see below for how to use filter and action hooks).
+	h4 Custom CSS code
 
+	p You can put all your custom CSS styles code into <code>CHILD_THEME_FOLDER/style.css</code> file. Or you can alternatively use #[+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' )] for that.
 
-	h4 Additional resources
+	h4 Custom PHP code
 
-	ul
-		li <a href="https://github.com/webmandesign/child-theme"><strong>Download a sample child theme</strong></a></li>
-		li <a href="https://wordpress.org/plugins/child-theme-check/"><strong>Child Theme Check</strong> plugin</a> (<a href="https://wptavern.com/child-theme-check-plugin-helps-wordpress-users-navigate-parent-theme-updates">how it works?</a>)</li>
-		li <a href="http://codex.wordpress.org/Child_Themes">WordPress Codex on child themes</a></li>
-		li <a href="http://www.woothemes.com/2015/07/why-child-themes-matter/">Why child themes are so important</a></li>
+	p If you also want to change the functionality of the original <strong>#{config.name}</strong> theme, do so in <code>CHILD_THEME_FOLDER/functions.php</code> file. You can freely modify any theme functionality via that file by hooking onto a specific filter or action <strong>#{config.name}</strong> theme provides. See below for how to use hooks.
+
+	h4 Sample child theme
+
+	p You can download a free child theme from WebMan Design GitHub repository. Don't forget to check the information in the repository for how to configure the child theme for your needs.
+
+	p <a href="https://github.com/webmandesign/child-theme">Grab a sample child theme from repository now &rarr;</a>
