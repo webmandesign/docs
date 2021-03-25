@@ -32,7 +32,29 @@
 		padding: 1.5vh var(--content_padding);
 		text-decoration: none;
 		color: inherit;
-		transition: background .1s, color .1s;
+		transition: background .15s, color .15s;
+
+		&:not(.is-active) {
+
+			&:hover,
+			&:focus {
+				background: var(--color_nav_border);;
+			}
+
+		}
+
+		&::before {
+			content: '\2192'; // &rarr;
+			speak: none;
+			position: absolute;
+			right: calc( 100% - 4vw );
+			top: 49%;
+			margin-right: 1em;
+			opacity: 0;
+			transform: translateY( -50% );
+			transition: opacity .15s;
+		}
+
 	}
 
 }
