@@ -5,11 +5,12 @@
 	border-width: 1px;
 	border-style: solid;
 	border-radius: var(--border_radius);
-	box-shadow: var(--box_shadow--large);
+	box-shadow: none;
 	transition: box-shadow .3s;
 
-	&:hover {
-		box-shadow: none;
+	&:hover,
+	&:focus-within {
+		box-shadow: var(--box_shadow--large);
 	}
 
 	.label {
