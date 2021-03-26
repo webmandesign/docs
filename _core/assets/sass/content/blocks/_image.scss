@@ -1,0 +1,73 @@
+/* FILE: content/blocks/_image.scss */
+
+figure {
+	@extend %shaded_background;
+	position: relative;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	border: 1em solid transparent;
+	border-radius: var(--border_radius);
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		border-width: 2em;
+	}
+
+	body &::before {
+		left: -1em;
+		right: -1em;
+		top: -1em;
+		bottom: -1em;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			left: -2em;
+			right: -2em;
+			top: -2em;
+			bottom: -2em;
+		}
+
+	}
+
+	.alert & {
+		border-width: 1em;
+
+		&::before {
+			left: -1em;
+			right: -1em;
+			top: -1em;
+			bottom: -1em;
+		}
+
+	}
+
+	img {
+		border-radius: var(--border_radius);
+		box-shadow: var(--drop_shadow_alert);
+	}
+
+}
+
+figcaption {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	padding: 1em;
+	font-size: .9em;
+	font-style: italic;
+	text-align: center;
+	background: rgba( #000, .75 );
+	color: #fff;
+	border-radius: var(--border_radius);
+	backdrop-filter: blur( 10px );
+
+	a {
+		color: inherit;
+	}
+
+}
+
+img {
+	height: auto;
+	font-style: italic;
+}

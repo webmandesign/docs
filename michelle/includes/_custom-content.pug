@@ -6,10 +6,12 @@ extends ../../_core/_index.pug
 	You can either completely overwrite them, or prepend/append to them.
 	@link  https://pugjs.org/language/inheritance.html
 
-block append posts
-	include posts-featured.pug
 block append customizer/about
 	include customizer.pug
+block append editor
+	include editor-footer.pug
+block append posts
+	include posts-featured.pug
 
 //-
 	Some additional partial content blocks for more flexibility:
