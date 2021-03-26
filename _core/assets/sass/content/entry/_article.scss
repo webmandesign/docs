@@ -1,11 +1,13 @@
 /* FILE: content/entry/_content.scss */
 
 .entry {
-	max-width: var(--content_width);
 	padding: calc( var(--white_space) / 2 ) 0;
 	margin: var(--white_space) auto;
 	margin-right: 0;
-	// transition: outline-color 5s;
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		max-width: var(--content_width);
+	}
 
 	&::after {
 		content: '';
@@ -16,8 +18,6 @@
 
 	&:focus {
 		outline: 0;
-		// outline-offset: 1em;
-		// outline-color: transparent;
 	}
 
 	&-title {
