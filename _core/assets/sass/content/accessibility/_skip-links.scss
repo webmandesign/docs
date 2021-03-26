@@ -1,7 +1,7 @@
 /* FILE: content/accessibility/_skip-links.scss */
 
 .skip-link-site-menu {
-	position: sticky;
+	position: fixed;
 	display: block;
 	width: 100%;
 	top: 0;
@@ -15,7 +15,6 @@
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 		display: inline-block;
-		position: fixed;
 		width: auto;
 
 		&:not(:focus) {
