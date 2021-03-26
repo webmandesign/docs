@@ -1,14 +1,17 @@
 /* FILE: content/menu/_primary.scss */
 
 .site-menu {
+	position: relative;
 	padding: var(--white_space) 0;
 	background: var(--color_nav_background);
 	color: var(--color_nav_text);
 	border-color: var(--color_nav_border);
+	z-index: 10;
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 		width: var(--menu_width);
 		box-shadow: var(--drop_shadow_nav);
+		z-index: 0;
 	}
 
 	ul {
@@ -36,6 +39,7 @@
 
 	a {
 		display: block;
+		position: relative;
 		padding: 1.5vh var(--content_padding);
 		text-decoration: none;
 		color: inherit;

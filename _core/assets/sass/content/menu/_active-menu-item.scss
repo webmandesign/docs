@@ -3,13 +3,16 @@
 .site-menu {
 
 	.is-active {
-		position: relative;
-		font-weight: 700;
-		background: var(--color_nav_background_active);
-		color: var(--color_nav_text_active);
 
-		&::before {
-			opacity: 1;
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			font-weight: 700;
+			background: var(--color_nav_background_active);
+			color: var(--color_nav_text_active);
+
+			&::before {
+				opacity: 1;
+			}
+
 		}
 
 	}

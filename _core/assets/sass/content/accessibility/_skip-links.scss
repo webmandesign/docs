@@ -1,18 +1,27 @@
 /* FILE: content/accessibility/_skip-links.scss */
 
-.menu-skip-links {
+.skip-link-site-menu {
+	position: sticky;
+	display: block;
+	width: 100%;
+	top: 0;
+	padding: 1em 2em;
+	text-align: center;
+	text-decoration: none;
+	background: var(--color_nav_background);
+	color: var(--color_nav_text);
+	box-shadow: var(--box_shadow--small);
+	z-index: 5;
 
-	ul {
-		position: absolute;
-		left: 0;
-		top: 0;
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		display: inline-block;
+		position: fixed;
+		width: auto;
 
-	li {
-		white-space: nowrap;
+		&:not(:focus) {
+			@include screen_reader_hiding();
+		}
+
 	}
 
 }

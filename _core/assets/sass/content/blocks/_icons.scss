@@ -1,13 +1,10 @@
 /* FILE: content/blocks/_icons.scss */
 
-.svg-icon,
-.has-svg-icon svg {
+.svg-icon {
 	fill: currentColor;
 	width: 1.5em;
 	height: 1.5em;
-
-	.button & {
-		vertical-align: middle;
-	}
-
+	margin-top: -.25em;
+	margin-right: $golden_minor +rem;
+	vertical-align: middle;
 }

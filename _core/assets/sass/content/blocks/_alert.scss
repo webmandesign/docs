@@ -43,6 +43,15 @@
 
 		}
 
+		span {
+			display: block;
+
+			@include media( map_get( $breakpoint, 'm' ) ) {
+				display: inline;
+			}
+
+		}
+
 	}
 
 	:last-child {

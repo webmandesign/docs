@@ -51,17 +51,11 @@
 		--typography_font_headings: var(--typography_font_global);
 
 		--typography_font_size_base: 16px;
-		@include media( map_get( $breakpoint, 'l' ) ) {
-			--typography_font_size_base: 17px;
-		}
 		@include media( map_get( $breakpoint, 'xl' ) ) {
 			--typography_font_size_base: 18px;
 		}
 
-		--typography_heading_size_multiplier: .75;
-		@include media( map_get( $breakpoint, 'm' ) ) {
-			--typography_heading_size_multiplier: .875;
-		}
+		--typography_heading_size_multiplier: .85;
 		@include media( map_get( $breakpoint, 'l' ) ) {
 			--typography_heading_size_multiplier: 1;
 		}
@@ -70,7 +64,7 @@
 		$heading_sizes : ( 2.488, 1.728, 1.44, 1.2 );
 		@each $size in $heading_sizes {
 			$value : $size +em;
-			@if .98 < ( .75 * $size ) {
+			@if .98 < ( .85 * $size ) {
 				$value : calc( var(--typography_heading_size_multiplier) * #{ $value } );
 			}
 			--typography_heading_size_#{ index( $heading_sizes, $size ) }: #{ $value };
@@ -92,7 +86,10 @@
 	// Spacing and size:
 
 		--content_width: 36rem;
-		--content_padding: 6vw;
+		--content_padding: 2em;
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			--content_padding: 6vw;
+		}
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 			--content_padding: 4vw;
 		}

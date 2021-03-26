@@ -21,10 +21,13 @@
 		text-transform: uppercase;
 	}
 
-	svg {
-		margin-top: -.15em;
-		margin-right: $golden_minor +rem;
-		vertical-align: middle;
+	a {
+		display: block;
+
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			display: inline;
+		}
+
 	}
 
 }
