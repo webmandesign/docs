@@ -4,18 +4,29 @@
 	var url_global = {
 		accessibility : 'https://support.webmandesign.eu/accessibility/',
 		author        : 'https://www.webmandesign.eu',
-		facebook      : 'https://www.facebook.com/webmandesigneu/',
-		twitter       : 'https://www.twitter.com/webmandesigneu/',
 		child_theme   : 'https://github.com/webmandesign/child-theme',
-		themeforest   : 'https://themeforest.net/user/webmandesign/portfolio',
-		wporg_plugins : 'https://profiles.wordpress.org/webmandesign/#content-plugins',
-		wporg_themes  : 'https://profiles.wordpress.org/webmandesign#content-themes',
+		css_classes   : 'https://themedemos.webmandesign.eu/' + config.slug + '/css-classes/',
+		demo          : 'https://themedemos.webmandesign.eu/' + config.slug + '/',
+		facebook      : 'https://www.facebook.com/webmandesigneu/',
+		info          : 'https://www.webmandesign.eu/portfolio/' + config.slug + '-wordpress-theme/',
 		logo          : 'https://raw.githubusercontent.com/webmandesign/demo-content/img/logo-webmandesign.eu.png',
 		modifications : 'https://support.webmandesign.eu/modifications/',
+		support       : 'https://support.webmandesign.eu/forum/' + config.slug + '/',
 		testing       : 'https://support.webmandesign.eu/testing-a-theme-on-your-computer/',
+		themeforest   : 'https://themeforest.net/user/webmandesign/portfolio',
+		twitter       : 'https://www.twitter.com/webmandesigneu/',
 		videos        : 'https://vimeo.com/webmandesigneu/videos',
+		wporg_plugins : 'https://profiles.wordpress.org/webmandesign/#content-plugins',
+		wporg_themes  : 'https://profiles.wordpress.org/webmandesign#content-themes',
+		review        : {
+			'wporg'  : 'https://wordpress.org/support/theme/' + config.slug + '/reviews/?filter=5',
+			'envato' : 'https://themeforest.net/downloads', //- https://easycaptures.com/fs/uploaded/1095/2900439960.jpg
+		},
 	};
 
-each value, key in url_global
-	if ! config.url[ key ]
-		- config.url[ key ] = value
+if ! config.url
+	- config.url = url_global
+else
+	each value, key in url_global
+		if ! config.url[ key ]
+			- config.url[ key ] = value

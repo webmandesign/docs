@@ -1,19 +1,21 @@
 +sub_section( 'Use a Child Theme' )
-	+danger( 'Very limited help support!' )
-		p Please note that <a href="#{config.url.modifications}">we do not provide support for theme modifications</a>. Responsibility for a code lies on shoulders of the code author. If you don't feel comfortable coding, please <a href="#{config.url.modifications}">consider hiring a developer to help</a>.
+	+danger( 'Limited support help!' )
+		p Please understand that <a href="#{config.url.modifications}">a very limited support is provided for theme modifications</a>. Responsibility for a code lies on shoulders of the code author. If you don't feel comfortable coding <a href="#{config.url.modifications}">consider hiring a help</a>.
 
-	p If you need to make any styling or functional changes to the theme, please use a WordPress native <strong>child theming</strong> functionality. This way you can continue updating the parent (original) <strong>#{config.name}</strong> theme without worrying your changes would get overwritten with theme updates. All your custom code is kept safe in your child theme. You can read more about <a href="https://developer.wordpress.org/themes/advanced-topics/child-themes/">child themes in WordPress documentation</a>.
+	p If you need to make styling or functional changes to the theme, use WordPress native <strong>child theming</strong> functionality. This way you can update the parent (original) <strong>#{config.name}</strong> theme without worrying your code would get overwritten and lost. All your custom code is kept safe in your child theme.
 
-	h4 Custom CSS code
+	p Read more about <a href="https://developer.wordpress.org/themes/advanced-topics/child-themes/">child themes in WordPress documentation</a>.
 
-	p You can put all your custom CSS styles code into <code>CHILD_THEME_FOLDER/style.css</code> file. Or you can alternatively use #[+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' )] for that.
+	h4 Custom CSS styles code
+
+	p Put your custom CSS code into <code>CHILD_THEME_FOLDER/style.css</code> file. Alternatively use #[+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' )] for that.
 
 	h4 Custom PHP code
 
-	p If you also want to change the functionality of the original <strong>#{config.name}</strong> theme, do so in <code>CHILD_THEME_FOLDER/functions.php</code> file. You can freely modify any theme functionality via that file by hooking onto a specific filter or action <strong>#{config.name}</strong> theme provides. See below for how to use hooks.
+	p If you want to change <strong>#{config.name}</strong> theme's functionality, do so in <code>CHILD_THEME_FOLDER/functions.php</code> file. You can freely modify any theme functionality via that file by <a href="#hooks">hooking onto a specific filter or action</a> <strong>#{config.name}</strong> theme provides.
 
 	h4 Sample child theme
 
-	p You can download a free child theme from WebMan Design GitHub repository. Don't forget to check the information in the repository for how to configure the child theme for your needs.
+	p Download a free child theme from WebMan Design GitHub repository. Don't forget to check the information in the repository for how to configure a child theme for your needs.
 
 	p <a href="#{config.url.child_theme}">Grab a sample child theme from repository now &rarr;</a>
