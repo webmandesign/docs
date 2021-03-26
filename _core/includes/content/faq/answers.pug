@@ -1,14 +1,15 @@
 ol.list-answers
 	block faq/answers/list
-		li
-			include answer/page-builder.pug
-		li
-			include answer/images.pug
-		li
-			include answer/helper-classes.pug
-		li
-			include answer/seo.pug
-		li
-			include answer/performance.pug
-		li
-			include answer/css.pug
+		each question, id in config.faq
+			li
+				+answer( question, id )
+					case id
+						when 'any-page-builder': include answer/page-builder.pug
+						when 'css': include answer/css.pug
+						when 'css-classes': include answer/helper-classes.pug
+						when 'image-sizes': include answer/images.pug
+						when 'seo': include answer/seo.pug
+						when 'speed': include answer/performance.pug
+						default
+							block faq/answers/list/item
+							- break

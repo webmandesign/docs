@@ -1,8 +1,5 @@
 ol#questions.list-questions
 	block faq/questions/list
-		li <a href="#any-page-builder">How to use a page builder?</a>
-		li <a href="#image-sizes">Why are uploaded images blurry or small?</a>
-		li <a href="#css-classes">How to modify element appearance?</a>
-		li <a href="#seo">SEO - Search Engine Optimization</a>
-		li <a href="#speed">How to speed up a website?</a>
-		li <a href="#css">How to add custom CSS?</a>
+		each question, id in config.faq
+			li
+				a( href="#"+id )= question

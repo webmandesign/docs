@@ -30,3 +30,20 @@ else
 	each value, key in url_global
 		if ! config.url[ key ]
 			- config.url[ key ] = value
+
+-
+	var faq_global = {
+		'any-page-builder' : 'How to use a page builder?',
+		'image-sizes'      : 'Why are uploaded images blurry or small?',
+		'css-classes'      : 'How to modify element appearance?',
+		'seo'              : 'SEO - Search Engine Optimization',
+		'speed'            : 'How to speed up a website?',
+		'css'              : 'How to add custom CSS?',
+	};
+
+if ! config.faq
+	- config.faq = faq_global
+else
+	each value, key in faq_global
+		if ! config.faq[ key ]
+			- config.faq[ key ] = value

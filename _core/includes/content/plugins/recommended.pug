@@ -12,13 +12,15 @@
 
 	dl.list-featured.has-quoted-terms
 		block plugins/recommended/list
-			each plugin in config.plugins
-				case plugin
-					when 'beaver-builder': include recommend/beaver-builder.pug
-					when 'envato-market': include recommend/envato-market.pug
-					when 'integration-wc': include recommend/integration-wc.pug
-					when 'jetpack': include recommend/jetpack.pug
-					when 'manage-sidebars': include recommend/manage-sidebars.pug
-					when 'woocommerce': include recommend/woocommerce.pug
-					default
-						- break
+			each name, id in config.plugins
+				+recommend( name, id )
+					case id
+						when 'beaver-builder': include recommend/beaver-builder.pug
+						when 'envato-market': include recommend/envato-market.pug
+						when 'integration-wc': include recommend/integration-wc.pug
+						when 'jetpack': include recommend/jetpack.pug
+						when 'manage-sidebars': include recommend/manage-sidebars.pug
+						when 'woocommerce': include recommend/woocommerce.pug
+						default
+							block plugins/recommended/list/item
+							- break
