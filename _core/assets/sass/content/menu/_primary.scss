@@ -6,11 +6,11 @@
 	background: var(--color_nav_background);
 	color: var(--color_nav_text);
 	border-color: var(--color_nav_border);
+	box-shadow: var(--drop_shadow_nav);
 	z-index: 10;
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 		width: var(--menu_width);
-		box-shadow: var(--drop_shadow_nav);
 		z-index: 0;
 	}
 

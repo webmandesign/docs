@@ -86,7 +86,7 @@
 	// Spacing and size:
 
 		--content_width: 36rem;
-		--content_padding: 2em;
+		--content_padding: 2rem;
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 			--content_padding: 6vw;
 		}
@@ -121,9 +121,13 @@
 
 		--drop_shadow_header: var(--box_shadow--small);
 		--drop_shadow_main: var(--box_shadow--small);
-		--drop_shadow_nav: none;
+		--drop_shadow_nav: var(--box_shadow--small);
 		--drop_shadow_footer: var(--box_shadow--small);
 		--drop_shadow_alert: var(--box_shadow--large);
 		--drop_shadow_button: var(--box_shadow--large);
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			--drop_shadow_nav: none;
+		}
 
 }

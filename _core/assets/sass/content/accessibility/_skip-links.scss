@@ -4,12 +4,12 @@
 	position: fixed;
 	display: block;
 	width: 100%;
-	top: 0;
+	bottom: 0;
 	padding: 1em 2em;
 	text-align: center;
 	text-decoration: none;
-	background: var(--color_nav_background);
-	color: var(--color_nav_text);
+	background: var(--color_button_background);
+	color: var(--color_button_text);
 	box-shadow: var(--box_shadow--small);
 	z-index: 5;
 
