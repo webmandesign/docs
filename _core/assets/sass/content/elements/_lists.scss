@@ -8,7 +8,7 @@ ol {
 
 	ul,
 	ol {
-		margin-left: $golden +em;
+		margin-left: 1em;
 
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 			margin-left: 0;
