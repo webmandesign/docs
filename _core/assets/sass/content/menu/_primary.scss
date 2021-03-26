@@ -1,21 +1,28 @@
 /* FILE: content/menu/_primary.scss */
 
 .site-menu {
-	width: var(--menu_width);
 	padding: var(--white_space) 0;
 	background: var(--color_nav_background);
 	color: var(--color_nav_text);
 	border-color: var(--color_nav_border);
-	box-shadow: var(--drop_shadow_nav);
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		width: var(--menu_width);
+		box-shadow: var(--drop_shadow_nav);
+	}
 
 	ul {
-		position: sticky;
-		max-height: 100vh;
-		top: 0;
 		padding: 1em 0;
 		margin: 0;
 		list-style: none;
-		overflow-y: auto;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			position: sticky;
+			max-height: 100vh;
+			top: 0;
+			overflow-y: auto;
+		}
+
 	}
 
 	li {

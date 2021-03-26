@@ -22,16 +22,21 @@
 
 	&-title {
 		padding: 2rem;
-		margin-left: -2rem;
-		margin-right: -4vw;
+		margin-left: calc( -1 * var(--content_padding) );
+		margin-right: calc( -1 * var(--content_padding) );
 		margin-bottom: var(--white_space);
 		background: var(--color_nav_background);
 		color: var(--color_nav_text);
 		border-width: 1px;
 		border-style: solid;
-		border-radius: var(--border_radius);
-		border-top-#{right}-radius: 0;
-		border-bottom-#{right}-radius: 0;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			margin-left: -2rem;
+			margin-right: -4vw;
+			border-radius: var(--border_radius);
+			border-top-#{right}-radius: 0;
+			border-bottom-#{right}-radius: 0;
+		}
 
 		+ .entry-section {
 			padding-top: 0;

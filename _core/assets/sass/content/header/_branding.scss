@@ -4,7 +4,15 @@
 	font-size: $golden +em;
 
 	img {
-		margin-right: 1em;
+		display: block;
+		margin-bottom: 1rem;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			display: inline;
+			margin-right: 1em;
+			margin-bottom: 0;
+		}
+
 	}
 
 }

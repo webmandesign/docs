@@ -3,12 +3,16 @@
 .alert {
 	@extend %shaded_background;
 	position: relative;
-	padding: 2em;
+	padding: 1em;
 	border: 2px solid;
 	border-left-width: 1rem;
 	border-color: inherit;
 	border-radius: var(--border_radius);
 	box-shadow: var(--drop_shadow_alert);
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		padding: 2em;
+	}
 
 	* {
 		margin-bottom: .5rem;
@@ -17,11 +21,12 @@
 	h3, h4 {
 		margin-bottom: $golden +rem;
 		font-size: 1em;
+		line-height: inherit;
 		text-transform: uppercase;
 
 		strong {
 			padding: .25em .5em;
-			margin-left: calc( -2.5rem - 2px );
+			margin-left: calc( -1.5rem - 2px );
 			margin-right: .5em;
 			font-size: .9em;
 			text-transform: uppercase;
@@ -30,6 +35,12 @@
 			border-color: inherit;
 			border-radius: var(--border_radius);
 			box-shadow: var(--drop_shadow_alert);
+			vertical-align: super;
+
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				margin-left: calc( -2.5rem + 2px );
+			}
+
 		}
 
 	}

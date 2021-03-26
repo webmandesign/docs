@@ -6,6 +6,16 @@ ol {
 	padding: 0;
 }
 
+	ul,
+	ol {
+		margin-left: $golden +em;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			margin-left: 0;
+		}
+
+	}
+
 	ul {
 		list-style: disc;
 	}
@@ -21,35 +31,6 @@ ol {
 
 dl {
 	margin-top: 0;
-
-	// &[class] {
-	// 	border-top: 3px solid;
-	// 	border-bottom: 3px solid;
-	// 	border-color: inherit;
-	// }
-
-	// position: relative;
-	// padding: 2px 0;
-	// margin-top: 0;
-
-	// &::before,
-	// &::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	width: 100%;
-	// 	height: 0;
-	// 	left: 0;
-	// 	border-top: 2px solid;
-	// }
-
-	// &::before {
-	// 	top: 0;
-	// }
-
-	// &::after {
-	// 	bottom: 0;
-	// }
-
 }
 
 dt {

@@ -1,16 +1,24 @@
 /* FILE: content/layout/_base.scss */
 
 .site-content {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	z-index: 1;
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		display: flex;
+		position: relative;
+		margin-left: 0;
+		z-index: 0;
+	}
+
 }
 
 .site-main {
-	position: relative;
-	width: calc( 100% - var(--menu_width) );
 	padding: 0 var(--content_padding);
-	box-shadow: var(--drop_shadow_main);
-	z-index: 1;
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		position: relative;
+		width: calc( 100% - var(--menu_width) );
+		box-shadow: var(--drop_shadow_main);
+		z-index: 1;
+	}
+
 }

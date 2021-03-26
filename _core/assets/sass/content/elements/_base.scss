@@ -52,14 +52,26 @@ figure {
 	margin-top: 0;
 	margin-left: 0;
 	margin-right: 0;
-	border: 2em solid transparent;
+	border: 1em solid transparent;
 	border-radius: var(--border_radius);
 
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		border: 2em solid transparent;
+	}
+
 	body &::before {
-		left: -2em;
-		right: -2em;
-		top: -2em;
-		bottom: -2em;
+		left: -1em;
+		right: -1em;
+		top: -1em;
+		bottom: -1em;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			left: -2em;
+			right: -2em;
+			top: -2em;
+			bottom: -2em;
+		}
+
 	}
 
 	img {
