@@ -1,5 +1,5 @@
 +sub_section( 'Hooks: Actions and Filters', 'hooks' )
-	+danger( 'Limited support help!' )
+	+danger( 'Limited support help!', 'h4' )
 		p This topic is meant for WordPress developers who would like to modify the theme and alter or expand its functionality. Please understand that <a href="#{config.url.modifications}">we do not provide support for custom theme modifications</a>, though.
 
 	p The theme is <a href="https://wordpress.org/plugins/theme-check/">coded following WordPress coding standards</a> and provides action and filter hooks for you, which can alter any functionality of the theme.
@@ -9,8 +9,8 @@
 	p <strong>#{config.name}</strong> theme uses <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance</a> hooks too. This is useful to entirely rebuild the theme structure or add your own sections anywhere.
 
 	if true === config.compatibility.theme_builder
-		+tip( 'Theme builder compatibility' )
+		+tip( 'Theme builder compatibility', 'h4' )
 			p This theme can be modified with a theme builder plugin such as <strong>Beaver Themer</strong> or <strong>Elementor Pro</strong> Theme Builder. You will most likely need to install an <a href="#{config.url.wporg_plugins}">additional compatibility layer plugin</a> though (if you are not sure, please search or ask at <a href="#{config.url.support}">support forum</a>).
 
-	+tip( 'Display awailable hooks' )
+	+tip( 'Display awailable hooks', 'h4' )
 		p To show all theme hooks you may try using <a href="https://wordpress.org/plugins/simply-show-hooks/"><strong>Simply Show Hooks</strong></a> plugin or <a href="https://wordpress.org/plugins/wp-inspect/"><strong>WP Inspect</strong></a> plugin.
