@@ -1,8 +1,9 @@
 block plugins/about
-	p.
-		<a href="#plugins-recommended">Main recommended plugins</a>
-		|
-		<a href="#plugins-others">Other useful plugins</a>
+	if config.plugins
+		p.
+			<a href="#plugins-recommended">Recommended plugins</a>
+			|
+			<a href="#plugins-others">Useful plugins</a>
 
 	p Why do you need to use plugins when you expected the theme to have all the functionality in it? Well, according to WordPress guidelines and generally best practices, <strong>themes are meant for presentational purpose only</strong>, while <strong>plugins provide website functionality</strong>.
 
@@ -10,11 +11,7 @@ block plugins/about
 
 	p This theme follows this WordPress philosophy and you can rest assured your site is as future-proof as possible. No lock-in effect with WebMan Design themes!
 
-	p The theme also supports and integrates seamlessly with various plugins out of the box. For more information about main recommended plugins read below.
-
 	+info( 'Compatibility' )
-		p The theme works on its own and does not need any plugin to work, not even recommended ones.
-
-		p Also, it is coded responsibly and flexibly enough so it should handle any decently coded 3rd party plugin you throw at it.
+		p The theme does not need any plugin to work properly. It is coded responsibly and flexibly enough so it should handle any decently coded 3rd party plugin you throw at it.
 
 		p However, please understand there are thousands of plugins available for WordPress and it is not humanly possible to test them all. Feel free to use your plugin and in case of an issue <a href="#{config.url.support}">contact support</a> for help.

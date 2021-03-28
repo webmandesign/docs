@@ -1,12 +1,13 @@
 +sub_section( 'Recommended Plugins', 'plugins-recommended' )
-	p Theme integrates <a href="http://tgmpluginactivation.com/">TGM Plugin Activation</a> script that prompts you to install recommended plugins after you activate the theme.
+	p Theme provides code and/or design integration for certain plugins. You will find these plugins in recommendations list below. They provide additional functionality for your website or improve your and your visitor's experience.
 
-	p These recommended plugins are only suggestions (they are definitely <strong>not required</strong>) and the theme works perfectly fine even without them. Please always read the plugin description before installing a plugin and install only those plugins you will use on your website.
+	p Please note that these are only <strong>recommended, suggested</strong> plugins, they are <strong>not required</strong> for the theme to work. Always read the plugin description before installing a plugin and <em>install only those plugins you will use on your website</em>.
 
-	+image( 'https://easycaptures.com/fs/uploaded/1493/2747581049.png', 'Recommended, not required' )
+	if config.tgmpa
+		+image( 'https://easycaptures.com/fs/uploaded/1493/2747581049.png', 'Recommended, not required' )
 
 	+warning( 'Demo content required plugins', 'h4' )
-		p List of plugin the theme recommends may differ from plugins that are <em>required</em> when installing <a href="#demo-content">demo content</a>. Check the demo content required plugins before installing demo content to your site.
+		p List of plugin the theme recommends may differ from plugins that are <em>required</em> when installing <a href="#demo-content">demo content</a>. Check the demo content information for more details.
 
 	p Here is a list of plugins that were successfully tested with the theme and the theme even provides additional integration layer for them:
 
@@ -17,9 +18,11 @@
 					case id
 						when 'beaver-builder': include recommend/beaver-builder.pug
 						when 'envato-market': include recommend/envato-market.pug
+						when 'improve-search': include recommend/improve-search.pug
 						when 'integration-wc': include recommend/integration-wc.pug
 						when 'jetpack': include recommend/jetpack.pug
 						when 'manage-sidebars': include recommend/manage-sidebars.pug
+						when 'one-click-demo-import': include recommend/one-click-demo-import.pug
 						when 'woocommerce': include recommend/woocommerce.pug
 						default
 							block plugins/recommended/list/item
