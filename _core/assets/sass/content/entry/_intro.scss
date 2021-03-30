@@ -1,11 +1,13 @@
 /* FILE: content/entry/_intro.scss */
 
 .intro {
+	position: relative;
 	background: var(--color_intro_background);
 	color: var(--color_intro_text);
 	padding: var(--white_space) 6vw calc( 1.5 * var(--white_space) );
 	margin-left: calc( -1 * var(--content_padding) );
 	margin-right: calc( -1 * var(--content_padding) );
+	overflow: hidden;
 
 	&-content{
 		max-width: var(--content_width);
@@ -13,8 +15,33 @@
 		margin-left: 0;
 	}
 
+	.screenshot {
+		$height : 12em;
+
+		object-fit: cover;
+		width: $height;
+		height: $height;
+		margin-top: calc( -.5 * var(--white_space) );
+		margin-bottom: 2em;
+		border-radius: 2em;
+		box-shadow: var(--box_shadow--small);
+		transform: rotate( 15deg );
+		transition: transform .3s, border-radius .3s, width .3s;
+
+		&:hover {
+			width: $height / 3 * 4; // 4:3 aspect ratio.
+			border-radius: 0;
+			transform: none;
+		}
+
+	}
+
 	h1 {
 		color: inherit;
+
+		a {
+			text-decoration: none;
+		}
 
 		small {
 			display: block;

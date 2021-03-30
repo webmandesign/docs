@@ -1,8 +1,13 @@
 header#intro.intro
 	div.intro-content
-		h1.
-			<strong>#{config.name}</strong>
-			<small>WordPress Theme User Manual</small>
+		if config.screenshot
+			a( href=config.url.info )
+				img( src=config.screenshot alt="" aria-hidden="true" ).screenshot
+
+		h1
+			a( href=config.url.info ).
+				<strong>#{config.name}</strong>
+				<small>WordPress Theme User Manual</small>
 
 		p.thank-you.has-extra-large-font-size Thank you and congratulations for using a theme by <a href="#{config.url.author}">WebMan&nbsp;Design</a>!
 

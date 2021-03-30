@@ -2,17 +2,46 @@
 
 .site-branding {
 	font-size: $golden +em;
+}
+
+.site-title {
+	display: block;
+	margin-bottom: $golden_major +em;
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		display: inline;
+		margin: 0;
+		margin-left: $golden +em;
+	}
+
+}
+
+.custom-logo-link {
+	position: relative;
+	display: inline-block;
+	margin: 50px 25px;
+	line-height: 1;
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		margin: 0;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 96px;
+		height: 96px;
+		left: 50%;
+		top: 50%;
+		background: var(--color_brand);
+		border-radius: 16px;
+		transform: translateX( -50% ) translateY( -50% ) rotate( 15deg );
+	}
 
 	img {
-		display: block;
-		margin-bottom: 1rem;
-
-		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			display: inline;
-			margin-right: 1em;
-			margin-bottom: 0;
-		}
-
+		position: relative;
+		max-height: 35px;
+		vertical-align: middle;
 	}
 
 }
