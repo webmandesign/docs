@@ -1,9 +1,8 @@
 header#intro.intro
 	div.intro-content
 		if config.screenshot
-			div.screenshot
-				a( href=config.url.info )
-					img( src=config.screenshot alt="" aria-hidden="true" )
+			a( href=config.url.info ).screenshot
+				img( src=config.screenshot alt="" aria-hidden="true" )
 
 		h1
 			a( href=config.url.info ).

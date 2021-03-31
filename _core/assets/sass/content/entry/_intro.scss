@@ -18,6 +18,7 @@
 	.screenshot {
 		$height : 240px; // Theme screenshot is 1200x900 and this is a fifth.
 
+		display: block;
 		width: $height;
 		height: $height;
 		margin-top: calc( -.5 * var(--white_space) );
@@ -36,7 +37,8 @@
 			transition: transform .3s;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			width: $height / 3 * 4; // 4:3 aspect ratio.
 			border-radius: 0;
 			transform: none;
