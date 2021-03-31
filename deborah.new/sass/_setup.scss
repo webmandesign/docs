@@ -1,0 +1,39 @@
+//
+// Documentation stylesheet setup
+//
+
+$font_family_body : system-ui, sans-serif;
+$font_family_headings : system-ui, sans-serif;
+
+$content_width    : 1200px;
+$nav_item_padding : .5em;
+
+$color_header_bg : #2e2d2a;
+$color_logo      : #fff;
+
+$color_sidebar_bg  : #fff;
+$color_sidebar_txt : #2e2d2a;
+$color_sidebar_bd  : rgba( #2e2d2a, .15 );
+
+$color_nav_active_bg  : #feedba;
+$color_nav_active_txt : #2e2d2a;
+
+$color_intro_bg  : #feedba;
+$color_intro_txt : #111;
+
+$color_content_txt     : #6e6d6a;
+$color_content_bd      : rgba( #6e6d6a, .15 );
+$color_content_heading : #2e2d2a;
+
+$color_figure_bg : #fff;
+
+$color_anatomy_heading      : #0e0e0f;
+$color_anatomy_bd           : #dededf;
+$color_anatomy_active_bg    : #ce1e0f;
+$color_anatomy_active_txt   : #fff;
+$color_anatomy_inactive_bg  : #dededf;
+$color_anatomy_inactive_txt : #2e2e2f;
+
+$color_footer_bg  : $color_header_bg;
+$color_footer_txt : #9e9d9a;
+$color_footer_lnk : $color_logo;

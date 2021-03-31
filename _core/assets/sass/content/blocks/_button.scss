@@ -21,7 +21,7 @@
 
 	&.dummy {
 		--color_button_background : none;
-		--color_button_text : inherit;
+		--color_button_text : var(--color_content_headings);
 
 		padding: .1em .5em;
 		margin: 0 .25em;

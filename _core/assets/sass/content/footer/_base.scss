@@ -11,6 +11,10 @@
 	box-shadow: var(--drop_shadow_footer);
 	z-index: 1;
 
+	.custom-logo-link {
+		margin-bottom: 35px;
+	}
+
 	a {
 		color: inherit;
 	}

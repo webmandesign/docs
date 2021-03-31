@@ -1,0 +1,74 @@
+//-
+//- Configuration object:
+//-
+-
+	var config = {
+		//- Theme attributes:
+		name          : 'Eimear',
+		slug          : 'eimear',
+		screenshot    : 'https://themedemos.webmandesign.eu/eimear/wp-content/themes/eimear/screenshot.png',
+		is_free       : false,
+		source        : 'envato', //- Available values: wporg/envato/github/other
+		compatibility : {
+			accessibility : true,
+			theme_builder : true,
+		},
+		version : {
+			wp  : '5.5',
+			php : '7.0',
+		},
+
+		//- Content sections:
+		//- For custom content see below.
+		content : [
+			//- For the list of core contents refer to `_core/includes/content.pug`.
+			//- Basically, these match sub-folder names in `_core/includes/content`.
+			//- Reorder these how you please.
+			'wordpress',
+			'install',
+			'update',
+			'demo',
+			'pages',
+			'posts',
+			'editor',
+			'cpt/products',
+			'cpt/portfolio',
+			'cpt/testimonials',
+			'menu',
+			'social',
+			'sidebars',
+			'customizer',
+			'localization',
+			'accessibility',
+			'plugins',
+			'faq',
+			'mods',
+			'credits',
+		],
+
+		//- Recommended plugins list:
+		//- For custom content see below.
+		plugins : {
+			//- For the list of core recommended plugin refer to `_core/includes/content.pug`.
+			//- Reorder these how you please.
+			'beaver-builder'        : 'Beaver Builder',
+			'manage-sidebars'       : 'Content Aware Sidebars',
+			'envato-market'         : 'Envato Market',
+			'improve-search'        : 'Improve Search Form Accessibility',
+			'one-click-demo-import' : 'One Click Demo Import',
+			'woocommerce'           : 'WooCommerce',
+		},
+		tgmpa : false,
+	};
+
+//-
+//- Debugging:
+//- IMPORTANT: Don't forget to set `false` before deployment!
+//-
+- var debug = true;
+
+//-
+//- Custom content:
+//- This has to be here, after all the above variables declarations.
+//-
+include includes/_custom-content.pug
