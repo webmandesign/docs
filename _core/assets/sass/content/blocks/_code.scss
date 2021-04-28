@@ -5,11 +5,20 @@ $code_line_height: 21px;
 
 code {
 	padding: .15em .5em;
-	font-size: 16px;
+	font-size: 13px;
 	border-width: 1px;
 	border-style: solid;
 	border-radius: var(--border_radius);
 	word-wrap: break-word;
+
+	@include media( map_get( $breakpoint, 'm' ) ) {
+		font-size: 14px;
+	}
+
+	@include media( map_get( $breakpoint, 'l' ) ) {
+		font-size: 16px;
+	}
+
 }
 
 pre {

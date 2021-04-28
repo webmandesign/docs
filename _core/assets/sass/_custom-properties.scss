@@ -87,10 +87,7 @@
 	// Spacing and size:
 
 		--content_width: 36rem;
-		--content_padding: 2rem;
-		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			--content_padding: 6vw;
-		}
+		--content_padding: 6vw;
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 			--content_padding: 4vw;
 		}

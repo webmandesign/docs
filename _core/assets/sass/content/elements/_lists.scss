@@ -35,7 +35,6 @@ dl {
 
 dt {
 	position: relative;
-	left: -1rem; // `margin-left` doesn't work here and I'm not sure why.
 	margin-top: 1em;
 	font-size: 1.15em;
 	font-weight: 600;
@@ -43,6 +42,10 @@ dt {
 
 	&:first-child {
 		margin-top: 0;
+	}
+
+	@include media( map_get( $breakpoint, 'm' ) ) {
+		left: -1rem; // `margin-left` doesn't work here and I'm not sure why.
 	}
 
 }
