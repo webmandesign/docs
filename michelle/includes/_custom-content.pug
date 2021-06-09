@@ -35,7 +35,8 @@ block pages/templates/list
 	include template-page-builder.pug
 //- block plugins/recommended/list
 //- block plugins/recommended/list/item
-//- block plugins/others/list
+block prepend plugins/others/list
+	include plugin-amp.pug
 block menu/list
 	include menu-primary.pug
 //- block sidebars/list
