@@ -1,5 +1,13 @@
 block demo/about
-	p The theme allows you to import a demo content, which matches <a href="#{config.url.demo}">theme demo website</a>. Then you can simply change the imported demo content to your needs and build your website faster that way - <em>no need to start from scratch</em>.
+
+	if true === config.compatibility.patterns
+		+important( 'Do you even need a demo content?' )
+			p The theme contains predefined <a href="#block-patterns">block patterns</a> you can drag & drop into your page content in editor.
+			p Theme demo content was actually built the same way: just stacking the block patterns to create a full demo website.
+			p Using block patterns you can <strong>create your very own website easily</strong> and you won't need to delete obsolete leftover pages and other data from imported demo content.
+			p <a href="#block-patterns"><strong>Meet block patterns &rarr;</strong></a>
+
+	p The theme allows you to import a demo content, which matches <a href="#{config.url.demo}">theme demo website</a>. Then you can simply change the imported demo content to your needs and build your website faster that way.
 
 	p Before you import the theme demo content, please check these important notes:
 
@@ -7,9 +15,9 @@ block demo/about
 		p Theme demo contains a lot of pages. You will certainly end up not using most of them. In that case it is strongly recommended to <strong>delete the leftover demo content you no longer need</strong> from your website. It improves your website performance and relevance.
 
 	+important( 'Install on fresh WordPress' )
-		p It is recommended to install demo content on empty, fresh WordPress site. (If you are <a href="#{config.url.testing}">testing a them on a computer</a> and not your live website, you can always <a href="https://wordpress.org/plugins/search/reset/">reset WordPress</a> to a fresh state.
+		p It is recommended to install demo content on empty, fresh WordPress site. (If you are <a href="#{config.url.testing}">testing the theme on a computer</a> and not your live website, you can always <a href="https://wordpress.org/plugins/search/reset/">reset WordPress</a> to a fresh state.
 
 	+danger( 'Images and media quality' )
-		p Please understand that demo images, audio and video files are of <strong>low quality</strong>. This is to prevent any copyright infringement. You should replace them with your own, <a href="#credits">properly licensed images</a> that fit your website project.
+		p Please understand that demo images, audio and video files are of <strong>low quality</strong>. This is to prevent any copyright infringement. You should replace them with your own, <a href="#credits">properly licensed media</a> that fit your website project.
 
 	p And now, for detailed instructions about importing theme demo content please visit <strong><a href="https://github.com/webmandesign/demo-content/tree/master/#{config.slug}/">demo content repository at GitHub</a></strong> (where it is kept up to date).

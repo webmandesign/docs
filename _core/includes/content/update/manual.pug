@@ -18,8 +18,8 @@
 
 		li On your server navigate to <code>WORDPRESS_FOLDER/wp-content/themes/</code> folder.
 
-		li Delete the existing <code>#{config.slug}</code> folder (or create a backup just in case - you can do this simply by appending the folder name with a <code>.bak</code>, for example).
+		li Delete the existing <code>#{config.slug}</code> folder (or create a backup just in case - you can do this simply by renaming the folder name by appending <code>.backup</code> to its name so it becomes <code>#{config.slug}.backup</code>, for example).
 
-		li Copy the unpacked theme <code>#{config.slug}</code> folder from your computer (from step 1 above) into <code>WORDPRESS_FOLDER/wp-content/themes/</code> folder on your server.
+		li Copy the unpacked theme <code>#{config.slug}</code> folder from your computer (from step&nbsp;1 above) into <code>WORDPRESS_FOLDER/wp-content/themes/</code> folder on your server.
 
-		li Log into your WordPress admin area and check the version of the theme in #[+mark( 'path', 'Appearance', 'Themes' )]. Your theme should be updated now.
+		li Log into your WordPress admin area and check the version of the theme in #[+mark( 'path', 'Appearance', 'Themes' )]. Your theme should be updated now. (And you can delete the <code>#{config.slug}.backup</code> folder from step&nbsp;4 above.)

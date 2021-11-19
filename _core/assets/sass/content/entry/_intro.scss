@@ -2,11 +2,12 @@
 
 .intro {
 	position: relative;
-	background: var(--color_intro_background);
-	color: var(--color_intro_text);
 	padding: var(--white_space) 6vw calc( 1.5 * var(--white_space) );
 	margin-left: calc( -1 * var(--content_padding) );
 	margin-right: calc( -1 * var(--content_padding) );
+	font-weight: 500;
+	background: var(--color_intro_background);
+	color: var(--color_intro_text);
 	overflow: hidden;
 
 	&-content{

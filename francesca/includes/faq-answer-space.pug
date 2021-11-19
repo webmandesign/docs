@@ -1,0 +1,23 @@
+li
+	+answer( 'Automatic content space for overlaid header', 'header-space' )
+
+		p As you have probably noticed already, this theme renders site header as an overlay over the page content. This may cause issues when you are hiding the page intro (main title) with a <a href="#page-templates">template</a> and you need to create a space for the header in your page content.
+
+		+image( 'https://easycaptures.com/fs/uploaded/1623/9372100097.jpg', 'Example of site header overlapping page content' )
+
+		p The information below is <strong>relevant only when page intro (main title) is hidden</strong>.
+
+		h4 Automatic spacing
+
+		p The theme is trying its best to apply the automatic space needed for the site header while not overlaying any actual text content of your page.
+
+		p This is done <strong>only when you are using WordPress block editor</strong> (code named Gutenberg), and specifically when you are using either <strong><em>Cover</em></strong>, <strong><em>Group</em></strong>, <strong><em>Spacer</em></strong> or <strong><em>Media & Text</em></strong> block as <strong>the first block in your page content</strong>.
+
+		+tip( 'Disable automatic spacing' )
+			p In case you don't need automatic theme spacing you can disable the <em>"Make space for overlaid header"</em> option in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout' )].
+
+		h4 Forcing the space manually
+
+		p When using block editor and any other block is the first one in your content, try to wrap it in one of the aforementioned blocks to apply the space automatically. Alternatively you can apply <code>add-space-top</code> <a href="https://vimeo.com/523023071">CSS class on the block</a>.
+
+		p Unfortunately, there is no way for the theme to apply automatic spacing in all cases. This is especially true when you are <a href="#any-page-builder"><strong>using a page builder plugin</strong></a> to build your page content. In that case you can either set the appropriate space (top padding) on the first row of your page content with page builder, or simply apply the <code>add-space-top</code> CSS class on such page builder row (check your page builder documentation for how to apply custom CSS classes on elements).

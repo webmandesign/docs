@@ -1,0 +1,66 @@
+//-
+//- Configuration object:
+//-
+-
+	var config = {
+		//- Theme attributes:
+		name          : 'Francesca',
+		slug          : 'francesca',
+		screenshot    : 'https://themedemos.webmandesign.eu/francesca/wp-content/themes/francesca/screenshot.jpg',
+		is_free       : false,
+		source        : 'envato', //- Available values: wporg/envato/github/other
+		compatibility : {
+			accessibility      : true,
+			theme_builder      : true,
+			patterns           : true,
+			megamenu_fullwidth : true,
+		},
+		version : {
+			wp  : '5.5',
+			php : '7.0',
+		},
+
+		//- Content sections:
+		//- For custom content see below.
+		content : [
+			//- For the list of core contents refer to `_core/includes/content.pug`.
+			//- Basically, these match sub-folder names in `_core/includes/content`.
+			//- Reorder these how you please.
+			'wordpress',
+			'install',
+			'update',
+			'demo',
+			'pages',
+			'posts',
+			'editor',
+			'menu',
+			'sidebars',
+			'customizer',
+			'localization',
+			'accessibility',
+			'plugins',
+			'faq',
+			'mods',
+			'credits',
+		],
+
+		//- Recommended plugins list:
+		//- For custom content see below.
+		plugins : {
+			//- For the list of core recommended plugin refer to `_core/includes/content/plugins/recommend`.
+			//- Reorder these how you please.
+			'beaver-builder'        : 'Beaver Builder',
+			'envato-market'         : 'Envato Market',
+			'improve-search'        : 'Improve Search Form Accessibility',
+			'one-click-demo-import' : 'One Click Demo Import',
+			'woocommerce'           : 'WooCommerce',
+			'integration-wc'        : 'Theme Integration for WooCommerce',
+		},
+		tgmpa : true,
+	};
+
+//-
+//- Custom content:
+//- This has to be here, after all the above variables declarations.
+//-
+include includes/_custom-content.pug

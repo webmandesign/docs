@@ -1,0 +1,51 @@
+extends ../../_core/_index.pug
+
+//-
+	Use this special block to create custom content sections.
+	Check for `article` value to display correct custom content then.
+//- block content/article
+
+//-
+	Section have predefined `{section}` and `{section}/about` content blocks.
+	These content blocks contain entire and basic about contents for the section.
+	You can either completely overwrite them, or prepend/append to them.
+	@link  https://pugjs.org/language/inheritance.html
+
+block append customizer/about
+	include customizer.pug
+block append editor
+	include editor-block-areas.pug
+block append posts
+	include posts-featured.pug
+
+//-
+	Some additional partial content blocks for more flexibility:
+
+block append styles
+	include style.css
+//- block scripts
+//- block demo/starter_content
+//- block pages/templates
+//- block pages/templates/about
+block pages/templates/list
+	include template-content-only.pug
+	include template-inverted-header.pug
+	include template-no-intro.pug
+	include template-page-builder.pug
+//- block plugins/recommended/list
+//- block plugins/recommended/list/item
+block prepend plugins/others/list
+	include plugin-amp.pug
+block menu/list
+	include menu-primary.pug
+block append sidebars/about
+	include sidebars.pug
+block sidebars/list
+	include sidebars-footer.pug
+	include sidebars-header.pug
+	include sidebars-sidebar.pug
+block prepend faq/questions/list
+	include faq-question-space.pug
+block prepend faq/answers/list
+	include faq-answer-space.pug
+//- block faq/answers/list/item

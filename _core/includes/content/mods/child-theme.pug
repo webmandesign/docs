@@ -1,6 +1,6 @@
 +sub_section( 'Use a Child Theme' )
 	+danger( 'Limited support help!', 'h4' )
-		p Please understand that <a href="#{config.url.modifications}">a very limited support is provided for theme modifications</a>. Responsibility for a code lies on shoulders of the code author. If you don't feel comfortable coding <a href="#{config.url.modifications}">consider hiring a help</a>.
+		p Please understand that <a href="#{config.url.modifications}">a very limited support is provided for theme modifications</a>. Responsibility for a code lies on shoulders of the code author. If you don't feel comfortable coding <a href="#{config.url.modifications}">consider hiring help</a>.
 
 	p If you need to make styling or functional changes to the theme, use WordPress native <strong>child theming</strong> functionality. This way you can update the parent (original) <strong>#{config.name}</strong> theme without worrying your code would get overwritten and lost. All your custom code is kept safe in your child theme.
 
@@ -19,3 +19,7 @@
 	p Download a free child theme from WebMan Design GitHub repository. Don't forget to check the information in the repository for how to configure a child theme for your needs.
 
 	p <a href="#{config.url.child_theme}">Grab a sample child theme from repository now &rarr;</a>
+
+	if false === config.is_free
+		+tip( 'Theme from Envato Market?' )
+			p If you've obtained the theme from Envato Market, there is a high chance that a dedicated <strong>child theme is already included</strong> in the package you've downloaded from the marketplace :)
