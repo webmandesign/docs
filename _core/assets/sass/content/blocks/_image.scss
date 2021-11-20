@@ -48,18 +48,19 @@ figure {
 }
 
 figcaption {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	padding: 1em;
+	padding: 1em .5em;
+	margin-top: calc( var(--border_radius) * -1 );
 	font-size: .9em;
 	font-style: italic;
 	text-align: center;
-	background: rgba( #000, .75 );
+	background: #222;
 	color: #fff;
 	border-radius: var(--border_radius);
-	backdrop-filter: blur( 10px );
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 
 	a {
 		color: inherit;

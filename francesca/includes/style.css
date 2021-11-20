@@ -32,7 +32,7 @@
 	--color_intro_background: var(--color_secondary);
 	--color_intro_text: var(--color_gray_900);
 
-	--color_intro_background: var(--color_gray_100);
+	--color_intro_background: var(--color_white);
 	--color_intro_text: var(--color_gray_900);
 
 	--color_content_background: var(--color_white);
@@ -55,8 +55,15 @@
 			var(--color_gradient_radial_secondary) 70%
 		),
 		url('https://pic.webmandesign.eu/WMDEMO/texture--pexels-namakuki-751374.jpg');
-	background-position: 50% 50%, 50% 0;
-  background-repeat: no-repeat;
-  background-size: cover, 150%;
-  background-attachment: scroll, fixed;
+	background-position: 50% 50%, 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
 }
+
+	@media (min-width: 880px) {
+		.intro {
+			background-size: cover, 150%;
+			background-attachment: scroll, fixed;
+		}
+	}

@@ -20,9 +20,13 @@ html( lang="en" )
 	body
 		a( name="top" )
 
-		a.skip-link-site-menu( href="#site-menu" aria-label="Skip to list of topics" )
-			include ../_core/assets/images/dashicons/menu-alt.svg
-			| #{config.name} User Manual Topics
+		nav#skip-links.skip-links
+			h2.screen-reader-text Skip links //- A11y: using headings to jump to section.
+			ul
+				li
+					a.skip-link-site-menu( href="#site-menu" aria-label="Skip to list of topics" )
+						include ../_core/assets/images/dashicons/menu-alt.svg
+						| #{config.name} User Manual Topics
 
 		header.site-header
 			include includes/header.pug
@@ -32,7 +36,8 @@ html( lang="en" )
 				include includes/intro.pug
 				include includes/content.pug
 
-			nav#site-menu.site-menu( aria-label="#{config.name} user manual topics list" )
+			nav#site-menu.site-menu
+				h2.screen-reader-text #{config.name} user manual topics list //- A11y: using headings to jump to section.
 				include includes/nav.pug
 
 		footer.site-footer

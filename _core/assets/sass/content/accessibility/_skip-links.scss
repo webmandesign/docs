@@ -1,17 +1,34 @@
 /* FILE: content/accessibility/_skip-links.scss */
 
+.skip-links {
+
+	ul,
+	ol,
+	li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+}
+
 .skip-link-site-menu {
 	position: fixed;
 	display: block;
 	width: 100%;
 	bottom: 0;
-	padding: 1em 2em;
+	padding: 1em var(--content_padding);
 	text-align: center;
 	text-decoration: none;
 	background: var(--color_button_background);
 	color: var(--color_button_text);
 	box-shadow: var(--box_shadow--small);
 	z-index: 5;
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 		display: inline-block;
