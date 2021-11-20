@@ -21,7 +21,8 @@ html( lang="en" )
 		a( name="top" )
 
 		nav#skip-links.skip-links
-			h2.screen-reader-text Skip links //- A11y: using headings to jump to section.
+			//- A11y: using headings to jump to section.
+			h2.screen-reader-text Skip links
 			ul
 				li
 					a.skip-link-site-menu( href="#site-menu" aria-label="Skip to list of topics" )
@@ -37,7 +38,8 @@ html( lang="en" )
 				include includes/content.pug
 
 			nav#site-menu.site-menu
-				h2.screen-reader-text #{config.name} user manual topics list //- A11y: using headings to jump to section.
+				//- A11y: using headings to jump to section.
+				h2.screen-reader-text #{config.name} user manual topics list
 				include includes/nav.pug
 
 		footer.site-footer
