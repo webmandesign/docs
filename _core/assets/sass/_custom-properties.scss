@@ -90,12 +90,12 @@
 
 		--content_padding: 4vw;
 
-		--white_space: 90px;
+		--white_space: 80px;
 		@include media( map_get( $breakpoint, 'l' ) ) {
-			--white_space: 120px;
+			--white_space: 100px;
 		}
 		@include media( map_get( $breakpoint, 'xl' ) ) {
-			--white_space: 150px;
+			--white_space: 120px;
 		}
 
 		--menu_width: 25%;

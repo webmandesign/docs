@@ -20,13 +20,31 @@ ol {
 		list-style: disc;
 	}
 
+	li {
+
+		p,
+		ul, ol {
+
+			&:not(:last-child) {
+				margin-bottom: 1em;
+			}
+
+		}
+
+	}
+
 	li > ul,
 	li > ol {
 		margin-bottom: 0;
 	}
 
 	ol li + li {
-		margin-top: $golden_major +em;
+		margin-top: $golden +em;
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			margin-top: 1em;
+		}
+
 	}
 
 dl {
@@ -52,7 +70,7 @@ dt {
 
 dd {
 	margin-left: 0;
-	margin-bottom: 1em;
+	margin-bottom: $golden +em;
 
 	p,
 	ul, ol {

@@ -50,10 +50,15 @@
 	&-questions {
 		@extend %shaded_background;
 		position: relative;
-		padding: 2em;
+		padding: 2em 1em;
 		margin: 0;
 		list-style-position: inside;
 		border-radius: var(--border_radius);
+
+		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+			padding-left: 2em;
+			padding-right: 2em;
+		}
 
 		h2 + & {
 			margin-top: calc( var(--white_space) * -1 );
