@@ -11,6 +11,7 @@ This repository contains documentation for all [WebMan Design](https://www.webma
 * [**Deborah**](https://webmandesign.github.io/docs/deborah/) &mdash; Premium accessibility ready multipurpose WordPress theme
 * [**Eimear**](https://webmandesign.github.io/docs/eimear/) &mdash; Premium accessibility ready multipurpose WordPress theme
 * [**Forstron**](https://webmandesign.github.io/docs/forstron/) &mdash; Premium legal business WordPress theme
+* [**Francesca**](https://webmandesign.github.io/docs/francesca/) &mdash; Premium accessibility ready multipurpose WordPress theme
 * [**Icelander**](https://webmandesign.github.io/docs/icelander/) &mdash; Premium accessibility ready portfolio & e-commerce WordPress theme
 * [**Michelle**](https://webmandesign.github.io/docs/michelle/) &mdash; Free accessibility ready WordPress theme
 * [**Modern**](https://webmandesign.github.io/docs/modern/) &mdash; Free portfolio & blogging WordPress theme
