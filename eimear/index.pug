@@ -10,12 +10,20 @@
 		is_free       : false,
 		source        : 'envato', //- Available values: wporg/envato/github/other
 		compatibility : {
-			accessibility : true,
-			theme_builder : true,
+			accessibility      : true,
+			theme_builder      : true,
+			block_patterns     : false,
+			block_styles       : false,
+			megamenu_fullwidth : true,
 		},
 		version : {
-			wp  : '5.5',
+			wp  : '5.2',
 			php : '7.0',
+		},
+
+		url : {
+			'info'        : 'https://1.envato.market/eimear',
+			'css_classes' : 'https://themedemos.webmandesign.eu/eimear/helper-css-classes/',
 		},
 
 		//- Content sections:
@@ -32,8 +40,6 @@
 			'posts',
 			'editor',
 			'cpt/products',
-			'cpt/portfolio',
-			'cpt/testimonials',
 			'menu',
 			'social',
 			'sidebars',
@@ -52,20 +58,15 @@
 			//- For the list of core recommended plugin refer to `_core/includes/content.pug`.
 			//- Reorder these how you please.
 			'beaver-builder'        : 'Beaver Builder',
+			'classic-widgets'       : 'Classic Widgets',
 			'manage-sidebars'       : 'Content Aware Sidebars',
 			'envato-market'         : 'Envato Market',
 			'improve-search'        : 'Improve Search Form Accessibility',
 			'one-click-demo-import' : 'One Click Demo Import',
 			'woocommerce'           : 'WooCommerce',
 		},
-		tgmpa : false,
+		tgmpa : true,
 	};
-
-//-
-//- Debugging:
-//- IMPORTANT: Don't forget to set `false` before deployment!
-//-
-- var debug = true;
 
 //-
 //- Custom content:

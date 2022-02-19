@@ -1,3 +1,5 @@
 include about.pug
-include patterns.pug
-include styles.pug
+if true === config.compatibility.block_patterns
+	include patterns.pug
+if true === config.compatibility.block_styles
+	include styles.pug

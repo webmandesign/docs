@@ -11,13 +11,11 @@ extends ../../_core/_index.pug
 	You can either completely overwrite them, or prepend/append to them.
 	@link  https://pugjs.org/language/inheritance.html
 
-block append customizer/about
-	include customizer.pug
+//- block append customizer/about
 block append editor
-	include editor-footer.pug
 	include editor-spacer-min-height.pug
-block append posts
-	include posts-featured.pug
+block append pages
+	include page-intro.pug
 
 //-
 	Some additional partial content blocks for more flexibility:
@@ -25,20 +23,26 @@ block append posts
 block append styles
 	include style.css
 //- block scripts
-//- block demo/starter_content
-//- block pages/templates
-//- block pages/templates/about
 block pages/templates/list
 	include template-content-only.pug
 	include template-no-intro.pug
-	include template-header-overlaid.pug
 	include template-page-builder.pug
 //- block plugins/recommended/list
 //- block plugins/recommended/list/item
-//- block plugins/others/list
+block prepend plugins/others/list
+	include plugin-amp.pug
+block append plugins/others/list
+	include plugin-widget-css-classes.pug
+	include plugin-woocommerce-menu-bar-cart.pug
 block menu/list
 	include menu-primary.pug
-//- block sidebars/list
-//- block faq/questions/list
-//- block faq/answers/list
+	include menu-secondary.pug
+	include menu-footer.pug
+	include menu-social.pug
+block sidebars/list
+	include sidebars-sidebar.pug
+block append faq/questions/list
+	include faq-question-breadcrumbs.pug
+block append faq/answers/list
+	include faq-answer-breadcrumbs.pug
 //- block faq/answers/list/item
