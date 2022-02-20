@@ -3,8 +3,7 @@ extends ../../_core/_index.pug
 //-
 	Use this special block to create custom content sections.
 	Check for `article` value to display correct custom content then.
-block content/article
-	include cpt-church-content.pug
+//- block content/article
 
 //-
 	Section have predefined `{section}` and `{section}/about` content blocks.
@@ -26,18 +25,18 @@ block append styles
 //- block scripts
 block pages/templates/list
 	include template-content-only.pug
-	include template-locations.pug
 	include template-no-intro.pug
 	include template-page-builder.pug
-	include template-team.pug
 //- block plugins/recommended/list
 block plugins/recommended/list/item
 	case id
-		when 'church-content' : include plugin-church-content.pug
-//- block append plugins/others/list
+		when 'add-category-to-pages' : include plugin-add-category-to-pages.pug
+		when 'wp-term-colors'        : include plugin-wp-term-colors.pug
+		when 'wp-term-images'        : include plugin-wp-term-images.pug
+block append plugins/others/list
+	include plugin-woocommerce.pug
 block menu/list
 	include menu-primary.pug
-	include menu-buttons.pug
 	include menu-social.pug
 block sidebars/list
 	include sidebars-sidebar.pug

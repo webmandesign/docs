@@ -1,0 +1,31 @@
+:root {
+
+	--color_accent: #bb060f;
+	/* https://www.colorhexa.com/bb060f */
+	--color_mark: rgba( 187, 6, 15, .2 );
+
+	--color_button_background: #222;
+	--color_button_text: #fff;
+
+	--color_header_background: #fff;
+	--color_header_text: #111;
+
+	--color_nav_background: #bb060f;
+	--color_nav_text: #fff;
+	--color_nav_background_active: var(--color_button_background);
+	--color_nav_text_active: var(--color_button_text);
+	--color_nav_border: rgba( 255, 255, 255, var(--border_opacity) );
+
+	--color_intro_background: #db262f;
+	--color_intro_text: #fff;
+
+	--color_content_background: #fff;
+	--color_content_text: #666;
+	--color_content_headings: #111;
+	/* https://www.colorhexa.com/666666 */
+	--color_content_border: rgba( 40, 40, 40, var(--border_opacity) );
+
+	--color_footer_background: var(--color_header_background);
+	--color_footer_text: var(--color_header_text);
+
+}

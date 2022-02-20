@@ -4,11 +4,11 @@ html {
 	box-sizing: border-box;
 	overflow-y: scroll;
 	// overscroll-behavior: none;
-	scroll-behavior: smooth;
+	// scroll-behavior: smooth; // Do not use this as we need immediate jump due to mobile nav.
 
-	@media (prefers-reduced-motion: reduce) {
-		scroll-behavior: auto;
-	}
+	// @media (prefers-reduced-motion: reduce) {
+	// 	scroll-behavior: auto;
+	// }
 
 }
 
