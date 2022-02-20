@@ -1,0 +1,74 @@
+//-
+//- Configuration object:
+//-
+-
+	var config = {
+		//- Theme attributes:
+		name          : 'Angelica',
+		slug          : 'angelica',
+		screenshot    : 'https://themedemos.webmandesign.eu/angelica/wp-content/themes/angelica/screenshot.jpg',
+		is_free       : false,
+		source        : 'envato', //- Available values: wporg/envato/github/other
+		compatibility : {
+			accessibility      : true,
+			theme_builder      : true,
+			block_patterns     : false,
+			block_styles       : false,
+			megamenu_fullwidth : true,
+		},
+		version : {
+			wp  : '5.2',
+			php : '7.0',
+		},
+
+		url : {
+			'info'        : 'https://1.envato.market/angelica',
+			'css_classes' : 'https://themedemos.webmandesign.eu/angelica/helper-css-classes/',
+		},
+
+		//- Content sections:
+		//- For custom content see below.
+		content : [
+			//- For the list of core contents refer to `_core/includes/content.pug`.
+			//- Basically, these match sub-folder names in `_core/includes/content`.
+			//- Reorder these how you please.
+			'wordpress',
+			'install',
+			'update',
+			'demo',
+			'pages',
+			'posts',
+			'cpt/products',
+			'editor',
+			'menu',
+			'social',
+			'sidebars',
+			'customizer',
+			'localization',
+			'accessibility',
+			'plugins',
+			'faq',
+			'mods',
+			'credits',
+		],
+
+		//- Recommended plugins list:
+		//- For custom content see below.
+		plugins : {
+			//- For the list of core recommended plugin refer to `_core/includes/content.pug`.
+			//- Reorder these how you please.
+			'beaver-builder'        : 'Beaver Builder',
+			'classic-widgets'       : 'Classic Widgets',
+			'envato-market'         : 'Envato Market',
+			'improve-search'        : 'Improve Search Form Accessibility',
+			'one-click-demo-import' : 'One Click Demo Import',
+			'woocommerce'           : 'WooCommerce',
+		},
+		tgmpa : true,
+	};
+
+//-
+//- Custom content:
+//- This has to be here, after all the above variables declarations.
+//-
+include includes/_custom-content.pug
