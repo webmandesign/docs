@@ -1,9 +1,14 @@
 /* FILE: content/blocks/_video.scss */
 
 .link-video {
+	@extend %shaded_background;
+	position: relative;
 	padding: 1em;
-	border-width: 1px;
-	border-style: solid;
+	background: var(--color_palette_blue);
+	color: var(--color_nav_text);
+	border: 2px solid;
+	border-left-width: 1rem;
+	border-color: var(--color_palette_blue);
 	border-radius: var(--border_radius);
 	box-shadow: none;
 	transition: box-shadow .3s;
@@ -26,6 +31,7 @@
 
 	a {
 		display: block;
+		color: inherit;
 
 		@include media( map_get( $breakpoint, 'm' ) ) {
 			display: inline;

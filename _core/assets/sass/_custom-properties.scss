@@ -33,7 +33,7 @@
 		--color_mark: #{ rgba( #fbce2f, .33 ) };
 
 		@each $color, $value in $colors {
-			--color_#{ $color }: #{ $value };
+			--color_palette_#{ $color }: #{ $value };
 		}
 
 	// Typography:
