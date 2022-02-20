@@ -65,7 +65,7 @@
 			font-weight: 400;
 
 			@include media( map_get( $breakpoint, 'xxl' ) ) {
-				font-size: $golden_minor +em;
+				font-size: $ratio_min +em;
 			}
 
 		}
@@ -82,7 +82,7 @@
 
 	.svg-icon {
 		margin-right: 0;
-		margin-bottom: $golden_minor +em;
+		margin-bottom: $ratio_min +em;
 	}
 
 }

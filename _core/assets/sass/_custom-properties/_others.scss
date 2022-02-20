@@ -1,0 +1,22 @@
+/* FILE: _custom-properties/_others.scss */
+
+:root {
+
+	--border_opacity: .25;
+	--pseudo_background_opacity: .075;
+
+	--box_shadow--small: 0 0 #{ $ratio_min +em } #{ rgba( #000, $ratio_min ) };
+	--box_shadow--large: 0 #{ $ratio_min +em } #{ $ratio +em } #{ rgba( #000, .15 ) };
+
+	--drop_shadow_header: var(--box_shadow--small);
+	--drop_shadow_main: var(--box_shadow--small);
+	--drop_shadow_nav: var(--box_shadow--small);
+	--drop_shadow_footer: var(--box_shadow--small);
+	--drop_shadow_alert: var(--box_shadow--large);
+	--drop_shadow_button: var(--box_shadow--large);
+
+	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+		--drop_shadow_nav: none;
+	}
+
+}

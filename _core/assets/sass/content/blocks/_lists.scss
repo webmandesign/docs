@@ -5,10 +5,10 @@
 	&-default {
 
 		dt {
-			margin: ( $golden +em ) 0 ( $golden_major +em );
+			margin: ( $ratio +em ) 0 ( $ratio_maj +em );
 
 			// &:not(:first-child) {
-			// 	padding-top: ( $golden +em );
+			// 	padding-top: ( $ratio +em );
 			// 	border-top-width: 1px;
 			// 	border-top-style: dashed;
 			// }
@@ -16,7 +16,7 @@
 		}
 
 		dd {
-			margin-bottom: $golden +em;
+			margin-bottom: $ratio +em;
 		}
 
 	}
@@ -25,14 +25,6 @@
 
 		dt {
 			margin: calc( var(--white_space) / 2 ) 0 2rem;
-			// font-size: var(--typography_heading_size_3);
-
-			// &:not(:first-child) {
-			// 	padding-top: calc( var(--white_space) / 2 );
-			// 	border-top-width: 1px;
-			// 	border-top-style: dashed;
-			// }
-
 		}
 
 		dd {

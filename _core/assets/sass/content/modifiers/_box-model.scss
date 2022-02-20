@@ -4,7 +4,7 @@
 
 	.has-phi-padding,
 	.has-golden-padding {
-		padding: ( $golden +em );
+		padding: ( $ratio +em );
 	}
 
 	.has-no-padding,
@@ -120,5 +120,5 @@
 
 	.has-regular-margin-bottom,
 	.has-normal-margin-bottom {
-		margin-bottom: $golden +rem;
+		margin-bottom: $ratio +rem;
 	}

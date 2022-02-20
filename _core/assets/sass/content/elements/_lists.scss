@@ -39,7 +39,7 @@ ol {
 	}
 
 	ol li + li {
-		margin-top: $golden +em;
+		margin-top: $ratio +em;
 
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 			margin-top: 1em;
@@ -70,7 +70,7 @@ dt {
 
 dd {
 	margin-left: 0;
-	margin-bottom: $golden +em;
+	margin-bottom: $ratio +em;
 
 	p,
 	ul, ol {

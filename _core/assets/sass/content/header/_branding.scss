@@ -1,17 +1,17 @@
 /* FILE: content/header/_branding.scss */
 
 .site-branding {
-	font-size: $golden +em;
+	font-size: $ratio +em;
 }
 
 .site-title {
 	display: block;
-	margin-bottom: $golden_major +em;
+	margin-bottom: $ratio_maj +em;
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 		display: inline;
 		margin: 0;
-		margin-left: $golden +em;
+		margin-left: $ratio +em;
 	}
 
 }

@@ -2,33 +2,40 @@
 
 // Font size
 
+	.has-xs-font-size,
 	.has-extra-small-font-size {
-		font-size: var(--typography_font_size_extra_small);
+		font-size: var(--typography_font_size_XS_em);
 	}
 
+	.has-s-font-size,
 	.has-small-font-size {
-		font-size: var(--typography_font_size_small);
+		font-size: var(--typography_font_size_S_em);
 	}
 
+	.has-m-font-size,
 	.has-regular-font-size,
 	.has-normal-font-size {
 		font-size: 1em;
 	}
 
+	.has-l-font-size,
 	.has-large-font-size {
-		font-size: var(--typography_font_size_large);
+		font-size: var(--typography_font_size_L_em);
 	}
 
+	.has-xl-font-size,
 	.has-extra-large-font-size {
-		font-size: var(--typography_font_size_extra_large);
+		font-size: var(--typography_font_size_XL_em);
 	}
 
+	.has-xxl-font-size,
 	.has-huge-font-size {
-		font-size: var(--typography_font_size_huge);
+		font-size: var(--typography_font_size_XXL_em);
 	}
 
+	.has-xxxl-font-size,
 	.has-gigantic-font-size {
-		font-size: var(--typography_font_size_gigantic);
+		font-size: var(--typography_font_size_XXXL_em);
 	}
 
 // Font style
@@ -56,17 +63,20 @@
 		line-height: 1;
 	}
 
+	.has-xs-line-height,
 	.has-extra-small-line-height {
-		line-height: ( 1 + $golden_minor / 2 );
+		line-height: ( 1 + $ratio_min / 2 );
 	}
 
+	.has-s-line-height,
 	.has-small-line-height {
-		line-height: ( 1 + $golden_minor );
+		line-height: ( 1 + $ratio_min );
 	}
 
+	.has-m-line-height,
 	.has-regular-line-height,
 	.has-medium-line-height {
-		line-height: $golden;
+		line-height: var(--typography_line_height);
 	}
 
 // Text transform

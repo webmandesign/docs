@@ -1,0 +1,12 @@
+:root {
+
+	// Unit is required in `calc()`.
+	// A non-zero value is required for minification process not to strip the unit.
+	--zero: 0.001px;
+
+}
+
+@import '_colors';
+@import '_typography';
+@import '_box-model';
+@import '_others';

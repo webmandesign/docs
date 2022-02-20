@@ -5,7 +5,7 @@ blockquote {
 	padding: 0;
 	margin-left: 0;
 	margin-right: 0;
-	font-family: var(--typography_font_alt);
+	font-family: var(--typography_font_tertiary);
 	font-size: 1.25em;
 	font-style: italic;
 	color: var(--color_body_headings);
@@ -16,13 +16,13 @@ blockquote {
 	}
 
 	cite {
-		font-size: var(--typography_font_size_small);
+		font-size: var(--typography_font_size_S_em);
 		font-weight: 400;
 	}
 
 		> cite {
 			display: block;
-			margin-top: $golden_major +rem;
+			margin-top: $ratio_maj +rem;
 		}
 
 	blockquote {
@@ -30,13 +30,13 @@ blockquote {
 	}
 
 	p {
-		margin-bottom: $golden_major +rem;
+		margin-bottom: $ratio_maj +rem;
 	}
 
 }
 
 cite {
-	font-family: var(--typography_font_global);
+	font-family: var(--typography_font_primary);
 	font-style: normal;
 
 	&::before {

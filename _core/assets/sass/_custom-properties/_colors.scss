@@ -1,0 +1,37 @@
+/* FILE: _custom-properties/_colors.scss */
+
+:root {
+
+	--color_header_background: #f1f1f1;
+	--color_header_text: #000;
+	--color_header_border: transparent;
+
+	--color_nav_background: #222;
+	--color_nav_text: #fff;
+	--color_nav_background_active: #fbce2f;
+	--color_nav_text_active: #000;
+	--color_nav_border: #{ rgba( #fff, var(--border_opacity) ) };
+
+	--color_content_background: #fff;
+	--color_content_text: #111;
+	--color_content_headings: #000;
+	--color_content_border: #{ rgba( #111, var(--border_opacity) ) };
+
+	--color_intro_background: #fbce2f;
+	--color_intro_text: #000;
+
+	--color_footer_background: #f1f1f1;
+	--color_footer_text: #000;
+	--color_footer_border: transparent;
+
+	--color_brand: #fbce2f;
+	--color_accent: #4134ae;
+	--color_button_background: #fbce2f;
+	--color_button_text: #000;
+	--color_mark: #{ rgba( #fbce2f, .33 ) };
+
+	@each $color, $value in $colors {
+		--color_palette_#{ $color }: #{ $value };
+	}
+
+}

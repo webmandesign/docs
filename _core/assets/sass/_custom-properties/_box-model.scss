@@ -1,0 +1,33 @@
+/* FILE: _custom-properties/_box-model.scss */
+
+:root {
+
+	// White spaces.
+
+		--content_padding: 4vw;
+
+		--white_space: 80px;
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			--white_space: 100px;
+		}
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			--white_space: 120px;
+		}
+
+	// Widths & heights.
+
+		--content_width: 36rem;
+
+		--menu_width: 25%;
+		@include media( map_get( $breakpoint, 'xl' ) ) {
+			--menu_width: 33.33%;
+		}
+		@include media( map_get( $breakpoint, 'xxl' ) ) {
+			--menu_width: 38%;
+		}
+
+	// Others.
+
+		--border_radius: .2rem;
+
+}

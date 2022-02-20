@@ -21,7 +21,7 @@
 // Has background
 
 	[class*="-background-color"] {
-		padding: $golden +rem;
+		padding: $ratio +rem;
 
 		@include media( ( map_get( $breakpoint, 'm' ), 'max-width' ) ) {
 			padding-left: 6vw;

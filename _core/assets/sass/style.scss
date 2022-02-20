@@ -1,8 +1,6 @@
-@import 'tools/_index';
-@import 'setup/_index';
-
-@import 'custom-properties';
+@import '_tools/_index';
+@import '_setup/_index';
+@import '_custom-properties/_index';
+@import '_extend/_index';
 
 @import 'content/_index';
-
-@import 'extend';
