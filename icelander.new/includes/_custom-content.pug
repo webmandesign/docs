@@ -1,0 +1,60 @@
+extends ../../_core/_index.pug
+
+//-
+	Use this special block to create custom content sections.
+	Check for `article` value to display correct custom content then.
+//- block content/article
+
+//-
+	Section have predefined `{section}` and `{section}/about` content blocks.
+	These content blocks contain entire and basic about contents for the section.
+	You can either completely overwrite them, or prepend/append to them.
+	@link  https://pugjs.org/language/inheritance.html
+
+//- block append customizer/about
+block append editor
+	include editor-spacer-min-height.pug
+block prepend pages
+	include page-content.pug
+block append pages
+	include page-intro.pug
+block append posts
+	include post-toc.pug
+	include post-blog-styles.pug
+
+//-
+	Some additional partial content blocks for more flexibility:
+
+block append styles
+	include style.css
+//- block scripts
+block pages/templates/list
+	include template-blank.pug
+	include template-intro-widgets.pug
+	include template-no-intro.pug
+	include template-with-sidebar.pug
+	include template-list-child-pages.pug
+	include template-project-layout.pug
+//- block plugins/recommended/list
+block plugins/recommended/list/item
+	case id
+		when 'advanced-custom-fields' : include plugin-advanced-custom-fields.pug
+//- block append plugins/others/list
+block menu/list
+	include menu-primary.pug
+	include menu-social.pug
+block sidebars/list
+	include sidebars-footer.pug
+	include sidebars-shop.pug
+	include sidebars-product.pug
+block append faq/questions/list
+	include faq-question-breadcrumbs.pug
+	include faq-question-font.pug
+	include faq-question-icons.pug
+	include faq-question-custom-fields.pug
+block append faq/answers/list
+	include faq-answer-breadcrumbs.pug
+	include faq-answer-font.pug
+	include faq-answer-icons.pug
+	include faq-answer-custom-fields.pug
+//- block faq/answers/list/item

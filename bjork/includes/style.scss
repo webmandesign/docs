@@ -1,0 +1,20 @@
+:root {
+
+	--color_accent: #122e98;
+	--color_mark: #{ rgba( #122e98, .1 ) };
+	--color_button_background: #122e98;
+	--color_button_text: #fff;
+
+	--color_header_background: #fff;
+	--color_header_text: #131316;
+
+	--color_nav_background: #131316;
+	--color_nav_text: #fff;
+	--color_nav_border: #{ rgba( #fff, var(--border_opacity) ) };
+
+	--color_content_background: #fff;
+	--color_content_headings: #131316;
+	--color_content_text: #434346;
+	--color_content_border: #{ rgba( #434346, var(--border_opacity) ) };
+
+}
