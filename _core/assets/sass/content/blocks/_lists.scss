@@ -39,16 +39,17 @@
 
 	}
 
-	&-questions {
+	&-questions,
+	&-topics {
 		@extend %shaded_background;
 		position: relative;
 		padding: 2em 1em;
+		padding-left: 2em;
 		margin: 0;
-		list-style-position: inside;
 		border-radius: var(--border_radius);
 
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			padding-left: 2em;
+			padding-left: 3em;
 			padding-right: 2em;
 		}
 
@@ -56,6 +57,30 @@
 			margin-top: calc( var(--white_space) * -1 );
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
+		}
+
+	}
+
+	&-topics {
+		list-style: upper-roman;
+
+		li {
+			padding-left: .5em;
+		}
+
+		~ h3 {
+			display: list-item;
+			// padding-bottom: $ratio +rem;
+			// border-bottom-width: 1px;
+			// border-bottom-style: solid;
+			font-weight: 400;
+			list-style: upper-roman;
+		}
+
+		li::marker,
+		~ h3::marker {
+			font-family: Georgia, serif;
+			font-size: .8rem;
 		}
 
 	}

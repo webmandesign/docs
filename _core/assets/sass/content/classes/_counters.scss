@@ -1,0 +1,13 @@
+/* FILE: content/classes/_counters.scss */
+
+.counter {
+
+	&-reset-numbers {
+		counter-reset: numbers;
+	}
+
+	&-increment-numbers {
+		counter-increment: numbers;
+	}
+
+}

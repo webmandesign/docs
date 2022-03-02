@@ -1,0 +1,69 @@
+/* FILE: content/blocks/_details.scss */
+
+details {
+	transition: padding .3s;
+
+	+ details {
+		border-top-width: 1px;
+		border-top-style: solid;
+	}
+
+	summary::after {
+		content: '⁝';
+	}
+
+	&[open] {
+		padding-top: 1em;
+		padding-bottom: 2em;
+
+		summary {
+			margin-bottom: 1em;
+			font-weight: 700;
+
+			&::after {
+				transform: rotate(90deg);
+			}
+
+		}
+
+	}
+
+	p {
+		margin: 0 1em $ratio_maj +em;
+	}
+
+}
+
+summary {
+	display: flex;
+	align-items: center;
+	padding: 1em;
+	color: var(--color_content_headings);
+	cursor: pointer;
+	transition: margin .3s;
+
+	&::after {
+		display: inline-block;
+		margin-left: auto;
+		font-size: 1.25em;
+		font-weight: 700;
+		text-align: center;
+		opacity: .5;
+		speak: none;
+		transition: transform .3s;
+	}
+
+	.counter-increment-numbers &::before {
+		content: counter(numbers);
+		display: inline-block;
+		width: 2em;
+		margin-right: $ratio_maj +em;
+		text-align: center;
+		font-weight: 700;
+		line-height: 2;
+		border-radius: 3px;
+		background: #fe0000;
+		color: #fff;
+	}
+
+}
