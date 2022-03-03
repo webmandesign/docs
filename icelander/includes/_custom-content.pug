@@ -3,7 +3,8 @@ extends ../../_core/_index.pug
 //-
 	Use this special block to create custom content sections.
 	Check for `article` value to display correct custom content then.
-//- block content/article
+block content/article
+	include cpt-wmamp.pug
 
 //-
 	Section have predefined `{section}` and `{section}/about` content blocks.
@@ -11,16 +12,11 @@ extends ../../_core/_index.pug
 	You can either completely overwrite them, or prepend/append to them.
 	@link  https://pugjs.org/language/inheritance.html
 
-//- block append customizer/about
-block append editor
-	include editor-spacer-min-height.pug
-block prepend pages
-	include page-content.pug
-block append pages
-	include page-intro.pug
-block append posts
-	include post-toc.pug
-	include post-blog-styles.pug
+block append styles
+	include style.css
+block append scripts
+	include script.js
+
 block append anatomy
 	include anatomy.pug
 	include anatomy-basics.pug
@@ -30,31 +26,28 @@ block append anatomy
 	include anatomy-cpt.pug
 	include anatomy-shop.pug
 
-//-
-	Some additional partial content blocks for more flexibility:
+block append editor
+	include editor-spacer-min-height.pug
 
-block append styles
-	include style.css
-//- block scripts
+block prepend pages
+	include page-content.pug
+block append pages
+	include page-intro.pug
 block pages/templates/list
-	include template-blank.pug
-	include template-intro-widgets.pug
-	include template-no-intro.pug
-	include template-with-sidebar.pug
-	include template-list-child-pages.pug
-	include template-project-layout.pug
-//- block plugins/recommended/list
-block plugins/recommended/list/item
-	case id
-		when 'advanced-custom-fields' : include plugin-advanced-custom-fields.pug
-//- block append plugins/others/list
+	include templates.pug
+
+block append posts
+	include post-toc.pug
+	include post-blog-styles.pug
+
 block menu/list
-	include menu-primary.pug
-	include menu-social.pug
+	include menus.pug
+
 block sidebars/list
-	include sidebars-footer.pug
-	include sidebars-shop.pug
-	include sidebars-product.pug
+	include sidebars.pug
+block append sidebars
+	include widgets.pug
+
 block append faq/questions/list
 	include faq-question-breadcrumbs.pug
 	include faq-question-font.pug
@@ -65,4 +58,7 @@ block append faq/answers/list
 	include faq-answer-font.pug
 	include faq-answer-icons.pug
 	include faq-answer-custom-fields.pug
-//- block faq/answers/list/item
+
+block plugins/recommended/list/item
+	case id
+		when 'advanced-custom-fields' : include plugin-advanced-custom-fields.pug

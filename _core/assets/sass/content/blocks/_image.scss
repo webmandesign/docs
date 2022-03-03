@@ -72,3 +72,15 @@ img {
 	height: auto;
 	font-style: italic;
 }
+
+map {
+	@extend %screen_reader_hiding;
+}
+
+area {
+
+	&:focus {
+		outline: 3px solid var(--color_accent);
+	}
+
+}

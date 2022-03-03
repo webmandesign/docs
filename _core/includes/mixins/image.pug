@@ -1,6 +1,22 @@
-mixin image( url, caption )
+mixin image( url, caption, attr )
+	- url = url.replace( 'http:', 'https:' )
+	if -1 < url.indexOf( 'dropbox' )
+		- url = url.replace( 'www.dropbox.com', 'dl.dropboxusercontent.com' )
 	figure
 		a( href=url title="Click to open large image" )
-			img( src=url alt=caption )
+			img( src=url alt=caption attr )
+			block
+		if caption
+			figcaption= caption
+
+mixin map( url, caption )
+	- url = url.replace( 'http:', 'https:' )
+	- index.map++
+	if -1 < url.indexOf( 'dropbox' )
+		- url = url.replace( 'www.dropbox.com', 'dl.dropboxusercontent.com' )
+	figure.image-map
+		img( src=url alt=caption usemap="#image-map-"+index.map )
+		map( name="image-map-"+index.map )
+			block
 		if caption
 			figcaption= caption

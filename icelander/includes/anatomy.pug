@@ -11,3 +11,15 @@ ol#anatomy-topics.list-topics
 		a( href="#anatomy-cpt" ) <strong>Custom post</strong> types
 	li
 		a( href="#anatomy-shop" ) <strong>Shop</strong> content
+
+mixin back_to( target = 'topics', href )
+	if -1 == href.indexOf( '#' )
+		- href = '#'+href
+	if 'topics' === target
+		p
+			br
+			a( href=href ) &uarr; Back to topics list
+	else if 'image' === target
+		p
+			small
+				a( href=href ) &uarr; Back to image
