@@ -32,8 +32,6 @@ block demo/starter_content
 block append editor
 	include editor-spacer-min-height.pug
 
-block prepend pages
-	include page-content.pug
 block append pages
 	include page-intro.pug
 block pages/templates/list
@@ -61,6 +59,8 @@ block append faq/answers/list
 	include faq-answer-font.pug
 	include faq-answer-icons.pug
 	include faq-answer-custom-fields.pug
+block faq/answer/page-builder
+	include faq-answer-page-builder.pug
 
 block accessibility/headings/site_title
 	include accessibility-site-title.pug

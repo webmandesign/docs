@@ -1,7 +1,1 @@
 [ ] https://webmandesign.github.io/docs/monument-valley/#anatomy
-[ ] https://webmandesign.github.io/docs/monument-valley/#plugins
-[ ] https://webmandesign.github.io/docs/monument-valley/#page-intro
-[ ] https://webmandesign.github.io/docs/monument-valley/#page-templates
-[ ] https://webmandesign.github.io/docs/monument-valley/#navigation
-[ ] https://webmandesign.github.io/docs/monument-valley/#widgets
-[ ] https://webmandesign.github.io/docs/monument-valley/#tips
