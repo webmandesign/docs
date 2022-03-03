@@ -1,0 +1,20 @@
+:root {
+
+	--color_accent: #9d693f;
+	--color_mark: #{ rgba( #9d693f, .1 ) };
+	--color_button_background: #9d693f;
+	--color_button_text: #fff;
+
+	--color_header_background: #232323;
+	--color_header_text: #e3e3e3;
+
+	--color_nav_background: #232323;
+	--color_nav_text: #e3e3e3;
+	--color_nav_border: #{ rgba( #e3e3e3, var(--border_opacity) ) };
+
+	--color_content_background: #fcfcfc;
+	--color_content_headings: #131313;
+	--color_content_text: #737373;
+	--color_content_border: #{ rgba( #737373, var(--border_opacity) ) };
+
+}

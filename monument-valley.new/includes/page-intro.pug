@@ -1,0 +1,30 @@
++sub_section( 'Page Intro Section', 'page-intro' )
+	p Page intro is basically a main title area of the page, post or archive page. By default it displays <strong>intro image</strong> (and video), <strong>page title</strong> and <strong>page excerpt</strong>:
+
+	dl.list-default
+		dt Page excerpt
+		dd
+			p <strong>Page Excerpt</strong> content depends on the page you are on.<br>
+
+			p If it is an actual WordPress Page or Post or any custom post type, you can set the <em>"Excerpt"</em> field.
+
+			p
+				| On taxonomy archive pages it displays the taxonomy (such as post category or tag) term description which you can set for any/all taxonomy terms in WordPress.<br>
+				| If you want to display some description text for the custom post type archive pages too, you need to <a href="https://wordpress.org/plugins/post-type-archive-descriptions/">use a plugin for that</a>.
+
+		dt Image and Video
+		dd
+			p <strong>Intro image</strong> is taken from your website header images that can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Header Media' )]. That image can be overridden then by setting up a post/page featured image, which can be again overridden by setting up a dedicated <a href="#custom-fields"><code>intro_image</code> custom field</a>.
+
+			p On single pages and posts the image is not displayed by default, unless you set a page featured image (or aforementioned custom field).
+
+			p On <strong>front page of your website</strong> the intro section has a different, special layout with image (or video) background overlayed with a page title and excerpt.
+
+			p If you are using <a href="#woocommerce">WooCommerce plugin</a>, intro image is not displayed on single product pages even if you set a product featured image. If you really need to display an intro image there, use aforementioned custom field for that.
+
+	p If you would like to remove the intro section (to set up your own with a page builder, for example), use <a href="#page-templates">"<strong>No intro</strong>" page template</a> (or set up the <a href="#custom-fields">specific custom field</a>).
+
+	p Colors of intro section can be customized in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Colors: Intro' )].
+
+	+tip( 'Intro Widgets', 'h4' )
+		p You can additionally display widgets in the intro section. Just add them into <a href="#sidebars">Intro Widgets area</a> and set <a href="#page-templates">"With intro widgets" page template</a> for the page/post.

@@ -26,6 +26,9 @@ block append anatomy
 	include anatomy-cpt.pug
 	include anatomy-shop.pug
 
+block demo/starter_content
+	//- Empty as this theme does not contain starter content.
+
 block append editor
 	include editor-spacer-min-height.pug
 
@@ -58,8 +61,6 @@ block append faq/answers/list
 	include faq-answer-font.pug
 	include faq-answer-icons.pug
 	include faq-answer-custom-fields.pug
-block faq/answer/page-builder
-	include faq-answer-page-builder.pug
 
 block accessibility/headings/site_title
 	include accessibility-site-title.pug
