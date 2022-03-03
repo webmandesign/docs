@@ -59,6 +59,9 @@ block append faq/answers/list
 	include faq-answer-icons.pug
 	include faq-answer-custom-fields.pug
 
+block accessibility/headings/site_title
+	include accessibility-site-title.pug
+
 block plugins/recommended/list/item
 	case id
 		when 'advanced-custom-fields' : include plugin-advanced-custom-fields.pug
