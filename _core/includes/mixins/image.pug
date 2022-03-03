@@ -18,5 +18,7 @@ mixin map( url, caption )
 		img( src=url alt=caption usemap="#image-map-"+index.map )
 		map( name="image-map-"+index.map )
 			block
-		if caption
-			figcaption= caption
+		figcaption= caption
+			br
+			small
+				a( href=url ) (Enlarge the image)

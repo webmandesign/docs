@@ -4,22 +4,23 @@ h3#anatomy-archives.counter-reset-numbers <strong>Blog</strong>, archives, searc
 - var index = 0;
 
 // http://www.image-map.net/
-+map( 'https://www.dropbox.com/s/gkkkiije1k009yf/blog-archives-search-results.jpg', 'Theme anatomy: Blog, archives, search results' )
-	area( href="#"+topic_href+"-1" coords="3,1,124,120"      title="1. Blog page" )
-	area( href="#"+topic_href+"-2" coords="129,116,389,209"  title="2. Archive page title" )
-	area( href="#"+topic_href+"-3" coords="150,269,457,420"  title="3. Featured media" )
-	area( href="#"+topic_href+"-4" coords="57,403,461,465"   title="4. Post title and subtitle" )
-	area( href="#"+topic_href+"-5" coords="61,468,241,539"   title="5. Post meta" )
-	area( href="#"+topic_href+"-6" coords="256,467,467,544"  title="6. Post excerpt" )
-	area( href="#"+topic_href+"-7" coords="480,246,709,660"  title="7. Sidebar" )
-	area( href="#"+topic_href+"-8" coords="805,222,1593,809" title="8. Search results" )
-	area( href="#"+topic_href+"-2" coords="928,113,1209,212" title="2. Archive page title" )
++map( 'https://www.dropbox.com/s/z0k7n2142uxew52/archives.jpg', 'Theme anatomy: Blog, archives, search results' )
+	area( href="#"+topic_href+"-1" coords="4,4,262,85"       title="1. Blog page" )
+	area( href="#"+topic_href+"-2" coords="29,189,372,97"    title="2. Archive page title" )
+	area( href="#"+topic_href+"-3" coords="80,233,347,353"   title="3. Featured media" )
+	area( href="#"+topic_href+"-4" coords="102,397,346,356"  title="4. Post title and subtitle" )
+	area( href="#"+topic_href+"-5" coords="344,422,122,399"  title="5. Post meta" )
+	area( href="#"+topic_href+"-6" coords="70,423,345,478"   title="6. Post excerpt" )
+	area( href="#"+topic_href+"-7" coords="961,169,1154,576" title="7. Sidebar" )
+	area( href="#"+topic_href+"-8" coords="691,170,954,584"  title="8. Search results" )
+	area( href="#"+topic_href+"-2" coords="628,63,1009,152"  title="2. Archive page title" )
+	area( href="#"+topic_href+"-7" coords="356,222,541,794"  title="7. Sidebar" )
 
 p <small>(Click the item below to reveal more info. Click the image to preview a bigger size.)</small>
 
 +details( 'Blog page', topic_href+'-'+(++index) )
-	p By default <a href="#wordpress">WordPress</a> displays blog posts listing on your website homepage. If you would like to set up a static homepage and use a different page for a blog posts listing, set it up in <a href="#pages">[+mark( 'Appearance', 'Customize', 'Static Front Page' )]</a> settings (or in #[+mark( 'nav', 'Settings', 'Reading' )]).
-	p The style of blog and archive page posts listing can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Blog' )].
+	p By default <a href="#wordpress">WordPress</a> displays blog posts listing on your website homepage. If you would like to set up a static homepage and use a different page for a blog posts listing, set it up in <a href="#pages">#[+mark( 'nav', 'Appearance', 'Customize', 'Static Front Page' )]</a> settings (or in #[+mark( 'nav', 'Settings', 'Reading' )]).
+	p The style (layout) of blog and archive page posts listing can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Blog' )].
 	+back_to( 'image', topic_href )
 
 +details( 'Archive page title', topic_href+'-'+(++index) )
@@ -29,11 +30,12 @@ p <small>(Click the item below to reveal more info. Click the image to preview a
 
 +details( 'Featured media', topic_href+'-'+(++index) )
 	p By default all posts display a post featured image.
+	p However, as the theme supports different <a href="#posts-formats">post formats</a>, the displayed featured media can differ depending on what post format is set for the post in posts listings (such as on blog page, archive pages or search results page).
 	p Please see FAQ section for more <a href="#image-sizes">information on image sizes</a>.
 	+back_to( 'image', topic_href )
 
 +details( 'Post title and subtitle', topic_href+'-'+(++index) )
-	p Title of the post.
+	p Title of the post. Note that some <a href="#posts-formats">post formats</a> don't display a post title.
 	p If you would like to display subtitles, use <a href="https://wordpress.org/plugins/wp-subtitle/"><strong>WP Subtitle</strong> plugin</a>.
 	+back_to( 'image', topic_href )
 
@@ -42,17 +44,18 @@ p <small>(Click the item below to reveal more info. Click the image to preview a
 	+back_to( 'image', topic_href )
 
 +details( 'Post excerpt', topic_href+'-'+(++index) )
-	p Automatic WordPress <a href="#posts">post excerpt</a> can be overridden per post basis.
+	p Automatic WordPress <a href="#posts">post excerpt</a> can be overrode per post basis.
+	p The excerpt display may differ depending on what <a href="#posts-formats">post format</a> you are using.
 	+back_to( 'image', topic_href )
 
 +details( 'Sidebar', topic_href+'-'+(++index) )
 	p The theme displays sidebar on each single post page, single custom post type page, blog page, archive page and search results page.
-	p Sidebar is a <a href="#sidebars">widgetized area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
+	p Sidebar is a <a href="#sidebars">widget area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
 	p If you would like to replace sidebar on a specific page with a different one or just remove it, use <a href="#manage-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.
 	+back_to( 'image', topic_href )
 
 +details( 'Search results', topic_href+'-'+(++index) )
-	p This page has a special layout, different from post archive pages (depending on the blog style you have chosen, actually), to allow for easier scanning.
+	p This page has a special layout, different from post archive pages, to allow easier scanning.
 	p In case you need to refine your search, there is a search form conveniently displayed on top of search results listing.
 	p Each post type displays differently in search results page.
 	+back_to( 'image', topic_href )

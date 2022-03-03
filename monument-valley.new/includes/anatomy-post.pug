@@ -4,29 +4,30 @@ h3#anatomy-post.counter-reset-numbers <strong>Post</strong> content
 - var index = 0;
 
 // http://www.image-map.net/
-+map( 'https://www.dropbox.com/s/tcruadwy95i8gkj/post-content.jpg', 'Theme anatomy: Post content' )
-	area( href="#"+topic_href+"-1"  coords="10,126,1055,431"     title="1. Featured image" )
-	area( href="#"+topic_href+"-2"  coords="78,434,525,556"      title="2. Post title and subtitle" )
-	area( href="#"+topic_href+"-2"  coords="1066,64,1305,115"    title="2. Post title and subtitle" )
-	area( href="#"+topic_href+"-3"  coords="601,431,984,561"     title="3. Post excerpt" )
-	area( href="#"+topic_href+"-3"  coords="1360,64,1591,126"    title="3. Post excerpt" )
-	area( href="#"+topic_href+"-4"  coords="101,595,368,669"     title="4. Post meta" )
-	area( href="#"+topic_href+"-4"  coords="1188,170,1438,126"   title="4. Post meta" )
-	area( href="#"+topic_href+"-5"  coords="615,935,193,669"     title="5. Post content" )
-	area( href="#"+topic_href+"-6"  coords="615,1086,190,940"    title="6. Table of contents" )
-	area( href="#"+topic_href+"-7"  coords="608,1193,190,1093"   title="7. Sharing buttons" )
-	area( href="#"+topic_href+"-8"  coords="184,1218,589,1800"   title="8. Comments" )
-	area( href="#"+topic_href+"-8"  coords="1068,1090,1596,1251" title="8. Comments" )
-	area( href="#"+topic_href+"-9"  coords="10,1828,1056,1940"   title="9. Posts navigation" )
-	area( href="#"+topic_href+"-9"  coords="1066,1336,1596,1250" title="9. Posts navigation" )
-	area( href="#"+topic_href+"-10" coords="1072,182,1596,1082"  title="10. Page builder" )
-	area( href="#"+topic_href+"-11" coords="635,597,949,1174"    title="11. Sidebar" )
++map( 'https://www.dropbox.com/s/6pqxhj511bb0q8w/post-content.jpg', 'Theme anatomy: Post content' )
+	area( href="#"+topic_href+"-1"  coords="470,51,767,395"     title="1. Featured image" )
+	area( href="#"+topic_href+"-2"  coords="63,184,460,280"     title="2. Post title and subtitle" )
+	area( href="#"+topic_href+"-3"  coords="64,337,461,279"     title="3. Post excerpt" )
+	area( href="#"+topic_href+"-4"  coords="77,438,217,617"     title="4. Post meta" )
+	area( href="#"+topic_href+"-5"  coords="470,448,220,703"    title="5. Post content" )
+	area( href="#"+topic_href+"-6"  coords="221,706,462,789"    title="6. Table of contents" )
+	area( href="#"+topic_href+"-7"  coords="152,793,474,842"    title="7. Sharing buttons" )
+	area( href="#"+topic_href+"-8"  coords="147,856,486,1298"   title="8. Comments" )
+	area( href="#"+topic_href+"-9"  coords="15,1335,794,1401"   title="9. Posts navigation" )
+	area( href="#"+topic_href+"-10" coords="805,234,1196,1110"  title="10. Page builder" )
+	area( href="#"+topic_href+"-1"  coords="1024,27,1190,217"   title="1. Featured image" )
+	area( href="#"+topic_href+"-2"  coords="799,72,1016,145"    title="2. Post title and subtitle" )
+	area( href="#"+topic_href+"-3"  coords="805,146,1022,180"   title="3. Post excerpt" )
+	area( href="#"+topic_href+"-4"  coords="809,1132,1196,1209" title="4. Post meta" )
+	area( href="#"+topic_href+"-7"  coords="1023,225,869,184"   title="7. Sharing buttons" )
+	area( href="#"+topic_href+"-8"  coords="812,1214,1194,1403" title="8. Comments" )
+	area( href="#"+topic_href+"-9"  coords="804,1408,1196,1460" title="9. Posts navigation" )
 
 p <small>(Click the item below to reveal more info. Click the image to preview a bigger size.)</small>
 
 +details( 'Featured image', topic_href+'-'+(++index) )
 	p It is recommended to <a href="https://codex.wordpress.org/Post_Thumbnails#Setting_a_Post_Thumbnail">set up a post featured image</a> for each post.
-	p A featured image is displayed in posts listing and also in <a href="#page-intro">intro section</a> on a single post page.
+	p A featured image is displayed in posts listing and also as a background of intro section on a single post page.
 	p Please see FAQ section for more <a href="#image-sizes">information on image sizes</a>.
 	+back_to( 'image', topic_href )
 
@@ -45,7 +46,7 @@ p <small>(Click the item below to reveal more info. Click the image to preview a
 	+back_to( 'image', topic_href )
 
 +details( 'Post content', topic_href+'-'+(++index) )
-	p A post content, optimized for readability. You can <a href="#formats">use "Formats" button</a> for some special styles.
+	p A post content, optimized for readability.
 	p You can also use a <a href="#beaver-builder">page builder</a> to create some interesting post layouts.
 	+back_to( 'image', topic_href )
 
@@ -55,6 +56,8 @@ p <small>(Click the item below to reveal more info. Click the image to preview a
 
 +details( 'Sharing buttons', topic_href+'-'+(++index) )
 	p To enable post, custom post and/or WooCommerce products sharing buttons (can be previewed on the <a href="https://themedemos.webmandesign.eu/monument-valley/">theme demo website</a>), please use <a href="#jetpack"><strong>Jetpack</strong></a> plugin's <a href="https://jetpack.com/support/sharing/">sharing module</a>.
+	p You can also add a "Print this" button as the theme contains a special stylesheet for printing.
+	p Sharing buttons are displayed at the bottom of the post content (if you don't use <a href="#beaver-builder">page builder</a> on the post) and in post intro section.
 	+back_to( 'image', topic_href )
 
 +details( 'Comments', topic_href+'-'+(++index) )
@@ -63,18 +66,12 @@ p <small>(Click the item below to reveal more info. Click the image to preview a
 	+back_to( 'image', topic_href )
 
 +details( 'Posts navigation', topic_href+'-'+(++index) )
-	p Displays links to previous and next post.
+	p Displays links to previous and next post. Inherits colors of Footer area.
 	+back_to( 'image', topic_href )
 
 +details( 'Page builder', topic_href+'-'+(++index) )
 	p For creating a more interesting, complex post layouts please use a (<a href="#any-page-builder">any</a>) page builder plugin (we recommend using powerful, optimized and easy to use <a href="#beaver-builder"><strong>Beaver Builder</strong> page builder plugin</a>).
 	p Please note that you will probably need to <strong>enable the page builder for WordPress posts</strong> first! (For Beaver Builder go to #[+mark( 'nav', 'Settings', 'Page Builder', 'Post Types' )].)
-	+back_to( 'image', topic_href )
-
-+details( 'Sidebar', topic_href+'-'+(++index) )
-	p The theme displays sidebar on each single post page, blog page and archive page.
-	p Sidebar is a <a href="#sidebars">widgetized area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
-	p If you would like to replace sidebar on a specific post with a different one <strong>or just remove it</strong>, use <a href="#manage-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.
 	+back_to( 'image', topic_href )
 
 +details( 'Content options', topic_href+'-'+(++index) )

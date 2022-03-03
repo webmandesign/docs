@@ -6,56 +6,69 @@ h3#anatomy-cpt.counter-reset-numbers <strong>Custom post</strong> types
 p You need <a href="#webman-amplifier"><strong>WebMan Amplifier</strong> plugin</a> to enable this functionality.
 
 // http://www.image-map.net/
-+map( 'https://www.dropbox.com/s/im5dq91t906ogwr/custom-post-types.jpg', 'Theme anatomy: Custom post types' )
-	area( href="#"+topic_href+"-1"  coords="6,3,788,435"        title="1. Archive pages" )
-	area( href="#"+topic_href+"-2"  coords="43,444,644,528"     title="2. Taxonomy filters" )
-	area( href="#"+topic_href+"-3"  coords="152,534,304,718"    title="3. Post featured image" )
-	area( href="#"+topic_href+"-3"  coords="803,90,1598,200"    title="3. Post featured image" )
-	area( href="#"+topic_href+"-4"  coords="66,716,319,780"     title="4. Post title" )
-	area( href="#"+topic_href+"-4"  coords="829,298,1175,196"   title="4. Post title" )
-	area( href="#"+topic_href+"-5"  coords="1251,200,1548,309"  title="5. Post excerpt" )
-	area( href="#"+topic_href+"-6"  coords="932,331,1278,724"   title="6. Post content" )
-	area( href="#"+topic_href+"-6"  coords="928,957,1465,1184"  title="6. Post content" )
-	area( href="#"+topic_href+"-7"  coords="808,1682,1593,2443" title="7. Page builder" )
-	area( href="#"+topic_href+"-8"  coords="842,1187,1153,1266" title="8. Sharing buttons" )
-	area( href="#"+topic_href+"-9"  coords="795,1288,1593,1392" title="9. Posts navigation" )
-	area( href="#"+topic_href+"-10" coords="1283,331,1537,719"  title="10. Sidebar" )
++map( 'https://www.dropbox.com/s/k4roibifodvmxxx/custom-post-types.jpg', 'Theme anatomy: Custom post types' )
+	area( href="#"+topic_href+"-1"  coords="513,3,662,367"     title="1. Projects and Staff archives" )
+	area( href="#"+topic_href+"-2"  coords="94,109,227,176"    title="2. Post featured image" )
+	area( href="#"+topic_href+"-3"  coords="73,170,229,206"    title="3. Post title" )
+	area( href="#"+topic_href+"-4"  coords="75,266,228,209"    title="4. Post excerpt" )
+	area( href="#"+topic_href+"-5"  coords="72,321,237,269"    title="5. Taxonomies" )
+	area( href="#"+topic_href+"-6"  coords="511,384,691,1041"  title="6. Project and Staff single post page" )
+	area( href="#"+topic_href+"-7"  coords="104,715,356,932"   title="7. Post content" )
+	area( href="#"+topic_href+"-8"  coords="364,711,504,986"   title="8. Sidebar" )
+	area( href="#"+topic_href+"-9"  coords="699,417,1186,972"  title="9. Page builder" )
+	area( href="#"+topic_href+"-10" coords="99,976,351,939"    title="10. Sharing buttons" )
+	area( href="#"+topic_href+"-11" coords="8,990,508,1045"    title="11. Posts navigation" )
+	area( href="#"+topic_href+"-2"  coords="669,99,832,169"    title="2. Post featured image" )
+	area( href="#"+topic_href+"-3"  coords="668,174,831,206"   title="3. Post title" )
+	area( href="#"+topic_href+"-3"  coords="45,517,318,590"    title="3. Post title" )
+	area( href="#"+topic_href+"-4"  coords="322,637,46,591"    title="4. Post excerpt" )
+	area( href="#"+topic_href+"-5"  coords="831,249,670,209"   title="5. Taxonomies" )
+	area( href="#"+topic_href+"-11" coords="1187,977,694,1045" title="11. Posts navigation" )
+	area( href="#"+topic_href+"-10" coords="46,680,321,636"    title="10. Sharing buttons" )
 
 p <small>(Click the item below to reveal more info. Click the image to preview a bigger size.)</small>
 
-+details( 'Archive pages', topic_href+'-'+(++index) )
++details( 'Projects and Staff archives', topic_href+'-'+(++index) )
 	p The theme is compatible with <a href="#webman-amplifier"><strong>WebMan Amplifier</strong> plugin</a>, which allows you to use several different custom post types: <a href="#projects">Projects</a>, <a href="#staff">Staff</a>, <a href="#testimonials">Testimonials</a>, <a href="#content-modules">Content Modules</a>.
-	p While Content Modules is a helper post type with no archive page, the theme can display <a href="#projects">Projects</a>, <a href="#staff">Staff</a> and <a href="#testimonials">Testimonials</a> posts archive pages.
-	p Projects can be even <a href="#projects">displayed in different style</a>.
+	p While Content Modules is a helper post type with no archive page, the theme displays <a href="#projects">Projects</a> and <a href="#staff">Staff</a> (and <a href="#testimonials">Testimonials</a>) post archive pages in a special masonry layout, different from the blog posts listing.
 	p (Other post types can be added by a different plugins. If you want to sell products, please use <a href="#woocommerce"><strong>WooCommerce</strong> plugin</a>.)
 	+back_to( 'image', topic_href )
 
-+details( 'Taxonomy filters', topic_href+'-'+(++index) )
-	p <a href="#projects">Projects</a> and <a href="#staff">Staff</a> posts display a filter from their taxonomies on archive pages.
-	p A taxonomy can also display on specific posts in the custom post type posts list. This depends on the custom post type and on the taxonomies you have assigned to it (such as project category, project tags, staff department or specialty).
-	+back_to( 'image', topic_href )
-
 +details( 'Post featured image', topic_href+'-'+(++index) )
-	p It is displayed differently for each custom post type. We suggest to set them for each post.
-	p You can <a href="#custom-fields">disable it on single post page or use a custom one</a>.
+	p <a href="#projects">Project</a> or <a href="#staff">Staff</a> post featured image.
 	p Please see FAQ section for more <a href="#image-sizes">information on image sizes</a>.
 	+back_to( 'image', topic_href )
 
 +details( 'Post title', topic_href+'-'+(++index) )
-	p By default the Testimonial posts display their title as a cite source. You can override this by setting a custom source, though.
+	p <a href="#projects">Project</a> or <a href="#staff">Staff</a> post title.
 	p If you would like to display subtitles, use <a href="https://wordpress.org/plugins/wp-subtitle/"><strong>WP Subtitle</strong> plugin</a>.
 	+back_to( 'image', topic_href )
 
 +details( 'Post excerpt', topic_href+'-'+(++index) )
-	p Custom post excerpt is displayed in intro section on all custom post type single pages (except for <a href="#testimonials">Testimonials</a>).
+	p Custom post excerpt is displayed in intro section on all custom post type single pages.
 	p <a href="#staff">Staff</a> post excerpt is displayed also in posts listing, and if the Staff post contains some content, a "Nice to meet you!" button is displayed too. After clicking the button you get to single Staff post page.
 	p <a href="#projects">Project</a> post does not display excerpt in posts listing.
 	+back_to( 'image', topic_href )
 
++details( 'Taxonomies', topic_href+'-'+(++index) )
+	p <a href="#projects">Project</a> or <a href="#staff">Staff</a> post custom taxonomies.
+	p The display depends on the custom post type and on taxonomies you have assigned to it (such as project category, project tags, staff department or specialty).
+	+back_to( 'image', topic_href )
+
++details( 'Project and Staff single post page', topic_href+'-'+(++index) )
+	p Custom post type single page has a different layout than native WordPress pages or posts. There is a featured image displayed at the beginning of the post, that can be zoomed in (we recommend using <a href="#plugins-others"><strong>WP Featherlight</strong> plugin</a>).
+	p Intro section is displayed similarly to WordPress native posts.
+	+back_to( 'image', topic_href )
+
 +details( 'Post content', topic_href+'-'+(++index) )
-	p <a href="#projects">Project</a> or <a href="#staff">Staff</a> post content. You can <a href="#formats">use "Formats" button</a> for some special styles.
-	p With <a href="#projects">Project</a> post type you can also use a special <a href="#project-templates">"Project layout" post type template</a> to display the project content and media in a specific way.
+	p <a href="#projects">Project</a> or <a href="#staff">Staff</a> post content.
 	p You can also use a <a href="#beaver-builder">page builder</a> to create some interesting post layouts.
+	+back_to( 'image', topic_href )
+
++details( 'Sidebar', topic_href+'-'+(++index) )
+	p The theme displays sidebar on each single custom post type page and archive page.
+	p Sidebar is a <a href="#sidebars">widget area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
+	p If you would like to replace sidebar on a specific post with a different one or just remove it, use <a href="#manage-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.
 	+back_to( 'image', topic_href )
 
 +details( 'Page builder', topic_href+'-'+(++index) )
@@ -66,16 +79,11 @@ p <small>(Click the item below to reveal more info. Click the image to preview a
 
 +details( 'Sharing buttons', topic_href+'-'+(++index) )
 	p To enable custom post sharing buttons, please use <a href="#jetpack"><strong>Jetpack</strong></a> plugin's <a href="https://jetpack.com/support/sharing/">sharing module</a>.
+	p Sharing buttons are displayed at the bottom of the post content (if you don't use <a href="#beaver-builder">page builder</a> on the post) and in post intro section.
 	+back_to( 'image', topic_href )
 
 +details( 'Posts navigation', topic_href+'-'+(++index) )
-	p Displays links to previous and next post.
-	+back_to( 'image', topic_href )
-
-+details( 'Sidebar', topic_href+'-'+(++index) )
-	p The theme displays sidebar on each single custom post type page and archive page.
-	p Sidebar is a <a href="#sidebars">widgetized area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
-	p If you would like to replace sidebar on a specific post with a different one or just remove it, use <a href="#manage-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.
+	p Displays links to previous and next post. Inherits colors of Footer area.
 	+back_to( 'image', topic_href )
 
 +back_to( 'topics', '#anatomy' )
