@@ -23,7 +23,13 @@
 			--typography_font_size_base: 18px;
 		}
 
-		--typography_line_height: #{ $ratio };
+		--typography_line_height: 1.4;
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			--typography_line_height: 1.5;
+		}
+		@include media( map_get( $breakpoint, 'l' ) ) {
+			--typography_line_height: #{ $ratio };
+		}
 		--typography_line_height_headings: 1.25;
 
 		--typography_ratio: 1.2;
