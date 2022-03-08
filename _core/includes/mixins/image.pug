@@ -4,7 +4,7 @@ mixin image( url, caption, attr )
 		- url = url.replace( 'www.dropbox.com', 'dl.dropboxusercontent.com' )
 	figure
 		a( href=url title="Click to open large image" )
-			img( src=url alt=caption attr )
+			img( src=url alt=caption )&attributes( attr )
 			block
 		if caption
 			figcaption= caption

@@ -1,0 +1,25 @@
++sub_section( 'Setting Up a Post Format', 'posts-formats' )
+	p On the post edit screen you can choose a post format supported in the theme:
+
+	dl.list-default
+
+		dt Standard post
+		dd
+			p This is basic standard blog post layout.
+
+		dt Audio post
+		dd
+			p Displays audio player to play your audio files. Could be used for Podcasting.
+			p To set the audio, use an <code>[audio]</code> (or <code>[playlist]</code>) shortcode in the content. The first <code>[audio]</code> (<code>[playlist]</code>) shortcode will be used in post media area in posts list display, including the post featured image.
+			p If no <code>[audio]</code> or <code>[playlist]</code> shortcode used, but <a href="https://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F">oembed media URL</a> found, this media will be displayed instead of the featured image in posts lists display.
+
+		dt Gallery post
+		dd
+			p Just add a <a href="https://codex.wordpress.org/The_WordPress_Gallery"><code>[gallery]</code> shortcode</a> anywhere in the content. The first <code>[gallery]</code> shortcode images (3 of them) are used as a preview in posts list display.
+
+		dt Video post
+		dd
+			p Displays a video player to play your video files. Could be used for video blogging.
+			p To set a video, use a <code>[video]</code> (or <code>[playlist]</code>) shortcode in the content. The first <code>[video]</code> (<code>[playlist]</code>) shortcode will be used in post media area in posts list display.
+			p If no <code>[video]</code> or <code>[playlist]</code> shortcode used, but <a href="https://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F">oembed media URL</a> found, this media will be displayed instead of the featured image in posts list display.
+			p Supports also <code>[wpvideo]</code> shortcode when using <a href="#jetpack"><strong>Jetpack</strong> plugin</a>.

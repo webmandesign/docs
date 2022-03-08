@@ -48,7 +48,3 @@ else
 
 if ! config.faq
 	- config.faq = faq_global
-else
-	each value, key in faq_global
-		if ! config.faq[ key ]
-			- config.faq[ key ] = value

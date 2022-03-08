@@ -26,9 +26,6 @@ block append anatomy
 	include anatomy-cpt.pug
 	include anatomy-shop.pug
 
-block append editor
-	include editor-spacer-min-height.pug
-
 block prepend pages
 	include page-content.pug
 block append pages
@@ -64,6 +61,8 @@ block faq/answer/page-builder
 block accessibility/headings/site_title
 	include accessibility-site-title.pug
 
+block append plugins/others/list
+	include plugins-others.pug
 block plugins/recommended/list/item
 	case id
 		when 'advanced-custom-fields' : include plugin-advanced-custom-fields.pug

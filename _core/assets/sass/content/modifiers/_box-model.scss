@@ -1,5 +1,13 @@
 /* FILE: content/modifiers/_box-model.scss */
 
+// Height
+
+	@for $i from 1 through 15 {
+		.has-#{ 20 + 5 * $i }vh-max-height {
+			max-height: 20vh + 5 * $i;
+		}
+	}
+
 // Padding
 
 	.has-phi-padding,
