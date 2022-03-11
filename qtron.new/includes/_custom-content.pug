@@ -1,0 +1,49 @@
+extends ../../_core/_index.pug
+
+//-
+	Use this special block to create custom content sections.
+	Check for `article` value to display correct custom content then.
+block content/article
+	include cpt-wmamp.pug
+
+//-
+	Section have predefined `{section}` and `{section}/about` content blocks.
+	These content blocks contain entire and basic about contents for the section.
+	You can either completely overwrite them, or prepend/append to them.
+	@link  https://pugjs.org/language/inheritance.html
+
+block append styles
+	include style.css
+
+block demo/starter_content
+	//- Empty to remove the section.
+
+block append pages
+	include page-options.pug
+block pages/excerpt
+	//- Empty to remove the section.
+block pages/templates
+	//- Empty to remove the section.
+
+block append posts
+	include post-toc.pug
+	include post-featured.pug
+	include post-formats.pug
+block posts/excerpt
+	include post-excerpt.pug
+
+block menu/list
+	include menus.pug
+block social/about
+	include menu-social.pug
+
+block sidebars/list
+	include sidebars.pug
+
+block append faq/questions/list
+	include faq-question-icons.pug
+block append faq/answers/list
+	include faq-answer-icons.pug
+
+block append plugins/others/list
+	include plugins-others.pug

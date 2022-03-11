@@ -16,8 +16,9 @@
 		li
 			p Then the 2nd level menu items (first child menu items) become captions for megamenu columns.
 
-			+tip( 'Disable link', 'h4' )
-				p You can set <code>disable-link</code> CSS class on these menu items to render their link inactive. It is still recommended to set their link to a dummy URL such simple as <code>#0</code> would do.
+			if false !== config.compatibility.megamenu_disable_link
+				+tip( 'Disable link', 'h4' )
+					p You can set <code>disable-link</code> CSS class on these menu items to render their link inactive. It is still recommended to set their link to a dummy URL such simple as <code>#0</code> would do.
 
 		li
 			p Finally, the 3rd level menu items (second child menu items) become actual menu items within your megamenu columns.

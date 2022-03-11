@@ -1,5 +1,8 @@
 block localization/about
-	p Every WordPress theme contains some texts that need to be translated into your language if you are building a non-English website. This theme if fully translation ready (and supports also <abbr title="Right-To-Left">RTL</abbr> languages).
+	p Every WordPress theme contains some texts that need to be translated into your language if you are building a non-English website. This theme if fully translation ready.
+
+	if false !== config.compatibility.rtl
+		p The theme also supports <abbr title="Right-To-Left">RTL</abbr> languages.
 
 	p To enable your language in the WordPress website, please <a href="https://wordpress.org/support/article/installing-wordpress-in-your-language/">switch WordPress into the desired language localization</a>.
 

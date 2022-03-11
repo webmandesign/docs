@@ -6,6 +6,7 @@ p It also provides seamless integration with <a href="#beaver-builder"><strong>B
 
 p This is essential plugin to provide advanced functionality for the theme and you will be prompted to install it after theme activation.
 
-+warning( 'Inaccessible elements', 'h4' )
-	p Please note that <strong>WM Accordion</strong> and <strong>WM Tabs</strong> page builder modules/shortcodes provided by WebMan Amplifier plugin are not accessible elements currently and are not recommended for use on accessible websites.
-	p Please don't forget to <a href="#{config.url.accessibility}">test your accessible websites</a> thoroughly.
+if true === config.compatibility.accessibility
+	+warning( 'Inaccessible elements', 'h4' )
+		p Please note that <strong>WM Accordion</strong> and <strong>WM Tabs</strong> page builder modules/shortcodes provided by WebMan Amplifier plugin are not accessible elements currently and are not recommended for use on accessible websites.
+		p Please don't forget to <a href="#{config.url.accessibility}">test your accessible websites</a> thoroughly.
