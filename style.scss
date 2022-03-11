@@ -11,7 +11,7 @@
 	--color-bg-item-hover: #fff;
 	--color-txt-item-hover: #111;
 
-	--color-decoration: #fbce2f;
+	--color-decoration: #eee;
 }
 
 // Base:
@@ -101,6 +101,7 @@
 			height: var(--decoration);
 			right: 0;
 			top: 0;
+			background: var(--decoration);
 			border: calc( var(--decoration) / 2 ) solid var(--color-decoration);
 			border-top-color: var(--color-bg);
 			border-right-color: var(--color-bg);
