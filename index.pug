@@ -1,0 +1,56 @@
+//-
+//- @link  https://pugjs.org/api/getting-started.html
+//- @link  https://devhints.io/pug
+//-
+
+-
+	var documentations = [
+		'Angelica',
+		'Auberge',
+		'Bjork',
+		'Cindy|png',
+		'Deborah|png',
+		'Eimear|png',
+		'Forstron',
+		'Francesca',
+		'Icelander',
+		'Michelle|png',
+		'Modern',
+		'Monument Valley',
+		'Mustang',
+		'Polyclinic',
+		"Q'tron",
+		'Receptar',
+		'Reykjavik',
+	];
+
+doctype html
+
+html( lang="en" )
+	head
+		meta( charset="utf-8" )
+		meta(
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		)
+
+		title WebMan Design documentation repository
+
+		style
+			include style.css
+
+	body
+		a( name="top" )
+
+		h1 Documentation by <a href="http://www.webmandesign.eu">WebMan Design</a>
+
+		section
+			each doc in documentations
+				- documentation = doc.split( '|' );
+				- folder = documentation[0].toLowerCase().replace( "'", '' ).replace( ' ', '-' );
+				- img_format = ( documentation[1] ) ? ( documentation[1] ) : ( 'jpg' );
+				article
+					a( href=folder+"/index.html" )
+						figure
+							img( src="https://themedemos.webmandesign.eu/"+folder+"/wp-content/themes/"+folder+"/screenshot."+img_format alt=documentation[0]+" documentation")
+						h2= documentation[0]
