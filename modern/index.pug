@@ -1,0 +1,81 @@
+//-
+//- Configuration object:
+//-
+-
+	var config = {
+		//- Theme attributes:
+		name          : 'Modern',
+		slug          : 'modern',
+		screenshot    : 'https://themedemos.webmandesign.eu/modern/wp-content/themes/modern/screenshot.jpg',
+		is_free       : true,
+		source        : 'wporg', //- Available values: wporg/envato/github/other
+		compatibility : {
+			accessibility         : true,
+			theme_builder         : false,
+			block_patterns        : false,
+			block_styles          : false,
+			megamenu_fullwidth    : false,
+			megamenu_disable_link : false,
+		},
+		version : {
+			wp  : '5.2',
+			php : '7.0',
+		},
+
+		//- Content sections:
+		//- For custom content see below.
+		content : [
+			//- For the list of core contents refer to `_core/includes/content.pug`.
+			//- Basically, these match sub-folder names in `_core/includes/content`.
+			//- Reorder these how you please.
+			'wordpress',
+			'install',
+			'update',
+			'demo',
+			'pages',
+			'posts',
+			'cpt/portfolio',
+			'cpt/testimonials',
+			'menu',
+			'social',
+			'sidebars',
+			'customizer',
+			'localization',
+			'accessibility',
+			'plugins',
+			'faq',
+			'mods',
+			'credits',
+		],
+
+		//- Recommended plugins list:
+		//- For custom content see below.
+		plugins : {
+			//- For the list of core recommended plugin refer to `_core/includes/content.pug`.
+			//- Reorder these how you please.
+			'beaver-builder'        : 'Beaver Builder',
+			'classic-widgets'       : 'Classic Widgets',
+			'improve-search'        : 'Improve Search Form Accessibility',
+			'jetpack'               : 'Jetpack',
+			'ns-featured-posts'     : 'NS Featured Posts',
+			'one-click-demo-import' : 'One Click Demo Import',
+			'manage-sidebars'       : 'Content Aware Sidebars',
+		},
+		tgmpa : true,
+
+		//- Default FAQ list:
+		faq : {
+			'any-page-builder' : 'How to use a page builder',
+			'image-sizes'      : 'Why are uploaded images blurry or small',
+			// 'css-classes'      : 'How to modify element appearance',
+			'seo'              : 'SEO - Search Engine Optimization',
+			'speed'            : 'How to speed up a website',
+			'css'              : 'How to add custom CSS',
+		},
+	};
+
+//-
+//- Custom content:
+//- This has to be here, after all the above variables declarations.
+//-
+include includes/_custom-content.pug

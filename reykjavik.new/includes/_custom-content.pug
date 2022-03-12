@@ -1,0 +1,68 @@
+extends ../../_core/_index.pug
+
+//-
+	Use this special block to create custom content sections.
+	Check for `article` value to display correct custom content then.
+block content/article
+	include cpt-wmamp.pug
+
+//-
+	Section have predefined `{section}` and `{section}/about` content blocks.
+	These content blocks contain entire and basic about contents for the section.
+	You can either completely overwrite them, or prepend/append to them.
+	@link  https://pugjs.org/language/inheritance.html
+
+block append styles
+	include style.css
+block append scripts
+	include script.js
+
+block append anatomy
+	include anatomy.pug
+	include anatomy-basics.pug
+	include anatomy-page.pug
+	include anatomy-archives.pug
+	include anatomy-post.pug
+	include anatomy-cpt.pug
+	include anatomy-shop.pug
+
+block prepend pages
+	include page-content.pug
+block append pages
+	include page-intro.pug
+block pages/templates/list
+	include templates.pug
+
+block append posts
+	include post-toc.pug
+	include post-blog-styles.pug
+
+block menu/list
+	include menus.pug
+
+block sidebars/list
+	include sidebars.pug
+block append sidebars
+	include widgets.pug
+
+block append faq/questions/list
+	include faq-question-breadcrumbs.pug
+	include faq-question-font.pug
+	include faq-question-icons.pug
+	include faq-question-custom-fields.pug
+block append faq/answers/list
+	include faq-answer-breadcrumbs.pug
+	include faq-answer-font.pug
+	include faq-answer-icons.pug
+	include faq-answer-custom-fields.pug
+block faq/answer/page-builder
+	include faq-answer-page-builder.pug
+
+block accessibility/headings/site_title
+	include accessibility-site-title.pug
+
+block append plugins/others/list
+	include plugins-others.pug
+block plugins/recommended/list/item
+	case id
+		when 'advanced-custom-fields' : include plugin-advanced-custom-fields.pug

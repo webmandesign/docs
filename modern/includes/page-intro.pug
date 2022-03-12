@@ -1,0 +1,24 @@
++sub_section( 'Page Intro Section', 'page-intro' )
+	p Colors of intro section can be customized in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Colors: Intro' )]. Please note that intro text color will affect also the "loose" elements displayed over intro section and website background, such as site title and tagline (logo), header social icons menu and homepage slideshow captions.
+	p Page intro is mostly a specially styled background image on of the website header area (coming down behind website content area too) for website sub pages, but on your homepage it displays either a background image with custom intro text, or a slideshow of featured posts and portfolio projects:
+
+
+	h4 On blog homepage
+	p If you are displaying blog on your website homepage, an intro text is displayed over the intro image. You can set this intro text in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Texts', '"Default blog intro text"' )].
+
+
+	h4 On static page homepage
+	p If you set a static homepage, the page featured image is used as intro image, and page title is used as intro text. You can further override the intro image by setting your homepage <a href="#custom-fields"><code>banner_image</code> custom field</a> and intro title by setting <a href="#custom-fields"><code>banner_text</code> custom field</a>.
+
+
+	h4 Homepage slideshow
+	p Finally, if you choose some of your posts and/or projects as featured (see <a href="#ns-featured-posts"><strong>NS Featured Posts</strong> plugin</a>), these will be displayed in a slideshow on your website homepage (doesn't matter if its set up to display blog or static page). Again, you can further override the intro image and intro text for specific post/project displayed in the slideshow by setting its <a href="#custom-fields"><code>banner_image</code> and/or <code>banner_text</code> custom fields</a>.
+
+
+	h4 On sub pages
+	p On every page except your website homepage, the intro only displays a specially styled page/post featured image as a website background image.
+	p There are these filters applied on the image to style it as complimentary image not to disturb from the page/post content: <em>grayscale</em>, <em>blur</em>, image is <em>horizontally flipped</em>.
+
+
+	h4 On all pages
+	p By default, the <strong>intro image</strong> is taken from your website header images that can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Header Media' )]. These images will be also used as fall back in case no other image override is found (see below).

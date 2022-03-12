@@ -1,0 +1,75 @@
+li
+	+answer( 'Custom fields', 'custom-fields' )
+
+		p To allow more control over pages and posts appearance, the theme uses some predefined <a href="https://codex.wordpress.org/Custom_Fields">custom fields</a>.
+
+		p You can use the <a href="https://wordpress.org/support/article/custom-fields/">WordPress native custom fields interface</a>, but <strong>for the best experience it is recommended to install and activate the <a href="https://wordpress.org/plugins/advanced-custom-fields/">Advanced Custom Fields plugin</a></strong>. The theme is compatible with this plugin out of the box and automatically creates easy-to-use metaboxes for you for all its options (custom fields).
+
+		p Custom fields used in the theme:
+
+
+
+		h4 <strong><a href="#page-intro">Intro section</a> related</strong>
+
+		p For easy setup of these custom fields please use <a href="https://easycaptures.com/fs/uploaded/1027/1200173498.png">the <abbr title="Advanced Custom Fields plugin">ACF</abbr> metabox <small>(click to preview)</small></a>.
+
+		dl.list-default
+			dt <code>no_intro</code>
+			dd
+				p <strong title="Value type">Boolean</strong>: "1" or empty
+
+				p Disables Intro section for the current page/post.
+
+				p With supported post types (pages, posts, projects, staff and WooCommerce products) you can preferably use a special <a href="#page-templates">page template</a> instead.
+
+			dt <code>no_intro_media</code>
+			dd
+				p <strong title="Value type">Boolean</strong>: "1" or empty
+
+				p Removes any intro media (such as image) from the particular page.
+
+			dt <code>intro_image</code>
+			dd
+				p <strong title="Value type">String</strong>: URL or ID of the image
+
+				p Overrides the default intro section image with a custom one.
+
+			dt <code>show_intro_widgets</code>
+			dd
+				p <strong title="Value type">Boolean</strong>: "1" or empty
+
+				p Displays <a href="#sidebars">Intro Widgets</a> area if Intro section is displayed.
+
+				p With supported post types (pages, posts, projects, staff and WooCommerce products) you can preferably use a special <a href="#page-templates">page template</a> instead.
+
+
+
+		h4 <strong><a href="#page-templates">Child pages list</a> related</strong>
+
+		p For easy setup of these custom fields please use <a href="https://easycaptures.com/fs/uploaded/1021/8753884824.png">the <abbr title="Advanced Custom Fields plugin">ACF</abbr> metabox <small>(click to preview)</small></a>. The metabox is only displayed for pages set as a child of some parent page.
+
+		dl.list-default
+			dt <code>no_thumbnail</code>
+			dd
+				p <strong title="Value type">Boolean</strong>: "1" or empty
+
+				p Removes the page thumbnail (featured image) from the list of child pages on the parent page.
+
+
+
+		h4 <strong><a href="#any-page-builder">Page builder</a> related</strong>
+
+		p These custom fields can be set for any post type only if you are not using <a href="#beaver-builder">Beaver Builder</a> page builder.
+
+		p <em>Why the theme uses a custom field for this instead of a page template?</em><br>For better flexibility. If this custom field was replaced with a custom page template, you could not use a different page template on that specific page or post. The theme allows you to use any page template you like while preparing it for your page builder plugin custom layout.
+
+		p For easy setup of these custom fields please use <a href="https://easycaptures.com/fs/uploaded/1021/5112036139.png">the <abbr title="Advanced Custom Fields plugin">ACF</abbr> metabox in the sidebar of page/post edit screen <small>(click to preview)</small></a>.
+
+		dl.list-default
+			dt <code>content_layout</code>
+			dd
+				p <strong title="Value type">Predefined</strong>: empty, or <code>no-paddings</code>, or <code>stretched</code>
+
+				p Prepares the content area of the page/post for use with your page builder plugin.
+
+				p You don't need to set this if you are <a href="#beaver-builder">using <strong>Beaver Builder</strong></a>.

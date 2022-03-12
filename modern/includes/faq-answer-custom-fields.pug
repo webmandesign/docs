@@ -1,0 +1,48 @@
+li
+	+answer( 'Custom fields', 'custom-fields' )
+
+		p To allow more control over pages and posts appearance, the theme uses some predefined <a href="https://codex.wordpress.org/Custom_Fields">custom fields</a>.
+
+		p You can use the <a href="https://wordpress.org/support/article/custom-fields/">WordPress native custom fields interface</a>, but <strong>for the best experience it is recommended to install and activate the <a href="https://wordpress.org/plugins/advanced-custom-fields/">Advanced Custom Fields plugin</a></strong>. The theme is compatible with this plugin out of the box and automatically creates easy-to-use metaboxes for you for all its options (custom fields).
+
+		p Custom fields used in the theme:
+
+
+
+		h4 <strong><a href="#page-intro">Intro (banner)</a> related</strong>
+
+		p For easy setup of these custom fields please use <a href="https://easycaptures.com/fs/uploaded/1245/5331475298.png">the <abbr title="Advanced Custom Fields plugin">ACF</abbr> metabox <small>(click to preview)</small></a>.
+
+		dl.list-default
+			dt <code>banner_image</code>
+			dd
+				p Use this to override the image displayed in the banner area of the website. You can set this to image URL, image post ID (find this in your WordPress media library), or set <code>-</code> to fall back to default global header image.
+
+			dt <code>banner_text</code>
+			dd
+				p Use this to override the text displayed in banner area of the website.
+				p It is useful to override the banner text when you are using static front page, or when displaying featured posts in a banner slideshow (in that case set this custom field for the specific post).
+
+
+
+		h4 <strong><a href="#posts-formats">Post formats</a> related</strong>
+
+		p For easy setup of these custom fields please use <a href="https://easycaptures.com/fs/uploaded/1245/5351991081.png">the <abbr title="Advanced Custom Fields plugin">ACF</abbr> metabox <small>(click to preview)</small></a>. The metabox is only displayed for specific post formats.
+
+		dl.list-default
+			dt <code>quote_source</code>
+			dd
+				p You can use this custom field to set up your Quote post format quote source. You can use inline HTML in here.
+
+
+
+		h4 <strong><a href="#any-page-builder">Page builder</a> related</strong>
+
+		p <em>Why the theme uses a custom field for this instead of a page template?</em> For better flexibility. If this custom field was replaced with a custom page template, you could not use a different page template on that specific page or post. The theme allows you to use any page template you like while preparing it for your page builder plugin custom layout.
+		p For easy setup of these custom fields please use <a href="https://easycaptures.com/fs/uploaded/1245/4649838637.png">the <abbr title="Advanced Custom Fields plugin">ACF</abbr> metabox in the sidebar of page/post edit screen <small>(click to preview)</small></a>.
+
+		dl.list-default
+			dt <code>content_layout</code>
+			dd
+				p <strong title="Value type">Predefined</strong>: empty, or <code>stretched</code>
+				p Prepares the content area of the page/post for use with your page builder plugin.

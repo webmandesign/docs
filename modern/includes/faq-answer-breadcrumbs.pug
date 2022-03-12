@@ -1,0 +1,15 @@
+li
+	+answer( 'Breadcrumbs navigation', 'breadcrumbs' )
+
+		p The theme supports <a href="https://wordpress.org/plugins/breadcrumb-navxt/"><strong>Breadcrumb NavXT</strong></a> plugin that allows very flexible set up and display of breadcrumbs navigation on your website. After you install and activate the plugin, the theme displays the breadcrumbs navigation in preset location, above the page content area.
+
+		p Here is some tip for setting up your breadcrumbs display:
+
+		dl.list-default
+			dt #[+mark( 'nav', 'Settings', 'Breadcrumb NavXT', 'General', '"Breadcrumbs Separator"' )]
+			dd Set to <code>&lt;span class="sep"> / &lt;/span></code>.
+
+			dt
+				| #[+mark( 'nav', 'Settings', 'Breadcrumb NavXT', 'General', '"Home Template"' )]<br>
+				| #[+mark( 'nav', 'Settings', 'Breadcrumb NavXT', 'General', '"Home Template (Unlinked)"' )]
+			dd Prepend the existing text with <code>&lt;span class="breadcrumbs-title">You are here: &lt;/span></code>.

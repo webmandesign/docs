@@ -1,0 +1,78 @@
+//-
+//- Configuration object:
+//-
+-
+	var config = {
+		//- Theme attributes:
+		name          : 'Icelander',
+		slug          : 'icelander',
+		screenshot    : 'https://themedemos.webmandesign.eu/icelander/wp-content/themes/icelander/screenshot.jpg',
+		is_free       : false,
+		source        : 'envato', //- Available values: wporg/envato/github/other
+		compatibility : {
+			accessibility      : true,
+			theme_builder      : true,
+			block_patterns     : false,
+			block_styles       : false,
+			megamenu_fullwidth : false,
+		},
+		version : {
+			wp  : '4.7',
+			php : '5.6',
+		},
+
+		url : {
+			'info'        : 'https://1.envato.market/icelander',
+			'css_classes' : 'https://themedemos.webmandesign.eu/icelander/theme-features/css-classes/',
+		},
+
+		//- Content sections:
+		//- For custom content see below.
+		content : [
+			//- For the list of core contents refer to `_core/includes/content.pug`.
+			//- Basically, these match sub-folder names in `_core/includes/content`.
+			//- Reorder these how you please.
+			'wordpress',
+			'install',
+			'update',
+			'anatomy',
+			'demo',
+			'pages',
+			'posts',
+			'cpt/products',
+			'cpt/wmamp',
+			'menu',
+			'social',
+			'sidebars',
+			'customizer',
+			'localization',
+			'accessibility',
+			'plugins',
+			'faq',
+			'mods',
+			'credits',
+		],
+
+		//- Recommended plugins list:
+		//- For custom content see below.
+		plugins : {
+			//- For the list of core recommended plugin refer to `_core/includes/content.pug`.
+			//- Reorder these how you please.
+			'advanced-custom-fields' : 'Advanced Custom Fields',
+			'beaver-builder'         : 'Beaver Builder',
+			'classic-widgets'        : 'Classic Widgets',
+			'envato-market'          : 'Envato Market',
+			'jetpack'                : 'Jetpack',
+			'one-click-demo-import'  : 'One Click Demo Import',
+			'webman-amplifier'       : 'WebMan Amplifier',
+			'woocommerce'            : 'WooCommerce',
+			'manage-sidebars'        : 'Content Aware Sidebars',
+		},
+		tgmpa : true,
+	};
+
+//-
+//- Custom content:
+//- This has to be here, after all the above variables declarations.
+//-
+include includes/_custom-content.pug

@@ -1,0 +1,45 @@
+:root {
+
+	--color_accent: #00855b;
+	--color_mark: #{ rgba( #00855b, .1 ) };
+	--color_button_background: #00855b;
+	--color_button_text: #fff;
+
+	--color_header_background: #fff;
+	--color_header_text: #1a1c1e;
+
+	--color_intro_background: #1a1c1e;
+	--color_intro_text: #fff;
+
+	--color_nav_background: #1a1c1e;
+	--color_nav_text: #fff;
+	--color_nav_border: #{ rgba( #fff, var(--border_opacity) ) };
+
+	--color_content_background: #fff;
+	--color_content_headings: #1a1c1e;
+	--color_content_text: #6a6c6e;
+	--color_content_border: #{ rgba( #6a6c6e, var(--border_opacity) ) };
+
+	--color_footer_background: #eaecee;
+	--color_footer_text: #5a5c5e;
+
+}
+
+.intro {
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: url('includes/nick-adams-457460.jpg');
+		background-position: 50% 50%;
+		background-size: cover;
+		opacity: .15;
+		z-index: -1;
+	}
+
+}

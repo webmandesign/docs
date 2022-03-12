@@ -1,0 +1,53 @@
+extends ../../_core/_index.pug
+
+//-
+	Use this special block to create custom content sections.
+	Check for `article` value to display correct custom content then.
+//- block content/article
+
+//-
+	Section have predefined `{section}` and `{section}/about` content blocks.
+	These content blocks contain entire and basic about contents for the section.
+	You can either completely overwrite them, or prepend/append to them.
+	@link  https://pugjs.org/language/inheritance.html
+
+block append styles
+	include style.css
+
+block append pages
+	include page-intro.pug
+
+block pages/templates/list
+	include templates.pug
+
+block append posts
+	include post-toc.pug
+	include post-blog-layout.pug
+	include post-formats.pug
+
+block append cpt/portfolio
+	+info( 'Homepage display' )
+		p Most recent portfolio projects are also displayed on the <a href="#page-templates">"Front page"</a> page template. You can control their display by setting up #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout' )] theme options.
+
+block append cpt/testimonials
+	+info( 'Homepage display' )
+		p Most recent testimonials are also displayed on the <a href="#page-templates">"Front page"</a> page template. You can control their display by setting up #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout' )] theme options.
+
+block menu/list
+	include menus.pug
+
+block sidebars/list
+	include sidebars.pug
+
+block append faq/questions/list
+	include faq-question-breadcrumbs.pug
+	include faq-question-custom-fields.pug
+block append faq/answers/list
+	include faq-answer-breadcrumbs.pug
+	include faq-answer-custom-fields.pug
+block faq/answer/page-builder
+	include faq-answer-page-builder.pug
+
+block plugins/recommended/list/item
+	case id
+		when 'ns-featured-posts' : include plugin-ns-featured-posts.pug
