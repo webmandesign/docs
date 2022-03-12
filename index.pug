@@ -6,7 +6,7 @@
 -
 	var documentations = [
 		'Angelica',
-		'Auberge',
+		'Auberge', // @todo
 		'Bjork',
 		'Cindy|png',
 		'Deborah|png',
@@ -15,13 +15,13 @@
 		'Francesca',
 		'Icelander',
 		'Michelle|png',
-		'Modern',
+		'Modern', // @todo
 		'Monument Valley',
-		'Mustang',
+		'Mustang', // @todo
 		'Polyclinic',
 		"Q'tron",
-		'Receptar',
-		'Reykjavik',
+		'Receptar', // @todo
+		'Reykjavik', // @todo
 	];
 
 doctype html
@@ -53,4 +53,4 @@ html( lang="en" )
 					a( href=folder+"/index.html" )
 						figure
 							img( src="https://themedemos.webmandesign.eu/"+folder+"/wp-content/themes/"+folder+"/screenshot."+img_format alt=documentation[0]+" documentation")
-						h2= documentation[0]
+						h2 #{ documentation[0] } <small>Theme Documentation</small>

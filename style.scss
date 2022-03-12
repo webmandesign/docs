@@ -15,150 +15,163 @@
 	--color-decoration: #eee;
 }
 
-// Base:
+html {
+	box-sizing: border-box;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-size: 20px;
+	font-size: clamp( 16px, 1.5vw, 20px );
+	line-height: 1.6;
+	background: var(--color-bg);
+	color: var(--color-txt);
 
-	html {
-		box-sizing: border-box;
-		overflow-y: scroll;
-		scroll-behavior: smooth;
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-		font-size: 20px;
-		font-size: clamp( 16px, 1.5vw, 20px );
-		line-height: 1.6;
-		background: var(--color-bg);
-		color: var(--color-txt);
+	background:
+		radial-gradient( circle, transparent 20%, var(--color-bg) 20%, var(--color-bg) 80%, transparent 80%, transparent ),
+		radial-gradient( circle, transparent 20%, var(--color-bg) 20%, var(--color-bg) 80%, transparent 80%, transparent ) 25px 25px,
+		linear-gradient( var(--color-bg-shade) 2px, transparent 2px ) 0 -1px,
+		linear-gradient( 90deg, var(--color-bg-shade) 2px, var(--color-bg) 2px ) -1px 0;
+	background-size:
+		50px 50px,
+		50px 50px,
+		25px 25px,
+		25px 25px;
 
-		background:
-			radial-gradient( circle, transparent 20%, var(--color-bg) 20%, var(--color-bg) 80%, transparent 80%, transparent ),
-			radial-gradient( circle, transparent 20%, var(--color-bg) 20%, var(--color-bg) 80%, transparent 80%, transparent ) 25px 25px,
-			linear-gradient( var(--color-bg-shade) 2px, transparent 2px ) 0 -1px,
-			linear-gradient( 90deg, var(--color-bg-shade) 2px, var(--color-bg) 2px ) -1px 0;
-		background-size:
-			50px 50px,
-			50px 50px,
-			25px 25px,
-			25px 25px;
-
-		@media (prefers-reduced-motion: reduce) {
-			scroll-behavior: auto;
-		}
-
+	@media (prefers-reduced-motion: reduce) {
+		scroll-behavior: auto;
 	}
 
-	* {
-		border-color: inherit;
+}
 
-		&,
-		&::before,
-		&::after {
-			box-sizing: inherit;
-		}
+* {
+	border-color: inherit;
 
+	&,
+	&::before,
+	&::after {
+		box-sizing: inherit;
 	}
 
-	h1, h2 {
-		color: inherit;
-	}
+}
 
-	h1 {
-		padding: 1em 2%;
-		margin: 0;
-		font-size: 1.5em;
-		font-weight: 400;
-		line-height: 1.25;
-		text-align: center;
+h1, h2 {
+	color: inherit;
+}
 
-		a {
-			font-weight: 700;
-		}
-
-	}
-
-	img {
-		max-width: 100%;
-		vertical-align: top;
-	}
+h1 {
+	padding: 1em 2%;
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 1.25;
+	text-align: center;
 
 	a {
-		color: inherit;
-		text-decoration: none;
+		font-weight: 700;
 	}
 
-// List:
+}
 
-	section {
-		display: flex;
-		gap: var(--gap);
-		flex-wrap: wrap;
-		justify-content: center;
-		padding: 2%;
-		margin: 0 auto;
-		list-style: none;
+h2 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+small {
+	display: block;
+	text-transform: uppercase;
+	font-size: .618em;
+	font-weight: 400;
+	opacity: .66;
+}
+
+figure {
+	margin: 0 0 1em;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+section {
+	display: flex;
+	gap: var(--gap);
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2%;
+	margin: 0 auto;
+	list-style: none;
+}
+
+article {
+	position: relative;
+	width: 40vw;
+	max-width: 12em;
+	background: var(--color-bg-item);
+	box-shadow: 0 10px 10px -10px rgba( #000, .25 );
+	overflow: hidden;
+	transition:
+		background .3s,
+		color .3s,
+		box-shadow .3s,
+		transform .3s;
+	will-change:
+		background,
+		color,
+		box-shadow,
+		transform;
+
+	&::after,
+	&::before {
+		content: '';
+		position: absolute;
+		width: var(--decoration);
+		height: var(--decoration);
+		right: 0;
+		top: 0;
+		background: var(--color-decoration);
+		border: calc( var(--decoration) / 2 ) solid var(--color-decoration);
+		border-top-color: var(--color-bg);
+		border-right-color: var(--color-bg);
+		z-index: 2;
 	}
 
-	article {
-		position: relative;
-		width: 40vw;
-		max-width: 12em;
-		background: var(--color-bg-item);
-		box-shadow: 0 10px 10px -10px rgba( #000, .25 );
-		overflow: hidden;
-		transition: all .3s;
+	&::before {
+		right: 2px;
+		top: 1px;
+		background: linear-gradient( 45deg, #000, rgba( #000, 0 ) 50% );
+		border: 0;
+		opacity: .5;
+		transform: skew(-3deg);
+		filter: blur(2px);
+		z-index: 1;
+	}
+
+	&:hover,
+	&:focus-within {
+		background: var(--color-bg-item-hover);
+		color: var(--color-txt-item-hover);
+		box-shadow: 0 .5em 1.5em rgba( #000, .25 );
+		transform: translateY(-.25em);
+		z-index: 99;
 
 		&::after,
 		&::before {
-			content: '';
-			position: absolute;
-			width: var(--decoration);
-			height: var(--decoration);
-			right: 0;
-			top: 0;
-			background: var(--color-decoration);
-			border: calc( var(--decoration) / 2 ) solid var(--color-decoration);
-			border-top-color: var(--color-bg);
-			border-right-color: var(--color-bg);
-			z-index: 2;
-		}
-
-		&::before {
-			right: 2px;
-			top: 1px;
-			background: linear-gradient( 45deg, #000, rgba( #000, 0 ) 50% );
-			border: 0;
-			opacity: .5;
-			transform: skew(-3deg);
-			filter: blur(2px);
-			z-index: 1;
-		}
-
-		&:hover,
-		&:focus-within {
-			background: var(--color-bg-item-hover);
-			color: var(--color-txt-item-hover);
-			box-shadow: 0 .5em 1.5em rgba( #000, .25 );
-			transform: translateY(-.25em);
-			z-index: 99;
-
-			&::after,
-			&::before {
-				display: none;
-			}
-
-		}
-
-		a {
-			display: block;
-			padding: var(--gap);
+			display: none;
 		}
 
 	}
 
-	figure {
-		margin: 0 0 1em;
+	a {
+		display: block;
+		padding: var(--gap);
 	}
 
-	h2 {
-		margin: 0;
-		font-size: 1em;
-		font-weight: 700;
-	}
+}
