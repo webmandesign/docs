@@ -5,6 +5,7 @@
 	--decoration: calc( 1.5 * var(--gap) );
 
 	--color-bg: #ddd;
+	--color-bg-shade: #d3d3d3;
 	--color-txt: #111;
 
 	--color-bg-item: #fff;
@@ -26,6 +27,17 @@
 		line-height: 1.6;
 		background: var(--color-bg);
 		color: var(--color-txt);
+
+		background:
+			radial-gradient( circle, transparent 20%, var(--color-bg) 20%, var(--color-bg) 80%, transparent 80%, transparent ),
+			radial-gradient( circle, transparent 20%, var(--color-bg) 20%, var(--color-bg) 80%, transparent 80%, transparent ) 25px 25px,
+			linear-gradient( var(--color-bg-shade) 2px, transparent 2px ) 0 -1px,
+			linear-gradient( 90deg, var(--color-bg-shade) 2px, var(--color-bg) 2px ) -1px 0;
+		background-size:
+			50px 50px,
+			50px 50px,
+			25px 25px,
+			25px 25px;
 
 		@media (prefers-reduced-motion: reduce) {
 			scroll-behavior: auto;
@@ -52,7 +64,7 @@
 		padding: 1em 2%;
 		margin: 0;
 		font-size: 1.5em;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.25;
 		text-align: center;
 
@@ -101,7 +113,7 @@
 			height: var(--decoration);
 			right: 0;
 			top: 0;
-			background: var(--decoration);
+			background: var(--color-decoration);
 			border: calc( var(--decoration) / 2 ) solid var(--color-decoration);
 			border-top-color: var(--color-bg);
 			border-right-color: var(--color-bg);
@@ -125,6 +137,7 @@
 			color: var(--color-txt-item-hover);
 			box-shadow: 0 .5em 1.5em rgba( #000, .25 );
 			transform: translateY(-.25em);
+			z-index: 99;
 
 			&::after,
 			&::before {
