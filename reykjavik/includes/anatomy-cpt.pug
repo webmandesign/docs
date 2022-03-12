@@ -1,0 +1,62 @@
+h3#anatomy-cpt.counter-reset-numbers <strong>Custom post</strong> types
+
+- var topic_href = "anatomy-cpt"
+- var index = 0;
+
+p You need to install plugins that add a custom post types. For example, you can use  <a href="#jetpack"><strong>Jetpack</strong> plugin</a> to enable <a href="#portfolio">Portfolios</a> and <a href="#testimonials">Testimonials</a> custom post types functionality.
+
+// http://www.image-map.net/
++map( 'https://www.dropbox.com/s/qh2g9qlgvrsp1d3/custom-post-types.jpg', 'Theme anatomy: Custom post types' )
+	area( href="#"+topic_href+"-1" coords="35,48,253,130"    title="1. Post title" )
+	area( href="#"+topic_href+"-2" coords="296,51,510,132"   title="2. Post excerpt" )
+	area( href="#"+topic_href+"-3" coords="2,141,593,467"    title="3. Post featured image" )
+	area( href="#"+topic_href+"-4" coords="33,493,329,701"   title="4. Post content" )
+	area( href="#"+topic_href+"-5" coords="38,783,331,705"   title="5. Sharing buttons" )
+	area( href="#"+topic_href+"-6" coords="3,800,593,869"    title="6. Posts navigation" )
+	area( href="#"+topic_href+"-7" coords="347,492,544,754"  title="7. Sidebar" )
+	area( href="#"+topic_href+"-8" coords="617,5,1192,349"   title="8. Archive pages" )
+	area( href="#"+topic_href+"-3" coords="653,387,1097,461" title="3. Post featured image" )
+	area( href="#"+topic_href+"-1" coords="653,511,1099,462" title="1. Post title" )
+
+p <small>(Click the item below to reveal more info. Click the image to preview a bigger size.)</small>
+
++details( 'Post title', topic_href+'-'+(++index) )
+	p If you would like to display subtitles, use <a href="https://wordpress.org/plugins/wp-subtitle/"><strong>WP Subtitle</strong> plugin</a>.
+	p If you would like to remove the intro section for the custom post type, use a <a href="#page-templates">dedicated post type page template</a> or a specific <a href="#custom-fields">custom field</a>.
+	+back_to( 'image', topic_href )
+
++details( 'Post excerpt', topic_href+'-'+(++index) )
+	p The theme adds support for custom post excerpt for <a href="#portfolio">Jetpack Portfolios</a>. The excerpt is then displayed in intro section on custom post type single page, but not in Portfolio archive pages (list of projects).
+	+back_to( 'image', topic_href )
+
++details( 'Post featured image', topic_href+'-'+(++index) )
+	p It is displayed differently for each custom post type. We suggest to set them for each post.
+	p You can <a href="#custom-fields">disable it on single post page or use a custom one</a>.
+	p Please see FAQ section for more <a href="#image-sizes">information on image sizes</a>.
+	+back_to( 'image', topic_href )
+
++details( 'Post content', topic_href+'-'+(++index) )
+	p <a href="#portfolio">Portfolio</a> post content.
+	p You can also use a <a href="#beaver-builder">page builder</a> to create some interesting post layouts. You can use <a href="#any-page-builder">any page builder</a> plugin (but we recommend using powerful, optimized and easy to use <a href="#beaver-builder"><strong>Beaver Builder</strong> page builder plugin</a>), but please note that you will probably need to <strong>enable the page builder for WordPress posts</strong> first. (For Beaver Builder go to #[+mark( 'nav', 'Settings', 'Page Builder', 'Post Types' )].)
+	+back_to( 'image', topic_href )
+
++details( 'Sharing buttons', topic_href+'-'+(++index) )
+	p To enable custom post sharing buttons, please use <a href="#jetpack"><strong>Jetpack</strong></a> plugin's <a href="https://jetpack.com/support/sharing/">sharing module</a>.
+	+back_to( 'image', topic_href )
+
++details( 'Posts navigation', topic_href+'-'+(++index) )
+	p Displays links to previous and next post.
+	+back_to( 'image', topic_href )
+
++details( 'Sidebar', topic_href+'-'+(++index) )
+	p The theme displays sidebar on each single custom post type page and archive page.
+	p Sidebar is a <a href="#sidebars">widgetized area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
+	p If you would like to replace sidebar on a specific post with a different one or just remove it, use <a href="#manage-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.
+	+back_to( 'image', topic_href )
+
++details( 'Archive pages', topic_href+'-'+(++index) )
+	p The theme is compatible with <a href="#jetpack"><strong>Jetpack</strong></a> plugin's <a href="#portfolio">Portfolios</a> and <a href="#testimonials">Testimonials</a> custom content types and you can display archive pages for these.
+	p (Other post types can be added by a different plugins. If you want to sell products, please use <a href="#woocommerce"><strong>WooCommerce</strong> plugin</a>.)
+	+back_to( 'image', topic_href )
+
++back_to( 'topics', '#anatomy' )

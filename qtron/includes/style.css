@@ -19,17 +19,24 @@
 .intro {
   z-index: 1;
 }
-.intro::before {
+.intro::before, .intro::after {
   content: "";
   position: absolute;
+  width: 100%;
+  height: 61.8%;
   left: 0;
-  right: 0;
-  top: 0;
   bottom: 0;
+  z-index: -1;
+}
+.intro::before {
   background: url("includes/pier.jpg");
   background-position: 50% 100%;
   background-size: cover;
   mix-blend-mode: luminosity;
   opacity: 0.15;
-  z-index: -1;
+}
+.intro::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--color_intro_background)), color-stop(38.2%, rgba(218, 220, 222, 0)));
+  background: -o-linear-gradient(top, var(--color_intro_background), rgba(218, 220, 222, 0) 38.2%);
+  background: linear-gradient(to bottom, var(--color_intro_background), rgba(218, 220, 222, 0) 38.2%);
 }

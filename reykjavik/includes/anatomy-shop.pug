@@ -6,27 +6,22 @@ h3#anatomy-shop.counter-reset-numbers <strong>Shop</strong> content
 p You need <a href="#woocommerce"><strong>WooCommerce</strong> plugin</a> to enable this functionality.
 
 // http://www.image-map.net/
-+map( 'https://www.dropbox.com/s/3sovtpm2o90kood/shop-content.jpg', 'Theme anatomy: Shop content' )
-	area( href="#"+topic_href+"-1"  coords="5,91,796,205"       title="1. Intro section" )
-	area( href="#"+topic_href+"-1"  coords="810,88,1593,206"    title="1. Intro section" )
-	area( href="#"+topic_href+"-2"  coords="129,232,478,410"    title="2. Shop page content" )
-	area( href="#"+topic_href+"-3"  coords="126,469,480,414"    title="3. Before products list" )
-	area( href="#"+topic_href+"-6"  coords="95,468,259,649"     title="6. Featured image" )
-	area( href="#"+topic_href+"-4"  coords="139,998,478,472"    title="4. Products list" )
-	area( href="#"+topic_href+"-5"  coords="487,221,728,841"    title="5. Shop Sidebar" )
-	area( href="#"+topic_href+"-7"  coords="932,639,1271,729"   title="7. Product gallery" )
-	area( href="#"+topic_href+"-8"  coords="1520,307,1263,385"  title="8. Product short description" )
-	area( href="#"+topic_href+"-9"  coords="1168,260,1390,318"  title="9. Sharing buttons" )
-	area( href="#"+topic_href+"-6"  coords="945,252,1253,637"   title="6. Featured image" )
-	area( href="#"+topic_href+"-10" coords="967,801,1192,1046"  title="10. Product description" )
-	area( href="#"+topic_href+"-11" coords="1201,801,1595,1049" title="11. Page builder" )
-	area( href="#"+topic_href+"-12" coords="936,793,1499,725"   title="12. Product tabs" )
-	area( href="#"+topic_href+"-13" coords="864,1123,1495,1275" title="13. Product widget area" )
-	area( href="#"+topic_href+"-14" coords="846,1314,1553,1689" title="14. Up-sell products" )
-	area( href="#"+topic_href+"-15" coords="846,1720,1528,2083" title="15. Related products" )
-	area( href="#"+topic_href+"-16" coords="128,1212,649,1323"  title="16. Checkout guide" )
-	area( href="#"+topic_href+"-17" coords="-1,1669,798,1324"   title="17. Cart and Checkout page" )
-	area( href="#"+topic_href+"-18" coords="5,1838,796,2121"    title="18. My Account page" )
++map( 'https://www.dropbox.com/s/61th4nuwhlppdta/shop-content.jpg', 'Theme anatomy: Shop content' )
+	area( href="#"+topic_href+"-1"  coords="0,52,1200,153"      title="1. Intro section" )
+	area( href="#"+topic_href+"-2"  coords="40,170,335,264"     title="2. Shop page content" )
+	area( href="#"+topic_href+"-3"  coords="38,281,344,723"     title="3. Products list" )
+	area( href="#"+topic_href+"-4"  coords="353,170,560,605"    title="4. Shop Sidebar" )
+	area( href="#"+topic_href+"-5"  coords="636,181,889,400"    title="5. Featured image" )
+	area( href="#"+topic_href+"-6"  coords="639,481,925,400"    title="6. Product gallery" )
+	area( href="#"+topic_href+"-7"  coords="1163,244,934,426"   title="7. Product short description" )
+	area( href="#"+topic_href+"-8"  coords="890,177,1073,243"   title="8. Sharing buttons" )
+	area( href="#"+topic_href+"-9"  coords="695,539,1102,481"   title="9. Product tabs" )
+	area( href="#"+topic_href+"-10" coords="680,764,1111,544"   title="10. Product description" )
+	area( href="#"+topic_href+"-11" coords="607,777,1191,1046"  title="11. Up-sell products" )
+	area( href="#"+topic_href+"-12" coords="611,1056,1191,1331" title="12. Related products" )
+	area( href="#"+topic_href+"-13" coords="85,886,481,985"     title="13. Checkout guide" )
+	area( href="#"+topic_href+"-14" coords="82,1277,498,987"    title="14. Cart and Checkout page" )
+	area( href="#"+topic_href+"-15" coords="76,1349,517,1720"   title="15. My Account page" )
 
 p <small>(Click the item below to reveal more info. Click the image to preview a bigger size.)</small>
 
@@ -40,14 +35,10 @@ p <small>(Click the item below to reveal more info. Click the image to preview a
 	p You can set a custom content for your <a href="https://docs.woocommerce.com/document/woocommerce-pages/">shop page</a>. The content will be displayed above the products list on main products archive page then.
 	+back_to( 'image', topic_href )
 
-+details( 'Before products list', topic_href+'-'+(++index) )
-	p A <a href="#sidebars">widgetized area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
-	p This widget area is best suited to display <a href="https://docs.woocommerce.com/document/woocommerce-widgets/">WooCommerce filter widgets</a>, such as "WooCommerce Layered Nav", "WooCommerce Price Filter" and/or "WooCommerce Product Categories".
-	+back_to( 'image', topic_href )
-
 +details( 'Products list', topic_href+'-'+(++index) )
 	p If you set widgets in <a href="#sidebars">"Shop Sidebar"</a> there will be a sidebar displayed on all product archive pages and products will be displayed in 2 columns instead of 3.
-	p <strong>Product categories list:</strong>
+
+	<p class="uppercase"><strong>Product categories list</strong>
 	p If you are displaying product categories, the theme conveniently separates categories from products list (which is a WooCommerce default display) for you, displaying categories first.
 	p Please note that you need to have a <em>"Show categories & products"</em> set for <strong>Shop Page Displays</strong> (and <em>"Show subcategories & products"</em> set for <strong>Default Category Display</strong>) in your <a href="https://docs.woocommerce.com/document/configuring-woocommerce-settings/">WooCommerce products display settings</a> for this feature to be enabled.
 	+back_to( 'image', topic_href )
@@ -77,23 +68,14 @@ p <small>(Click the item below to reveal more info. Click the image to preview a
 	p To enable product sharing buttons, please use <a href="#jetpack"><strong>Jetpack</strong></a> plugin's <a href="https://jetpack.com/support/sharing/">sharing module</a>.
 	+back_to( 'image', topic_href )
 
-+details( 'Product description', topic_href+'-'+(++index) )
-	p Set this on your product edit screen. Please see <a href="https://docs.woocommerce.com/document/managing-products/">WooCommerce documentation</a> for more info.
-	p Please note that the product description width is set for best readability. If you would like to override this, use a page builder to build the product description content.
-	+back_to( 'image', topic_href )
-
-+details( 'Page builder', topic_href+'-'+(++index) )
-	p For creating a more complex product description layouts please use a (<a href="#any-page-builder">any</a>) page builder plugin (we recommend using powerful, optimized and easy to use <a href="#beaver-builder"><strong>Beaver Builder</strong> page builder plugin</a>).
-	p Please note that you will probably need to <strong>enable the product post type in your page builder settings</strong> first! (For Beaver Builder go to #[+mark( 'nav', 'Settings', 'Page Builder', 'Post Types' )].)
-	+back_to( 'image', topic_href )
-
 +details( 'Product tabs', topic_href+'-'+(++index) )
 	p Set this on your product edit screen. Please see <a href="https://docs.woocommerce.com/document/managing-products/">WooCommerce documentation</a> for more info.
 	+back_to( 'image', topic_href )
 
-+details( 'Product widget area', topic_href+'-'+(++index) )
-	p A <a href="#sidebars">widgetized area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
-	p This widget area is best suited to display a general featured information about your shop, such as shipping info, newsletter subscription form or similar.
++details( 'Product description', topic_href+'-'+(++index) )
+	p Set this on your product edit screen. Please see <a href="https://docs.woocommerce.com/document/managing-products/">WooCommerce documentation</a> for more info.
+	p Please note that the product description width is set for best readability. If you would like to override this, use a page builder to build the product description content.
+	p You can also use a <a href="#beaver-builder">page builder</a> to create some interesting product description layouts. You can use <a href="#any-page-builder">any page builder</a> plugin (but we recommend using powerful, optimized and easy to use <a href="#beaver-builder"><strong>Beaver Builder</strong> page builder plugin</a>), but please note that you will probably need to <strong>enable the page builder for WordPress posts</strong> first. (For Beaver Builder go to #[+mark( 'nav', 'Settings', 'Page Builder', 'Post Types' )].) Also, please note that before enabling page builder on the specific product, you <strong>have to add some text to product description (content area) first</strong>.
 	+back_to( 'image', topic_href )
 
 +details( 'Up-sell products', topic_href+'-'+(++index) )

@@ -1,0 +1,40 @@
+:root {
+
+	--color_accent: #273a7d;
+	--color_mark: #{ rgba( #273a7d, .1 ) };
+	--color_button_background: #273a7d;
+	--color_button_text: #fefeff;
+
+	--color_header_background: #fefeff;
+	--color_header_text: #232324;
+
+	--color_nav_background: #0f1732;
+	--color_nav_text: #d3d3d4;
+	--color_nav_border: #{ rgba( #d3d3d4, var(--border_opacity) ) };
+
+	--color_content_background: #fefeff;
+	--color_content_headings: #232324;
+	--color_content_text: #535354;
+	--color_content_border: #{ rgba( #535354, var(--border_opacity) ) };
+
+}
+
+.intro {
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: url('includes/bg.png');
+		background-position: 50% 50%;
+		background-size: cover;
+		mix-blend-mode: multiply;
+		opacity: .6;
+		z-index: -1;
+	}
+
+}

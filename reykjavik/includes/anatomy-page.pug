@@ -4,17 +4,17 @@ h3#anatomy-page.counter-reset-numbers <strong>Page</strong> content
 - var index = 0;
 
 // http://www.image-map.net/
-+map( 'https://www.dropbox.com/s/917r4tpmw2p2frs/page-content.jpg', 'Theme anatomy: Page content' )
-	area( href="#"+topic_href+"-1" coords="618,127,451,3"    title="1. Homepage and Blog page" )
-	area( href="#"+topic_href+"-2" coords="10,69,169,255"    title="2. Page featured image" )
-	area( href="#"+topic_href+"-3" coords="173,147,401,228"  title="3. Page excerpt" )
-	area( href="#"+topic_href+"-3" coords="327,522,494,605"  title="3. Page excerpt" )
-	area( href="#"+topic_href+"-3" coords="829,66,1048,143"  title="3. Page excerpt" )
-	area( href="#"+topic_href+"-4" coords="10,267,521,369"   title="4. Intro Widgets" )
-	area( href="#"+topic_href+"-5" coords="9,376,522,516"    title="5. Page content & sidebar" )
-	area( href="#"+topic_href+"-5" coords="857,165,1020,426" title="5. Page content & sidebar" )
-	area( href="#"+topic_href+"-6" coords="10,520,323,611"   title="6. Child pages list" )
-	area( href="#"+topic_href+"-7" coords="1078,64,1591,887" title="7. Page templates & Page builder" )
++map( 'https://www.dropbox.com/s/rl770nd9st982a0/page-content.jpg', 'Theme anatomy: Page content' )
+	area( href="#"+topic_href+"-5" coords="944,169,1169,731" title="5. Page content" )
+	area( href="#"+topic_href+"-3" coords="946,65,1093,154"  title="3. Page excerpt" )
+	area( href="#"+topic_href+"-3" coords="117,858,490,944"  title="3. Page excerpt" )
+	area( href="#"+topic_href+"-2" coords="116,786,505,856"  title="2. Page featured image" )
+	area( href="#"+topic_href+"-6" coords="3,779,537,968"    title="6. Child pages list" )
+	area( href="#"+topic_href+"-5" coords="3,558,540,775"    title="5. Page content" )
+	area( href="#"+topic_href+"-4" coords="4,324,535,547"    title="4. Intro Widgets" )
+	area( href="#"+topic_href+"-3" coords="97,111,323,285"   title="3. Page excerpt" )
+	area( href="#"+topic_href+"-2" coords="0,52,536,314"     title="2. Page featured image" )
+	area( href="#"+topic_href+"-1" coords="543,0,699,1193"   title="1. Homepage and Blog page" )
 
 p <small>(Click the item below to reveal more info. Click the image to preview a bigger size.)</small>
 
@@ -37,21 +37,25 @@ p <small>(Click the item below to reveal more info. Click the image to preview a
 	p A <a href="#sidebars">widgetized area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
 	p Colors can be <a href="#customizer">customized</a> in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Colors: Intro' )].
 	p You can control the appearance with a <a href="#page-templates">page template</a> or a <a href="#custom-fields">custom field</a> and <a href="#manage-sidebars">Content Aware Sidebars plugin</a>.
+	p You can also enable this widgetized area for archive pages in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout' )].
 	+back_to( 'image', topic_href )
 
-+details( 'Page content & sidebar', topic_href+'-'+(++index) )
++details( 'Page content', topic_href+'-'+(++index) )
 	p For more info please see <a href="#pages">Pages</a> section of this user manual.
+
+	<p class="uppercase"><strong>Page templates</strong>
+	p There are various <a href="#page-templates">page templates</a> available for use with this theme. Such as when you're creating a special landing page and would like to remove header and footer from the page, use the <a href="#page-templates">"Blank" page template</a>.
+
+	<p class="uppercase"><strong>Page builder</strong>
+	p For creating a more complex page layouts please use a (<a href="#any-page-builder">any</a>) page builder plugin (we recommend using powerful, optimized and easy to use <a href="#beaver-builder"><strong>Beaver Builder</strong> page builder plugin</a>).
+
+	<p class="uppercase"><strong>Sidebar</strong>
 	p You can optionally <a href="#page-templates">display a sidebar on a page</a>, which is a <a href="#sidebars">widgetized area</a> and its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
 	p If you would like to replace sidebar on a specific page with a different one or just remove it, use <a href="#manage-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.
 	+back_to( 'image', topic_href )
 
 +details( 'Child pages list', topic_href+'-'+(++index) )
 	p Please see <a href="#page-templates">"List child pages" page template</a> for more details.
-	+back_to( 'image', topic_href )
-
-+details( 'Page templates & Page builder', topic_href+'-'+(++index) )
-	p There are various <a href="#page-templates">page templates</a> available for use with this theme. Such as when you're creating a special landing page and would like to remove header and footer from the page use the <a href="#page-templates">"Blank" page template</a>.
-	p For creating a more complex page layouts please use a (<a href="#any-page-builder">any</a>) page builder plugin (we recommend using powerful, optimized and easy to use <a href="#beaver-builder"><strong>Beaver Builder</strong> page builder plugin</a>).
 	+back_to( 'image', topic_href )
 
 +back_to( 'topics', 'anatomy' )

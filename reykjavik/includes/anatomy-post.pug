@@ -1,0 +1,74 @@
+h3#anatomy-post.counter-reset-numbers <strong>Post</strong> content
+
+- var topic_href = "anatomy-post"
+- var index = 0;
+
+// http://www.image-map.net/
++map( 'https://www.dropbox.com/s/00qgl2opdtv8ndy/post-content.jpg', 'Theme anatomy: Post content' )
+	area( href="#"+topic_href+"-1"  coords="135,120,479,273"    title="1. Post title and subtitle" )
+	area( href="#"+topic_href+"-2"  coords="623,122,1012,287"   title="2. Post excerpt" )
+	area( href="#"+topic_href+"-3"  coords="1,307,1196,978"     title="3. Featured image" )
+	area( href="#"+topic_href+"-4"  coords="149,1030,670,1114"  title="4. Post meta" )
+	area( href="#"+topic_href+"-5"  coords="148,1335,669,1120"  title="5. Post content" )
+	area( href="#"+topic_href+"-6"  coords="147,1522,666,1343"  title="6. Table of contents" )
+	area( href="#"+topic_href+"-7"  coords="149,1641,666,1534"  title="7. Sharing buttons" )
+	area( href="#"+topic_href+"-8"  coords="194,1903,674,1650"  title="8. Content options" )
+	area( href="#"+topic_href+"-9"  coords="138,1947,728,2704"  title="9. Comments" )
+	area( href="#"+topic_href+"-10" coords="4,2768,1196,2915"   title="10. Posts navigation" )
+	area( href="#"+topic_href+"-11" coords="697,1023,1091,1811" title="11. Sidebar" )
+
+p <small>(Click the item below to reveal more info. Click the image to preview a bigger size.)</small>
+
++details( 'Post title and subtitle', topic_href+'-'+(++index) )
+	p Title of the post.
+	p If you would like to display subtitles, use <a href="https://wordpress.org/plugins/wp-subtitle/"><strong>WP Subtitle</strong> plugin</a>.
+	p You can also display intro widgets here or hide the post intro section altogether using <a href="#page-templates">post type page templates</a>.
+	+back_to( 'image', topic_href )
+
++details( 'Post excerpt', topic_href+'-'+(++index) )
+	p If you set a custom <a href="#posts">post excerpt</a>, it will be displayed in posts listing and in intro section on a single post page.
+	+back_to( 'image', topic_href )
+
++details( 'Featured image', topic_href+'-'+(++index) )
+	p It is recommended to <a href="https://codex.wordpress.org/Post_Thumbnails#Setting_a_Post_Thumbnail">set up a post featured image</a> for each post.
+	p A featured image is displayed in posts listing and also in <a href="#page-intro">intro section</a> on a single post page.
+	p Please see FAQ section for more <a href="#image-sizes">information on image sizes</a>.
+	+back_to( 'image', topic_href )
+
++details( 'Post meta', topic_href+'-'+(++index) )
+	p Such as post publish date, post author name (displayed only on multi-author websites), number of comments...
+	+back_to( 'image', topic_href )
+
++details( 'Post content', topic_href+'-'+(++index) )
+	p A post content, optimized for readability.
+	p You can also use a <a href="#beaver-builder">page builder</a> to create some interesting post layouts. You can use <a href="#any-page-builder">any page builder</a> plugin (but we recommend using powerful, optimized and easy to use <a href="#beaver-builder"><strong>Beaver Builder</strong> page builder plugin</a>), but please note that you will probably need to <strong>enable the page builder for WordPress posts</strong> first. (For Beaver Builder go to #[+mark( 'nav', 'Settings', 'Page Builder', 'Post Types' )].)
+	+back_to( 'image', topic_href )
+
++details( 'Table of contents', topic_href+'-'+(++index) )
+	p If you separate a post into multiple parts, there will be a <a href="#posts">table of contents</a> automatically generated.
+	+back_to( 'image', topic_href )
+
++details( 'Sharing buttons', topic_href+'-'+(++index) )
+	p To enable post, custom post and/or WooCommerce products sharing buttons (can be previewed on the <a href="https://themedemos.webmandesign.eu/reykjavik/">theme demo website</a>), please use <a href="#jetpack"><strong>Jetpack</strong></a> plugin's <a href="https://jetpack.com/support/sharing/">sharing module</a>.
+	+back_to( 'image', topic_href )
+
++details( 'Content options', topic_href+'-'+(++index) )
+	p The theme is compatible with several content options provided by <a href="#jetpack"><strong>Jetpack</strong> plugin</a>. You can hide certain post meta information or display post author biography below post content.
+	+back_to( 'image', topic_href )
+
++details( 'Comments', topic_href+'-'+(++index) )
+	p Comments are useful for blog posts to engage discussion with your website visitors. You can set them up in #[+mark( 'nav', 'Settings', 'Discussion' )] and disable them also per post basis.
+	p However, if you do not want to use comments for specific post types, we recommend setting up <a href="#plugins-others"><strong>Disable Comments</strong> plugin</a>.
+	+back_to( 'image', topic_href )
+
++details( 'Posts navigation', topic_href+'-'+(++index) )
+	p Displays links to previous and next post.
+	+back_to( 'image', topic_href )
+
++details( 'Sidebar', topic_href+'-'+(++index) )
+	p The theme displays sidebar on each single post page, blog page and archive page.
+	p Sidebar is a <a href="#sidebars">widgetized area</a>, its content can be set in #[+mark( 'nav', 'Appearance', 'Customize', 'Widgets' )].
+	p If you would like to replace sidebar on a specific post with a different one <strong>or just remove it</strong>, use <a href="#manage-sidebars"><strong>Content Aware Sidebars</strong> plugin</a>. It is a great way to control and alter your website layout.
+	+back_to( 'image', topic_href )
+
++back_to( 'topics', '#anatomy' )

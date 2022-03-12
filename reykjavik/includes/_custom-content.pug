@@ -3,8 +3,7 @@ extends ../../_core/_index.pug
 //-
 	Use this special block to create custom content sections.
 	Check for `article` value to display correct custom content then.
-block content/article
-	include cpt-wmamp.pug
+//- block content/article
 
 //-
 	Section have predefined `{section}` and `{section}/about` content blocks.
@@ -35,7 +34,6 @@ block pages/templates/list
 
 block append posts
 	include post-toc.pug
-	include post-blog-styles.pug
 
 block menu/list
 	include menus.pug
@@ -48,12 +46,10 @@ block append sidebars
 block append faq/questions/list
 	include faq-question-breadcrumbs.pug
 	include faq-question-font.pug
-	include faq-question-icons.pug
 	include faq-question-custom-fields.pug
 block append faq/answers/list
 	include faq-answer-breadcrumbs.pug
 	include faq-answer-font.pug
-	include faq-answer-icons.pug
 	include faq-answer-custom-fields.pug
 block faq/answer/page-builder
 	include faq-answer-page-builder.pug
