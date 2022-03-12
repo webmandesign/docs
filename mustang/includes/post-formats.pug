@@ -1,0 +1,33 @@
++sub_section( 'Setting Up a Post Format', 'posts-formats' )
+	p On the post edit screen you can choose a post format supported in the theme:
+
+	dl.list-default
+
+		dt Standard post
+		dd
+			p This is basic standard blog post layout. It is recommended to set a featured image for this post format as it will be displayed in posts list alongside with post excerpt.
+
+		dt Audio post
+		dd
+			p Displays audio player to play your audio files. Could be used for podcasting. Please place the <code>[wm_audio]</code> shortcode as the first thing in post content. The audio description text can follow on next line.
+
+		dt Gallery post
+		dd
+			p A standard post with a gallery of images in post content. Slideshow will be displayed on blog page from the first gallery found in post content. If no gallery found, featured image is displayed.
+			p You can insert a <code>[gallery]</code> shortcode anywhere in the post. This shortcode will not be stripped out from the post content on the single post page.
+
+		dt Link post
+		dd
+			p Promotes interesting URL links. You can set the link anywhere in the post content. The link will be emphasized when post is displayed. Post title will not be displayed.
+
+		dt Quote post
+		dd
+			p A quotation. Please place the actual quote (blockquote) directly into post content. To set a quote source use a <a href="https://www.w3schools.com/tags/tag_cite.asp"><code>&lt;cite></code> HTML tag</a>. Post title will not be displayed.
+
+		dt Status post
+		dd
+			p A short status update, similar to a Twitter status update. Please place the actual status text directly into post content area. Post title will not be displayed.
+
+		dt Video post
+		dd
+			p A single video. Please place the <code>[wm_video]</code> shortcode as the first thing in post content. The video description text can follow on next line.

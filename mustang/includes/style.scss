@@ -1,0 +1,24 @@
+:root {
+
+	--color_accent: #4f6dad;
+	--color_mark: #{ rgba( #4f6dad, .1 ) };
+	--color_button_background: #4f6dad;
+	--color_button_text: #fff;
+
+	--color_header_background: #fff;
+	--color_header_text: #333;
+
+	--color_nav_background: #345292;
+	--color_nav_text: #{ lighten( #345292, 40% ) };
+	--color_nav_border: #{ rgba( lighten( #345292, 40% ), var(--border_opacity) ) };
+
+	--color_content_background: #fff;
+	--color_content_headings: #333;
+	--color_content_text: #777;
+	--color_content_border: #{ rgba( #777, var(--border_opacity) ) };
+
+}
+
+.entry-title {
+	color: #fff;
+}
