@@ -18,3 +18,23 @@
 	--color_content_border: #{ rgba( #737373, var(--border_opacity) ) };
 
 }
+
+.intro {
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: url('includes/monument-valley.jpg');
+		background-position: 50% 50%;
+		background-size: cover;
+		mix-blend-mode: luminosity;
+		opacity: .2;
+		z-index: -1;
+	}
+
+}

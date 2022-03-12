@@ -18,3 +18,20 @@
 	--color_content_border: #{ rgba( #5a5c5e, var(--border_opacity) ) };
 
 }
+
+.intro {
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: url('includes/pattern.png');
+		background-position: 50% 50%;
+		z-index: -1;
+	}
+
+}

@@ -20,7 +20,7 @@
 		'Mustang', // @todo
 		'Polyclinic',
 		"Q'tron",
-		'Receptar', // @todo
+		'Receptar',
 		'Reykjavik', // @todo
 	];
 
@@ -51,6 +51,6 @@ html( lang="en" )
 				- img_format = ( documentation[1] ) ? ( documentation[1] ) : ( 'jpg' );
 				article
 					a( href=folder+"/index.html" )
+						h2 #{ documentation[0] } <small>Documentation</small>
 						figure
 							img( src="https://themedemos.webmandesign.eu/"+folder+"/wp-content/themes/"+folder+"/screenshot."+img_format alt=documentation[0]+" documentation")
-						h2 #{ documentation[0] } <small>Theme Documentation</small>

@@ -4,8 +4,9 @@ block install/about
 	else
 		include paid.pug
 
-	+tip( 'Welcome page' )
-		p Don't forget to check the theme welcome page at #[+mark( 'nav', 'Appearance', 'Welcome' )]. It contains everything you need to start.
+	if false !== config.compatibility.welcome
+		+tip( 'Welcome page' )
+			p Don't forget to check the theme welcome page at #[+mark( 'nav', 'Appearance', 'Welcome' )]. It contains everything you need to start.
 
 	+tip( 'Get info about updates' )
 		p Get fast information about new theme updates by subscribing to WebMan Design on <a href="#{config.url.facebook}"><strong>Facebook</strong></a> and <a href="#{config.url.twitter}"><strong>Twitter</strong></a>.

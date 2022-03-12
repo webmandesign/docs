@@ -18,3 +18,27 @@
 	--color_content_border: #{ rgba( #434346, var(--border_opacity) ) };
 
 }
+
+.intro {
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		right: 0;
+		top: 0;
+		background: url('includes/dots-white.png');
+		background-repeat: no-repeat;
+		background-position: 0 var(--white_space);
+		background-size: contain;
+		z-index: -1;
+
+		@media (min-width: 1280px) {
+			width: 38.2%;
+		}
+
+	}
+
+}

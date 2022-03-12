@@ -8,6 +8,9 @@
 	--color_header_background: #ffffff;
 	--color_header_text: #2e2d2a;
 
+	--color_intro_background: #feedba;
+	--color_intro_text: #2e2d2a;
+
 	--color_nav_background: #2e2d2a;
 	--color_nav_text: #e4e3e3;
 	--color_nav_border: #{ rgba( #e4e3e3, var(--border_opacity) ) };
@@ -16,5 +19,34 @@
 	--color_content_headings: #2e2d2a;
 	--color_content_text: #6e6d6a;
 	--color_content_border: #{ rgba( #6e6d6a, var(--border_opacity) ) };
+
+}
+
+.intro {
+	z-index: 1;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 61.8%;
+		height: 100%;
+		left: 38.2%;
+		top: 0;
+		z-index: -1;
+	}
+
+	&::before {
+		background: url('includes/britain-2028243.jpg');
+		background-position: 50% 50%;
+		background-size: cover;
+		mix-blend-mode: luminosity;
+		opacity: .15;
+	}
+
+	&::after {
+		width: 38.2%;
+		background: linear-gradient( to right, var(--color_intro_background), rgba( #feedba, 0 ) );
+	}
 
 }

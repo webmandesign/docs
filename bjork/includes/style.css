@@ -1,1 +1,37 @@
-:root{--color_accent:#122e98;--color_mark:rgba(18, 46, 152, 0.1);--color_button_background:#122e98;--color_button_text:#fff;--color_header_background:#fff;--color_header_text:#131316;--color_nav_background:#131316;--color_nav_text:#fff;--color_nav_border:rgba(255, 255, 255, var(--border_opacity));--color_content_background:#fff;--color_content_headings:#131316;--color_content_text:#434346;--color_content_border:rgba(67, 67, 70, var(--border_opacity))}
+:root {
+  --color_accent: #122e98;
+  --color_mark: rgba(18, 46, 152, 0.1);
+  --color_button_background: #122e98;
+  --color_button_text: #fff;
+  --color_header_background: #fff;
+  --color_header_text: #131316;
+  --color_nav_background: #131316;
+  --color_nav_text: #fff;
+  --color_nav_border: rgba(255, 255, 255, var(--border_opacity));
+  --color_content_background: #fff;
+  --color_content_headings: #131316;
+  --color_content_text: #434346;
+  --color_content_border: rgba(67, 67, 70, var(--border_opacity));
+}
+
+.intro {
+  z-index: 1;
+}
+.intro::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: url("includes/dots-white.png");
+  background-repeat: no-repeat;
+  background-position: 0 var(--white_space);
+  background-size: contain;
+  z-index: -1;
+}
+@media (min-width: 1280px) {
+  .intro::before {
+    width: 38.2%;
+  }
+}

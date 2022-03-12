@@ -1,24 +1,25 @@
-+sub_section( 'Megamenu', 'megamenu' )
-	p With built in simple megamenu functionality you can display child menu (sub-menu) items in columns.
+block menu/megamenu
+	+sub_section( 'Megamenu', 'megamenu' )
+		p With built in simple megamenu functionality you can display child menu (sub-menu) items in columns.
 
-	+image( 'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg', 'Megamenu example preview.' )
+		+image( 'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg', 'Megamenu example preview.' )
 
-	ol
-		li
-			p Set a <code>megamenu</code> class on the parent menu item (1st level menu item).
+		ol
+			li
+				p Set a <code>megamenu</code> class on the parent menu item (1st level menu item).
 
-			+image( 'https://easycaptures.com/fs/uploaded/1625/5144473367.png', 'Setting up menu item class.' )
+				+image( 'https://easycaptures.com/fs/uploaded/1625/5144473367.png', 'Setting up menu item class.' )
 
-			if true === config.compatibility.megamenu_fullwidth
-				+tip( 'Fullwidth megamenu', 'h4' )
-					p Add the <code>fullwidth</code> CSS class (so it becomes <code>megamenu fullwidth</code>) to stretch the megamenu full width of the screen.
+				if true === config.compatibility.megamenu_fullwidth
+					+tip( 'Fullwidth megamenu', 'h4' )
+						p Add the <code>fullwidth</code> CSS class (so it becomes <code>megamenu fullwidth</code>) to stretch the megamenu full width of the screen.
 
-		li
-			p Then the 2nd level menu items (first child menu items) become captions for megamenu columns.
+			li
+				p Then the 2nd level menu items (first child menu items) become captions for megamenu columns.
 
-			if false !== config.compatibility.megamenu_disable_link
-				+tip( 'Disable link', 'h4' )
-					p You can set <code>disable-link</code> CSS class on these menu items to render their link inactive. It is still recommended to set their link to a dummy URL such simple as <code>#0</code> would do.
+				if false !== config.compatibility.megamenu_disable_link
+					+tip( 'Disable link', 'h4' )
+						p You can set <code>disable-link</code> CSS class on these menu items to render their link inactive. It is still recommended to set their link to a dummy URL such simple as <code>#0</code> would do.
 
-		li
-			p Finally, the 3rd level menu items (second child menu items) become actual menu items within your megamenu columns.
+			li
+				p Finally, the 3rd level menu items (second child menu items) become actual menu items within your megamenu columns.

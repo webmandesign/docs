@@ -1,0 +1,43 @@
+:root {
+
+	--color_accent: #e53739;
+	--color_mark: #{ rgba( #e53739, .1 ) };
+	--color_button_background: #e53739;
+	--color_button_text: #fff;
+
+	--color_header_background: #fff;
+	--color_header_text: #1a1c1e;
+
+	--color_nav_background: #1a1c1e;
+	--color_nav_text: #caccce;
+	--color_nav_border: #{ rgba( #caccce, var(--border_opacity) ) };
+
+	--color_content_background: #fff;
+	--color_content_headings: #1a1c1e;
+	--color_content_text: #6a6c6e;
+	--color_content_border: #{ rgba( #6a6c6e, var(--border_opacity) ) };
+
+	--color_footer_background: #f5f7f9;
+	--color_footer_text: #6a6c6e;
+
+}
+
+.intro {
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: url('includes/fruits.jpg');
+		background-position: 50% 50%;
+		background-size: cover;
+		mix-blend-mode: luminosity;
+		opacity: .1;
+		z-index: -1;
+	}
+
+}
