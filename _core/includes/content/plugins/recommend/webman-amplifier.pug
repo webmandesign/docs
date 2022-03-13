@@ -1,12 +1,13 @@
-+plugin_link( 'https://wordpress.org/plugins/webman-amplifier/' )
+block plugins/recommended/webman-amplifier
+	+plugin_link( 'https://wordpress.org/plugins/webman-amplifier/' )
 
-p This plugin extends the theme's functionality with additional content types, custom icon font, metaboxes, shortcodes (with page builder compatibility) and custom widgets.
+	p This plugin extends the theme's functionality with additional content types, custom icon font, metaboxes, shortcodes (with page builder compatibility) and custom widgets.
 
-p It also provides seamless integration with <a href="#beaver-builder"><strong>Beaver Builder</strong></a> page builder plugin.
+	p It also provides seamless integration with <a href="#beaver-builder"><strong>Beaver Builder</strong></a> page builder plugin.
 
-p This is essential plugin to provide advanced functionality for the theme and you will be prompted to install it after theme activation.
+	p This is essential plugin to provide advanced functionality for the theme and you will be prompted to install it after theme activation.
 
-if true === config.compatibility.accessibility
-	+warning( 'Inaccessible elements', 'h4' )
-		p Please note that <strong>WM Accordion</strong> and <strong>WM Tabs</strong> page builder modules/shortcodes provided by WebMan Amplifier plugin are not accessible elements currently and are not recommended for use on accessible websites.
-		p Please don't forget to <a href="#{config.url.accessibility}">test your accessible websites</a> thoroughly.
+	if true === config.compatibility.accessibility
+		+warning( 'Inaccessible elements', 'h4' )
+			p Please note that <strong>WM Accordion</strong> and <strong>WM Tabs</strong> page builder modules/shortcodes provided by WebMan Amplifier plugin are not accessible elements currently and are not recommended for use on accessible websites.
+			p Please don't forget to <a href="#{config.url.accessibility}">test your accessible websites</a> thoroughly.

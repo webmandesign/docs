@@ -1,0 +1,38 @@
+:root {
+
+	--color_accent: #0aac8e;
+	--color_mark: #{ rgba( #0aac8e, .1 ) };
+	--color_button_background: #0aac8e;
+	--color_button_text: #fff;
+
+	--color_header_background: #fff;
+	--color_header_text: #1a1c1e;
+
+	--color_nav_background: #1a1c1e;
+	--color_nav_text: #8a8c8e;
+	--color_nav_border: #{ rgba( #8a8c8e, var(--border_opacity) ) };
+
+	--color_content_background: #fff;
+	--color_content_headings: #1a1c1e;
+	--color_content_text: #6a6c6e;
+	--color_content_border: #{ rgba( #6a6c6e, var(--border_opacity) ) };
+
+}
+
+.entry-title {
+	color: #fff;
+}
+
+.badge-plus {
+	display: inline-block;
+	padding: .5em;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: var(--color_button_background);
+	color: var(--color_button_text);
+	border-radius: .25em;
+	vertical-align: top;
+}

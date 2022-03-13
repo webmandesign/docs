@@ -1,0 +1,65 @@
+extends ../../_core/_index.pug
+
+//-
+	Use this special block to create custom content sections.
+	Check for `article` value to display correct custom content then.
+block content/article
+	include restaurant.pug
+
+//-
+	Section have predefined `{section}` and `{section}/about` content blocks.
+	These content blocks contain entire and basic about contents for the section.
+	You can either completely overwrite them, or prepend/append to them.
+	@link  https://pugjs.org/language/inheritance.html
+
+block append styles
+	include style.css
+
+block demo/starter_content
+	//- Empty to remove the section.
+
+block append pages
+	include page.pug
+block pages/excerpt
+	//- Empty to remove the section.
+block pages/templates/list
+	include templates.pug
+
+block append posts
+	include post-toc.pug
+	include post-formats.pug
+block posts/excerpt
+	include post-excerpt.pug
+
+block menu/list
+	include menus.pug
+block menu/megamenu
+	//- Empty to remove the section.
+
+block sidebars/list
+	include sidebars.pug
+
+block append customizer/about
+	+tip( 'More options with Plus' )
+		p #[+plus] With <a href="https://www.webmandesign.eu/portfolio/auberge-plus-wordpress-theme/">premium version of the theme</a> you get more options to control the theme's appearance and functionality.
+
+block append faq/questions/list
+	include faq-question-breadcrumbs.pug
+	include faq-question-custom-fields.pug
+block append faq/answers/list
+	include faq-answer-breadcrumbs.pug
+	include faq-answer-custom-fields.pug
+block append faq/answer/helper-classes
+	+video( 'https://vimeo.com/124310603' ) How to apply CSS classes in theme.
+
+block append plugins/others/list
+	include plugins-others.pug
+block append plugins/recommended/jetpack
+	p Jetpack provides the <strong>Food Menu</strong> custom post type and functionality for the theme. Theme further modifies and improves this functionality. You will be prompted to install the plugin after the theme activation.
+block plugins/recommended/webman-amplifier
+	+plugin_link( 'https://wordpress.org/plugins/webman-amplifier/' )
+	p #[+plus] This plugin extends the theme's functionality with recipes functionality and adds a custom "Ingredients" taxonomy.
+	p This is essential plugin to provide <strong>Recipes</strong> functionality for the theme and you will be prompted to install it after the theme activation.
+
+mixin plus( url = 'https://www.webmandesign.eu/portfolio/auberge-plus-wordpress-theme/' )
+	a( href=url ).badge-plus Plus only

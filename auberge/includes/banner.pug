@@ -1,0 +1,18 @@
+- title   = 'Content: Banner';
+- id      = 'banner';
+- nav[id] = title;
+
++section( title, id )
+	p On front page of your website the theme displays a banner area with an image and text or with a slideshow of images with a titles. Here is how it is displayed:
+
+	h3 <strong>Static banner</strong>
+	p By default it displays header images (#[+mark( 'nav', 'Appearance', 'Header' )]) and your website tagline (#[+mark( 'nav', 'Settings', 'General', '"Tagline"' )]).
+	p If you <a href="#front-page">set a static front page</a> you can override the site tagline text by setting <a href="#custom-fields"><code>banner_text</code> custom field</a> for the page.
+
+	h3 <strong>Slideshow</strong>
+	p You can display a slideshow of featured posts in the banner area.
+	p To set up featured posts you need to use <a href="https://wordpress.org/plugins/ns-featured-posts/"><strong>NS Featured Posts</strong> plugin</a> and mark some of your posts as featured ones.
+	p Post featured image will be displayed in the slideshow alongside the post title (or a <a href="#custom-fields"><code>banner_text</code> custom field</a> that you set for the post).
+
+	h3 #[+plus] <strong>Custom slider</strong>
+	p Use <a href="#sidebars"><strong>Custom Banner</strong> widgets area</a> to set custom content for the banner. You can insert your custom <a href="https://wordpress.org/plugins/search/slider/">slider plugin</a> widget or shortcode there.
