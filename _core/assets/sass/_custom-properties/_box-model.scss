@@ -26,6 +26,14 @@
 			--menu_width: 38%;
 		}
 
+		// Original theme screenshot is 1200x900...
+		//...this is 10th.
+		--screenshot_height: 120px;
+		@include media( map_get( $breakpoint, 'm' ) ) {
+			//...this is 5th.
+			--screenshot_height: 240px;
+		}
+
 	// Others.
 
 		--border_radius: .2rem;

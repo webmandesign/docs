@@ -124,6 +124,7 @@ h1 {
   --white_space: 80px;
   --content_width: 36rem;
   --menu_width: 25%;
+  --screenshot_height: 120px;
   --border_radius: .2rem;
 }
 @media (min-width: 880px) {
@@ -144,6 +145,11 @@ h1 {
 @media (min-width: 1600px) {
   :root {
     --menu_width: 38%;
+  }
+}
+@media (min-width: 672px) {
+  :root {
+    --screenshot_height: 240px;
   }
 }
 
@@ -1255,11 +1261,11 @@ body:focus {
 }
 .intro .screenshot {
   display: block;
-  width: 240px;
-  height: 240px;
+  width: var(--screenshot_height);
+  height: var(--screenshot_height);
   margin-top: calc( -.5 * var(--white_space) );
   margin-bottom: 2em;
-  border-radius: 40px;
+  border-radius: calc( var(--screenshot_height) / 6 );
   -webkit-box-shadow: var(--box_shadow--small);
           box-shadow: var(--box_shadow--small);
   -webkit-transform: rotate(15deg);
@@ -1287,7 +1293,7 @@ body:focus {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .intro .screenshot:hover, .intro .screenshot:focus {
-  width: 320px;
+  width: calc( var(--screenshot_height) / 3 * 4 );
   border-radius: 0;
   -webkit-transform: none;
       -ms-transform: none;

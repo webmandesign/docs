@@ -17,14 +17,12 @@
 	}
 
 	.screenshot {
-		$height : 240px; // Theme screenshot is 1200x900 and this is a fifth.
-
 		display: block;
-		width: $height;
-		height: $height;
+		width: var(--screenshot_height);
+		height: var(--screenshot_height);
 		margin-top: calc( -.5 * var(--white_space) );
 		margin-bottom: 2em;
-		border-radius: $height / 6;
+		border-radius: calc( var(--screenshot_height) / 6 );
 		box-shadow: var(--box_shadow--small);
 		transform: rotate( 15deg );
 		transition: transform .3s, border-radius .3s, width .3s;
@@ -40,7 +38,8 @@
 
 		&:hover,
 		&:focus {
-			width: $height / 3 * 4; // 4:3 aspect ratio.
+			// 4:3 aspect ratio.
+			width: calc( var(--screenshot_height) / 3 * 4 );
 			border-radius: 0;
 			transform: none;
 
