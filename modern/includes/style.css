@@ -19,15 +19,12 @@
 }
 
 .intro {
-  z-index: 1;
+  isolation: isolate;
 }
 .intro::before {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  inset: 0;
   background: url("includes/nick-adams-457460.jpg");
   background-position: 50% 50%;
   background-size: cover;

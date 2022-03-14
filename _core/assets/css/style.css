@@ -185,15 +185,12 @@ map, .screen-reader-text {
 }
 
 .link-video, .list-questions, .list-topics, figure, .alert {
-  z-index: 1;
+  isolation: isolate;
 }
 .link-video::before, .list-questions::before, .list-topics::before, figure::before, .alert::before {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  inset: 0;
   background-color: currentColor;
   border-radius: inherit;
   opacity: var(--pseudo_background_opacity);

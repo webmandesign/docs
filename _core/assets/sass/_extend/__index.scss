@@ -3,19 +3,16 @@
 }
 
 %shaded_background {
-	z-index: 1; // Trick to keep pseudo element below child elements.
+	isolation: isolate;
 
 	&::before {
 		content: '';
 		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
+		inset: 0;
 		background-color: currentColor;
 		border-radius: inherit;
 		opacity: var(--pseudo_background_opacity);
-		z-index: -1; // Trick to keep pseudo element below child elements.
+		z-index: -1;
 	}
 
 }
