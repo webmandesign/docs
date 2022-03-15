@@ -70,7 +70,7 @@ h1 {
 }
 
 h2 {
-	margin: 0 0 clamp( 1em, 2.5vw, 2em );
+	margin: 0 0 1em;
 	font-size: 1em;
 	font-weight: 700;
 }
@@ -99,6 +99,15 @@ figure {
 	margin: auto 0 var(--monitor);
 	background: var(--color-bg-shade);
 	border-radius: var(--radius);
+	transform:
+		scale(.9)
+		translateX(25%)
+		translateY(-5%)
+		perspective(800px)
+		rotateY(-20deg);
+	transform-origin: 50% 75%;
+	transition: transform .3s;
+	will-change: transform;
 
 	&::before,
 	&::after {
@@ -146,8 +155,10 @@ figure {
 }
 
 img {
+	position: relative;
 	max-width: 100%;
 	vertical-align: top;
+	background: currentColor;
 	border: var(--bezel) solid;
 	border-radius: var(--radius) var(--radius) 0 0;
 	box-shadow: inset 0 0 1px 1px currentColor;
@@ -161,6 +172,7 @@ section {
 	padding: 2%;
 	margin: 0 auto;
 	list-style: none;
+	pointer-events: none;
 }
 
 article {
@@ -177,6 +189,7 @@ article {
 		4px 4px 0   0 var(--color-bg-item),
 		4px 4px var(--shadow-blur) 0 rgba( #000, .15 );
 	overflow: hidden;
+	pointer-events: auto;
 	transition:
 		background .3s,
 		color .3s,
@@ -193,6 +206,11 @@ article {
 		--shadow-blur: 20px;
 		transform: translateY(-.2em);
 		z-index: 99;
+
+		figure {
+			transform: none;
+		}
+
 	}
 
 	a {
@@ -201,6 +219,7 @@ article {
 		justify-content: space-between;
 		height: 100%;
 		padding: var(--gap);
+		overflow: hidden;
 	}
 
 }
