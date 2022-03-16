@@ -181,12 +181,16 @@ article {
 	width: 40vw;
 	max-width: 12em;
 	background: var(--color-bg-item);
+	// box-shadow:
+	// 	0   0   2px 0 rgba( #000, .3 ),
+	// 	2px 2px 0   0 var(--color-bg-item),
+	// 	2px 2px 2px 0 rgba( #000, .3 ),
+	// 	4px 4px 0   0 var(--color-bg-item),
+	// 	4px 4px var(--shadow-blur) 0 rgba( #000, .15 );
 	box-shadow:
-		0   0   2px 0 rgba( #000, .3 ),
-		2px 2px 0   0 var(--color-bg-item),
-		2px 2px 2px 0 rgba( #000, .3 ),
-		4px 4px 0   0 var(--color-bg-item),
-		4px 4px var(--shadow-blur) 0 rgba( #000, .15 );
+		0   0   3px 0 rgba( #000, .8 ),
+		3px 3px 0   0 var(--color-bg-item),
+		3px 3px var(--shadow-blur) 0 rgba( #000, .5 );
 	overflow: hidden;
 	pointer-events: auto;
 	transition:
@@ -203,6 +207,7 @@ article {
 	&:hover,
 	&:focus-within {
 		--shadow-blur: 20px;
+
 		transform: translateY(-.2em);
 		z-index: 99;
 
