@@ -2,15 +2,12 @@
 
 :root {
 	--gap: clamp( 10px, 1.5vw, 20px );
-	--decoration: calc( 1.5 * var(--gap) );
 
-	--color-bg: #ddd;
-	--color-bg-shade: #d3d3d3;
-	--color-txt: #111;
+	--color-bg: #191919;
+	--color-bg-shade: #232323;
+	--color-txt: #fff;
 
-	--color-bg-item: #fff;
-
-	--color-decoration: #eee;
+	--color-bg-item: #292929;
 }
 
 html {
@@ -60,7 +57,7 @@ h1 {
 	padding: 1em 2%;
 	margin: 0;
 	font-size: 1.5em;
-	font-weight: 400;
+	font-weight: 300;
 	text-align: center;
 
 	a {
@@ -70,7 +67,7 @@ h1 {
 }
 
 h2 {
-	margin: 0 0 1em;
+	margin: 0 0 1.25em;
 	font-size: 1em;
 	font-weight: 700;
 }
@@ -92,12 +89,14 @@ small {
 figure {
 	--radius: 4px;
 	--bezel: 5px;
-	--monitor: 20px;
+	--monitor: clamp( 10px, 2vw, 20px );
+	--bezel-color: #020202;
+	--monitor-color: #444;
 
 	position: relative;
 	padding-bottom: var(--monitor);
 	margin: auto 0 var(--monitor);
-	background: var(--color-bg-shade);
+	background: var(--monitor-color);
 	border-radius: var(--radius);
 	transform:
 		scale(.9)
@@ -113,11 +112,11 @@ figure {
 	&::after {
 		content: '';
 		position: absolute;
-		width: 52px;
+		width: 22.5%;
 		height: var(--monitor);
 		left: 50%;
 		bottom: calc( -1 * var(--monitor) );
-		background-color: var(--color-bg-shade);
+		background-color: var(--monitor-color);
 		background-image:
 			linear-gradient(
 				to bottom,
@@ -140,7 +139,7 @@ figure {
 	}
 
 	&::after {
-		width: 64px;
+		width: 27.5%;
 		height: 3px;
 		margin-top: calc( var(--monitor) - 3px );
 		background-image:
@@ -158,10 +157,10 @@ img {
 	position: relative;
 	max-width: 100%;
 	vertical-align: top;
-	background: currentColor;
-	border: var(--bezel) solid;
+	background: var(--bezel-color);
+	border: var(--bezel) solid var(--bezel-color);
 	border-radius: var(--radius) var(--radius) 0 0;
-	box-shadow: inset 0 0 1px 1px currentColor;
+	box-shadow: inset 0 0 1px 1px var(--bezel-color);
 }
 
 section {
