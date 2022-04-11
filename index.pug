@@ -4,9 +4,9 @@
 //-
 
 -
-	var documentations = [
+	var docs = [
 		'Angelica',
-		'Auberge',
+		'Auberge|https://themedemos.webmandesign.eu/auberge/wp-content/themes/auberge-plus/screenshot.jpg',
 		'Bjork',
 		'Cindy|png',
 		'Deborah|png',
@@ -45,12 +45,14 @@ html( lang="en" )
 		h1 Documentation by <a href="http://www.webmandesign.eu">WebMan Design</a>
 
 		section
-			each doc in documentations
-				- documentation = doc.split( '|' );
-				- folder = documentation[0].toLowerCase().replace( "'", '' ).replace( ' ', '-' );
-				- img_format = ( documentation[1] ) ? ( documentation[1] ) : ( 'jpg' );
+			each doc in docs
+				- doc     = doc.split( '|' );
+				- folder  = doc[0].toLowerCase().replace( "'", '' ).replace( ' ', '-' );
+				- img     = ( doc[1] ) ? ( doc[1] ) : ( 'jpg' );
+				- img_url = ( 0 > img.indexOf( 'http' ) ) ? ( 'https://themedemos.webmandesign.eu/' + folder + '/wp-content/themes/' + folder + '/screenshot.' + img ) : ( img );
+
 				article
 					a( href=folder+"/index.html" )
-						h2 #{ documentation[0] } <small>Documentation</small>
+						h2 #{ doc[0] } <small>Documentation</small>
 						figure
-							img( src="https://themedemos.webmandesign.eu/"+folder+"/wp-content/themes/"+folder+"/screenshot."+img_format alt=documentation[0]+" documentation")
+							img( src=img_url alt=doc[0]+" documentation")
