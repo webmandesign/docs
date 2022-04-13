@@ -11,11 +11,15 @@ extends ../../_core/_index.pug
 	You can either completely overwrite them, or prepend/append to them.
 	@link  https://pugjs.org/language/inheritance.html
 
-//- block append customizer/about
 block append editor
 	include editor-spacer-min-height.pug
 block append pages
 	include page-intro.pug
+block append cpt/products
+	+info( 'Featured attribute' )
+		p The theme displays a featured attribute on product page just below the product title. This functionality is useful for displaying a book author, or a brand of your product, for example.
+		+image( 'https://easycaptures.com/fs/uploaded/1503/0471254272.jpg', 'Featured attribute displayed on product page.' )
+		p Check out <abbr title="Frequently Asked Questions">FAQ</abbr> section for <a href="#featured-attribute">how to set it up</a>.
 
 //-
 	Some additional partial content blocks for more flexibility:
@@ -37,6 +41,10 @@ block menu/list
 block sidebars/list
 	include sidebars-sidebar.pug
 	include sidebars-footer.pug
+block prepend faq/questions/list
+	include faq-question-attribute.pug
+block prepend faq/answers/list
+	include faq-answer-attribute.pug
 block append faq/questions/list
 	include faq-question-breadcrumbs.pug
 block append faq/answers/list
