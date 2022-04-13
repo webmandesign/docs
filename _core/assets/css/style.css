@@ -612,8 +612,8 @@ big {
 }
 
 /* FILE: content/typography/_headings.scss */
-h1, h2, h3, h4,
-.h1, .h2, .h3, .h4 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
   clear: both;
   margin-top: 0;
   margin-bottom: 1.618rem;
@@ -623,26 +623,26 @@ h1, h2, h3, h4,
   word-wrap: break-word;
   color: var(--color_content_headings);
 }
-h1:last-child, h2:last-child, h3:last-child, h4:last-child,
-.h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child {
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child,
+.h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child {
   margin-bottom: 0;
 }
-h1 a, h2 a, h3 a, h4 a,
-.h1 a, .h2 a, .h3 a, .h4 a {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
   color: inherit;
 }
 
-h2, h3, h4,
-.h2, .h3, .h4 {
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
   margin-top: calc( var(--white_space) / 2 );
 }
-h2:first-child, h3:first-child, h4:first-child,
-.h2:first-child, .h3:first-child, .h4:first-child {
+h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child,
+.h2:first-child, .h3:first-child, .h4:first-child, .h5:first-child, .h6:first-child {
   margin-top: 0;
 }
 
-h4,
-.h4 {
+h4, h5, h6,
+.h4, .h5, .h6 {
   margin-top: 2rem;
 }
 
@@ -664,6 +664,16 @@ h3,
 h4,
 .h4 {
   font-size: var(--typography_heading_size_4_em);
+}
+
+h5,
+.h5 {
+  font-size: var(--typography_heading_size_5_em);
+}
+
+h6,
+.h6 {
+  font-size: var(--typography_heading_size_6_em);
 }
 
 /* FILE: content/elements/__index.scss */
@@ -1885,13 +1895,14 @@ body .has-palette-red-border-color {
 .alert * {
   margin-bottom: 0.5rem;
 }
-.alert h3, .alert h4 {
+.alert h3, .alert h4, .alert h5, .alert h6 {
+  margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1em;
   line-height: inherit;
   text-transform: uppercase;
 }
-.alert h3 strong, .alert h4 strong {
+.alert h3 strong, .alert h4 strong, .alert h5 strong, .alert h6 strong {
   padding: 0.25em 0.5em;
   margin-left: calc( -1.5rem - 2px );
   margin-right: 0.5em;
@@ -1906,15 +1917,15 @@ body .has-palette-red-border-color {
   vertical-align: super;
 }
 @media (min-width: 880px) {
-  .alert h3 strong, .alert h4 strong {
+  .alert h3 strong, .alert h4 strong, .alert h5 strong, .alert h6 strong {
     margin-left: calc( -2.5rem - 2px );
   }
 }
-.alert h3 span, .alert h4 span {
+.alert h3 span, .alert h4 span, .alert h5 span, .alert h6 span {
   display: block;
 }
 @media (min-width: 672px) {
-  .alert h3 span, .alert h4 span {
+  .alert h3 span, .alert h4 span, .alert h5 span, .alert h6 span {
     display: inline;
   }
 }
