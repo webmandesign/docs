@@ -39,4 +39,18 @@
 
 	}
 
+	.alert & {
+		padding-left: 1em;
+		padding-right: 1em;
+
+		&:not(:first-child) {
+			margin-top: $ratio +em;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: $ratio +em;
+		}
+
+	}
+
 }

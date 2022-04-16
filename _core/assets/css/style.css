@@ -2389,3 +2389,13 @@ h2 + .list-questions, h2 + .list-topics {
     display: inline;
   }
 }
+.alert .link-video {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.alert .link-video:not(:first-child) {
+  margin-top: 1.618em;
+}
+.alert .link-video:not(:last-child) {
+  margin-bottom: 1.618em;
+}
