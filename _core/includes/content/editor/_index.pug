@@ -2,6 +2,10 @@
 - id      = 'editor';
 - nav[id] = title;
 
+// Automatically set support for block editor when this section is displayed.
+if true !== config.compatibility.block_editor
+	- config.compatibility.block_editor = true
+
 +section( title, id )
 	block editor
 		include _content.pug
