@@ -3,6 +3,7 @@
 //- @link  https://devhints.io/pug
 //-
 
+- var time = new Date();
 -
 	var docs = [
 		'Angelica',
@@ -39,7 +40,7 @@ html( lang="en" )
 		style
 			include style.css
 
-	body
+	body( data-version=time.toLocaleString() )
 		a( name="top" )
 
 		h1 Documentation by <a href="http://www.webmandesign.eu">WebMan Design</a>
