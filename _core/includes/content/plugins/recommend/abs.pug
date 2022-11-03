@@ -1,0 +1,8 @@
+block plugins/recommended/abs
+	+plugin_link( 'https://wordpress.org/plugins/additional-block-styles/' )
+
+	p Provides additional block styles.
+
+	if true === config.compatibility.block_styles
+		+warning( 'Duplicate styles', 'h4' )
+			p If <a href="#block-styles">your theme already provides block styles</a>, the styles from plugin will be added only, so you might experience some duplicate styles.

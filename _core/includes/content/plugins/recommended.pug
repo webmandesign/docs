@@ -16,6 +16,7 @@
 			each name, id in config.plugins
 				+recommend( name, id )
 					case id
+						when 'abs': include recommend/abs.pug
 						when 'beaver-builder': include recommend/beaver-builder.pug
 						when 'classic-widgets': include recommend/classic-widgets.pug
 						when 'envato-market': include recommend/envato-market.pug
