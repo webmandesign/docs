@@ -48,6 +48,9 @@ block append faq/answers/list
 block faq/answer/page-builder
 	include faq-answer-page-builder.pug
 
+block accessibility/headings/site_title
+	include accessibility-site-title.pug
+
 block plugins/recommended/list/item
 	case id
 		when 'ns-featured-posts' : include plugin-ns-featured-posts.pug
