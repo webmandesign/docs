@@ -20,6 +20,10 @@ block demo/about
 	+danger( 'Images and media quality' )
 		p Please understand that demo images, audio and video files are of <strong>low quality</strong>. This is to prevent any copyright infringement. You should replace them with your own, <a href="#references">properly licensed media</a> that fit your website project.
 
+	if config.content.includes( 'sidebars' )
+		+alert( 'Classic widgets interface', 'orange', 'h3', '<strong>Recommended:</strong>' )
+			p WordPress 5.8 introduced a new block-based interface to widgets and sidebars management screen. Theme demo content was built using the classic widgets interface, so it is highly recommended to install and activate <a href="https://wordpress.org/plugins/classic-widgets/"><strong>Classic Widgets</strong> plugin</a> to retrieve the classic WordPress widgets interface again.
+
 	+danger( 'Page builder compatibility' )
 		p If you want to <a href="#any-page-builder">use a page builder</a>, please understand that if the theme demo content was not built with your page builder, you will not be able to edit the imported demo pages.
 		p → Read <a href="https://support.webmandesign.eu/demo-content-editor/">knowledge base article</a> for more info.
