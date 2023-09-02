@@ -5,10 +5,10 @@
 	&-default {
 
 		dt {
-			margin: ( $ratio +em ) 0 ( $ratio_maj +em );
+			margin: ( $ratio + em ) 0 ( $ratio_maj + em );
 
 			// &:not(:first-child) {
-			// 	padding-top: ( $ratio +em );
+			// 	padding-top: ( $ratio + em );
 			// 	border-top-width: 1px;
 			// 	border-top-style: dashed;
 			// }
@@ -16,7 +16,7 @@
 		}
 
 		dd {
-			margin-bottom: $ratio +em;
+			margin-bottom: $ratio + em;
 		}
 
 	}
@@ -70,7 +70,7 @@
 
 		~ h3 {
 			display: list-item;
-			// padding-bottom: $ratio +rem;
+			// padding-bottom: $ratio + rem;
 			// border-bottom-width: 1px;
 			// border-bottom-style: solid;
 			font-weight: 400;

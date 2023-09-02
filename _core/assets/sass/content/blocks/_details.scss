@@ -29,7 +29,7 @@ details {
 	}
 
 	p {
-		margin: 0 1em $ratio_maj +em;
+		margin: 0 1em $ratio_maj + em;
 	}
 
 }
@@ -57,7 +57,7 @@ summary {
 		content: counter(numbers);
 		display: inline-block;
 		width: 2em;
-		margin-right: $ratio_maj +em;
+		margin-right: $ratio_maj + em;
 		text-align: center;
 		font-weight: 700;
 		line-height: 2;

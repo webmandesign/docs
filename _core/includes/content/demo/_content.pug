@@ -1,2 +1,5 @@
-include about.pug
-include starter-content.pug
+if true !== config.compatibility.fse
+	include about.pug
+	include starter-content.pug
+else
+	include fse.pug

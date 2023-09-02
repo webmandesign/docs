@@ -7,13 +7,13 @@
 
 .site-title {
 	display: block;
-	margin-left: $ratio +em;
+	margin-left: $ratio + em;
 	font-size: 1.25em;
 	line-height: 1.15;
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 		display: inline-block;
-		font-size: $ratio +em;
+		font-size: $ratio + em;
 	}
 
 }

@@ -1,3 +1,6 @@
-include about.pug
-include create.pug
-include mega.pug
+if true !== config.compatibility.fse
+	include about.pug
+	include create.pug
+	include mega.pug
+else
+	include fse.pug

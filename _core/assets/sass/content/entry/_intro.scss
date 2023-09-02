@@ -46,9 +46,7 @@
 			img {
 				transform: none;
 			}
-
 		}
-
 	}
 
 	h1 {
@@ -64,11 +62,9 @@
 			font-weight: 400;
 
 			@include media( map_get( $breakpoint, 'xxl' ) ) {
-				font-size: $ratio_min +em;
+				font-size: $ratio_min + em;
 			}
-
 		}
-
 	}
 
 	a {
@@ -80,8 +76,14 @@
 	}
 
 	.svg-icon {
-		margin-right: 0;
-		margin-bottom: $ratio_min +em;
+		margin: 0;
+		width: 1.25em;
+		height: 1.25em;
 	}
 
+	.stars {
+		display: inline-block;
+		margin-inline: $ratio_min + em;
+		letter-spacing: -$ratio_min + em;
+	}
 }

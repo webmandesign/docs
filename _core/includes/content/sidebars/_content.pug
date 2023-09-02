@@ -1,2 +1,5 @@
-include about.pug
-include manage.pug
+if true !== config.compatibility.fse
+	include about.pug
+	include manage.pug
+else
+	include fse.pug

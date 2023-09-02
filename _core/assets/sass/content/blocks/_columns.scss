@@ -1,6 +1,6 @@
 /* FILE: content/blocks/_columns.scss */
 
-$gap : $ratio +rem;
+$gap : $ratio + rem;
 
 .row {
 	display: flex;
@@ -19,6 +19,6 @@ $gap : $ratio +rem;
 
 @for $i from 1 through 12 {
 	.span-#{$i} {
-		max-width: calc( #{ percentage( 1 / 12 * $i ) } - #{ $gap } );
+		max-width: calc( #{ percentage( math.div( 1, 12 ) * $i ) } - #{ $gap } );
 	}
 }

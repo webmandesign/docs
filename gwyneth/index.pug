@@ -1,0 +1,70 @@
+//-
+//- Configuration object:
+//-
+-
+	var config = {
+		//- Theme attributes:
+		name          : 'Gwyneth',
+		slug          : 'gwyneth',
+		screenshot    : 'https://themedemos.webmandesign.eu/gwyneth/wp-content/themes/gwyneth/screenshot.jpg',
+		is_free       : false,
+		source        : 'envato', //- Available values: wporg/envato/github/other
+		compatibility : {
+			fse                : true,
+			accessibility      : true,
+			block_patterns     : true,
+			block_styles       : true,
+			megamenu_fullwidth : true,
+			no_demo            : true,
+		},
+		version : {
+			wp  : '6.2',
+			php : '7.0',
+		},
+
+		url : {
+			'info' : 'https://1.envato.market/gwyneth',
+		},
+
+		//- Content sections:
+		//- For custom content see below.
+		content : [
+			//- For the list of core contents refer to `_core/includes/content.pug`.
+			//- Basically, these match sub-folder names in `_core/includes/content`.
+			//- Reorder these how you please.
+			'wordpress',
+			'install',
+			'update',
+			'demo',
+			'pages',
+			'posts',
+			'editor',
+			'menu',
+			'sidebars',
+			'customizer',
+			'localization',
+			'accessibility',
+			'plugins',
+			'faq',
+			'mods',
+			'references',
+		],
+
+		//- Recommended plugins list:
+		//- For custom content see below.
+		plugins : {
+			//- For the list of core recommended plugin refer to `_core/includes/content/plugins/recommend`.
+			//- Reorder these how you please.
+			'abs'            : 'Additional Block Styles',
+			'envato-market'  : 'Envato Market',
+			'woocommerce'    : 'WooCommerce',
+			'integration-wc' : 'Theme Integration for WooCommerce',
+		},
+		tgmpa : true,
+	};
+
+//-
+//- Custom content:
+//- This has to be here, after all the above variables declarations.
+//-
+include includes/_custom-content.pug

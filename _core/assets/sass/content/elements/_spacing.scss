@@ -2,7 +2,7 @@
 
 #{ $selectors_margin_bottom } {
 	margin-top: 0;
-	margin-bottom: $ratio +rem;
+	margin-bottom: $ratio + rem;
 
 	&:last-child {
 		margin-bottom: 0;

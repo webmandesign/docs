@@ -6,8 +6,9 @@
 	if config.tgmpa
 		+image( 'https://easycaptures.com/fs/uploaded/1625/5223285226.png', 'Plugins recommendation page example: Recommended, not required' )
 
-	+warning( 'Demo content required plugins', 'h4' )
-		p List of plugins the theme recommends may differ from plugins that are <em>required</em> when installing <a href="#demo-content">demo content</a>. Check the demo content information for more details.
+	if true !== config.compatibility.no_demo
+		+warning( 'Demo content required plugins', 'h4' )
+			p List of plugins the theme recommends may differ from plugins that are <em>required</em> when installing <a href="#demo-content">demo content</a>. Check the demo content information for more details.
 
 	p Here is a list of plugins that were successfully tested with the theme and the theme even provides additional integration layer for them:
 

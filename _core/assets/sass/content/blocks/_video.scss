@@ -23,7 +23,7 @@
 	}
 
 	.label {
-		margin-right: $ratio_min +rem;
+		margin-right: $ratio_min + rem;
 		font-size: .8em;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -44,11 +44,11 @@
 		padding-right: 1em;
 
 		&:not(:first-child) {
-			margin-top: $ratio +em;
+			margin-top: $ratio + em;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: $ratio +em;
+			margin-bottom: $ratio + em;
 		}
 
 	}

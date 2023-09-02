@@ -1,0 +1,20 @@
+extends ../../_core/_index.pug
+
+block append styles
+	include style.css
+
+//-----------------------------------------------
+
+block append posts
+	include posts-featured.pug
+
+block pages/templates/list
+	include template-content-only.pug
+	include template-no-intro.pug
+	include template-overlaid-header.pug
+	include template-page-builder.pug
+
+block prepend faq/questions/list
+	include faq-question-space.pug
+block prepend faq/answers/list
+	include faq-answer-space.pug

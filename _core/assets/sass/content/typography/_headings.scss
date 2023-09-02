@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	clear: both;
 	margin-top: 0;
-	margin-bottom: $ratio +rem;
+	margin-bottom: $ratio + rem;
 	font-family: var(--typography_font_secondary);
 	font-weight: 700;
 	line-height: var(--typography_line_height_headings);

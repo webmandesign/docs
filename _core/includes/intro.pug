@@ -9,12 +9,15 @@ header#intro.intro
 				<strong>#{config.name}</strong>
 				<small>WordPress Theme User Manual</small>
 
-		p.thank-you.has-extra-large-font-size Thank you and congratulations for using a theme by <a href="#{config.url.author}">WebMan&nbsp;Design</a>!
+		p.thank-you.has-extra-large-font-size Thank you and congratulations for using #{config.name} theme by <a href="#{config.url.author}">WebMan&nbsp;Design</a>!
 
-		p This user manual will teach you how to set up and use the theme. In case you have any questions that are beyond the scope of this documentation, please join <a href="#{config.url.support}"><strong>WebMan Design support forum</strong></a>. Enjoy your <strong>#{config.name}</strong> WordPress theme!
-
-		if 'wporg' === config.source || 'envato' === config.source
-			div.stars
-				+stars()
-			p
-				em Love this theme? <a href="#{config.url.review[ config.source ]}">Support it by leaving a review &rarr;</a>
+		p This user manual will teach you how to set up and use the theme. In case you have any questions that are beyond the scope of this documentation, please join <a href="#{config.url.support}"><strong>WebMan Design support forum</strong></a>.
+		p Enjoy your <a href="#{config.url.info}"><strong>#{config.name}</strong></a> WordPress theme!
+			if 'wporg' === config.source || 'envato' === config.source
+				br
+				em Love this theme? Support it by leaving a
+					a( href=config.url.review[ config.source ] )
+						| review
+						span.stars
+							+stars()
+						| &rarr;

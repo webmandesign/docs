@@ -30,7 +30,7 @@
 	}
 
 	li {
-		margin-top: $ratio_maj +em;
+		margin-top: $ratio_maj + em;
 
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
 			margin-left: 2em;
