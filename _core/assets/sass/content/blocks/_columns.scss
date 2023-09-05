@@ -1,24 +1,47 @@
 /* FILE: content/blocks/_columns.scss */
 
-$gap : $ratio + rem;
+.row,
+.columns {
+	--gap: #{ $ratio + rem };
 
-.row {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-left: calc( #{ $gap } / -2 );
-	margin-right: calc( #{ $gap } / -2 );
+	gap: var(--gap);
 }
 
 .column {
-	flex: 1;
-	width: calc( 100% - #{ $gap } );
-	margin-left: calc( #{ $gap } / 2 );
-	margin-right: calc( #{ $gap } / 2 );
+	flex: 1 1 auto;
+	width: 100%;
+
+	h4 {
+		margin-bottom: 1rem;
+		font-size: var(--typography_font_size_S_em);
+		letter-spacing: .05em;
+		text-transform: uppercase;
+	}
+
+	ul, ol {
+		list-style-position: inside;
+	}
+
+	ul {
+		list-style-type: circle;
+	}
 }
 
-@for $i from 1 through 12 {
-	.span-#{$i} {
-		max-width: calc( #{ percentage( math.div( 1, 12 ) * $i ) } - #{ $gap } );
+@include media( map_get( $breakpoint, 'm' ) ) {
+
+	@for $j from 2 through 4 {
+		$selectors: ();
+
+		@for $i from 1 through $j {
+			$selector  : '.column:nth-child(' + $i + '):nth-last-child(' + ( $j - $i + 1 ) + ')';
+			$selectors : append( $selectors, $selector, comma );
+		}
+
+		#{ $selectors } {
+			width: calc( #{ percentage( math.div( 1, $j ) ) } - var(--gap) / #{$j} );
+		}
 	}
 }

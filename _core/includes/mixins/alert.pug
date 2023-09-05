@@ -1,6 +1,6 @@
 mixin alert( title = '', context = 'default', tag = 'h3', label = '' )
 	- title = '<span>' + title + '</span>';
-	div( class="alert alert-" + context )
+	.alert( class="alert-" + context )&attributes( attributes )
 		if label
 			- title = label + ' ' + title;
 		if title

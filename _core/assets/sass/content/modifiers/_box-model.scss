@@ -126,6 +126,11 @@
 		margin-bottom: 0;
 	}
 
+	.has-regular-margin-top,
+	.has-normal-margin-top {
+		margin-top: $ratio + rem;
+	}
+
 	.has-regular-margin-bottom,
 	.has-normal-margin-bottom {
 		margin-bottom: $ratio + rem;

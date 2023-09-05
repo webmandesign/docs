@@ -1,8 +1,17 @@
 mixin image( url, caption, attr )
+	//- Allow image overrides:
+	if config.images && config.images.hasOwnProperty( url )
+		- url = config.images[ url ]
 	- url = url.replace( 'http:', 'https:' )
 	if -1 < url.indexOf( 'dropbox' )
 		- url = url.replace( 'www.dropbox.com', 'dl.dropboxusercontent.com' )
-	figure
+	else if 0 === url.indexOf( 'core/' )
+		//- Global, core image from `_core/assets/images` folder.
+		- url = url.replace( 'core/', '../_core/assets/images/' )
+	else if -1 === url.indexOf( 'https:' )
+		//- Local, theme specific image from `theme-slug/assets/images` folder.
+		- url = 'assets/images/' + url
+	figure&attributes( attributes )
 		a( href=url title="Click to open large image" )
 			img( src=url alt=caption )&attributes( attr )
 			block

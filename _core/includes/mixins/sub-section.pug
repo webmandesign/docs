@@ -1,9 +1,8 @@
 mixin sub_section( title, id, class_heading )
-	- var class_section = attributes.class ? ' ' + attributes.class : '';
-	section( class!="entry-section"+class_section id=id  )&attributes( attributes )
+	section.entry-section( id=id  )&attributes( attributes )
 		if id
 			h3( class=class_heading )
-				a( class="heading-anchor" href="#"+id )!= title
+				a.heading-anchor( href="#"+id )!= title
 		else
 			h3( class=class_heading )= title
 		block

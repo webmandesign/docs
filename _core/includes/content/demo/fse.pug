@@ -1,2 +1,30 @@
 block demo/fse
-	p FSE core @TODO
+	block demo/fse/about
+		p There is no need to import demo content data in this theme, which prevents introducing redundant content to your website. An <strong>easier</strong> and <strong>more flexible</strong> solution is to use <a href="#block-patterns">block patterns</a>.
+
+	block demo/fse/page-patterns
+		+sub_section( 'Complete page patterns', 'page-block-patterns' )
+
+			p Use block patterns from dedicated "<strong>Pages</strong>" category to create whole page content easily at once:
+
+			ol
+				li
+					p On page/post edit screen (in <a href="#editor">block editor</a>) click the <em>block inserter</em> button (the #[+mark( 'btn', '+' )] button in the upper left corner of editor).
+					+image( 'core/demo/01.png' )
+
+				li
+					p Switch to "<strong>Patterns</strong>" tab. <br>(<em>Optional</em>: click the #[+mark( 'btn', 'Explore all patterns' )] button at the bottom of the list of pattern categories to open block pattern inserter pop-up window.)
+					+image( 'core/demo/02.png' )
+
+				li
+					p Choose "<strong>Pages</strong>" category and select a content you want to insert into your page/post content.
+					+image( 'core/demo/03.png' )
+
+				li
+					p Edit the inserted content to your needs, and set up recommended <a href="#page-templates">page template</a>.
+					+image( 'core/demo/04.jpg' )
+
+					+tip( 'Set up recommended template', 'h4' )
+						p Each page content pattern is suited for a specific page template.
+						p Check the pattern description for information what <a href="#page-templates">page template to set</a>. If no page template info is provided, use a default template.
+						+image( 'core/demo/04-tip.png' )

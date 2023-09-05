@@ -50,3 +50,13 @@ else
 
 if ! config.faq
 	- config.faq = faq_global
+else
+	-
+		// Display only specific core FAQs based on array of FAQ keys.
+		if ( Array.isArray( config.faq ) ) {
+			// @link  https://masteringjs.io/tutorials/fundamentals/filter-key
+			config.faq = Object.fromEntries(
+				Object.entries( faq_global )
+					.filter( ( [ key ] ) => config.faq.includes( key ) )
+			);
+		}

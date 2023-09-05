@@ -1,5 +1,5 @@
 mixin section( title, id, class_container = '' )
-	article( id=id class=("entry entry-"+id+" "+class_container).trim() tabindex="-1" )
+	article.entry( id=id class="entry-"+id class=class_container tabindex="-1" )
 		h2.entry-title
-			a( class="heading-anchor" href="#"+id )!= title
+			a.heading-anchor( href="#"+id )!= title
 		block

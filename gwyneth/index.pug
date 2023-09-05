@@ -10,12 +10,13 @@
 		is_free       : false,
 		source        : 'envato', //- Available values: wporg/envato/github/other
 		compatibility : {
-			fse                : true,
-			accessibility      : true,
-			block_patterns     : true,
-			block_styles       : true,
-			megamenu_fullwidth : true,
-			no_demo            : true,
+			fse                   : true,
+			hybrid                : true,
+			no_demo               : true,
+			block_patterns        : true,
+			block_styles          : true,
+			megamenu_disable_link : true,
+			accessibility         : true,
 		},
 		version : {
 			wp  : '6.2',
@@ -42,12 +43,23 @@
 			'menu',
 			'sidebars',
 			'customizer',
+			'site-editor',
 			'localization',
 			'accessibility',
 			'plugins',
 			'faq',
 			'mods',
 			'references',
+		],
+
+		//- Core FAQ object keys:
+		faq : [
+			'any-page-builder',
+			'image-sizes',
+			// 'css-classes',
+			'seo',
+			'speed',
+			'css',
 		],
 
 		//- Recommended plugins list:
@@ -61,6 +73,11 @@
 			'integration-wc' : 'Theme Integration for WooCommerce',
 		},
 		tgmpa : true,
+
+		//- Core image overrides:
+		images : {
+			'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg' : 'megamenu.png',
+		}
 	};
 
 //-

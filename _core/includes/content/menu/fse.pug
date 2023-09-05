@@ -1,2 +1,104 @@
 block menu/fse
-	p FSE core @TODO
+	block menu/fse/about
+		p Navigation menu of your website website contains links to pages, categories, other content, or custom links. The menu is keyboard <a href="#accessibility">accessible</a> and you can make it <a href="#mobile-nav">mobile friendly</a>. It also supports simple <a href="#megamenu">megamenu functionality</a>.
+
+	block menu/fse/edit
+		+sub_section( 'Editing main navigation', 'edit-navigation' )
+
+			p For simple editing of main navigation displayed in site header navigate to #[+mark( 'nav', 'Appearance', 'Editor', 'Navigation' )]. Then choose the navigation menu you want to edit, and you can now add, remove, organize and modify menu items here.
+
+			p For advanced editing of main navigation with all styling options follow these steps:
+
+			ol
+				li
+					p Open site editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
+					+image( 'core/fse/editor.jpg' )
+
+				li
+					p In site editor open "<strong>Patterns</strong>" management.
+					+image( 'core/fse/patterns.jpg' )
+
+				li
+					p Now click "<strong>Manage all template parts</strong>" in patterns manager.
+					+image( 'core/fse/template-parts.png' )
+
+				li
+					p Click "<strong>Header</strong>" from the list of all available template parts to edit its content.
+
+				li
+					p Click the "<strong>Navigation</strong>" block to edit its content and options.
+
+			if true === config.compatibility.hybrid
+				+important( 'Template editor', 'h4' )
+					p Note that if you <em>disabled</em> full site editing in <a href="#disable-fse">theme options</a>, the path to edit "<strong>Navigation</strong>" block in "<strong>Header</strong>" template part changes to #[+mark( 'nav', 'Appearance', 'Template Parts', 'Header' )]. Basically, you are skipping step #2 and #3 from the procedure above.
+
+	block menu/fse/mobile
+		+sub_section( 'Mobile menu', 'mobile-nav' )
+
+			p You can enable or disable mobile menu for your main navigation <a href="#edit-navigation">editing the Navigation block</a> in "<strong>Header</strong>" template part.
+
+			+image( 'core/menu/block-navigation-mobile.png', 'Enabling mobile navigation for Navigation block' )
+
+			hr
+
+			h4 Different mobile and desktop menu
+
+			p <em>Alternatively</em>, in case you need to provide a different menu for small (mobile phone) and large (laptop, desktop) screens, <strong>#{config.name}</strong> theme has a solution:
+
+			ol
+				li Insert 2 Navigation blocks into your site "<strong>Header</strong>" template part.
+
+				li
+					p Set corresponding responsive <a href="#block-styles">block style</a> for each of these Navigation blocks depending on your needs:
+
+					ul.has-inside-list-style-position
+						li Use "<strong>Hide on small screens</strong>" block style to display the Navigation block <em>on laptop or desktop screens only</em>.
+
+						li Use "<strong>Only on small screens</strong>" block style to display the Navigation block <em>on mobile phone screens only</em>.
+
+				li Now, whenever the screen size matches the condition based on small screen breakpoint (usually set to <code>880px</code>) only a specific Navigation block is displayed. The other Navigation block is hidden inaccessibly.
+
+			hr
+
+			h4 Improving user experience
+
+			p The theme provides useful "<strong>Fixed mobile toggle button</strong>" <a href="#block-styles">block style</a> which fixes the position of the mobile navigation open/close button to the bottom of the mobile device screen for easier access when using the device with one hand.
+
+			p Apply this block style on the Navigation block in site "<strong>Header</strong>" template part.
+
+			+image( 'core/menu/block-style-fixed-menu-toggle.jpg', 'Fixed position of mobile menu toggle button', { 'width': 300 } )
+
+	block menu/fse/megamenu
+		+sub_section( 'Megamenu', 'megamenu' )
+			p With built in simple megamenu functionality you can display child menu (sub-menu) items in columns.
+
+			+image( 'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg', 'Megamenu example preview' )
+
+			p Use a dedicated "<strong>Megamenu</strong>" <a href="#block-styles">block style</a> on a Submenu block:
+
+			+image( 'core/menu/block-style-megamenu.png', 'Applying "Megamenu" block style' )
+
+			+important( 'Create nested menus first', 'h4' )
+				p Before proceeding, make sure to create a nested menu (submenu) in your <a href="#edit-navigation">navigation block</a>.
+
+			ol
+				li Select a top level parent menu item (the Submenu block) where you want to enable megamenu functionality.
+
+				li If block settings sidebar is not displayed, click the <em>settings</em> button in the upper right corner of the editor.
+
+				li Make sure you are editing the block settings (choose "<strong>Block</strong>" tab).
+
+				li In block settings click the <em>styles</em> tab.
+
+				li
+					p Choose "<strong>Megamenu</strong>" style. Now your megamenu is set and:
+
+					ul.has-inside-list-style-position
+						li The 2nd level menu items (first child menu items) of this megamenu parent menu item will be displayed as <em>label for your megamenu columns</em>.
+
+							if false !== config.compatibility.megamenu_disable_link
+								+tip( 'Disable link', 'h4' ).has-regular-margin-top
+									p You can even set "<strong>Disable link</strong>" block style for any menu item to render its link inactive, un-clickable. Such menu items are useful as a megamenu column labels/titles.
+									p Note that it is still recommended to set the link with a dummy URL such as <code>#0</code>.
+
+						li The 3rd level menu items (second child menu items) of this megamenu parent menu item will become actual <em>menu items within your megamenu columns</em>.
