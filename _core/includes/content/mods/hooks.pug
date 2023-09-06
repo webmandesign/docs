@@ -1,18 +1,19 @@
-+sub_section( 'Hooks: Actions and Filters', 'hooks' )
-	+danger( 'Limited support', 'h4' )
-		p This topic is meant for WordPress developers who would like to modify the theme and WordPress and alter or expand their functionality. Please understand that <a href="#{config.url.modifications}">we do not provide support for custom code modifications</a>, though.
+block mods/hooks
+	+sub_section( 'Hooks: Actions and Filters', 'hooks' )
+		+danger( 'Limited support', 'h4' )
+			p This topic is meant for WordPress developers who would like to modify the theme and WordPress and alter or expand their functionality. Please understand that <a href="#{config.url.modifications}">we do not provide support for custom code modifications</a>, though.
 
-	p The theme is <a href="https://wordpress.org/plugins/theme-check/">coded following WordPress coding standards</a> and provides action and filter hooks for you, which can alter any functionality of the theme.
+		p The theme is <a href="https://wordpress.org/plugins/theme-check/">coded following WordPress coding standards</a> and provides action and filter hooks for you, which can alter any functionality of the theme.
 
-	p Please check the theme's source code for hook references (simply search for <code>do_action</code> and/or <code>apply_filters</code>), or <a href="#{config.url.support}">contact support</a> for help.
+		p Please check the theme's source code for hook references (simply search for <code>do_action</code> and/or <code>apply_filters</code>), or <a href="#{config.url.support}">contact support</a> for help.
 
-	p <strong>#{config.name}</strong> theme uses <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance</a> hooks too. This is useful to entirely rebuild the theme structure or add your own custom sections anywhere.
+		p <strong>#{config.name}</strong> theme uses <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance</a> hooks too. This is useful to entirely rebuild the theme structure or add your own custom sections anywhere.
 
-	if true === config.compatibility.theme_builder
-		+tip( 'Theme builder compatibility', 'h4' )
-			p This theme can be modified with a theme builder plugin such as <a href="https://www.wpbeaverbuilder.com/beaver-themer/?fla=67"><strong>Beaver Themer</strong></a> or <strong>Elementor Pro</strong> Theme Builder.
-			if true !== config.compatibility.theme_builder_no_plugin
-				p You will most likely need to install an <a href="#{config.url.wporg_plugins}">additional compatibility layer plugin</a> though (if you are not sure, please search or ask at <a href="#{config.url.support}">support forum</a>).
+		if true === config.compatibility.theme_builder
+			+tip( 'Theme builder compatibility', 'h4' )
+				p This theme can be modified with a theme builder plugin such as <a href="https://www.wpbeaverbuilder.com/beaver-themer/?fla=67"><strong>Beaver Themer</strong></a> or <strong>Elementor Pro</strong> Theme Builder.
+				if true !== config.compatibility.theme_builder_no_plugin
+					p You will most likely need to install an <a href="#{config.url.wporg_plugins}">additional compatibility layer plugin</a> though (if you are not sure, please search or ask at <a href="#{config.url.support}">support forum</a>).
 
-	+tip( 'Display available hooks', 'h4' )
-		p You can display all available hooks using <a href="https://wordpress.org/plugins/simply-show-hooks/"><strong>Simply Show Hooks</strong></a> plugin.
+		+tip( 'Display available hooks', 'h4' )
+			p You can display all available hooks using <a href="https://wordpress.org/plugins/simply-show-hooks/"><strong>Simply Show Hooks</strong></a> plugin.

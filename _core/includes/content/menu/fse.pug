@@ -5,9 +5,16 @@ block menu/fse
 	block menu/fse/edit
 		+sub_section( 'Editing main navigation', 'edit-navigation' )
 
-			p For simple editing of main navigation displayed in site header navigate to #[+mark( 'nav', 'Appearance', 'Editor', 'Navigation' )]. Then choose the navigation menu you want to edit, and you can now add, remove, organize and modify menu items here.
+			if true === config.compatibility.hybrid
+				- var info_hybrid = ' <em>(note that this is not available if you <a href="#disable-fse">disabled full site editing</a>)</em>'
+			else
+				- var info_hybrid = ''
 
-			p For advanced editing of main navigation with all styling options follow these steps:
+			p For simple editing of main navigation displayed in site header navigate to #[+mark( 'nav', 'Appearance', 'Editor', 'Navigation' )]!{info_hybrid}. Then choose the navigation menu you want to edit, and you can now add, remove, organize and modify menu items here.
+
+			p For advanced editing of main navigation with all styling options edit a dedicated template part:
+
+			+mark( 'nav', 'Appearance', 'Editor', 'Patterns', 'Manage all template parts', '"Header"', 'Navigation block' ).is-path-featured
 
 			ol
 				li
@@ -16,7 +23,7 @@ block menu/fse
 
 				li
 					p In site editor open "<strong>Patterns</strong>" management.
-					+image( 'core/fse/patterns.jpg' )
+					+image( 'core/fse/menu-patterns.jpg' )
 
 				li
 					p Now click "<strong>Manage all template parts</strong>" in patterns manager.

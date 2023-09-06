@@ -8,9 +8,9 @@ mixin mark( type = 'nav', ...content )
 					- output = output + ' → ' + item;
 				else
 					- output = item;
-			mark.nav-path= output
+			mark.nav-path&attributes( attributes )= output
 		when 'btn'
 		when 'button'
-			kbd.button.dummy= content
+			kbd.button.dummy&attributes( attributes )= content
 		default
-			mark= output
+			mark&attributes( attributes )= output

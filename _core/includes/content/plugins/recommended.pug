@@ -1,10 +1,11 @@
 +sub_section( 'Recommended Plugins', 'plugins-recommended' )
 	p Theme provides code and/or design integration for certain plugins. You will find these plugins in recommendations list below. They provide additional functionality for your website or improve your and your visitor's experience.
 
-	p Please note that these are only <strong>recommended, suggested</strong> plugins, they are <strong>not required</strong> for the theme to work. Always read the plugin description before installing a plugin and <em>install only those plugins you will use on your website</em>.
+	p Please note that these are <strong>only recommended, suggested</strong> plugins, they are <strong><em>not required</em></strong> for the theme to work. Always read the plugin <em>description</em> before installing a plugin and <em>install only those plugins you will use on your website</em>.
 
 	if config.tgmpa
-		+image( 'https://easycaptures.com/fs/uploaded/1625/5223285226.png', 'Plugins recommendation page example: Recommended, not required' )
+		+mark( 'nav', 'Appearance', 'Install Plugins' ).is-path-featured
+		+image( 'core/plugins/recommended.png', 'Plugins recommendation page example: Recommended, not required' )
 
 	if true !== config.compatibility.no_demo
 		+warning( 'Demo content required plugins', 'h4' )

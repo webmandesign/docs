@@ -8,13 +8,15 @@ block sidebars/fse
 
 			if true === config.compatibility.hybrid
 				+important( 'Template editor', 'h4' )
-					p Note that if you <em>disabled</em> full site editing in <a href="#disable-fse">theme options</a>, you can edit <em>only</em> template parts, <em>not templates</em>.
+					p Note that if you <em>disabled</em> full site editing in <a href="#disable-fse">theme options</a>, you can edit <em>only</em> <a href="#site-editor-template-parts">template parts</a>, <em>not templates</em>.
 
 			+danger( 'Template Part block restriction', 'h4' )
-				p Note that <a href="https://wordpress.org/documentation/article/template-part-block/">Template Part block</a> can be used only in site editor. So, <em>only when editing template parts or templates</em>. In page/post editor the Template Part block is not available.
+				p Note that <a href="https://wordpress.org/documentation/article/template-part-block/">Template Part block</a> can be used only in site editor. So, <em>only when editing <a href="#site-editor-template-parts">template parts</a> or <a href="#site-editor-templates">templates</a></em>. In page/post editor the Template Part block is not available.
 
 	block sidebars/fse/edit
 		+sub_section( 'Editing sidebar template part content', 'edit-sidebar' )
+
+			+mark( 'nav', 'Appearance', 'Editor', 'Patterns', 'Manage all template parts', '"Sidebar"' ).is-path-featured
 
 			ol
 				li
@@ -23,7 +25,7 @@ block sidebars/fse
 
 				li
 					p In site editor open "<strong>Patterns</strong>" management.
-					+image( 'core/fse/patterns.jpg' )
+					+image( 'core/fse/menu-patterns.jpg' )
 
 				li
 					p Now click "<strong>Manage all template parts</strong>" in patterns manager.

@@ -1,4 +1,7 @@
 +sub_section( 'Block Patterns', 'block-patterns' )
+
+	+mark( 'nav', '+', 'Patterns', 'select category', 'choose pattern' ).is-path-featured
+
 	p This theme contains a library of predesigned block patterns to help you <strong>create a custom website with ease and in no time</strong>.
 
 	h4 Using block patterns
@@ -15,6 +18,10 @@
 		li Select a pattern you want to insert into your page/post content.
 
 		li Edit the inserted pattern to your needs.
+
+	if true === config.compatibility.fse
+		+info( 'Managing patterns', 'h4' )
+			p You can manage all patterns and create custom ones in <a href="#site-editor">site editor</a> in #[+mark( 'nav', 'Appearance', 'Editor', 'Patterns' )].
 
 	+tip( 'Tutorials', 'h4' )
 		p If you are new to block patterns you can check out <a href="https://learn.wordpress.org/workshops/?search=pattern">tutorials at Learn WordPress website</a> for useful info.

@@ -5,17 +5,19 @@ block customizer/fse
 	block customizer/fse/site-editor
 		+sub_section( '"Styles" section in site editor' )
 
-			p If you are looking for options to modify <em>colors</em> or <em>layout widths</em>, these can be found in <a href="#site-editor-styles">"Styles" section of full site editor</a>.
-
 			if true === config.compatibility.hybrid
-				+danger( 'Has to be enabled!', 'h4' )
+				+danger( 'This has to be enabled!', 'h4' )
 					p If you <em>disabled</em> full site editing in <a href="#disable-fse">theme options</a>, you can <strong>not</strong> edit "Styles" section in site editor.
-					p Use #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options' )] instead.
+					p Continue using #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options' )] instead.
+
+			p If you are looking for options to modify <em>colors</em> or <em>layout widths</em>, these can be found in <a href="#site-editor-styles">"Styles" section of full site editor</a>.
 
 	block customizer/fse/theme-options
 
 		block customizer/fse/theme-options/typography
 			+sub_section( 'Harmonious typography', 'typography' )
+
+				+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Typography' ).is-path-featured
 
 				p Theme provides options for setting up more advanced harmonious typography in comparison to typography <a href="#site-editor-styles">options in site editor</a> (full site editing). You can find these options in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Typography' )].
 
@@ -33,9 +35,11 @@ block customizer/fse
 				+info( 'For multilingual websites only', 'h4' )
 					p The information in this section is only relevant when you build a <em>multilingual website that allows switching between languages with different text direction</em>.
 
+				+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Language Direction' ).is-path-featured
+
 				p Currently <sup>(as of September 2023)</sup> there seems to be no way for building truly <abbr title="Left-To-Right">LTR</abbr>+<abbr title="Right-To-Left">RTL</abbr> multilingual website <em>when using asymmetric block designs</em> (such as rounded borders on the right side of blocks only) in templates and template parts of <a href="#site-editor">full site editor</a>.
 
-				p <strong>#{config.name}</strong> theme attempts to solve this issue by applying language direction fix at #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Language direction' )]. Apply this if you experience inconsistency with layouts when using <abbr title="Right-To-Left">RTL</abbr> languages:
+				p <strong>#{config.name}</strong> theme attempts to solve this issue by applying language direction fix at #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Language Direction' )]. Apply this if you experience inconsistency with layouts when using <abbr title="Right-To-Left">RTL</abbr> languages:
 
 				ul
 					li Set "<strong>Fix LTR template parts</strong>" when you've built your templates and template parts in <abbr title="Left-To-Right">LTR</abbr> language (such as English, which is also theme's default). When user of your multilingual website switches to <abbr title="Right-To-Left">RTL</abbr> language, the theme attempts to flip designs accordingly.
@@ -49,6 +53,8 @@ block customizer/fse
 					+warning( 'For developers only', 'h4' )
 						p Use this option only if you really need to, and you are familiar with PHP coding. Generally it is advisable to use <a href="#site-editor">full site editing</a> whenever possible.
 
+					+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Site Editing' ).is-path-featured
+
 					p <strong>#{config.name}</strong> theme contains a <em>hybrid mode</em> that allows you to <em>disable editing theme templates</em> and use the theme in more traditional, "classic" way. This mode can be useful when your plugin does not work with WordPress full site editing (yet), for example.
 
 					p Advantages of hybrid mode:
@@ -59,3 +65,7 @@ block customizer/fse
 						li You can still <em>edit all template parts visually in block editor</em> with <strong>#{config.name}</strong> theme! No need to use coding for that, which means great customization options.
 
 					p Toggle template editing at #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Site Editing' )].
+
+					+tip( 'Classic vs Block theme', 'h4' )
+						p Learn more about the difference between <em>classic</em> and <em>block</em> themes at <a href="https://developer.wordpress.org/themes/block-themes/">WordPress website</a>.
+						p <strong>#{config.name}</strong> is a unique block theme which <em>can be switched to classic/hybrid theme</em> by disabling <a href="#site-editor">full site editing</a>.

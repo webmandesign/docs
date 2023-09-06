@@ -6,7 +6,8 @@ body {
 	border-color: var(--color_content_border);
 }
 
-[title],
+p > [title],
+li > [title],
 abbr[title],
 acronym[title],
 dfn {
@@ -29,6 +30,17 @@ ins {
 		border-radius: var(--border_radius)
 	}
 
+	&.is-path-featured {
+		display: block;
+		padding: 1em;
+		margin: 0 0 2em;
+		border: 2px dotted;
+		border-color: inherit;
+
+		* + & {
+			margin-top: 2em;
+		}
+	}
 }
 
 s,
