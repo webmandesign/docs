@@ -6,8 +6,8 @@ mixin image( url, caption, attr )
 	if -1 < url.indexOf( 'dropbox' )
 		- url = url.replace( 'www.dropbox.com', 'dl.dropboxusercontent.com' )
 	else if 0 === url.indexOf( 'core/' )
-		//- Global, core image from `_core/assets/images` folder.
-		- url = url.replace( 'core/', '../_core/assets/images/' )
+		//- Global, core image from `0app/assets/images` folder.
+		- url = url.replace( 'core/', '../0app/assets/images/' )
 	else if -1 === url.indexOf( 'https:' )
 		//- Local, theme specific image from `theme-slug/assets/images` folder.
 		- url = 'assets/images/' + url
