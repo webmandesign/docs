@@ -1,6 +1,6 @@
 block customizer/fse
 	block customizer/fse/about
-		p Even though this theme allows you to <a href="#site-editor">edit your site fully</a>, including theme templates, you can still use WordPress Customizer (#[+mark( 'nav', 'Appearance', 'Customize' )]) where you'll find additional advanced theme options.
+		p Even though this theme allows you to <a href="#site-editor">edit your site fully</a>, including theme templates, you can still use WordPress Customizer (#[+mark( 'nav', 'Appearance', 'Customize' )]) where you'll find additional advanced theme options such as <a href="#typography">harmonious typography</a>, <a href="#rtl-fix">language direction fix</a>, or <a href="#custom-background">website background image setup</a>.
 
 	block customizer/fse/site-editor
 		+sub_section( '"Styles" section in site editor' )
@@ -30,7 +30,7 @@ block customizer/fse
 				p And, you are also free to use any font family from <a href="https://fonts.google.com/">Google Fonts</a>. <strong>#{config.name}</strong> theme even makes sure these font families are served directly from your website and not from Google's servers. This effectively enhances your visitor's privacy and your website's <a href="https://wikipedia.org/wiki/General_Data_Protection_Regulation"><abbr title="General Data Protection Regulation">GDPR</abbr></a> compliance.
 
 		block customizer/fse/theme-options/rtl-fix
-			+sub_section( 'Language direction fix', 'typography' )
+			+sub_section( 'Language direction fix', 'rtl-fix' )
 
 				+info( 'For multilingual websites only', 'h4' )
 					p The information in this section is only relevant when you build a <em>multilingual website that allows switching between languages with different text direction</em>.
