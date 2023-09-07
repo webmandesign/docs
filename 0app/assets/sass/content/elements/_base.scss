@@ -16,6 +16,10 @@ dfn {
 	border-bottom: 1px dashed;
 }
 
+	a[title] {
+		cursor: pointer;
+	}
+
 mark,
 ins {
 	padding: .15em .3em;

@@ -1,0 +1,20 @@
++sub_section( 'Page intro images', 'custom-header' )
+
+	+mark( 'nav', 'Appearance', 'Customize', 'Header Image' ).is-path-featured
+
+	p By default, the theme displays page/post featured image in page intro section (the page title section, page header). When page/post featured image is not set, page intro displays header image you set in #[+mark( 'nav', 'Appearance', 'Customize', 'Header Image' )] (or #[+mark( 'nav', 'Appearance', 'Header' )]).
+
+	p The header image is applied as a blurred background of page intro section. Removing fallback header image displays page intro with a solid color background, as can be seen in this screenshot for comparison:
+
+	+image( 'custom-header.jpg', 'Comparing page intro with and without header image enabled' )
+
+	p Though, you can always modify page intro section to your liking by editing <em>"Intro (Page header)"</em> and <em>"Intro: Post"</em> <a href="#site-editor-template-parts">template parts in site editor</a>.
+
+	+important( 'Remove image if not needed' )
+		p If you want your page intro sections on a solid color background without an image, don't forget to disable the header image: #[+mark( 'nav', 'Appearance', 'Customize', 'Header Image', '"Current header"', '"Hide image" button' )].
+		p.has-small-font-size
+			em (If "Hide image" button is not displayed for you, first choose an image from "Suggested" list and then you can click the "Hide image" button.)
+
+	+important( 'Let theme know' )
+		p When creating your own custom page intro by <a href="#site-editor-template-parts">modifying template parts</a>, apply <code>has-fallback-image</code> CSS class on a block which displays featured image and you want it to fall back to header image.
+		p Otherwise the theme does not know you want to apply header image as a fall back image for your page intro featured images.

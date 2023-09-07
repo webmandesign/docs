@@ -1,19 +1,21 @@
 block mods/hooks
 	+sub_section( 'Hooks: Actions and Filters', 'hooks' )
-		+danger( 'Limited support', 'h4' )
-			p This topic is meant for WordPress developers who would like to modify the theme and WordPress and alter or expand their functionality. Please understand that <a href="#{config.url.modifications}">we do not provide support for custom code modifications</a>, though.
 
-		p The theme is <a href="https://wordpress.org/plugins/theme-check/">coded following WordPress coding standards</a> and provides action and filter hooks for you, which can alter any functionality of the theme.
+		p The theme provides multiple useful <a href="https://developer.wordpress.org/plugins/hooks/">action and filter hooks</a>, which can alter its functionality. Check the theme's source code for hook references: simply search for <code>do_action</code> and/or <code>apply_filters</code>. Or <a href="#{config.url.support}">contact support</a> for help.
 
-		p Please check the theme's source code for hook references (simply search for <code>do_action</code> and/or <code>apply_filters</code>), or <a href="#{config.url.support}">contact support</a> for help.
+		if true === config.compatibility.hybrid || true !== config.compatibility.fse
+			if true === config.compatibility.hybrid
+				- var info_hybrid = ' <br><strong>(Note that THA hooks are <em>not available</em> when <a href="#disable-fse">site editor is enabled</a>.)</strong>'
+			else
+				- var info_hybrid = ''
+			p <strong>#{config.name}</strong> theme uses <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance (THA)</a> hooks too. This is useful to rebuild theme structure or add your custom sections anywhere.!{info_hybrid}
 
-		p <strong>#{config.name}</strong> theme uses <a href="https://github.com/zamoose/themehookalliance">Theme Hook Alliance</a> hooks too. This is useful to entirely rebuild the theme structure or add your own custom sections anywhere.
+		if true === config.compatibility.fse
+			+tip( 'Use hooks in block theme', 'h4' )
+				p If you need to keep using action hooks in <a href="#site-editor-templates">block theme templates</a>, try free <a href="https://github.com/webmandesign/action-hook-block"><strong>Action Hook Block</strong> plugin</a> that provides a block triggering a specific action hook.
 
 		if true === config.compatibility.theme_builder
 			+tip( 'Theme builder compatibility', 'h4' )
 				p This theme can be modified with a theme builder plugin such as <a href="https://www.wpbeaverbuilder.com/beaver-themer/?fla=67"><strong>Beaver Themer</strong></a> or <strong>Elementor Pro</strong> Theme Builder.
 				if true !== config.compatibility.theme_builder_no_plugin
 					p You will most likely need to install an <a href="#{config.url.wporg_plugins}">additional compatibility layer plugin</a> though (if you are not sure, please search or ask at <a href="#{config.url.support}">support forum</a>).
-
-		+tip( 'Display available hooks', 'h4' )
-			p You can display all available hooks using <a href="https://wordpress.org/plugins/simply-show-hooks/"><strong>Simply Show Hooks</strong></a> plugin.

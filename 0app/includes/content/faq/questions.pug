@@ -2,4 +2,4 @@ ol#questions.list-questions
 	block faq/questions/list
 		each question, id in config.faq
 			li
-				a( href="#"+id )= question
+				a( href="#"+id )!= question

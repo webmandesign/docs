@@ -15,7 +15,9 @@ header#intro.intro
 		p Enjoy your <a href="#{config.url.info}"><strong>#{config.name}</strong></a> WordPress theme!
 			if 'wporg' === config.source || 'envato' === config.source
 				br
-				em Love this theme? Support it by leaving a
+				em
+					| Love this theme? Support it by leaving a
+					|
 					a( href=config.url.review[ config.source ] )
 						| review
 						span.stars

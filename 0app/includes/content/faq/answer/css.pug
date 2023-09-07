@@ -1,6 +1,7 @@
-+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' ).is-path-featured
+block faq/answer/css
+	+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' ).is-path-featured
 
-p Add your custom CSS code into #[+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' )], or alternatively into your <a href="#child-theme" >child theme's</a> <code>style.css</code> file.
+	p Add your custom CSS code into #[+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' )], or alternatively into your <a href="#child-theme" >child theme's</a> <code>style.css</code> file.
 
-if true === config.compatibility.fse
-	p You can also tweak theme provided CSS and add your own custom CSS code in <a href="#site-editor-styles-others">"Styles" section of site editor</a>.
+	if true === config.compatibility.fse
+		p You can also tweak theme provided CSS and add your own custom CSS code in <a href="#site-editor-styles-others">"Styles" section of site editor</a>.

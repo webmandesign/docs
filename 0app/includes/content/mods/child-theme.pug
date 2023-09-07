@@ -1,41 +1,45 @@
 block mods/child-theme
 	+sub_section( 'Use a Child Theme/Plugin' )
-		+danger( 'Limited support help!', 'h4' )
-			p Please understand that <a href="#{config.url.modifications}">a very limited support is provided for theme modifications</a>. Responsibility for a code lies on shoulders of the code author. If you don't feel comfortable coding <a href="#{config.url.modifications}">consider hiring help</a>.
 
-		p If you need to make styling or functional changes to the theme or WordPress itself, use WordPress native <strong>child theming</strong> functionality <em>(or even more flexible <a href="#child-theme-plugin">"child theme" plugin</a> solution)</em>.
-		p This way you can update the parent (original) <strong>#{config.name}</strong> theme without worrying about your code getting overwritten and lost. All your custom code is kept safe in your child theme/plugin.
+		if true === config.compatibility.fse
+			+tip( 'Use plugin with block theme', 'h4' )
+				p With block theme it is recommended to <a href="#child-theme-plugin"><strong>use a plugin</strong></a> instead of a child theme. Especially when you've already made changes to <a href="#site-editor">theme template parts and templates</a>.
 
-		p (Read more about <a href="https://developer.wordpress.org/themes/advanced-topics/child-themes/">child themes in WordPress documentation</a>.)
+		p If you need to make coding changes to the theme or WordPress itself, use child theming functionality, or even <em>more flexible</em> <a href="#child-theme-plugin">"child theme" plugin</a> solution.
+
+		p This way you can update the parent (original) <strong>#{config.name}</strong> theme without worrying about your custom code getting overwritten and lost. Your code is kept safe in <em>your</em> child theme/plugin.
+
+		p <strong>Tip</strong>: Read more about <a href="https://developer.wordpress.org/themes/advanced-topics/child-themes/">child themes in WordPress documentation</a>.
 
 		block mods/child-theme/css
-			h4#custom-css Custom CSS code
+			h4#custom-css
+				a.heading-anchor( href="#custom-css" ) CSS code
 
-			p Put your custom CSS code into <code>CHILD_THEME_FOLDER/style.css</code> file. Alternatively use #[+mark( 'nav', 'Appearance', 'Customize', 'Additional CSS' )] for that.
-
-			if true === config.compatibility.fse
-				p You can also tweak theme provided CSS and add your own custom CSS code in <a href="#site-editor-styles-others">"Styles" section of site editor</a>.
-
-			+info( 'Unleash the power of CSS', 'h5' )
-				p For more information about coding CSS, HTML, or JavaScript, check out a great free online learning resources such as <a href="https://www.w3schools.com/">W3Schools.com</a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs</a>.
+			p
+				| Put your custom <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS code</a> into <code>style.css</code> file.
+				if true === config.compatibility.fse
+					| <br>
+					| You can also tweak theme provided CSS and add your own custom CSS code in <a href="#site-editor-styles-others">"Styles" section of site editor</a>.
 
 		block mods/child-theme/php
-			h4 Custom PHP code
+			h4#custom-php
+				a.heading-anchor( href="#custom-php" ) PHP code
 
-			p If you want to change functionality of <strong>#{config.name}</strong> theme or WordPress itself, do so in <code>CHILD_THEME_FOLDER/functions.php</code> file. You can freely modify any theme functionality via that file by <a href="#hooks">hooking onto a specific filter or action</a>.
+			p Modify functionality of the theme and/or WordPress via <code>functions.php</code> file. Use <a href="#hooks">action and filter hooks</a>.
 
 		block mods/child-theme/plugin
-			h4#child-theme-plugin "Child theme" plugin
+			h4#child-theme-plugin
+				a.heading-anchor( href="#child-theme-plugin" ) "Child theme" plugin
 
-			p For more flexible approach that works with any type of theme ("classic" or <abbr title="Full Site Editing">FSE</abbr> block theme), or for cases when you can't use a child theme, we have created a <strong>"Child Theme" Plugin</strong> for you.
-			p For more <a href="#{config.url.child_plugin}#using-a-child-theme-plugin">information on the plugin usage</a> and <a href="#{config.url.child_plugin}/raw/master/child-theme-plugin.zip">plugin download</a> check out the <a href="#{config.url.child_plugin}">GitHub repository</a>.
+			p For more flexible approach that works with any type of theme (<a href="#disable-fse">classic</a> or <a href="#site-editor"><abbr title="Full Site Editing">FSE</abbr> block theme</a>), or for cases when you can't use a child theme, we have created a free <a href="#{config.url.child_plugin}#using-a-child-theme-plugin"><strong>"Child Theme" Plugin</strong></a> for you.
 
 		block mods/child-theme/sample
-			h4 Sample child theme/plugin
+			h4#child-theme-sample
+				a.heading-anchor( href="#child-theme-sample" ) Sample child theme/plugin
 
-			p Download a <strong>free</strong> child theme or plugin from <a href="#{config.url.child_theme}">WebMan Design GitHub repository</a>. Don't forget to check the information in the repository for how to set up the child theme/plugin for your needs.
-			p <a href="#{config.url.child_theme}">Grab a <strong>free child theme or plugin</strong> from the repository now &rarr;</a>
+			p Download a free child theme or plugin from <a href="#{config.url.child_theme}">WebMan Design GitHub repository</a>. Don't forget to check the information in the repository for how to set them up.
 
 			if false === config.is_free
 				+tip( 'Theme from Envato Market?', 'h5' )
-					p If you've obtained the theme from Envato Market, there is a high chance that a dedicated <strong>child theme is already included</strong> in the package you've downloaded from the marketplace. Check out your files. Or download the child theme from the aforementioned repository.
+					p If you've obtained the theme from Envato Market, there is a high chance that a dedicated <strong>child theme is already included</strong> in the package you've downloaded from the marketplace.
+					p Check out your files. Or download a sample child theme from the aforementioned repository.

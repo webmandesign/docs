@@ -6,18 +6,25 @@ block append styles
 //-----------------------------------------------
 
 block append posts
-	//- include posts-featured.pug
+	include posts-featured.pug
 
+block prepend pages/templates/about
+	include templates.pug
 block pages/templates/list
 	include template-content-only.pug
 	include template-no-intro.pug
-	//- include template-overlaid-header.pug
-	//- include template-page-builder.pug
+	include template-overlaid-header.pug
+
+block append customizer
+	include custom-background.pug
+	include custom-header.pug
 
 block append site-editor/styles/colors/bottom
-	include site-editor-styles-colors.pug
+	include colors.pug
 
+block faq/answer/page-builder
+	include faq-answer-page-builder.pug
 block prepend faq/questions/list
-	//- include faq-question-space.pug
+	include faq-question-space.pug
 block prepend faq/answers/list
-	//- include faq-answer-space.pug
+	include faq-answer-space.pug
