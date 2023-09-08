@@ -1,8 +1,14 @@
 li
 	+answer( '"Content padding" block spacing value', 'header-space' )
 
-		p <strong>#{config.name}</strong> theme provides multiple responsive spacing values for blocks (for margin and padding options, for example). There is also a special value of <em>"<strong>Content padding</strong>"</em> useful for setting up padding on "Content" block (when <a href="#site-editor-templates">editing templates</a>).
+		p <strong>#{config.name}</strong> theme provides multiple responsive spacing options for blocks (for margin and padding, for example).
 
-		p Once this spacing value is set as top padding on a "Content" block, the <em>first</em> block <em>that is also fully aligned</em>, will mitigate for this spacing automatically. The same applies for bottom padding and last block.
+		p Among these there is a special option of <em>"<strong>Content padding</strong>"</em> added for setting up intelligent spacing on "Content" block (when <a href="#site-editor-templates">editing templates</a>).
 
-		p Feel free to use <em>"<strong>Content padding</strong>"</em> spacing value everywhere it fits your needs. For example when maintaining consistent spacing between blocks in your page/post content.
+		p Once this spacing value is applied as <em>top padding</em> on the "Content" block, the <em><strong>first</strong> block in page/post content that is also <strong>fully aligned</strong></em> will mitigate for this content spacing and stick to upper edge of the page/post content, effectively removing the spacing automatically. <br>If the block is not fully aligned, the spacing (content padding) is still present.
+
+		+image( 'faq-spacing.jpg', 'Automatic mitigation for "Content padding" spacing option' )
+
+		p The opposite applies for bottom padding and the last block in page/post content (in "Content" block).
+
+		p Feel free to use this <em>"<strong>Content padding</strong>"</em> spacing value everywhere it fits your needs. For example, it can be used for keeping vertical spacing between sections consistent in your page/post content.
