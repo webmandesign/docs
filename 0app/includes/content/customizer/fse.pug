@@ -1,6 +1,6 @@
 block customizer/fse
 	block customizer/fse/about
-		p Even though this theme allows you to <a href="#site-editor">edit your site fully</a>, including theme templates, you can still use WordPress Customizer (#[+mark( 'nav', 'Appearance', 'Customize' )]) where you'll find additional advanced theme options such as <a href="#typography">harmonious typography</a>, <a href="#rtl-fix">language direction fix</a>, or <a href="#custom-background">website background image setup</a>.
+		p Even though this theme allows you to <a href="#site-editor">edit your site fully</a>, including theme templates, you can still use WordPress Customizer (#[+mark( 'nav', 'Appearance', 'Customize' )]) where you'll find additional advanced theme options such as <a href="#typography">harmonious typography</a>, or <a href="#custom-background">website background image setup</a>.
 
 	block customizer/fse/site-editor
 		+sub_section( '"Styles" section in site editor' )
@@ -28,23 +28,6 @@ block customizer/fse
 				p You can also set up custom font families, which can be simply and consistently reused in block editor without breaking your website design and typography by mixing too many of different fonts.
 
 				p And, you are also free to use any font family from <a href="https://fonts.google.com/">Google Fonts</a>. <strong>#{config.name}</strong> theme even makes sure these font families are served directly from your website and not from Google's servers. This effectively enhances your visitor's privacy and your website's <a href="https://wikipedia.org/wiki/General_Data_Protection_Regulation"><abbr title="General Data Protection Regulation">GDPR</abbr></a> compliance.
-
-		block customizer/fse/theme-options/rtl-fix
-			+sub_section( 'Language direction fix', 'rtl-fix' )
-
-				+info( 'For multilingual websites only', 'h4' )
-					p The information in this section is only relevant when you build a <em>multilingual website that allows switching between languages with different text direction</em>.
-
-				+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Language Direction' ).is-path-featured
-
-				p Currently <sup>(as of September 2023)</sup> there seems to be no way for building truly <abbr title="Left-To-Right">LTR</abbr>+<abbr title="Right-To-Left">RTL</abbr> multilingual website <em>when using asymmetric block designs</em> (such as rounded borders on the right side of blocks only) in templates and template parts of <a href="#site-editor">full site editor</a>.
-
-				p <strong>#{config.name}</strong> theme attempts to solve this issue by applying language direction fix at #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Language Direction' )]. Apply this if you experience inconsistency with layouts when using <abbr title="Right-To-Left">RTL</abbr> languages:
-
-				ul
-					li Set "<strong>Fix LTR template parts</strong>" when you've built your templates and template parts in <abbr title="Left-To-Right">LTR</abbr> language (such as English, which is also theme's default). When user of your multilingual website switches to <abbr title="Right-To-Left">RTL</abbr> language, the theme attempts to flip designs accordingly.
-
-					li Set "<strong>Fix RTL template parts</strong>" when you've built your templates and template parts in <abbr title="Left-To-Right">RTL</abbr> language. When user of your multilingual website switches to <abbr title="Left-To-Right">LTR</abbr> language, the theme attempts to flip designs accordingly.
 
 		if true === config.compatibility.hybrid
 			block customizer/fse/theme-options/disable-fse
