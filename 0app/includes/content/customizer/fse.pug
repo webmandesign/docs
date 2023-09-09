@@ -5,12 +5,12 @@ block customizer/fse
 	block customizer/fse/site-editor
 		+sub_section( '"Styles" section in site editor' )
 
-			if true === config.compatibility.hybrid
-				+danger( 'This has to be enabled!', 'h4' )
-					p If you <em>disabled</em> full site editing in <a href="#disable-fse">theme options</a>, you can <strong>not</strong> edit "Styles" section in site editor.
-					p Continue using #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options' )] instead.
-
 			p If you are looking for options to modify <em>colors</em> or <em>layout widths</em>, these can be found in <a href="#site-editor-styles">"Styles" section of full site editor</a>.
+
+			if true === config.compatibility.hybrid
+				+danger( 'Make sure site editor is enabled', 'h4' )
+					p If you <a href="#disable-fse"><em>disabled</em> full site editing</a> you can <strong>not</strong> edit "Styles" section in site editor. Continue using #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options' )], where you can set also colors and layout widths now.
+
 
 	block customizer/fse/theme-options
 
