@@ -1,0 +1,19 @@
++sub_section( 'Site header options', 'custom-background' )
+
+	+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Header' ).is-path-featured
+
+	p Once you display your site header as a <a href="#site-editor-template-parts">template part</a> with "Site header" <a href="#block-styles">block style</a> (this is a theme default setup), you can tweak additional header layout options in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout', 'Header' )].
+
+	p Choose how your site header behaves:
+	ol
+		li <strong>Default layout</strong> displays the header as is, with no positioning effect.
+
+		li <strong>Sticky on scroll</strong> sticks the header to top of the browser window when scrolling.
+
+		li <strong>Overlaying content</strong> makes the site header positioned so it overlays your page content. Prepare your site header for this layout by removing its background. You also need to modify the page intro section(s) so it has sufficient top padding for the header not to overlay any text and possibly also tweak intro background.
+
+		li <strong>Overlaying content & sticky on scroll</strong> combines the 2 previous options. In this case you need to set site header background color, which will be applied when scrolling (see below for additional background option).
+
+	+image( 'site-header.jpg', 'Preview of various site header layouts' )
+
+	p For scrolling header layouts you can furthermore set background behavior when header is not sticky (when page was not scrolled).
