@@ -5,6 +5,17 @@ block append styles
 
 //-----------------------------------------------
 
+block append anatomy
+	include anatomy.pug
+	include anatomy-basics.pug
+	include anatomy-page.pug
+	include anatomy-archives.pug
+	include anatomy-post.pug
+	include anatomy-shop.pug
+
+block append install/welcome
+	+image( 'welcome-page.jpg', 'Theme Welcome page (Appearance → Welcome)' ).has-regular-margin-top
+
 block append posts
 	include posts-featured.pug
 
@@ -14,6 +25,7 @@ block pages/templates/list
 	include template-content-only.pug
 	include template-no-intro.pug
 	include template-overlaid-header.pug
+	include template-with-sidebar.pug
 
 block prepend customizer/fse/theme-options
 	include customizer-site-header.pug
