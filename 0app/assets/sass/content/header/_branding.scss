@@ -15,7 +15,6 @@
 		display: inline-block;
 		font-size: $ratio + em;
 	}
-
 }
 
 .custom-logo-link {
@@ -23,34 +22,13 @@
 	display: inline-block;
 	line-height: 1;
 
-	&::before {
-		content: '';
-		position: absolute;
-		width: 58px;
-		height: 58px;
-		left: 50%;
-		top: 50%;
-		background: var(--color_brand);
-		border-radius: 10px;
-		transform: translateX( -50% ) translateY( -50% ) rotate( 15deg );
-
-		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			width: 96px;
-			height: 96px;
-			border-radius: 16px;
-		}
-
-	}
-
 	img {
 		position: relative;
-		max-height: 21px;
+		max-height: 58px;
 		vertical-align: middle;
 
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			max-height: 35px;
+			max-height: 96px;
 		}
-
 	}
-
 }

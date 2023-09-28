@@ -1169,34 +1169,14 @@ body:focus {
   display: inline-block;
   line-height: 1;
 }
-.custom-logo-link::before {
-  content: "";
-  position: absolute;
-  width: 58px;
-  height: 58px;
-  left: 50%;
-  top: 50%;
-  background: var(--color_brand);
-  border-radius: 10px;
-  -webkit-transform: translateX(-50%) translateY(-50%) rotate(15deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(15deg);
-          transform: translateX(-50%) translateY(-50%) rotate(15deg);
-}
-@media (min-width: 880px) {
-  .custom-logo-link::before {
-    width: 96px;
-    height: 96px;
-    border-radius: 16px;
-  }
-}
 .custom-logo-link img {
   position: relative;
-  max-height: 21px;
+  max-height: 58px;
   vertical-align: middle;
 }
 @media (min-width: 880px) {
   .custom-logo-link img {
-    max-height: 35px;
+    max-height: 96px;
   }
 }
 
@@ -1386,6 +1366,7 @@ body:focus {
 }
 .site-footer .custom-logo-link {
   margin-bottom: 35px;
+  border: 0;
 }
 .site-footer a {
   color: inherit;
