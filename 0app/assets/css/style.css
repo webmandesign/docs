@@ -728,6 +728,11 @@ pre {
   border-style: solid;
 }
 
+hr,
+.alert hr {
+  margin-block: 1.618em;
+}
+
 /* FILE: content/elements/_links.scss */
 a {
   overflow-wrap: break-word;

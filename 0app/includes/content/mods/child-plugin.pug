@@ -1,0 +1,18 @@
+h4#child-theme-plugin
+	a.heading-anchor( href="#child-theme-plugin" ) "Child theme" plugin
+
+p For more flexible approach that works with any type of theme (<a href="#disable-fse">classic</a> or <a href="#site-editor"><abbr title="Full Site Editing">FSE</abbr> block theme</a>), or for cases when you can't use a child theme, we have created a free <a href="#{config.url.child_plugin}#using-a-child-theme-plugin"><strong>"Child Theme" Plugin</strong></a> for you.
+
++info( 'Is using a "child theme" plugin better?', 'h5' )
+	p Using "child theme" plugin is mostly beneficial when you use a block theme (full site editing theme) <em>for some time</em> already and then you decide you need to modify something with code.
+	p If you plan to provide means for future code modifications right from the start <em>use a child theme</em>, even with a block parent theme.
+	hr
+	.has-s-font-size
+		h6 More technical details
+		p Full site editing block theme compatibility with WordPress child themes concept is limited. This is due to Site Editor user-modifications being stored in WordPress database. It causes issues when you decide to use a child theme afterwards, because all of these database records are <em>bound to a specific (parent) theme name</em>.
+		p Copying modified Site Editor options and layouts so they work with a child theme is more <a href="https://github.com/webmandesign/child-theme/tree/master/child-theme">complicated process</a>. Though, this complication is solved elegantly using a <a href="https://github.com/webmandesign/child-theme/tree/master/child-theme-plugin">"child theme" plugin</a>.
+		p The plugin works the same way as classic child theme would - you can <em>use it anytime</em>, even after you've already made custom changes in Site Editor, and it involves less code in comparison to a child theme.
+		p A downside of the plugin may be overriding parent theme templates <em>with code</em>:
+		ul.has-inside-list-style-position
+			li With WebMan Design themes this should not be an issue as they are very flexible and contain useful <a href="#hooks">action and filter hooks</a> you can use instead.
+			li And in case of a block theme in general, you can/should <a href="#site-editor">edit all template parts and templates in Site Editor</a>.

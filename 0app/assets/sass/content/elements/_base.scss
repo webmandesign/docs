@@ -72,3 +72,8 @@ pre {
 	border-width: 1px;
 	border-style: solid;
 }
+
+hr,
+.alert hr {
+	margin-block: $ratio + em;
+}

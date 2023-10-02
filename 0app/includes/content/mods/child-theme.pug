@@ -28,10 +28,7 @@ block mods/child-theme
 			p Modify functionality of the theme and/or WordPress via <code>functions.php</code> file. Use <a href="#hooks">action and filter hooks</a>.
 
 		block mods/child-theme/plugin
-			h4#child-theme-plugin
-				a.heading-anchor( href="#child-theme-plugin" ) "Child theme" plugin
-
-			p For more flexible approach that works with any type of theme (<a href="#disable-fse">classic</a> or <a href="#site-editor"><abbr title="Full Site Editing">FSE</abbr> block theme</a>), or for cases when you can't use a child theme, we have created a free <a href="#{config.url.child_plugin}#using-a-child-theme-plugin"><strong>"Child Theme" Plugin</strong></a> for you.
+			include child-plugin.pug
 
 		block mods/child-theme/sample
 			h4#child-theme-sample
