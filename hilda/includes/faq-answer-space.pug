@@ -1,0 +1,14 @@
+li
+	+answer( '"Content padding" block spacing value', 'content-padding' )
+
+		p <strong>#{config.name}</strong> theme provides multiple responsive spacing options for blocks (for margin and padding, for example).
+
+		p Among these there is a special option of <em>"<strong>Content padding</strong>"</em> added for setting up intelligent spacing on "Content" block (when <a href="#site-editor-templates">editing templates</a>).
+
+		p Once this spacing value is applied as a <em>top padding</em> on the "Content" block, the <em><strong>first</strong> block in the page/post content that is also a <strong>fully aligned</strong></em> block will mitigate for this content spacing and stick to the upper edge of the page/post content, effectively removing the spacing automatically. <br>If the block is not fully aligned, the spacing (content padding) is still present.
+
+		+image( 'faq-spacing.jpg', 'Example of automatic mitigation for "Content padding" spacing option' )
+
+		p The opposite applies for bottom padding and the last block in the page/post content (in "Content" block).
+
+		p Feel free to use this <em>"<strong>Content padding</strong>"</em> spacing value everywhere it fits your needs. For example, it can be used for keeping vertical spacing between sections consistent in your page/post content. The default height of the <a href="https://wordpress.org/documentation/article/spacer-block/">"<strong>Spacer</strong>" block</a> is also set to <em>"<strong>Content padding</strong>"</em> value.

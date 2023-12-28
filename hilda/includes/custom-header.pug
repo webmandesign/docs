@@ -1,0 +1,13 @@
++sub_section( 'Random header images', 'custom-header' )
+
+	+mark( 'nav', 'Appearance', 'Customize', 'Header Image' ).is-path-featured
+
+	p By default, the theme displays page/post featured image also in the call to action are in default site footer. When post or page has no featured image set, or when displaying an archive page, a random fallback image is displayed here generated from "<strong>Header image</strong>" option (set in #[+mark( 'nav', 'Appearance', 'Customize', 'Header Image' )] (or #[+mark( 'nav', 'Appearance', 'Header' )]).
+
+	+important( 'Remove header images' )
+		p To disable the header image go to #[+mark( 'nav', 'Appearance', 'Customize', 'Header Image', '"Current header"', '"Hide image" button' )].
+		p.has-small-font-size
+			em (If "Hide image" button is not displayed for you, first choose an image from "Suggested" list and then you can click the "Hide image" button.)
+
+	+important( 'Let theme know' )
+		p If you want to use header image(s) in your <a href="#site-editor-templates">templates</a> and <a href="#site-editor-template-parts">template parts</a>, apply the <code>has-fallback-image</code> CSS class on the block which displays a post featured image.

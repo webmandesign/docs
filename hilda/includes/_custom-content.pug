@@ -1,0 +1,46 @@
+extends ../../0app/_index.pug
+
+block append styles
+	include ../assets/css/style.css
+
+//-----------------------------------------------
+
+block append anatomy
+	include anatomy.pug
+	include anatomy-basics.pug
+	include anatomy-page.pug
+	include anatomy-archives.pug
+	include anatomy-post.pug
+	include anatomy-shop.pug
+
+block append install/welcome/notice
+	+image( 'welcome-page.jpg', 'Theme Welcome page (Appearance → Welcome)' ).has-regular-margin-top
+
+block append posts
+	include posts-featured.pug
+
+block prepend pages/templates/about
+	include templates.pug
+block pages/templates/list
+	include template-content-only.pug
+	include template-no-intro.pug
+	include template-overlaid-header.pug
+	include template-with-sidebar.pug
+
+block append menu/fse
+	include menu-image.pug
+
+block prepend customizer/fse/theme-options
+	include customizer-boxed.pug
+	include custom-background.pug
+	include custom-header.pug
+
+block append site-editor/styles/colors/bottom
+	include colors.pug
+
+block faq/answer/page-builder
+	include faq-answer-page-builder.pug
+block prepend faq/questions/list
+	include faq-question-space.pug
+block prepend faq/answers/list
+	include faq-answer-space.pug

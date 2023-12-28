@@ -47,8 +47,9 @@ block site-editor/styles
 					h4#site-editor-styles-colors
 						a.heading-anchor( href="#site-editor-styles-colors" ) Colors
 					block site-editor/styles/colors/top
-					p Theme applies a palette of colors throughout site elements. You can modify each individual color in palette, modify WordPress default color palette, and add your own custom colors.
-					p As the theme automatically calculates additional colors from its palette, it is recommended to use solid colors, not a semi-transparent ones.
+					p Theme applies a palette of colors throughout the site elements. You can modify each individual color in palette, modify WordPress default color palette, and add your own custom colors.
+					+important( 'Use solid colors', 'h4' )
+						p As the theme automatically calculates additional colors from its palette, it is recommended to use solid colors, not a semi-transparent ones.
 					block site-editor/styles/colors/bottom
 					+image( 'core/fse/styles-colors.png', 'Editing theme colors' )
 					+tip( 'Editing tips', 'h4' )

@@ -1,0 +1,63 @@
+:root {
+
+	/* Theme color palette: */
+	--color_base:            #faf8f5;
+	--color_contrast:        #1b140e;
+	--color_contrast_alt:    #5f4430;
+	--color_primary:         #964f4c;
+	--color_primary_mixed:   #dcc7c0;
+	--color_secondary:       #febe98;
+	--color_secondary_mixed: #f6e3d3;
+	--color_black:           #000000;
+	--color_white:           #ffffff;
+
+	--color_gradient_primary: var(--color_secondary);
+	--color_gradient_radial_primary: var(--color_secondary);
+	--color_gradient_radial_secondary: transparent;
+
+	/* Documentation colors: */
+	--color_accent: var(--color_primary);
+	--color_mark: var(--color_primary_mixed);
+
+	--color_button_background: var(--color_secondary);
+	--color_button_text: var(--color_black);
+
+	--color_header_background: var(--color_base);
+	--color_header_text: var(--color_contrast_alt);
+
+	--color_nav_background: var(--color_primary);
+	--color_nav_text: var(--color_white);
+	--color_nav_background_active: var(--color_secondary);
+	--color_nav_text_active: var(--color_black);
+	--color_nav_border: #{ rgba( #fff, var(--border_opacity) ) };
+
+	--color_intro_background: var(--color_contrast);
+	--color_intro_text: var(--color_white);
+
+	--color_content_background: var(--color_base);
+	--color_content_text: var(--color_contrast);
+	--color_content_headings: var(--color_contrast_alt);
+	--color_content_border: #{ rgba( #1b140e, var(--border_opacity) ) };
+
+	--color_footer_background: var(--color_contrast);
+	--color_footer_text: var(--color_white);
+}
+
+.intro {
+	isolation: isolate;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: url('assets/images/img-3--3to2.jpg');
+		background-position: 50% 50%;
+		background-size: cover;
+		opacity: .1;
+		z-index: -1;
+	}
+
+	.stars .svg-icon {
+		fill: var(--color_secondary);
+	}
+}
