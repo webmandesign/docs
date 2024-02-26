@@ -23,6 +23,9 @@ code {
 
 pre {
 	padding: 0;
+	background: var(--color_pre_background);
+	color: var(--color_pre_text);
+	border-radius: var(--border_radius);
 
 	code {
 		display: block;

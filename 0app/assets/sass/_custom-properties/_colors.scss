@@ -10,12 +10,23 @@
 	--color_nav_text: #fff;
 	--color_nav_background_active: var(--color_button_background);
 	--color_nav_text_active: var(--color_button_text);
+	--color_nav_background_hover: var(--color_nav_border);
+	--color_nav_text_hover: var(--color_nav_text);
 	--color_nav_border: #{ rgba( #fff, var(--border_opacity) ) };
+
+	--color_nav_prefix_content: currentColor;
+	--color_nav_prefix_customizing: currentColor;
 
 	--color_content_background: #fff;
 	--color_content_text: #000;
 	--color_content_headings: #000;
 	--color_content_border: #{ rgba( #000, var(--border_opacity) ) };
+
+	--color_heading_entry_background: var(--color_nav_background);
+	--color_heading_entry_text: var(--color_nav_text);
+
+	--color_pre_background: #222;
+	--color_pre_text: #fff;
 
 	--color_intro_background: var(--color_button_background);
 	--color_intro_text: var(--color_button_text);

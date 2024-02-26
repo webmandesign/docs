@@ -128,10 +128,16 @@
 
 	.has-regular-margin-top,
 	.has-normal-margin-top {
-		margin-top: $ratio + rem;
+
+		&[class] {
+			margin-top: $ratio + rem;
+		}
 	}
 
 	.has-regular-margin-bottom,
 	.has-normal-margin-bottom {
-		margin-bottom: $ratio + rem;
+
+		&[class] {
+			margin-bottom: $ratio + rem;
+		}
 	}

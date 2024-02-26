@@ -1,6 +1,18 @@
 - var nav = {};
 
 -
+	var icon = {
+		content     : '<svg class="svg-icon" aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"><path fill="currentColor" d="m227.31 73.37l-44.68-44.69a16 16 0 0 0-22.63 0L36.69 152A15.86 15.86 0 0 0 32 163.31V208a16 16 0 0 0 16 16h44.69a15.86 15.86 0 0 0 11.31-4.69L227.31 96a16 16 0 0 0 0-22.63M51.31 160L136 75.31L152.69 92L68 176.68ZM48 179.31L76.69 208H48Zm48 25.38L79.31 188L164 103.31L180.69 120Zm96-96L147.31 64l24-24L216 84.68Z"/></svg>',
+		customizing : '<svg class="svg-icon" aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"><path fill="currentColor" d="M64 105V40a8 8 0 0 0-16 0v65a32 32 0 0 0 0 62v49a8 8 0 0 0 16 0v-49a32 32 0 0 0 0-62m-8 47a16 16 0 1 1 16-16a16 16 0 0 1-16 16m80-95V40a8 8 0 0 0-16 0v17a32 32 0 0 0 0 62v97a8 8 0 0 0 16 0v-97a32 32 0 0 0 0-62m-8 47a16 16 0 1 1 16-16a16 16 0 0 1-16 16m104 64a32.06 32.06 0 0 0-24-31V40a8 8 0 0 0-16 0v97a32 32 0 0 0 0 62v17a8 8 0 0 0 16 0v-17a32.06 32.06 0 0 0 24-31m-32 16a16 16 0 1 1 16-16a16 16 0 0 1-16 16"/></svg>',
+	}
+
+-
+	var prefix = {
+		content     : '<strong class="prefix-content" title="Content">' + icon.content + '<span>Content:</span></strong> ',
+		customizing : '<strong class="prefix-customizing" title="Customization">' + icon.customizing + '<span>Customization:</span></strong> ',
+	}
+
+-
 	var index = {
 		map : 0,
 	}
@@ -44,8 +56,10 @@ else
 		'image-sizes'      : 'Why are uploaded <strong>images blurry</strong> or small',
 		'css-classes'      : 'How to <strong>modify element</strong> appearance',
 		'seo'              : '<strong>SEO</strong> - Search Engine Optimization',
+		'font'             : 'How to set up <strong>custom fonts</strong>',
 		'speed'            : 'How to <strong>speed up</strong> a website',
 		'css'              : 'How to add <strong>custom CSS</strong>',
+		'margin'           : 'How to <strong>remove gap</strong> between sections/elements',
 	};
 
 if ! config.faq
@@ -60,3 +74,27 @@ else
 					.filter( ( [ key ] ) => config.faq.includes( key ) )
 			);
 		}
+
+if config.imageNote && 'core' === config.imageNote
+	- config.imageNote = '<svg class="svg-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88m16-40a8 8 0 0 1-8 8a16 16 0 0 1-16-16v-40a8 8 0 0 1 0-16a16 16 0 0 1 16 16v40a8 8 0 0 1 8 8m-32-92a12 12 0 1 1 12 12a12 12 0 0 1-12-12"/></svg> Illustration image. May not display this actual theme.';
+
+-
+	var image_notes = {
+		'core/demo/01.png' : '',
+		'core/demo/02.png' : '',
+		'core/fse/styles-book.png' : '',
+		'core/fse/template-parts-all.png' : '',
+		'core/fse/template-parts.png' : '',
+		'core/fse/templates-all.png' : '',
+		'core/pages/templates.png' : '',
+		'core/posts/excerpt.png' : '',
+		'core/sidebars/edit-template-part.png' : '',
+		'https://easycaptures.com/fs/uploaded/1839/9200486017.png' : '',
+	};
+
+if ! config.imageNotes
+	- config.imageNotes = image_notes
+else
+	each value, key in image_notes
+		if ! config.imageNotes[ key ]
+			- config.imageNotes[ key ] = value

@@ -47,7 +47,7 @@
 				// Query value must be set as SASS number, which can actually also contain a unit.
 				// SASS string must be enclosed in parentheses, so never enclose the query value in those.
 				//
-				// @link  http://sass-lang.com/documentation/Sass/Script/Functions.html#unit-instance_method
+				// @link  https://sass-lang.com/documentation/Sass/Script/Functions.html#unit-instance_method
 				//
 				$query_value : nth( $query, 1 );
 

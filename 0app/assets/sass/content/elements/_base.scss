@@ -44,6 +44,10 @@ ins {
 		* + & {
 			margin-top: 2em;
 		}
+
+		+ .is-path-featured {
+			margin-top: -$ratio + em;
+		}
 	}
 }
 

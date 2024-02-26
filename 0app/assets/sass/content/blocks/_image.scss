@@ -26,7 +26,6 @@ figure {
 			top: -2em;
 			bottom: -2em;
 		}
-
 	}
 
 	.alert & {
@@ -38,7 +37,6 @@ figure {
 			top: -1em;
 			bottom: -1em;
 		}
-
 	}
 
 	img {
@@ -46,6 +44,10 @@ figure {
 		box-shadow: var(--drop_shadow_alert);
 	}
 
+	.note {
+		margin-top: 1em;
+		font-size: .75em;
+	}
 }
 
 figcaption {
@@ -64,7 +66,6 @@ figcaption {
 	a {
 		color: inherit;
 	}
-
 }
 
 img {
@@ -81,5 +82,4 @@ area {
 	&:focus {
 		outline: 3px solid var(--color_accent);
 	}
-
 }

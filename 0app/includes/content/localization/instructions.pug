@@ -4,16 +4,24 @@
 
 	ol
 		li
-			p Create a copy of the original <code>#{config.slug}/languages/#{config.slug}.pot</code> file.
+			p Make a copy of the original <code>#{config.slug}/languages/#{config.slug}.pot</code> file.
 
 		li
-			p Rename the copied file now: add hyphen followed with <a href="https://translate.wordpress.org/">your language code locale</a>, and change the file extension to "po". <br>(So, the British English file would be named <code>#{config.slug}-en_GB.po</code>.)
+			p Rename the copied file now: add hyphen followed with <a href="https://translate.wordpress.org/">your language code locale</a>, and change the file extension to "po". For example, the British English file would be named <code>#{config.slug}-en_GB.po</code>.
 
 		li
 			p Use <a href="https://poedit.net/"><strong>Poedit</strong></a> to translate the file and export (save) translation in "mo" file format.
 
 		li
-			p Upload translated <code>#{config.slug}-en_GB.mo</code> file into your WordPress languages directory, into <code>themes</code> folder (such as <code>/wp-content/languages/themes/#{config.slug}-en_GB.mo</code> (if the <code>themes</code> folder does not exist in your WordPress languages directory, create it).
+			p Upload translated <code>#{config.slug}-en_GB.mo</code> and <code>#{config.slug}-en_GB.po</code> file into your WordPress languages directory, into <code>themes</code> folder (such as <code>/wp-content/languages/themes/#{config.slug}-en_GB.mo</code> (if the <code>themes</code> folder does not exist in your WordPress languages directory, create it).
+
+		if true === config.compatibility.fse
+			li
+				p For JavaScript localization we need to <a href="https://developer.wordpress.org/block-editor/how-to-guides/internationalization/#create-translation-file">create additional JSON translation files</a>. In your computer terminal/command line/SSH set the directory to <code>/wp-content/languages/themes/</code>.
+			li
+				p Using <a href="https://wp-cli.org/">WPCLI</a> run this command to create the JSON file(s): <code>wp i18n make-json #{config.slug}-en_GB.po --no-purge</code>.
+			li
+				p If the <code>#{config.slug}-en_GB.po</code> file contains JavaScript translation strings, WPCLI should create <code>#{config.slug}-en_GB-{md5}.json</code> file(s) for you. You are done now.
 
 	+danger( 'Don\'t lose your files!', 'h5' )
 		p When you update the theme, all custom translation files will be deleted from <code>/wp-content/themes/#{config.slug}/languages</code> folder. Do not put your custom translation files into that folder! Basically, you should never <a href="#child-theme">modify the actual theme files and folders</a>.

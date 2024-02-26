@@ -1,0 +1,16 @@
++sub_section( 'Header images (decorative images)', 'custom-header' )
+
+	+mark( 'nav', 'Appearance', 'Customize', 'Header Image' ).is-path-featured
+	+mark( 'nav', 'Appearance', 'Header' ).is-path-featured
+
+	p The theme displays a decorative image in page intro section and in footer. It is also used in <a href="#block-patterns">block patterns</a>. By default this image is set to "Flowers" image. You can change it to custom image or choose from the theme predefined images.
+
+	+image( 'decorative-image.jpg', 'Preview of decorative image - flowers' )
+
+	+tip( 'Remove header images' )
+		p To disable the header image go to #[+mark( 'nav', 'Appearance', 'Customize', 'Header Image', '"Current header"', '"Hide image" button' )].
+		p.has-small-font-size
+			em (If "Hide image" button is not displayed for you, first choose an image from "Suggested" list and then you can click the "Hide image" button.)
+
+	+tip( 'Use in Image block' )
+		p If you want to use header image(s) in block editor, set <a href="#block-styles"><em>"Use header image"</em> or <em>"Use header image (flipped)"</em> block style</a> for the <a href="https://wordpress.org/documentation/article/image-block/">Image block</a>.

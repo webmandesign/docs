@@ -25,7 +25,6 @@
 			top: 0;
 			overflow-y: auto;
 		}
-
 	}
 
 	li {
@@ -34,7 +33,6 @@
 			border-top-width: 1px;
 			border-top-style: solid;
 		}
-
 	}
 
 	a {
@@ -49,9 +47,9 @@
 
 			&:hover,
 			&:focus {
-				background: var(--color_nav_border);;
+				background: var(--color_nav_background_hover);
+				color: var(--color_nav_text_hover);
 			}
-
 		}
 
 		&::before {
@@ -66,6 +64,28 @@
 			transition: opacity .15s;
 		}
 
-	}
+		> svg,
+		> strong {
+			font-size: .75em;
+		}
 
+		strong {
+			text-transform: uppercase;
+
+			span {
+				@extend %screen_reader_hiding;
+			}
+		}
+
+		&:not(.is-active):not(:hover):not(:focus) {
+
+			.prefix-content {
+				color: var(--color_nav_prefix_content);
+			}
+
+			.prefix-customizing {
+				color: var(--color_nav_prefix_customizing);
+			}
+		}
+	}
 }

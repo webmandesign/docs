@@ -1,13 +1,15 @@
 /* FILE: content/blocks/_video.scss */
 
 .link-video {
+	--pseudo_background_opacity: .15;
 	@extend %shaded_background;
 	position: relative;
 	padding: 1em;
+	font-size: .9em;
 	background: var(--color_palette_blue);
 	color: #fff;
 	border: 2px solid;
-	border-left-width: 1rem;
+	border-top-width: .618em;
 	border-color: var(--color_palette_blue);
 	border-radius: var(--border_radius);
 	box-shadow: none;
@@ -24,7 +26,6 @@
 
 	.label {
 		margin-right: $ratio_min + rem;
-		font-size: .8em;
 		font-weight: 700;
 		text-transform: uppercase;
 	}

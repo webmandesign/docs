@@ -13,3 +13,33 @@
 	.has-square-list-style-type {
 		list-style-type: square;
 	}
+
+	.is-steps {
+		counter-reset: steps;
+		list-style: none;
+
+		li {
+
+			&::before {
+				counter-increment: steps;
+				content: counter(steps);
+				display: inline-block;
+				width: 2em;
+				height: 2em;
+				margin-right: .618em;
+				font-size: .9em;
+				font-weight: 700;
+				line-height: calc( 2em - 2px );
+				text-align: center;
+				color: var(--color_accent);
+				border: 2px solid;
+				// border-color: inherit;
+				border-radius: 4px;
+				vertical-align: super;
+			}
+
+			+ li {
+				margin-top: 1em;
+			}
+		}
+	}

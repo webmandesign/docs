@@ -30,6 +30,8 @@
 	--color_nav_background_active: var(--color_secondary);
 	--color_nav_text_active: var(--color_black);
 	--color_nav_border: #{ rgba( #fff, var(--border_opacity) ) };
+	--color_nav_prefix_content: var(--color_secondary);
+	--color_nav_prefix_customizing: #fe98a5; // Analogous, https://www.colorhexa.com/febe98
 
 	--color_intro_background: var(--color_contrast);
 	--color_intro_text: var(--color_white);

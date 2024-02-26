@@ -1,8 +1,10 @@
 mixin image( url, caption, attr )
+	- urlOriginal = url
+
 	//- Allow image overrides:
 	if config.images && config.images.hasOwnProperty( url )
 		- url = config.images[ url ]
-	- url = url.replace( 'http:', 'https:' )
+
 	if -1 < url.indexOf( 'dropbox' )
 		- url = url.replace( 'www.dropbox.com', 'dl.dropboxusercontent.com' )
 	else if 0 === url.indexOf( 'core/' )
@@ -11,12 +13,22 @@ mixin image( url, caption, attr )
 	else if -1 === url.indexOf( 'https:' )
 		//- Local, theme specific image from `theme-slug/assets/images` folder.
 		- url = 'assets/images/' + url
+
+	- note = ''
+	if config.imageNote && 0 !== url.indexOf( 'assets/images/' )
+		- note = config.imageNote
+	if config.imageNotes && config.imageNotes.hasOwnProperty( urlOriginal )
+		- note = config.imageNotes[ urlOriginal ]
+
 	figure&attributes( attributes )
 		a( href=url title="Click to open large image" )
 			img( src=url alt=caption )&attributes( attr )
 			block
 		if caption
 			figcaption= caption
+		if note
+			//- Un-escaped for inline HTML.
+			.note!= note
 
 mixin map( url, caption )
 	- url = url.replace( 'http:', 'https:' )
