@@ -180,7 +180,7 @@ h1 {
   }
 }
 
-map, .site-menu a strong span, .screen-reader-text {
+map, .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
@@ -1368,6 +1368,10 @@ body:focus {
 .entry-title + .entry-section {
   padding-top: 0;
 }
+.entry-title .svg-icon {
+  width: 1em;
+  height: 1em;
+}
 .entry-section {
   padding-top: calc(var(--white_space) / 2);
   margin-top: calc(var(--white_space) / 2);
@@ -1470,9 +1474,6 @@ body:focus {
 .site-menu a > svg,
 .site-menu a > strong {
   font-size: 0.75em;
-}
-.site-menu a strong {
-  text-transform: uppercase;
 }
 .site-menu a:not(.is-active):not(:hover):not(:focus) .prefix-content {
   color: var(--color_nav_prefix_content);

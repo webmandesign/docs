@@ -69,14 +69,6 @@
 			font-size: .75em;
 		}
 
-		strong {
-			text-transform: uppercase;
-
-			span {
-				@extend %screen_reader_hiding;
-			}
-		}
-
 		&:not(.is-active):not(:hover):not(:focus) {
 
 			.prefix-content {

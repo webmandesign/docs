@@ -44,11 +44,14 @@
 			padding-top: 0;
 		}
 
+		.svg-icon {
+			width: 1em;
+			height: 1em;
+		}
 	}
 
 	&-section {
 		padding-top: calc( var(--white_space) / 2 );
 		margin-top: calc( var(--white_space) / 2 );
 	}
-
 }
