@@ -64,11 +64,13 @@ else
 		'image-sizes'      : 'Why are uploaded <strong>images blurry</strong> or small',
 		'css-classes'      : 'How to <strong>modify element</strong> appearance',
 		'seo'              : '<strong>SEO</strong> - Search Engine Optimization',
-		'font'             : 'How to set up <strong>custom fonts</strong>',
 		'speed'            : 'How to <strong>speed up</strong> a website',
 		'css'              : 'How to add <strong>custom CSS</strong>',
-		'margin'           : 'How to <strong>remove gap</strong> between sections/elements',
 	};
+
+if config.content.includes( 'editor' )
+	- faq_global['font']   = 'How to set up <strong>custom fonts</strong>';
+	- faq_global['margin'] = 'How to <strong>remove gap</strong> between sections/elements';
 
 if ! config.faq
 	- config.faq = faq_global
@@ -97,6 +99,7 @@ if config.imageNote && 'core' === config.imageNote
 		'core/pages/templates.png' : '',
 		'core/posts/excerpt.png' : '',
 		'core/sidebars/edit-template-part.png' : '',
+		'https://easycaptures.com/fs/uploaded/1625/5144473367.png' : '',
 		'https://easycaptures.com/fs/uploaded/1839/9200486017.png' : '',
 	};
 

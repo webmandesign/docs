@@ -3,7 +3,8 @@ block faq/answer/helper-classes
 
 	p For full up-to-date list of the helper modifier CSS classes and instructions on how to use them refer to <a href="#{config.url.css_classes}">theme demo website</a>.
 
-	+image( 'https://easycaptures.com/fs/uploaded/1839/9200486017.png', 'Adding custom CSS class onto a block' )
+	if config.content.includes( 'editor' )
+		+image( 'https://easycaptures.com/fs/uploaded/1839/9200486017.png', 'Adding custom CSS class onto a block' )
 
 	+video( 'https://vimeo.com/523023071' ) Using CSS classes in block editor.
 
