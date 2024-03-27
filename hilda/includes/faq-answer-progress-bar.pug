@@ -1,0 +1,19 @@
+li
+	+answer( 'How to set progress bar value (width)', 'progress-bar' )
+
+		p "Progress bar" <a href="#block-patterns">block pattern</a> consists of multiple nested blocks and it may be difficult to find out how to change the value and width of the progress bar. Here are instructions to do so:
+
+		p
+			small
+				em (The images below are only illustrative and may not represent the actual "Progress bar" pattern design supplied with the theme.)
+
+		ol.is-steps
+			li
+				p Insert "Progress bar" block pattern into page/post content.
+				+image( 'progress-bar-1.jpg', 'Insert "Progress bar" block pattern' )
+
+			li Click on the text value of the progress bar (<a href="https://wordpress.org/documentation/article/paragraph-block/">Paragraph block</a> with <code>65%</code> text by default) and change the number to desired value.
+
+			li
+				p Then select the parent <a href="https://wordpress.org/documentation/article/row-block/">Row block</a> and in block options change the width to your desired value.
+				+image( 'progress-bar-2.jpg', 'Setting up progress bar width' )
