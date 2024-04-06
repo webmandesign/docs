@@ -29,6 +29,9 @@ block customizer/fse
 
 				p And, you are also free to use any font family from <a href="https://fonts.google.com/">Google Fonts</a>. <strong>#{config.name}</strong> theme even makes sure these font families are served directly from your website and not from Google's servers. This effectively enhances your visitor's privacy and your website's <a href="https://wikipedia.org/wiki/General_Data_Protection_Regulation"><abbr title="General Data Protection Regulation">GDPR</abbr></a> compliance.
 
+				+tip( 'WordPress fonts library', 'h4' )
+					p When using a block theme, you can upload your custom fonts using WordPress native <a href="#site-editor-styles-typography">fonts library</a>.
+
 		if true === config.compatibility.hybrid
 			block customizer/fse/theme-options/disable-fse
 				+sub_section( 'Disabling full site editing', 'disable-fse' )

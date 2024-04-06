@@ -6,8 +6,8 @@
 	--color_contrast_alt:    #0f0d0d;
 	--color_primary:         #e51c06;
 	--color_primary_mixed:   #fce1de;
-	--color_secondary:       #ffeed9;
-	--color_secondary_mixed: #fff8f1;
+	--color_secondary:       #fff8d0;
+	--color_secondary_mixed: #fffbec;
 	--color_black:           #000000;
 	--color_white:           #ffffff;
 
@@ -29,7 +29,7 @@
 	--color_nav_text: var(--color_black);
 	--color_nav_background_active: var(--color_primary);
 	--color_nav_text_active: var(--color_white);
-	--color_nav_background_hover: var(--color_secondary_mixed);
+	--color_nav_background_hover: var(--color_primary_mixed);
 	--color_nav_text_hover: var(--color_nav_text);
 	--color_nav_border: #{ rgba( #000, var(--border_opacity) ) };
 	--color_nav_prefix_content: var(--color_primary);
@@ -57,7 +57,7 @@
 		content: '';
 		position: absolute;
 		inset: 0;
-		background: url('assets/images/3to4-1.jpg');
+		background: url('assets/images/pexels-amina-filkins-5410071.webp');
 		background-position: 50% 50%;
 		background-size: cover;
 		opacity: .1;
