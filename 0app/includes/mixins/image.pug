@@ -19,6 +19,8 @@ mixin image( url, caption, attr )
 		- note = config.imageNote
 	if config.imageNotes && config.imageNotes.hasOwnProperty( urlOriginal )
 		- note = config.imageNotes[ urlOriginal ]
+	if 'core' === note
+		- note = config.imageNote
 
 	figure&attributes( attributes )
 		a( href=url title="Click to open large image" )
