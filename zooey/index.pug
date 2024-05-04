@@ -4,13 +4,14 @@
 -
 	var config = {
 		//- Theme attributes:
-		name          : 'Ileana',
-		slug          : 'ileana',
-		screenshot    : 'https://themedemos.webmandesign.eu/ileana/wp-content/themes/ileana/screenshot.jpg',
-		is_free       : false,
-		source        : 'envato', //- Available values: wporg/envato/github/other
+		name          : 'Zooey',
+		slug          : 'zooey',
+		screenshot    : 'https://themedemos.webmandesign.eu/zooey/wp-content/themes/zooey/screenshot.jpg',
+		is_free       : true,
+		source        : 'wporg', //- Available values: wporg/envato/github/other
 		compatibility : {
 			fse                   : true,
+			fse_colors_elements   : true,
 			hybrid                : true,
 			no_demo               : true,
 			block_patterns        : true,
@@ -24,7 +25,7 @@
 		},
 
 		url : {
-			'info' : 'https://1.envato.market/ileana',
+			'info' : 'https://wordpress.org/themes/zooey/',
 		},
 
 		//- Content sections:
@@ -65,16 +66,7 @@
 			'margin',
 		],
 
-		//- Recommended plugins list:
-		//- For custom content see below.
-		plugins : {
-			//- For the list of core recommended plugin refer to `0app/includes/content/plugins/recommend`.
-			//- Reorder these how you please.
-			'envato-market'  : 'Envato Market',
-			'woocommerce'    : 'WooCommerce',
-			'integration-wc' : 'Theme Integration for WooCommerce',
-		},
-		tgmpa : true,
+		tgmpa : false,
 
 		//- Core image overrides:
 		images : {
@@ -82,7 +74,12 @@
 			'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg' : 'megamenu.jpg',
 		},
 		imageNote  : 'core',
-		imageNotes : {}
+		imageNotes : {
+			'faq-spacing.jpg'    : 'core',
+			'progress-bar-1.jpg' : 'core',
+			'progress-bar-2.jpg' : 'core',
+			'sticky-header.jpg'  : 'core',
+		}
 	};
 
 //-

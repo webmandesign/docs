@@ -1,10 +1,13 @@
 block editor/about
 	p <strong>#{config.name}</strong> theme is compatible with WordPress block editor and supports wide alignment, color palettes, font sizes, and others. Using block editor allows you to create beautiful and performant websites with intriguing page layouts without a page builder plugin. Have a look at <a href="#{config.url.demo}">theme demo website</a> for inspiration.
 
-	+video( 'https://wordpress.tv/2021/10/12/how-to-create-a-post-or-page-with-the-wordpress-block-editor/' ) How to use block editor
+	+video( 'https://www.youtube.com/watch?v=jA6AbrVwd3o' ) How to use block editor
+
+	+video( 'https://wordpress.tv/2021/10/12/how-to-create-a-post-or-page-with-the-wordpress-block-editor/' ) Alternative, older video about how to use block editor
 
 	+info( 'Available blocks', 'h3' )
 		p Visit <a href="https://wordpress.org/documentation/article/blocks-list/">WordPress blocks list</a> for information on available blocks and how to set them up.
 
-	+warning( 'Incompatibility', 'h3' )
-		p Please note that WordPress editors are not compatible with each other. Editing content built in one editor will not work when using a different editor. <a href="https://support.webmandesign.eu/demo-content-editor/">Read knowledge base article</a> for further information.
+	if true !== config.compatibility.no_demo
+		+warning( 'Incompatibility', 'h3' )
+			p Please note that WordPress editors are not compatible with each other. Editing content built in one editor will not work when using a different editor. <a href="https://support.webmandesign.eu/demo-content-editor/">Read knowledge base article</a> for further information.

@@ -1,12 +1,12 @@
 :root {
   /* Theme color palette: */
-  --color_base: $color_base;
-  --color_contrast: $color_contrast;
-  --color_contrast_alt: $color_contrast_alt;
-  --color_primary: $color_primary;
-  --color_primary_mixed: mix( $color_primary, $color_base, 12.50% );
-  --color_secondary: $color_secondary;
-  --color_secondary_mixed: mix( $color_secondary, $color_base, 38.20% );
+  --color_base: #f7fff7;
+  --color_contrast: #474f47;
+  --color_contrast_alt: #171f17;
+  --color_primary: #5f1a37;
+  --color_primary_mixed: #e4e2df;
+  --color_secondary: #ff6b6b;
+  --color_secondary_mixed: #fac6c2;
   --color_black: #000000;
   --color_white: #ffffff;
   --color_gradient_primary: var(--color_secondary);
@@ -23,11 +23,11 @@
   --color_nav_text: var(--color_black);
   --color_nav_background_active: var(--color_primary);
   --color_nav_text_active: var(--color_white);
-  --color_nav_background_hover: var(--color_primary_mixed);
+  --color_nav_background_hover: var(--color_secondary_mixed);
   --color_nav_text_hover: var(--color_nav_text);
   --color_nav_border: rgba(0, 0, 0, var(--border_opacity));
-  --color_nav_prefix_content: var(--color_primary);
-  --color_nav_prefix_customizing: #0660e5;
+  --color_nav_prefix_content: #1a375f;
+  --color_nav_prefix_customizing: #375f1a;
   --color_intro_background: var(--color_primary);
   --color_intro_text: var(--color_white);
   --color_content_background: var(--color_base);
@@ -47,7 +47,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("assets/images/pexels-amina-filkins-5410071.webp");
+  background: url("assets/images/intro.webp");
   background-position: 50% 50%;
   background-size: cover;
   opacity: 0.1;

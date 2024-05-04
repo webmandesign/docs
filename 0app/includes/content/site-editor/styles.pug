@@ -54,6 +54,11 @@ block site-editor/styles
 					p Theme applies a palette of colors throughout the site elements. You can modify each individual color in palette, modify WordPress default color palette, and add your own custom colors.
 					+important( 'Use solid colors', 'h4' )
 						p As the theme automatically calculates additional colors from its palette, it is recommended to use solid colors, not a semi-transparent ones.
+					if true === config.compatibility.fse_colors_elements
+						+info( 'Link & element colors', 'h4' )
+							p Editing global styles Colors section also allows you to set colors for "Text", "Background", "Link", "Captions", "Button" and "Heading" elements.
+							p Please note this is <strong><em>not advisable</em></strong> for this theme. Instead, change the theme color palette accordingly - check the colors information below.
+							p Actually, the only "safe", usable option from elements colors setup group is the "<strong>Link</strong>" color setup. If needed, you can tweak that one to your needs.
 					block site-editor/styles/colors/bottom
 					+image( 'core/fse/styles-colors.png', 'Editing theme colors' )
 					+tip( 'Editing tips', 'h4' )
