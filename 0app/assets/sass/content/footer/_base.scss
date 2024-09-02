@@ -3,7 +3,7 @@
 .site-footer {
 	position: relative;
 	display: block;
-	padding: 8vmax 6vw 25vh;
+	padding: min( 10vmin, 4rem ) 6vw 25vh;
 	text-align: center;
 	background: var(--color_footer_background);
 	color: var(--color_footer_text);
@@ -12,7 +12,7 @@
 	z-index: 9;
 
 	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-		padding-bottom: 8vmax;
+		padding-bottom: min( 10vmin, 4rem );
 	}
 
 	.custom-logo-link {

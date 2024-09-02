@@ -182,8 +182,7 @@ h1 {
 
 map, .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   position: absolute !important;
   width: 1px;
   height: 1px;
@@ -1046,8 +1045,7 @@ body:focus {
 }
 .screen-reader-text:focus {
   clip: auto;
-  -webkit-clip-path: none;
-          clip-path: none;
+  clip-path: none;
   width: auto;
   height: auto;
   line-height: normal;
@@ -1104,8 +1102,7 @@ body:focus {
   }
   .skip-link-site-menu:not(:focus) {
     clip: rect(1px, 1px, 1px, 1px);
-    -webkit-clip-path: inset(50%);
-            clip-path: inset(50%);
+    clip-path: inset(50%);
     position: absolute !important;
     width: 1px;
     height: 1px;
@@ -1130,7 +1127,7 @@ body:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6vmax 6vw;
+  padding: min(10vmin, 4rem) 6vw;
   background: var(--color_header_background);
   color: var(--color_header_text);
   border-bottom: 1px solid var(--color_header_border);
@@ -1382,7 +1379,7 @@ body:focus {
 .site-footer {
   position: relative;
   display: block;
-  padding: 8vmax 6vw 25vh;
+  padding: min(10vmin, 4rem) 6vw 25vh;
   text-align: center;
   background: var(--color_footer_background);
   color: var(--color_footer_text);
@@ -1393,7 +1390,7 @@ body:focus {
 }
 @media (min-width: 880px) {
   .site-footer {
-    padding-bottom: 8vmax;
+    padding-bottom: min(10vmin, 4rem);
   }
 }
 .site-footer .custom-logo-link {
