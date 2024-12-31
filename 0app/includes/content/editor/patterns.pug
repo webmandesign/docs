@@ -1,37 +1,39 @@
-+sub_section( 'Block Patterns', 'block-patterns' )
+block editor/patterns
+	+sub_section( 'Block Patterns', 'block-patterns' )
 
-	+mark( 'nav', '+', 'Patterns', 'select category', 'choose pattern' ).is-path-featured
+		+mark( 'nav', '+', 'Patterns', 'select category', 'choose pattern' ).is-path-featured
 
-	+video( 'https://youtu.be/hb0lxVNL6Uo?t=101' ) Using block patterns
+		+video( 'https://youtu.be/hb0lxVNL6Uo?t=101' ) Using block patterns
 
-	p This theme contains a library of predesigned block patterns to help you <strong>create a custom website with ease and in no time</strong>.
+		p This theme contains a library of predesigned block patterns to help you <strong>create a custom website with ease and in no time</strong>.
 
-	h4 Using block patterns
+		h4 Using block patterns
 
-	+image( 'core/editor/add-pattern.png', 'Adding a block pattern into page/post content' )
+		block editor/patterns/image
+			+image( 'core/editor/add-pattern.webp', 'Adding a block pattern into page/post content' )
 
-	ol
-		li On page/post edit screen (in block editor) click the <em>block inserter</em> button (the #[+mark( 'btn', '+' )] button in the upper left corner of editor).
+		ol
+			li On page/post edit screen (in block editor) click the <em>block inserter</em> button (the #[+mark( 'btn', '+' )] button in the upper left corner of editor).
 
-		li Switch to "<strong>Patterns</strong>" tab. <br>(<em>Optional</em>: click the #[+mark( 'btn', 'Explore all patterns' )] button at the bottom of the list of pattern categories to open block pattern inserter pop-up window.)
+			li Switch to "<strong>Patterns</strong>" tab. <br>(<em>Optional</em>: click the #[+mark( 'btn', 'Explore all patterns' )] button at the bottom of the list of pattern categories to open block pattern inserter pop-up window.)
 
-		li Choose a pattern category.
+			li Choose a pattern category.
 
-		li Select a pattern you want to insert into your page/post content.
+			li Select a pattern you want to insert into your page/post content.
 
-		li Edit the inserted pattern to your needs.
+			li Edit the inserted pattern to your needs.
 
-	if true === config.compatibility.fse
-		+info( 'Managing patterns', 'h4' )
-			p You can manage all patterns and create custom ones in <a href="#site-editor">site editor</a> in #[+mark( 'nav', 'Appearance', 'Editor', 'Patterns' )].
+		if true === config.compatibility.fse
+			+info( 'Managing patterns', 'h4' )
+				p You can manage all patterns and create custom ones in <a href="#site-editor">site editor</a> in #[+mark( 'nav', 'Appearance', 'Editor', 'Patterns' )].
 
-		+tip( 'Full page patterns', 'h4' )
-			p Use block patterns from dedicated "<strong>Pages</strong>" category to <a href="#page-block-patterns">create whole page content</a> easily at once.
+			+tip( 'Full page patterns', 'h4' )
+				p Use block patterns from dedicated "<strong>Pages</strong>" category to <a href="#page-block-patterns">create whole page content</a> easily at once.
 
-	+tip( 'Tutorials', 'h4' )
-		p If you are new to block patterns you can check out <a href="https://learn.wordpress.org/workshops/?search=pattern">tutorials at Learn WordPress website</a> for useful info.
-		p Additional tutorial can be found at <a href="https://wordpress.com/support/block-pattern/">WordPress.com website</a>.
+		+tip( 'Tutorials', 'h4' )
+			p If you are new to block patterns you can check out <a href="https://learn.wordpress.org/workshops/?search=pattern">tutorials at Learn WordPress website</a> for useful info.
+			p Additional tutorial can be found at <a href="https://wordpress.com/support/block-pattern/">WordPress.com website</a>.
 
-	+tip( 'More patterns', 'h4' )
-		p You can get more block patterns at official <a href="https://wordpress.org/patterns/">WordPress pattern directory</a>. (Get <a href="https://wordpress.org/patterns/author/webmandesign/">free patterns I provided for you</a>.)
-		+video( 'https://youtu.be/UlTC6yKzOJM' ) Insert WordPress directory patterns to your website
+		+tip( 'More patterns', 'h4' )
+			p You can get more block patterns at official <a href="https://wordpress.org/patterns/">WordPress pattern directory</a>. (Get <a href="https://wordpress.org/patterns/author/webmandesign/">free patterns I provided for you</a>.)
+			+video( 'https://youtu.be/UlTC6yKzOJM' ) Insert WordPress directory patterns to your website

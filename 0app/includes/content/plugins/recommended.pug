@@ -6,7 +6,8 @@
 	if config.tgmpa
 		+mark( 'nav', 'Appearance', 'Install Plugins' ).is-path-featured
 		+video( 'https://youtu.be/hb0lxVNL6Uo?t=72' ) Install theme recommended plugins
-		+image( 'core/plugins/recommended.png', 'Plugins recommendation page example: Recommended, not required' )
+		block plugins/recommended/tgmpa/image
+			+image( 'core/plugins/recommended.png', 'Plugins recommendation page example: Recommended, not required' )
 
 	if true !== config.compatibility.no_demo
 		+warning( 'Demo content required plugins', 'h4' )

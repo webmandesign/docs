@@ -1,5 +1,6 @@
 :root {
   --color_accent: #665522;
+  --color_accent_text: #fff;
   --color_mark: rgba(102, 85, 34, 0.1);
   --color_button_background: #feedba;
   --color_button_text: #2e2d2a;
@@ -38,6 +39,5 @@
 .intro::after {
   width: 38.2%;
   background: -webkit-gradient(linear, left top, right top, from(var(--color_intro_background)), to(rgba(254, 237, 186, 0)));
-  background: -o-linear-gradient(left, var(--color_intro_background), rgba(254, 237, 186, 0));
   background: linear-gradient(to right, var(--color_intro_background), rgba(254, 237, 186, 0));
 }

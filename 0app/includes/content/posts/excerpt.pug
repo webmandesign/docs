@@ -2,8 +2,15 @@ block posts/excerpt
 	+sub_section( 'Excerpt', 'posts-excerpt' )
 		p Excerpt will be displayed in posts list. If no excerpt is set, a portion of post content will take its place.
 
-		p If you set a custom excerpt text for a post or page, this will be also displayed in page intro section (main title area) unless you hide it with a <a href="#page-templates">template</a>.
+		p If you set a custom excerpt text, it can also be displayed in the page intro section (depending on your theme; unless you hide it with a dedicated <a href="#page-templates">template</a>).
 
-		+image( 'core/posts/excerpt.png', 'Adding/editing excerpt field' )
+		h4 Setting up custom excerpt
 
-		+video( 'https://vimeo.com/523023144' ) How to set up custom excerpt
+		ol
+			li On the page/post edit screen open the page/post settings sidebar. <br><small>(Point <strong>#1</strong> and <strong>#2</strong> in the screenshot below.)</small>
+			li Click the "Add an excerpt&hellip;" (or "Edit excerpt", respectively) option. <br><small>(Point <strong>#3</strong> in the screenshot below.)</small>
+			li Write your custom excerpt text into the text field. <br><small>(Point <strong>#4</strong> in the screenshot below.)</small>
+			li Save your settings. <br><small>(Point <strong>#5</strong> in the screenshot below.)</small>
+
+		block posts/excerpt/image
+			+image( 'core/posts/excerpt.webp', 'Adding/editing excerpt' )

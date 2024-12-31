@@ -34,6 +34,7 @@
   --color_footer_border: var(--color_header_border);
   --color_brand: #fbce2f;
   --color_accent: #06c;
+  --color_accent_text: #fff;
   --color_mark: rgba(0, 102, 204, 0.1);
   --color_button_background: #fbce2f;
   --color_button_text: #000;
@@ -191,10 +192,10 @@ map, .screen-reader-text {
   word-wrap: normal !important;
 }
 
-.link-video, .list-questions, .list-topics, figure, .alert {
+.link-video, .list-questions, .list-topics, figure:not(.is-plain), .alert {
   isolation: isolate;
 }
-.link-video::before, .list-questions::before, .list-topics::before, figure::before, .alert::before {
+.link-video::before, .list-questions::before, .list-topics::before, figure:not(.is-plain)::before, .alert::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -2208,7 +2209,7 @@ summary::after {
   width: 1.5em;
   height: 1.5em;
   margin-top: -0.25em;
-  margin-right: 0.382rem;
+  margin-right: 0.5em;
   vertical-align: middle;
 }
 
@@ -2219,32 +2220,34 @@ figure {
   margin-left: 0;
   margin-right: 0;
   text-align: center;
-  border: 1em solid transparent;
   border-radius: var(--border_radius);
 }
+figure:not(.is-plain) {
+  border: 1em solid transparent;
+}
 @media (min-width: 880px) {
-  figure {
+  figure:not(.is-plain) {
     border-width: 2em;
   }
 }
-body figure::before {
+body figure:not(.is-plain)::before {
   left: -1em;
   right: -1em;
   top: -1em;
   bottom: -1em;
 }
 @media (min-width: 880px) {
-  body figure::before {
+  body figure:not(.is-plain)::before {
     left: -2em;
     right: -2em;
     top: -2em;
     bottom: -2em;
   }
 }
-.alert figure {
+.alert figure:not(.is-plain) {
   border-width: 1em;
 }
-.alert figure::before {
+.alert figure:not(.is-plain)::before {
   left: -1em;
   right: -1em;
   top: -1em;
@@ -2365,11 +2368,11 @@ h2 + .list-questions, h2 + .list-topics {
   position: relative;
   padding: 1em;
   font-size: 0.9em;
-  background: var(--color_palette_blue);
-  color: #fff;
+  background: var(--color_accent, var(--color_palette_blue));
+  color: var(--color_accent_text, #fff);
   border: 2px solid;
   border-top-width: 0.618em;
-  border-color: var(--color_palette_blue);
+  border-color: var(--color_accent, var(--color_palette_blue));
   border-radius: var(--border_radius);
   -webkit-box-shadow: none;
           box-shadow: none;

@@ -1,1 +1,16 @@
-:root{--color_accent:#aa5a00;--color_mark:rgba(170, 90, 0, 0.1);--color_button_background:#aa5a00;--color_button_text:#fff;--color_header_background:#fff;--color_header_text:#0a0a00;--color_nav_background:#2a2a20;--color_nav_text:#fff;--color_nav_border:rgba(255, 255, 255, var(--border_opacity));--color_content_background:#fbf7f0;--color_content_headings:#0a0a00;--color_content_text:#6a6a60;--color_content_border:rgba(106, 106, 96, var(--border_opacity))}
+:root {
+  --color_accent: #aa5a00;
+  --color_accent_text: #fff;
+  --color_mark: rgba(170, 90, 0, 0.1);
+  --color_button_background: #aa5a00;
+  --color_button_text: #fff;
+  --color_header_background: #fff;
+  --color_header_text: #0a0a00;
+  --color_nav_background: #2a2a20;
+  --color_nav_text: #fff;
+  --color_nav_border: rgba(255, 255, 255, var(--border_opacity));
+  --color_content_background: #fbf7f0;
+  --color_content_headings: #0a0a00;
+  --color_content_text: #6a6a60;
+  --color_content_border: rgba(106, 106, 96, var(--border_opacity));
+}

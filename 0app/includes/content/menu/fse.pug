@@ -18,37 +18,26 @@ block menu/fse
 
 			+video( 'https://learn.wordpress.org/tutorial/how-to-create-a-menu-with-the-navigation-block/' ) How to Create a Menu with the Navigation Block
 
-			+mark( 'nav', 'Appearance', 'Editor', 'Patterns', 'Manage all template parts', '"Header"', 'Navigation block' ).is-path-featured
+			+mark( 'nav', 'Appearance', 'Editor', 'Patterns', 'All template parts', '"Header"', 'Navigation block' ).is-path-featured
 
 			ol
-				li
-					p Open site editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
-					+image( 'core/fse/editor.jpg' )
-
-				li
-					p In site editor open "<strong>Patterns</strong>" management.
-					+image( 'core/fse/menu-patterns.jpg' )
-
-				li
-					p Now click "<strong>Manage all template parts</strong>" in patterns manager.
-					+image( 'core/fse/template-parts.png' )
-
-				li
-					p Click "<strong>Header</strong>" from the list of all available template parts to edit its content.
-
-				li
-					p Click the "<strong>Navigation</strong>" block to edit its content and options.
+				li Open Site Editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
+				li In Site Editor open "<strong>Patterns</strong>" management.
+				li Click "<strong>All template parts</strong>" in the patterns manager.
+				li Click "<strong>Header</strong>" from the list of available template parts to edit its content.
+				li Click the <a href="https://wordpress.org/documentation/article/navigation-block/">"<strong>Navigation</strong>" block</a> to edit its content and options.
 
 			if true === config.compatibility.hybrid
 				+important( 'Template editor', 'h4' )
-					p Note that if you <em>disabled</em> full site editing in <a href="#disable-fse">theme options</a>, the path to edit "<strong>Navigation</strong>" block in "<strong>Header</strong>" template part changes to #[+mark( 'nav', 'Appearance', 'Template Parts', 'Header' )]. Basically, you are skipping step #2 and #3 from the procedure above.
+					p If you <a href="#disable-fse"><em>disabled</em> full site editing</a>, the path to edit "<strong>Navigation</strong>" block in "<strong>Header</strong>" template part changes to #[+mark( 'nav', 'Appearance', 'Patterns', 'All template parts', '"Header"', 'Navigation block' )].
 
 	block menu/fse/mobile
 		+sub_section( 'Mobile menu', 'mobile-nav' )
 
 			p You can enable or disable mobile menu for your main navigation <a href="#edit-navigation">editing the Navigation block</a> in "<strong>Header</strong>" template part.
 
-			+image( 'core/menu/block-navigation-mobile.png', 'Enabling mobile navigation for Navigation block' )
+			block menu/fse/mobile/image/01
+				+image( 'core/menu/block-navigation-mobile.webp', 'Enabling mobile navigation for Navigation block' )
 
 			hr
 
@@ -77,17 +66,20 @@ block menu/fse
 
 			p Apply this block style on the Navigation block in site "<strong>Header</strong>" template part.
 
-			+image( 'core/menu/block-style-fixed-menu-toggle.jpg', 'Fixed position of mobile menu toggle button', { 'width': 300 } )
+			block menu/fse/mobile/image/02
+				+image( 'core/menu/fixed-mobile-navigation.webp', 'Fixed position of mobile menu toggle button' )
 
 	block menu/fse/megamenu
 		+sub_section( 'Megamenu', 'megamenu' )
 			p With built in simple megamenu functionality you can display child menu (sub-menu) items in columns.
 
-			+image( 'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg', 'Megamenu example preview' )
+			block menu/fse/megamenu/image/01
+				+image( 'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg', 'Megamenu example preview' )
 
 			p Use a dedicated "<strong>Megamenu</strong>" <a href="#block-styles">block style</a> on a <a href="https://wordpress.org/documentation/article/submenu-block/">Submenu block</a>:
 
-			+image( 'core/menu/block-style-megamenu.png', 'Applying "Megamenu" block style' )
+			block menu/fse/megamenu/image/02
+				+image( 'core/menu/block-style-megamenu.webp', 'Applying "Megamenu" block style' )
 
 			+important( 'Create nested menus first', 'h4' )
 				p Before proceeding, make sure to create a nested menu (submenu) in your <a href="#edit-navigation">navigation block</a>.

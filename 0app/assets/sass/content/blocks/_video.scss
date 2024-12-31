@@ -6,11 +6,11 @@
 	position: relative;
 	padding: 1em;
 	font-size: .9em;
-	background: var(--color_palette_blue);
-	color: #fff;
+	background: var( --color_accent, var(--color_palette_blue) );
+	color: var( --color_accent_text, #fff );
 	border: 2px solid;
 	border-top-width: .618em;
-	border-color: var(--color_palette_blue);
+	border-color: var( --color_accent, var(--color_palette_blue) );
 	border-radius: var(--border_radius);
 	box-shadow: none;
 	transition: box-shadow .3s;

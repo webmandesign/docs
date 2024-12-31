@@ -2,13 +2,15 @@ block menu/megamenu
 	+sub_section( 'Megamenu', 'megamenu' )
 		p With built in simple megamenu functionality you can display child menu (sub-menu) items in columns.
 
-		+image( 'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg', 'Megamenu example preview.' )
+		block menu/megamenu/image/01
+			+image( 'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg', 'Megamenu example preview.' )
 
 		ol
 			li
 				p Set a <code>megamenu</code> class on the parent menu item (1st level menu item).
 
-				+image( 'https://easycaptures.com/fs/uploaded/1625/5144473367.png', 'Setting up menu item class.' )
+				block menu/megamenu/image/02
+					+image( 'https://easycaptures.com/fs/uploaded/1625/5144473367.png', 'Setting up menu item class.' )
 
 				if true === config.compatibility.megamenu_fullwidth
 					+tip( 'Fullwidth megamenu', 'h4' )

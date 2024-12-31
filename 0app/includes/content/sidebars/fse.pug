@@ -1,40 +1,31 @@
 block sidebars/fse
 	block sidebars/fse/display
 		+sub_section( 'Displaying a sidebar' )
+			block sidebars/fse/display/content
 
-			p With full site editing theme (block theme) you have full power of modifying your theme templates and template parts. If you want to display a sidebar, simply insert a <a href="#block-patterns">block pattern</a> containing the sidebar into desired template or template part content.
+				p With full site editing theme (block theme) you have full power of modifying your theme templates and template parts. If you want to display a sidebar, simply insert a <a href="#block-patterns">block pattern</a> containing the sidebar into desired content.
 
-			p The theme provides multiple block patterns displaying a dedicated "<strong>Sidebar</strong>" <em>template part</em>. A <em>template part</em> was chosen for sidebar content management so you can edit your (global) sidebar in one place and it will be updated everywhere the "<strong>Sidebar</strong>" template part is being used.
+				p The theme provides multiple block patterns displaying a dedicated "<strong>Sidebar</strong>" <em>template part</em>. A <em>template part</em> was chosen for sidebar content management so you can edit the sidebar in one place and it will be updated everywhere the "<strong>Sidebar</strong>" template part is being used.
 
-			if true === config.compatibility.hybrid
-				+important( 'Template editor', 'h4' )
-					p Note that if you <em>disabled</em> full site editing in <a href="#disable-fse">theme options</a>, you can edit <em>only</em> <a href="#site-editor-template-parts">template parts</a>, <em>not templates</em>.
+				if true === config.compatibility.hybrid
+					+important( 'Template editor', 'h4' )
+						p Note that if you <em>disabled</em> full site editing in <a href="#disable-fse">theme options</a>, you can edit <em>only</em> <a href="#site-editor-template-parts">template parts</a>, <em>not templates</em>.
 
-			+danger( 'Template Part block restriction', 'h4' )
-				p Note that <a href="https://wordpress.org/documentation/article/template-part-block/">Template Part block</a> can be used only in site editor. So, <em>only when editing <a href="#site-editor-template-parts">template parts</a> or <a href="#site-editor-templates">templates</a></em>. In page/post editor the Template Part block is not available.
+				+danger( 'Template Part block restriction', 'h4' )
+					p Note that <a href="https://wordpress.org/documentation/article/template-part-block/">Template Part block</a> can be used only in Site Editor. So, <em>only when editing <a href="#site-editor-template-parts">template parts</a> or <a href="#site-editor-templates">templates</a></em>. In page/post editor the Template Part block is not available.
 
 	block sidebars/fse/edit
 		+sub_section( 'Editing sidebar template part content', 'edit-sidebar' )
+			block sidebars/fse/edit/content
 
-			+mark( 'nav', 'Appearance', 'Editor', 'Patterns', 'Manage all template parts', '"Sidebar"' ).is-path-featured
+				+mark( 'nav', 'Appearance', 'Editor', 'Patterns', 'All template parts', '"Sidebar"' ).is-path-featured
 
-			ol
-				li
-					p Open site editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
-					+image( 'core/fse/editor.jpg' )
+				ol
+					li Open Site Editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
+					li In Site Editor open "<strong>Patterns</strong>" management.
+					li Click "<strong>All template parts</strong>" in the patterns manager.
+					li Click "<strong>Sidebar</strong>" from the list of available template parts to edit its content.
 
-				li
-					p In site editor open "<strong>Patterns</strong>" management.
-					+image( 'core/fse/menu-patterns.jpg' )
-
-				li
-					p Now click "<strong>Manage all template parts</strong>" in patterns manager.
-					+image( 'core/fse/template-parts.png' )
-
-				li
-					p Click "<strong>Sidebar</strong>" from the list of all available template parts to edit its content.
-					+image( 'core/sidebars/edit-template-part.png' )
-
-			if true === config.compatibility.hybrid
-				+important( 'Template editor', 'h4' )
-					p Note that if you <em>disabled</em> full site editing in <a href="#disable-fse">theme options</a>, the path to edit "<strong>Sidebar</strong>" template part content changes to #[+mark( 'nav', 'Appearance', 'Template Parts', 'Sidebar' )]. Basically, you are skipping step #2 and #3 from the procedure above.
+				if true === config.compatibility.hybrid
+					+important( 'Template editor', 'h4' )
+						p If you <a href="#disable-fse"><em>disabled</em> full site editing</a>, the path to edit "<strong>Sidebar</strong>" template part changes to #[+mark( 'nav', 'Appearance', 'Patterns', 'All template parts', '"Sidebar"' )].

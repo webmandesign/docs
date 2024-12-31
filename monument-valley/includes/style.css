@@ -1,5 +1,6 @@
 :root {
   --color_accent: #9d693f;
+  --color_accent_text: #fff;
   --color_mark: rgba(157, 105, 63, 0.1);
   --color_button_background: #9d693f;
   --color_button_text: #fff;

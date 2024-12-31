@@ -3,9 +3,18 @@ block pages/templates
 		block pages/templates/about
 			p <strong>#{config.name}</strong> theme supports <a href="https://developer.wordpress.org/themes/template-files-section/page-template-files/">WordPress page/post templates functionality</a> and contains selection of predefined templates for you (see the list below).
 
-			+image( 'core/pages/templates.jpg', 'Setting up template in editor' )
+			h4 Assigning a template
 
-			+video( 'https://vimeo.com/766481653' ) How to assign a template
+			ol
+				li On the page/post edit screen open the page/post settings sidebar. <br><small>(Point <strong>#1</strong> and <strong>#2</strong> in the screenshot below.)</small>
+				li Locate the "Template" option and click on its value. <br><small>(Point <strong>#3</strong> in the screenshot below.)</small>
+				li Choose "Swap template" from the list of options. <br><small>(Point <strong>#4</strong> in the screenshot below.)</small>
+				li Choose a desired template from the the popup window and save your settings. <br><small>(Point <strong>#5</strong> and <strong>#6</strong> in the screenshot below.)</small>
+
+			block pages/templates/about/image
+				+image( 'core/pages/templates.webp', 'Assigning a template in block editor' )
+
+		h4 List of available templates
 
 		dl.list-default
 			block pages/templates/list

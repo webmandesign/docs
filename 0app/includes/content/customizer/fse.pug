@@ -1,11 +1,11 @@
 block customizer/fse
 	block customizer/fse/about
-		p Even though this theme allows you to <a href="#site-editor">edit your site fully</a>, including theme templates, you can still use WordPress Customizer (#[+mark( 'nav', 'Appearance', 'Customize' )]) where you'll find additional advanced theme options such as <a href="#typography">harmonious typography</a>, or <a href="#custom-background">website background image setup</a>.
+		p Use WordPress Customizer (#[+mark( 'nav', 'Appearance', 'Customize' )]) to find advanced theme options such as <a href="#typography">harmonious typography</a>, or <a href="#custom-background">website background image setup</a>.
 
 	block customizer/fse/site-editor
 		+sub_section( '"Styles" section in site editor' )
 
-			p If you are looking for options to modify <em>colors</em> or <em>layout widths</em>, these can be found in <a href="#site-editor-styles">"Styles" section of full site editor</a>.
+			p If you are looking for options to modify <em>colors</em> or <em>layout widths</em>, these can be found in <a href="#site-editor-styles">"Styles" section of Site Editor</a>.
 
 			if true === config.compatibility.hybrid
 				+danger( 'Make sure site editor is enabled', 'h4' )

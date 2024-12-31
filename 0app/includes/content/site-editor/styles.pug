@@ -3,7 +3,7 @@ block site-editor/styles
 
 		+mark( 'nav', 'Appearance', 'Editor', 'Styles', 'Edit styles' ).is-path-featured
 
-		p "Styles" section of site editor allows you to change theme colors and layout widths.
+		p "Styles" section of site editor allows you to change colors and layout.
 
 		p
 			a( href="#site-editor-styles-typography") Typography &darr;
@@ -15,55 +15,53 @@ block site-editor/styles
 			a( href="#site-editor-styles-others") Others &darr;
 
 		+info( 'Section colors', 'h4' )
-			p If you want to change colors of a specific theme section, <a href="#site-editor-template-parts">edit template parts</a> instead.
+			p If you want to change colors of a specific section, <a href="#site-editor-template-parts">edit template parts</a> instead.
 
 		+important( 'Typography setup', 'h4' )
 			p Although "Styles" section allows you to set up your website typography, the theme provides <strong>advanced harmonious responsive typography setup</strong> tweaking <a href="#typography">just a few theme options</a>. So, there is no need to set up typography here.
-			p However, you can still use this section to upload your custom fonts (as of WordPress 6.5).
+			p However, you can still use this section to upload your custom fonts.
+
+		+video( 'https://learn.wordpress.org/lesson/customizing-theme-settings-colors-fonts-typography-and-layout/' ) Customizing colors, fonts, and layout
 
 		ol
+			li Open Site Editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
 			li
-				p Open site editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
-				+image( 'core/fse/editor.jpg' )
+				p In Site Editor open "<strong>Styles</strong>" management.
+				block site-editor/styles/image/02
+					+image( 'core/fse/menu-styles.webp' )
 
 			li
-				p In site editor open "<strong>Styles</strong>" management.
-				+image( 'core/fse/menu-styles.jpg' )
-
-			li
-				p In styles manager you can choose to apply predefined theme styles or tweak the style options. Click the <em>edit style</em> button to modify current style.
-				+image( 'core/fse/styles.jpg' )
-
-			li
-				p For better preview of your styling changes affecting various website elements click the <em>style book</em> button.
-				+image( 'core/fse/styles-book.png', 'Using helpful style book' )
-				+video( 'https://learn.wordpress.org/tutorial/how-to-use-the-wordpress-stylebook-with-your-block-theme/' ) How to use the WordPress style book
+				p In styles manager you can choose to apply predefined theme styles or tweak the style options. Click the <em>Edit styles</em> button to modify current styles.
+				block site-editor/styles/image/03
+					+image( 'core/fse/styles.webp' )
 
 				block site-editor/styles/typography
 					h4#site-editor-styles-typography
 						a.heading-anchor( href="#site-editor-styles-typography" ) Typography
 					p Although "Styles" section allows you to set up your website typography, the theme provides <strong>advanced harmonious responsive typography setup</strong> tweaking <a href="#typography">just a few theme options</a>. So, there is no need to set up typography here.
-					p However, you can still <strong>use this section to upload your custom fonts</strong> (as of WordPress 6.5).
+					p However, you can still <strong>use this section to upload your custom fonts</strong>.
 
-					+video( 'https://learn.wordpress.org/tutorial/exploring-wordpress-6-5/' ) Exploring WordPress 6.5 (fonts setup starts at 7:29 of the video)
+					+video( 'https://learn.wordpress.org/lesson/making-the-most-of-the-font-library/' ) Making the most of the Font Library
 
 				block site-editor/styles/colors
 					h4#site-editor-styles-colors
 						a.heading-anchor( href="#site-editor-styles-colors" ) Colors
 					block site-editor/styles/colors/top
-					p Theme applies a palette of colors throughout the site elements. You can modify each individual color in palette, modify WordPress default color palette, and add your own custom colors.
+					p Theme applies a palette of colors throughout the site elements. You can modify each individual color in the palette, modify WordPress default color palette, and add your own custom colors.
 					+important( 'Use solid colors', 'h4' )
-						p As the theme automatically calculates additional colors from its palette, it is recommended to use solid colors, not a semi-transparent ones.
+						p As the theme automatically calculates additional colors from its palette, it is <strong>recommended to use solid colors</strong>, not a semi-transparent ones.
 					if true === config.compatibility.fse_colors_elements
 						+info( 'Link & element colors', 'h4' )
 							p Editing global styles Colors section also allows you to set colors for "Text", "Background", "Link", "Captions", "Button" and "Heading" elements.
 							p Please note this is <strong><em>not advisable</em></strong> for this theme. Instead, change the theme color palette accordingly - check the colors information below.
 							p Actually, the only "safe", usable option from elements colors setup group is the "<strong>Link</strong>" color setup. If needed, you can tweak that one to your needs.
 					block site-editor/styles/colors/bottom
-					+image( 'core/fse/styles-colors.png', 'Editing theme colors' )
+					block site-editor/styles/colors/image
+						+image( 'core/fse/styles-colors.webp', 'Editing theme colors' )
 					+tip( 'Editing tips', 'h4' )
 						p To see the color names, click the "Color options" button (1) and select "Show details" (2).
-						+image( 'core/fse/styles-colors-tips.jpg' )
+						block site-editor/styles/colors/tip/image
+							+image( 'core/fse/styles-colors-tips.webp' )
 						p If you want to revert your color changes, click the "Color options" button (3) and select "Reset colors" (4).
 
 				block site-editor/styles/layout
@@ -73,10 +71,11 @@ block site-editor/styles
 					p In "Layout" section it is recommended to tweak <em>content and wide width</em> if needed.
 					p Other layout options are set for the best responsiveness across multiple devices. It is not recommended to modify them in this theme.
 					block site-editor/styles/layout/bottom
-					+image( 'core/fse/styles-layout.png', 'Modifying layout widths' )
+					block site-editor/styles/layout/image
+						+image( 'core/fse/styles-layout.webp', 'Modifying layout widths' )
 
 				block site-editor/styles/others
 					h4#site-editor-styles-others
 						a.heading-anchor( href="#site-editor-styles-others" ) Others
 					p Additionally, you can tweak styles for each block individually. You can modify the default <strong>appearance of any block</strong> to your needs.
-					p There is also an option to add your own (and modify the theme provided) <strong>CSS styles code</strong>.
+					p There is also an option to add <strong>CSS styles code</strong>.

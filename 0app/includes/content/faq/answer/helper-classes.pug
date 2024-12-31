@@ -1,10 +1,11 @@
 block faq/answer/helper-classes
-	p This theme predefines some useful modifier CSS classes for you. You can use them <a href="https://vimeo.com/523023071">in block editor</a>, in a page builder, or however you find useful. These classes modify appearance of your website elements and blocks.
+	p This theme provides some useful modifier CSS classes for you. You can use them <a href="https://vimeo.com/523023071">in block editor</a>, in a page builder, or however you find useful. These classes modify appearance of your website elements and blocks.
 
 	p For full up-to-date list of the helper modifier CSS classes and instructions on how to use them refer to <a href="#{config.url.css_classes}">theme demo website</a>.
 
 	if config.content.includes( 'editor' )
-		+image( 'https://easycaptures.com/fs/uploaded/1839/9200486017.png', 'Adding custom CSS class onto a block' )
+		block faq/answer/helper-classes/image
+			+image( 'https://easycaptures.com/fs/uploaded/1839/9200486017.png', 'Adding custom CSS class onto a block' )
 
 	+video( 'https://vimeo.com/523023071' ) Using CSS classes in block editor.
 

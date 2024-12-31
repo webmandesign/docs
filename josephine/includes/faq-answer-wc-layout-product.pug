@@ -1,0 +1,14 @@
+li
+	+answer( '<strong>WooCommerce</strong>: Set up product layout', 'wc-layout-product' )
+
+		+mark( 'nav', 'Appearance', 'Customize', 'WooCommerce', 'Others' ).is-path-featured
+
+		p <strong>#{config.name}</strong> theme provides these options to alter default WooCommerce product page layout:
+
+		ul
+			li <strong>Product gallery layout</strong> can be set to display <a href="#{config.url.demo}product/product-8/?mod=l.slideshow">slideshow with thumbnails</a>, or <a href="#{config.url.demo}product/product-8/?mod=l.list">images in 1 column</a>, or <a href="#{config.url.demo}product/product-8/">in 2 columns</a>, or automatic columns (which is default).
+			li <strong>Sticky product summary</strong> sticks the product information and "Add to cart" button when scrolling the product page.
+			li <strong>Product details layout</strong> displays product content area (description, additional info, reviews) in <a href="#{config.url.demo}product/product-8/#product-more-info">tabbed interface</a> or in <a href="#{config.url.demo}product/product-6/#product-more-info">panels</a>.
+
+		+tip( 'Block editor for products', 'h4' )
+			p If you would like to use block editor to create custom layouts for your product description, check out <a href="https://wordpress.org/plugins/block-editor-for-woocommerce/"><strong>Block Editor For WooCommerce</strong> plugin</a>.

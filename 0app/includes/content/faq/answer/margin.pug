@@ -1,8 +1,11 @@
 block faq/answer/margin
-	p The theme applies vertical margin on elements to provide automatic harmonious spacing. Sometimes you may need to remove this gap between rows of columns with a background, for example.
+	p The theme applies vertical margin on blocks to provide automatic harmonious spacing. Sometimes you may need to remove this gap between sections.
 
-	p To remove the gap, null out (set value to zero, <code>0</code>) vertical margin (usually top margin) of the block in block editor, or element in your page builder.
+	p To remove the gap, null-out the vertical margin (set the value to <code>0</code>, "None") of the block in block editor (or element in page builder).
 
-	p Here is how you can set top margin in block editor:
+	p Specifically, usually the <em>top</em> margin needs to be removed, but this depends on your theme styles.
 
-	+image( 'https://easycaptures.com/fs/uploaded/1635/1043957511.png', 'Setting block top margin to zero' )
+	p Here is how you can set vertical margin in block editor:
+
+	block faq/answer/margin/image
+		+image( 'core/faq/margin.webp', 'Removing block vertical margin' )

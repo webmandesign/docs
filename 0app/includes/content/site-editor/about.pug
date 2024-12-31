@@ -1,10 +1,6 @@
 block site-editor/about
 
-	p Now you get <strong>full power</strong> of editing every aspect of your theme visually, using drag-&-drop <a href="#editor">block editor</a> - <strong>no coding required</strong>! Create beautiful, customizable websites with a few clicks.
-
-	p Modify theme <a href="#site-editor-styles">colors and layout widths</a>, reusable <a href="#site-editor-template-parts">template parts</a>, or whole <a href="#site-editor-templates">templates</a>.
-
-	+image( 'core/fse/editing.png', 'Editing header in site editor' )
+	p Edit every aspect of your theme visually, using drag-&-drop <a href="#editor">block editor</a> - <strong>no coding required</strong>. Create beautiful, customizable websites with a few clicks. <br>Modify <a href="#site-editor-styles">colors and layout widths</a>, reusable <a href="#site-editor-template-parts">template parts</a>, or whole <a href="#site-editor-templates">templates</a>.
 
 	+tip( 'Info & Tutorials' )
 		p <a href="https://wordpress.org/documentation/article/site-editor/">Find out more about Site Editor</a> and <a href="https://learn.wordpress.org/tutorials/">learn how to use it in tutorial videos</a> available directly at WordPress website.
@@ -12,5 +8,5 @@ block site-editor/about
 
 	if true === config.compatibility.hybrid
 		+info( 'Hybrid theme mode' )
-			p <strong>#{config.name}</strong> theme allows you to <a href="#disable-fse">switch full site editing feature off</a> if needed. It is useful in cases when your plugin does not work with WordPress full site editing features, for example. In hybrid mode you will still be able to edit all theme <a href="#site-editor-template-parts">template parts</a> using <a href="#editor">block editor</a>, and yet gain from <a href="#child-theme">PHP coding</a> if needed.
+			p <strong>#{config.name}</strong> theme allows you to <a href="#disable-fse">switch full site editing feature off</a> if needed. It is useful in cases when a plugin does not work with WordPress full site editing functionality, for example. In hybrid mode you will still be able to edit all theme <a href="#site-editor-template-parts">template parts</a> using <a href="#editor">block editor</a>, and yet gain from <a href="#child-theme">PHP coding</a> if needed.
 			p <a href="#disable-fse">How to disable site editor &rarr;</a>

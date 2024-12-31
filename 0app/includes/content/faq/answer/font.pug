@@ -6,13 +6,13 @@ block faq/answer/font
 
 	ol.is-steps
 		li
-			p Use a plugin to upload your custom font to your website, such as <a href="https://wordpress.org/plugins/custom-fonts/"><strong>Custom Fonts</strong> plugin</a>. (Or upload it by other means, such as via a child theme or <a href="#child-theme-plugin">child theme plugin</a>.)
-
 			if true === config.compatibility.fse
-				+tip( 'Use WordPress fonts library', 'h4' )
+				+tip( 'Use WordPress fonts library!', 'h4' )(style="margin-bottom:1em")
 					p When using a block theme, you can upload your custom fonts using WordPress native <a href="#site-editor-styles-typography">fonts library</a>.
+
+			p Use a plugin to upload font file(s) to your website, such as <a href="https://wordpress.org/plugins/custom-fonts/"><strong>Custom Fonts</strong> plugin</a>. (Or upload it by other means, such as via a <a href="#child-theme-plugin">child theme or plugin</a>.)
 
 		li
 			p Disable <strong>Appearance → Customize → Theme Options → Typography → "Enable theme Google Fonts loading"</strong> option.
 		li
-			p Set font family fields in <strong>Appearance → Customize → Theme Options → Typography</strong> to use your custom font family. (These fields take a value valid for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">CSS <code>font-family</code> property</a>.)
+			p Set font family fields in <strong>Appearance → Customize → Theme Options → Typography</strong> to use your custom font family. <br><small><em>(These fields take a value valid for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">CSS <code>font-family</code> property</a>.)</em></small>

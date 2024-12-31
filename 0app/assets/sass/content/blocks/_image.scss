@@ -1,41 +1,44 @@
 /* FILE: content/blocks/_image.scss */
 
 figure {
-	@extend %shaded_background;
 	position: relative;
 	margin-top: 0;
 	margin-left: 0;
 	margin-right: 0;
 	text-align: center;
-	border: 1em solid transparent;
 	border-radius: var(--border_radius);
 
-	@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-		border-width: 2em;
-	}
-
-	body &::before {
-		left: -1em;
-		right: -1em;
-		top: -1em;
-		bottom: -1em;
+	&:not(.is-plain) {
+		@extend %shaded_background;
+		border: 1em solid transparent;
 
 		@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
-			left: -2em;
-			right: -2em;
-			top: -2em;
-			bottom: -2em;
+			border-width: 2em;
 		}
-	}
 
-	.alert & {
-		border-width: 1em;
-
-		&::before {
+		body &::before {
 			left: -1em;
 			right: -1em;
 			top: -1em;
 			bottom: -1em;
+
+			@include media( map_get( $breakpoint, $mobile_menu_breakpoint ) ) {
+				left: -2em;
+				right: -2em;
+				top: -2em;
+				bottom: -2em;
+			}
+		}
+
+		.alert & {
+			border-width: 1em;
+
+			&::before {
+				left: -1em;
+				right: -1em;
+				top: -1em;
+				bottom: -1em;
+			}
 		}
 	}
 

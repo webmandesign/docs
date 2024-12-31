@@ -1,0 +1,117 @@
+$color_html         : #ececec;
+$color_base         : #fcfcfc;
+$color_base_alt     : #f2f2f2;
+$color_contrast     : #353445;
+$color_contrast_alt : #050415;
+$color_primary      : #4433dc;
+$color_secondary    : #cc23bb;
+
+:root {
+
+	/* Theme color palette: */
+	--color_html:            #{ $color_html };
+	--color_base:            #{ $color_base };
+	--color_contrast:        #{ $color_contrast };
+	--color_contrast_alt:    #{ $color_contrast_alt };
+	--color_primary:         #{ $color_primary };
+	--color_primary_mixed:   #{ mix( $color_primary, $color_base, 12.50% ) };
+	--color_secondary:       #{ $color_secondary };
+	--color_secondary_mixed: #{ mix( $color_secondary, $color_base, 38.20% ) };
+	--color_black:           #000000;
+	--color_white:           #ffffff;
+
+	--color_gradient_primary: var(--color_secondary);
+	--color_gradient_radial_primary: var(--color_secondary);
+	--color_gradient_radial_secondary: transparent;
+
+	/* Documentation colors: */
+	--color_accent: var(--color_primary);
+	--color_accent_text: var(--color_white);
+	--color_mark: var(--color_primary_mixed);
+	--color_pre_background: var(--color_primary);
+	--color_pre_text: var(--color_white);
+
+	--color_button_background: linear-gradient( 135deg, var(--color_primary), var(--color_secondary) );
+	--color_button_text: var(--color_white);
+
+	--color_header_background: var(--color_base);
+	--color_header_text: var(--color_contrast_alt);
+
+	--color_nav_background: linear-gradient( to right, var(--color_primary), var(--color_secondary) );
+	--color_nav_text: var(--color_white);
+	--color_nav_background_active: var(--color_secondary);
+	--color_nav_text_active: var(--color_white);
+	--color_nav_background_hover: var(--color_primary);
+	--color_nav_text_hover: var(--color_white);
+	--color_nav_border: color-mix( in srgb, currentColor calc( 100% * var(--border_opacity) ), transparent );
+
+	--color_intro_background: linear-gradient( 135deg, var(--color_primary), var(--color_secondary) );
+	--color_intro_text: var(--color_white);
+
+	--color_content_background: var(--color_base);
+	--color_content_text: var(--color_contrast);
+	--color_content_headings: var(--color_contrast_alt);
+	--color_content_border: color-mix( in srgb, currentColor calc( 100% * var(--border_opacity) ), transparent );
+
+	--color_heading_entry_background: var(--color_primary);
+	--color_heading_entry_text: var(--color_white);
+
+	--color_footer_background: var(--color_header_background);
+	--color_footer_text: var(--color_header_text);
+}
+
+.intro,
+.site-footer {
+	isolation: isolate;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		inset-block-end: auto;
+		height: 50%;
+		background-image: url('assets/images/p-i.webp');
+		mask-image: linear-gradient( to bottom, white, transparent );
+		z-index: -1;
+	}
+}
+
+.site-footer {
+	box-shadow: none;
+
+	&::before {
+		height: 10em;
+		background-image: url('assets/images/p.webp');
+	}
+}
+
+pre {
+
+	::selection {
+		background: #fff3;
+	}
+}
+
+.site-menu {
+
+	.prefix-content,
+	.prefix-customizing {
+		$padding: .618em;
+
+		.svg-icon {
+			width: calc( 1.5em + 2 * #{$padding} );
+			height: calc( 1.5em + 2 * #{$padding} );
+			padding: $padding;
+			margin-top: calc( ( 1.5em + 2 * #{$padding} ) / -6 );
+			margin-right: .618em;
+			background: color-mix( in srgb, currentColor 15%, transparent );
+			border-width: 1px;
+			border-style: solid;
+			border-radius: 5em;
+		}
+	}
+
+	.prefix-customizing .svg-icon {
+		border-radius: 2px;
+	}
+}

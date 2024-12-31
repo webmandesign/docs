@@ -1,22 +1,24 @@
-+sub_section( 'Block Styles', 'block-styles' )
-	p With <strong>#{config.name}</strong> you can change block appearance with ease. Simply choose a preferred predefined style from block settings and you are done.
+block editor/styles
+	+sub_section( 'Block Styles', 'block-styles' )
+		p With <strong>#{config.name}</strong> you can change block appearance with ease. Simply choose a preferred predefined style from block settings and you are done.
 
-	h4 Applying block styles
+		h4 Applying block styles
 
-	+mark( 'nav', 'select block', 'styles tab', 'select style' ).is-path-featured
+		+mark( 'nav', 'select block', 'styles tab', 'select style' ).is-path-featured
 
-	+image( 'core/editor/apply-block-style.jpg', 'Applying a block style' )
+		block editor/styles/image
+			+image( 'core/editor/apply-block-style.webp', 'Applying a block style' )
 
-	ol
-		li Click the block in page/post content.
+		ol
+			li Click the block in page/post content.
 
-		li If block settings sidebar is not displayed, click the <em>settings</em> button in the upper right corner of the editor.
+			li If block settings sidebar is not displayed, click the <em>settings</em> button in the upper right corner of the editor.
 
-		li Make sure you are editing the block settings (choose "<strong>Block</strong>" tab).
+			li Make sure you are editing the block settings (choose "<strong>Block</strong>" tab).
 
-		li In block settings click the <em>styles</em> tab.
+			li In block settings click the <em>styles</em> tab.
 
-		li Choose a block style you want to apply on the selected block. (If there is no list of styles available, the selected block does not support any block style.)
+			li Choose a block style you want to apply on the selected block. (If there is no list of styles available, the selected block does not support any block style.)
 
-	+tip( 'Additional block styles', 'h4' )
-		p Use free <a href="https://wordpress.org/plugins/additional-block-styles/"><strong>Abs – Additional block styles</strong> plugin</a> for additional creative block styles.
+		+tip( 'Additional block styles', 'h4' )
+			p Use free <a href="https://wordpress.org/plugins/additional-block-styles/"><strong>Abs – Additional block styles</strong> plugin</a> for additional creative block styles.

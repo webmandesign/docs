@@ -1,0 +1,27 @@
+block editor/variations
+	+sub_section( 'Block Variations', 'block-variations' )
+		p A <strong>block variation</strong> is a block preset with specific attributes and even inner blocks. <strong>#{config.name}</strong> theme contains multiple useful block variations you can use.
+
+		h4 Using block variations
+
+		+mark( 'nav', 'Type "/" and a keyword', 'Choose from the variations list' ).is-path-featured
+
+		block editor/variations/image
+			+image( 'core/editor/variations.webp', 'Using block variations' )
+
+		ol
+			li In block editor content type <code>/</code> followed with a keyword (depending on what you aim to achieve). <br>For example, when you want to insert a blurred background Cover block, simply type <code>/blur</code>.
+
+			li A list of available block variations appears.
+
+			li Choose the one you intend to use and it will be inserted into the block editor at the position of your cursor.
+
+		+tip( 'Use block inserter', 'h4' )
+			p An alternative way of adding a block variation is via <a href="https://wordpress.org/documentation/article/adding-a-new-block/#what-is-the-inserter">Block Inserter</a>.
+
+			ol
+				li Open the Block Inserter and search for the block variation (using a keyword).
+				li Choose the desired block variation from the list.
+
+			block editor/variations/tip/image
+				+image( 'core/editor/variations-block-inserter.webp', 'Searching for a block variation in the Block Inserter' )

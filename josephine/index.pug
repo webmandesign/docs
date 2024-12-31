@@ -1,0 +1,89 @@
+//-
+//- Configuration object:
+//-
+-
+	var config = {
+		//- Theme attributes:
+		name          : 'Josephine',
+		slug          : 'josephine',
+		screenshot    : 'https://themedemos.webmandesign.eu/josephine/wp-content/themes/josephine/screenshot.jpg',
+		is_free       : false,
+		source        : 'envato', //- Available values: wporg/envato/github/other
+		compatibility : {
+			fse                   : true,
+			fse_colors_elements   : true,
+			hybrid                : true,
+			no_demo               : true,
+			block_patterns        : true,
+			block_styles          : true,
+			block_variations      : true,
+			megamenu_disable_link : true,
+			accessibility         : true,
+		},
+		version : {
+			wp  : '6.6',
+			php : '7.0',
+		},
+
+		url : {
+			'info' : 'https://1.envato.market/josephine',
+		},
+
+		//- Content sections:
+		//- For custom content see below.
+		content : [
+			//- For the list of core contents refer to `0app/includes/content.pug`.
+			//- Basically, these match sub-folder names in `0app/includes/content`.
+			//- Reorder these how you please.
+			'wordpress',
+			'install',
+			'update',
+			// 'anatomy',
+			'demo',
+			'pages',
+			'posts',
+			'editor',
+			'site-editor',
+			'menu',
+			'sidebars',
+			'customizer',
+			'localization',
+			'accessibility',
+			'plugins',
+			'faq',
+			'mods',
+			'references',
+		],
+
+		//- Core FAQ object keys:
+		faq : [
+			'any-page-builder',
+			'image-sizes',
+			'css-classes',
+			'seo',
+			'font',
+			'speed',
+			'css',
+			'margin',
+		],
+
+		//- Recommended plugins list:
+		//- For custom content see below.
+		plugins : {
+			//- For the list of core recommended plugin refer to `0app/includes/content/plugins/recommend`.
+			//- Reorder these how you please.
+			'envato-market'  : 'Envato Market',
+			'woocommerce'    : 'WooCommerce',
+			'integration-wc' : 'Integration for WooCommerce',
+		},
+		tgmpa : true,
+
+		//- Core image overrides:
+		imageNote : 'core',
+	};
+
+//-
+//- Custom content:
+//- This has to be here, after all the above variables declarations.
+//-
+include includes/_custom-content.pug

@@ -1,0 +1,68 @@
+extends ../../0app/_index.pug
+
+block append styles
+	include ../assets/css/style.css
+
+//-----------------------------------------------
+
+block prepend pages/templates/about
+	include templates.pug
+block pages/templates/list
+	include template-content-only.pug
+	include template-no-intro.pug
+	include template-overlaid-header.pug
+	include template-with-sidebar.pug
+
+block append posts
+	include posts-featured.pug
+	include blog-layout.pug
+
+block append editor/variations
+	+info( 'Theme block variations', 'h4' )
+		p For full up-to-date list of block variations provided by the theme refer to <a href="https://themedemos.webmandesign.eu/josephine/block-variations/">theme demo website</a>.
+block editor/variations/image
+	+image( 'variations.webp', 'Using block variations' ).is-plain
+
+block append site-editor/styles/colors/bottom
+	include colors.pug
+
+block append menu/fse
+	include menu-image.pug
+block menu/fse/megamenu/image/01
+	+image( 'megamenu.webp', 'Megamenu example preview' ).is-plain
+block menu/fse/mobile/image/02
+	+image( 'mobile-menu.webp', 'Fixed position of mobile menu toggle button at the bottom of the screen' ).is-plain
+
+block append sidebars/fse/display/content
+	include sidebar-block.pug
+
+block prepend customizer/fse/theme-options
+	include customizer-boxed.pug
+	include custom-background.pug
+
+block append accessibility
+	include a11y-options.pug
+
+block append plugins/recommended/woocommerce
+	include plugin-wc.pug
+
+block faq/answer/page-builder
+	include faq-answer-page-builder.pug
+block append faq/questions/list
+	include faq-question-mobile-header.pug
+	include faq-question-sticky-header.pug
+	include faq-question-progress-bar.pug
+	include faq-question-space.pug
+	include faq-question-text-background.pug
+	include faq-question-menu-icon.pug
+	include faq-question-wc-layout-product.pug
+	include faq-question-wc-shop-page.pug
+block append faq/answers/list
+	include faq-answer-mobile-header.pug
+	include faq-answer-sticky-header.pug
+	include faq-answer-progress-bar.pug
+	include faq-answer-space.pug
+	include faq-answer-text-background.pug
+	include faq-answer-menu-icon.pug
+	include faq-answer-wc-layout-product.pug
+	include faq-answer-wc-shop-page.pug

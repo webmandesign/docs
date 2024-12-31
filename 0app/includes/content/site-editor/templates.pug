@@ -2,30 +2,21 @@ block site-editor/templates
 	+sub_section( 'Editing templates', 'site-editor-templates' )
 
 		+important( 'Edit template parts instead', 'h4' )
-			p Wherever possible, edit a <a href="#site-editor-template-parts"><strong>template part</strong></a> instead of the whole template. Editing a template part applies your modification across all templates where the template part is being used.
+			p Wherever possible, edit a <a href="#site-editor-template-parts"><strong>template part</strong></a> instead of the whole template. Editing a template part applies your modification across all templates where the template part is being used at once.
 
-		+mark( 'nav', 'Appearance', 'Editor', 'Templates', 'Manage all templates' ).is-path-featured
+		+mark( 'nav', 'Appearance', 'Editor', 'Templates', 'All templates' ).is-path-featured
 
 		p Editing theme templates is an advanced feature and it is recommended to get familiar with <a href="https://developer.wordpress.org/themes/basics/template-hierarchy/">WordPress template hierarchy</a>. Understanding template hierarchy allows you to create any template you like.
 
 		+video( 'https://learn.wordpress.org/tutorial/a-beginners-guide-to-the-wordpress-template-hierarchy/' ) A Beginners Guide to the WordPress Template Hierarchy
 
-		p If you need to <em>modify existing theme templates</em> or <em>create new custom page/post templates</em>, you can do so in "Templates" section of site editor:
+		p If you need to <em>modify existing theme templates</em> or <em>create new custom templates</em>, you can do so in "Templates" section of Site Editor:
 
 		ol
+			li Open Site Editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
 			li
-				p Open site editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
-				+image( 'core/fse/editor.jpg' )
-
-			li
-				p In site editor open "<strong>Templates</strong>" management.
-				+image( 'core/fse/menu-templates.jpg' )
-
-			li
-				p Now click "<strong>Manage all templates</strong>" in templates manager.
-				+image( 'core/fse/templates.jpg' )
-
-			li
-				p Click a template name from the list of all available templates to edit its content.
-				p Click the #[+mark( 'btn', 'Add New Template' )] button to create a new template or <a href="https://learn.wordpress.org/tutorial/creating-a-custom-template-with-the-wordpress-site-editor/">custom template</a>.
-				+image( 'core/fse/templates-all.png', 'List of all available theme, plugin and custom templates' )
+				p In Site Editor open "<strong>Templates</strong>" management.
+				block site-editor/templates/image/02
+					+image( 'core/fse/menu-templates.webp' )
+			li Click "<strong>All templates</strong>" in templates manager.
+			li Click a template name from the list of available templates to edit its content. <br>Click the #[+mark( 'btn', 'Add New Template' )] button to create a new (<a href="https://learn.wordpress.org/tutorial/creating-a-custom-template-with-the-wordpress-site-editor/">custom</a>) template.

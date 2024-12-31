@@ -1,0 +1,19 @@
+li
+	+answer( 'How to set sticky header', 'sticky-header' )
+		p If you need to display the site header on top of the browser window (viewport) even when user scrolls the page, try one of these options:
+
+
+		h4 Use a plugin
+
+		p Use a plugin to set sticky position on elements, such as <a href="https://wordpress.org/plugins/sticky-menu-or-anything-on-scroll/"><strong>Sticky Menu & Sticky Header</strong> plugin</a>. This option can be very flexible, providing conditional control over header sticky positioning (depending on the plugin capabilities).
+
+		+tip( 'Set up the plugin', 'h5' )
+			p For setting up the sticky header using a plugin use <code>#masthead</code> in the plugin options as (theme default) site header CSS selector.
+			p Alternatively use your <a href="https://support.webmandesign.eu/using-browser-code-inspector/">browser code inspector</a> to determine the selector for your desired sticky element. Or check your plugin documentation for tips.
+
+
+		h4 Use custom CSS code
+
+		p You can even set the sticky positioning using a <a href="#css">custom CSS code</a>, such as:
+
+		+code #masthead {<br>	position: sticky;<br>	top: var(--wp-admin--admin-bar--height, 0);<br>	background: var(--wp--preset--color--base);<br>	border-start-start-radius: var(--theme--css--boxed--border-radius);<br>	border-start-end-radius: var(--theme--css--boxed--border-radius);<br>}

@@ -2,31 +2,22 @@ block site-editor/template-parts
 	+sub_section( 'Editing template parts', 'site-editor-template-parts' )
 
 		+important( 'Global changes', 'h4' )
-			p Using template parts is <strong>ideal for modifying global theme sections</strong> that repeat across multiple <a href="#site-editor-templates">templates</a>.
+			p Using template parts is <strong>ideal for modifying global theme sections</strong> that repeat across multiple <a href="#site-editor-templates">templates</a> at once.
 
-		+mark( 'nav', 'Appearance', 'Editor', 'Patterns', 'Manage all template parts' ).is-path-featured
+		+mark( 'nav', 'Appearance', 'Editor', 'Patterns', 'All template parts' ).is-path-featured
 
-		p <strong>Template parts</strong> are global areas of your website, such as site header, site footer, post comments area, or content of error 404 page. They are sections reused in the theme <a href="#site-editor-templates">templates</a>.
-
-		p Updating content of a template part <em>will update all of its occurrences across all templates at once</em>. The theme provides you with a number of template parts allowing you to modify each section of the theme with ease.
+		p <strong>Template parts</strong> are global areas of your website, such as site header, site footer, post comments area, or content of error 404 page. They are sections reused in the theme <a href="#site-editor-templates">templates</a>. Updating the content of a template part <em>will apply your updates to all of its occurrences across all templates at once</em>.
+		p The theme provides you with a number of template parts allowing you to modify each section of the theme granularly, with ease.
 
 		if true === config.compatibility.hybrid
 			+info( 'Available also in hybrid mode' )
-				p Even in <a href="#disable-fse">hybrid theme mode</a> you can still edit all template parts using block editor! The only difference is in the path where you find the template part manager: #[+mark( 'nav', 'Appearance', 'Template Parts' )].
+				p Even in <a href="#disable-fse">hybrid theme mode</a> you can still edit all template parts using block editor! The only difference is in the path where you find the template part manager: #[+mark( 'nav', 'Appearance', 'Patterns' )].
 
 		ol
+			li Open Site Editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
 			li
-				p Open site editor navigating to #[+mark( 'nav', 'Appearance', 'Editor' )].
-				+image( 'core/fse/editor.jpg' )
-
-			li
-				p In site editor open "<strong>Patterns</strong>" management.
-				+image( 'core/fse/menu-patterns.jpg' )
-
-			li
-				p Now click "<strong>Manage all template parts</strong>" in patterns manager.
-				+image( 'core/fse/template-parts.png' )
-
-			li
-				p Click a template part name from the list to edit its content.
-				+image( 'core/fse/template-parts-all.png', 'List of all available theme, plugin and custom template parts' )
+				p In Site Editor open "<strong>Patterns</strong>" management.
+				block site-editor/template-parts/image/02
+					+image( 'core/fse/menu-patterns.webp' )
+			li Click "<strong>All template parts</strong>" in patterns manager.
+			li Click a template part name from the list to edit its content.
