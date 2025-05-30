@@ -6,13 +6,16 @@ block plugins/recommended/manage-sidebars
 	p This type of plugin is also great to alter you website layout with ease. Here are couple of example usecases:
 
 	+alert( 'Classic Widgets interface', 'orange', 'h4', '<strong>Tip:</strong>' )
-		p When using a sidebar management plugin, it's recommended to restore previous widgets interface with <a href="https://wordpress.org/plugins/classic-widgets/"><strong>Classic Widgets</strong> plugin</a>.
+		p When using a sidebar management plugin, it is recommended to restore classic WordPress widgets interface with <a href="https://wordpress.org/plugins/classic-widgets/"><strong>Classic Widgets</strong> plugin</a>.
 
 	h4 Remove sidebar on specific pages
 
 	p Simply create a new custom sidebar, let's call it <em>"Empty"</em>, and set it to replace the actual theme's <a href="#sidebars"><em>"Sidebar"</em></a> on specific pages.
 
-	p Then just leave this new custom sidebar empty, with no widgets in it. It will cause the theme to adapt the layout when it detects there is no sidebar on those specific pages displayed. This way you've effectively removed sidebar.
+	p Then just leave this new custom sidebar empty, with no widgets in it. It causes adaptation of the theme layout when no sidebar is detected on those specific pages. This way you've effectively removed sidebar.
+
+	+alert( 'Initiate an empty sidebar', 'red', 'h5', '<strong>Important:</strong>' )
+		p After creating a new sidebar in WordPress, you might need to initiate it first. To do this simply navigate to #[+mark( 'nav', 'Appearance', 'Widgets' )], add a widget to your "Empty" sidebar, and then delete the widget from the sidebar. Now the sidebar should be properly registered in your WordPress.
 
 	+tip( 'Reverse approach', 'h5' )
 		p If you, on the other hand, want to display the sidebar on some pages only, you can use reverse logic:
