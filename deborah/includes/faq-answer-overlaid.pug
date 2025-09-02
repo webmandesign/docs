@@ -1,0 +1,22 @@
+li
+	+answer( 'Overlaid header', 'overlaid' )
+
+		p By default the site header is set to overlaid in theme options in #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Layout' )]. However, on pages with <a href="#page-templates">"No intro" template</a> the header displays above the page content, not overlaying it.
+
+		p If you would like to force site header overlay for such pages, so the site header is displayed over the page content, follow these steps:
+
+		ol.is-steps
+			li
+				p Install and activate <a href="https://wordpress.org/plugins/wp-custom-body-class/"><strong>Custom Body Class</strong> plugin</a>.
+			li
+				p Set <a href="#page-templates">"No intro" template</a> for the page where you want to overlay the site header. <br>
+					small (Now the global overlaid header set in theme options is not applied for this particular page.)
+			li
+				p Force the overlaid site header by setting one of these CSS classes to "<strong>Page classes</strong>" option in the sidebar on page edit screen (this is option added by Custom Body Class plugin):
+
+				+code force-overlaid-header <br>force-overlaid-header-light <br>force-overlaid-header-dark
+
+				p The <code>force-overlaid-header</code> class will apply default theme overlaid header style. <br>The <code>force-overlaid-header-light/dark</code> class will apply transparent header with light or dark text color.
+
+		p
+			small This information can also be found at <a href="https://themedemos.webmandesign.eu/deborah/helper-css-classes/#layout">helper CSS classes page at theme demo website</a>.
