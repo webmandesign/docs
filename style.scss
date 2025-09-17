@@ -8,6 +8,9 @@
 	--color-txt: #fff;
 
 	--color-bg-item: #292929;
+	--color-txt-item: #fff;
+	--color-bg-item-alt: #fbce2f;
+	--color-txt-item-alt: #000;
 }
 
 html {
@@ -35,7 +38,6 @@ html {
 	@media (prefers-reduced-motion: reduce) {
 		scroll-behavior: auto;
 	}
-
 }
 
 * {
@@ -46,7 +48,6 @@ html {
 	&::after {
 		box-sizing: inherit;
 	}
-
 }
 
 h1, h2 {
@@ -54,16 +55,16 @@ h1, h2 {
 }
 
 h1 {
-	padding: 1em 2%;
+	padding: 2%;
+	padding-bottom: 0;
 	margin: 0;
+	text-align: center;
 	font-size: 1.5em;
 	font-weight: 300;
-	text-align: center;
 
 	a {
 		font-weight: 700;
 	}
-
 }
 
 h2 {
@@ -89,68 +90,15 @@ small {
 figure {
 	--radius: 4px;
 	--bezel: 5px;
-	--monitor: clamp( 10px, 2vw, 20px );
-	--bezel-color: #020202;
-	--monitor-color: #444;
+	--bezel-color: #444;
 
 	position: relative;
-	padding-bottom: var(--monitor);
-	margin: auto 0 var(--monitor);
-	background: var(--monitor-color);
+	margin: 0 -10em -5em 0;
 	border-radius: var(--radius);
-	transform:
-		scale(.9)
-		translateX(25%)
-		translateY(-5%)
-		perspective(800px)
-		rotateY(-20deg);
-	transform-origin: 50% 75%;
-	transition: transform .3s;
 	will-change: transform;
-
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		width: 22.5%;
-		height: var(--monitor);
-		left: 50%;
-		bottom: calc( -1 * var(--monitor) );
-		background-color: var(--monitor-color);
-		background-image:
-			linear-gradient(
-				to bottom,
-				rgba( #000, .25 ),
-				rgba( #000, 0 ) 50%,
-				rgba( #000, 0 ) 75%,
-				rgba( #000, .25 )
-			);
-		transform: translateX(-50%);
-	}
-
-	&::before {
-		clip-path:
-			polygon(
-				0 100%,
-				100% 100%,
-				95% 0,
-				5% 0,
-			);
-	}
-
-	&::after {
-		width: 27.5%;
-		height: 3px;
-		margin-top: calc( var(--monitor) - 3px );
-		background-image:
-			linear-gradient(
-				to bottom,
-				rgba( #000, .15 ),
-				rgba( #000, .15 )
-			);
-		border-radius: 2px;
-	}
-
+	transition:
+		filter .2s,
+		opacity .2s;
 }
 
 img {
@@ -160,7 +108,6 @@ img {
 	background: var(--bezel-color);
 	border: var(--bezel) solid var(--bezel-color);
 	border-radius: var(--radius) var(--radius) 0 0;
-	box-shadow: inset 0 0 1px 1px var(--bezel-color);
 }
 
 section {
@@ -172,6 +119,11 @@ section {
 	margin: 0 auto;
 	list-style: none;
 	pointer-events: none;
+
+	&:has( article:hover ) article:not( :hover ) figure {
+		filter: grayscale( 1 );
+		opacity: .5;
+	}
 }
 
 article {
@@ -181,12 +133,7 @@ article {
 	width: 40vw;
 	max-width: 12em;
 	background: var(--color-bg-item);
-	// box-shadow:
-	// 	0   0   2px 0 rgba( #000, .3 ),
-	// 	2px 2px 0   0 var(--color-bg-item),
-	// 	2px 2px 2px 0 rgba( #000, .3 ),
-	// 	4px 4px 0   0 var(--color-bg-item),
-	// 	4px 4px var(--shadow-blur) 0 rgba( #000, .15 );
+	color: var(--color-txt-item);
 	box-shadow:
 		0   0   3px 0 rgba( #000, .8 ),
 		3px 3px 0   0 var(--color-bg-item),
@@ -207,6 +154,8 @@ article {
 	&:hover,
 	&:focus-within {
 		--shadow-blur: 20px;
+		--color-bg-item: var(--color-bg-item-alt);
+		--color-txt-item: var(--color-txt-item-alt);
 
 		transform: translateY(-.2em);
 		z-index: 99;
@@ -214,7 +163,6 @@ article {
 		figure {
 			transform: none;
 		}
-
 	}
 
 	a {
@@ -225,7 +173,6 @@ article {
 		padding: var(--gap);
 		overflow: hidden;
 	}
-
 }
 
 .suffix {
