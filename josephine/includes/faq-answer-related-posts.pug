@@ -1,4 +1,10 @@
 li
 	+answer( 'How to display related posts', 'related-posts' )
 
-		p <a href="https://support.webmandesign.eu/forums/topic/show-latest-posts-from-the-same-category-in-the-single-template/#post-33090">@todo</a>
+		p The theme provides simple related posts functionality. By properly setting up the <a href="https://wordpress.org/documentation/article/query-loop-block/">Query block</a>, you can display related posts from same category on single post page ("Single Posts" <a href="#site-editor-templates">template</a>).
+
+		p By default the theme provides <em>"<strong>Post meta: After post content</strong>"</em> <a href="#site-editor-template-parts">template part</a>, which uses <em>"<strong>Site builder</strong>" / "<strong>Post meta: After post content</strong>"</em> <a href="#block-patterns">block pattern</a> to list 2 posts related to the specific single post being viewed.
+
+		p In case you would like to create your own related posts query loop, simply set your <a href="https://wordpress.org/documentation/article/query-loop-block/">Query block</a> to your needs and assign <strong>"Related posts" <a href="#block-styles">block style</a></strong> onto the Query block. The theme will do the magic on your website front-end then.
+
+		+image( 'https://easycaptures.com/fs/uploaded/1966/5162047493.jpg', 'Setting up related posts' )
