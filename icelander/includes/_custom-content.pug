@@ -50,17 +50,21 @@ block append faq/questions/list
 	include faq-question-font.pug
 	include faq-question-icons.pug
 	include faq-question-custom-fields.pug
+	include faq-question-cart.pug
 block append faq/answers/list
 	include faq-answer-breadcrumbs.pug
 	include faq-answer-font.pug
 	include faq-answer-icons.pug
 	include faq-answer-custom-fields.pug
+	include faq-answer-cart.pug
 block faq/answer/page-builder
 	include faq-answer-page-builder.pug
 
 block accessibility/headings/site_title
 	include accessibility-site-title.pug
 
+block append plugins/recommended/woocommerce
+	include plugins-woocommerce.pug
 block append plugins/others/list
 	include plugins-others.pug
 block plugins/recommended/list/item
