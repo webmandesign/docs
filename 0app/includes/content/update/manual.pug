@@ -4,7 +4,16 @@
 
 	h4 <strong>Updating via WordPress dashboard</strong>
 
-	p A simple way of doing a manual theme update is deleting and reinstalling the theme directly via WordPress dashboard. You can <a href="https://wptheming.com/2016/02/how-to-overwrite-a-theme/">read an article</a> or <a href="https://www.youtube.com/watch?v=W3ntxBYZhg4">watch a video</a> on how to do this.
+	ol
+		li In WordPress dashboard navigate to #[+mark( 'nav', 'Appearance', 'Themes' )] and click the #[+mark( 'btn', 'Add Theme' )] button next to "Themes" page title.
+
+		li On "Add Themes" screen click the #[+mark( 'btn', 'Upload Theme' )] button next to page title.
+
+		li In the displayed form, choose the downloaded <strong title="#{config.slug}.zip">theme ZIP file</strong> and click the #[+mark( 'btn', 'Install Now' )] button.
+
+		li On the theme version comparison page click the #[+mark( 'btn', 'Replace installed with uploaded' )] button.
+
+		li Your theme is updated now.
 
 
 	h4 <strong>Updating via FTP</strong>
@@ -12,7 +21,7 @@
 	p This is more advanced manual update procedure and you will need an FTP client (such as <a href="https://filezilla-project.org/">FileZilla</a>) to connect to your server:
 
 	ol
-		li Download the newest theme ZIP file from where you've obtained it and unpack the ZIP file on your computer.
+		li Unpack the downloaded theme ZIP file on your computer.
 
 		li Now you will need an <a href="https://filezilla-project.org/">FTP client</a> to connect to your server.
 
@@ -22,4 +31,4 @@
 
 		li Copy the unpacked theme <code>#{config.slug}</code> folder from your computer (from step&nbsp;1 above) into <code>WORDPRESS_FOLDER/wp-content/themes/</code> folder on your server.
 
-		li Log into your WordPress admin area and check the version of the theme in #[+mark( 'path', 'Appearance', 'Themes' )]. Your theme should be updated now. (And you can delete the <code>#{config.slug}.backup</code> folder from step&nbsp;4 above.)
+		li Log into your WordPress admin area and confirm the new version of the theme in #[+mark( 'path', 'Appearance', 'Themes' )]. Your theme should be updated now. (And you can delete the <code>#{config.slug}.backup</code> folder from step&nbsp;4 above.)
