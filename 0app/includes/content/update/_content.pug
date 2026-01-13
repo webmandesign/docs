@@ -1,3 +1,4 @@
 include about.pug
-include auto.pug
+if 'deprecated' !== config.source
+	include auto.pug
 include manual.pug

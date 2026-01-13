@@ -1,10 +1,13 @@
 block install/about
-	if config.is_free
-		include free.pug
+	if 'deprecated' === config.source
+		include deprecated.pug
 	else
-		include paid.pug
+		if config.is_free
+			include free.pug
+		else
+			include paid.pug
 
-	if false !== config.compatibility.welcome
+	if false !== config.compatibility.welcome && 'deprecated' !== config.source
 		+tip( 'Welcome page' )#welcome-page
 			block install/welcome/notice
 				p Don't forget to check the theme welcome page at #[+mark( 'nav', 'Appearance', 'Welcome' )]. It contains everything you need to start.

@@ -1,5 +1,8 @@
 block update/about
-	p You will be notified in the WordPress admin each time a new updated theme version is available. Install the update following instructions below.
+	if 'deprecated' === config.source
+		include ../install/deprecated.pug
+	else
+		p You will be notified in the WordPress admin each time a new updated theme version is available. Install the update following instructions below.
 
 	+tip( 'Info on social networks' )
 		p If there is a specific procedure required during update, this will be shared on the <a href="#{config.url.facebook}"><strong>Facebook</strong></a> and <a href="#{config.url.x}"><strong>X</strong> (Twitter)</a> pages.
