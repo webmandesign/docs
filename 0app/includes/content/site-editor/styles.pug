@@ -1,9 +1,12 @@
 block site-editor/styles
 	+sub_section( 'Editing theme styles', 'site-editor-styles' )
 
-		+mark( 'nav', 'Appearance', 'Editor', 'Styles', 'Edit styles' ).is-path-featured
+		+mark( 'nav', 'Appearance', 'Editor', 'Styles' ).is-path-featured
 
-		p "Styles" section of site editor allows you to change colors and layout.
+		p
+			| "
+			include ../../../assets/images/icons/fse-styles.svg
+			| Styles" section of site editor allows you to change colors and layout.
 
 		p
 			a( href="#site-editor-styles-typography") Typography &darr;
@@ -31,13 +34,13 @@ block site-editor/styles
 					+image( 'core/fse/menu-styles.webp' )
 
 			li
-				p In styles manager you can choose to apply predefined theme styles or tweak the style options. Click the <em>Edit styles</em> button to modify current styles.
-				block site-editor/styles/image/03
-					+image( 'core/fse/styles.webp' )
+				p In styles manager you can choose to apply predefined theme styles (click "<strong>Browse styles</strong>" for the list of available styles) or tweak the individual style options to your liking.
 
 				block site-editor/styles/typography
 					h4#site-editor-styles-typography
-						a.heading-anchor( href="#site-editor-styles-typography" ) Typography
+						a.heading-anchor( href="#site-editor-styles-typography" )
+							include ../../../assets/images/icons/fse-typography.svg
+							| Typography
 					p Although "Styles" section allows you to set up your website typography, the theme provides <strong>advanced harmonious responsive typography setup</strong> tweaking <a href="#typography">just a few theme options</a>. So, there is no need to set up typography here.
 					p However, you can still <strong>use this section to upload your custom fonts</strong>.
 
@@ -45,7 +48,9 @@ block site-editor/styles
 
 				block site-editor/styles/colors
 					h4#site-editor-styles-colors
-						a.heading-anchor( href="#site-editor-styles-colors" ) Colors
+						a.heading-anchor( href="#site-editor-styles-colors" )
+							include ../../../assets/images/icons/fse-colors.svg
+							| Colors
 					block site-editor/styles/colors/top
 					p Theme applies a palette of colors throughout the site elements. You can modify each individual color in the palette, modify WordPress default color palette, and add your own custom colors.
 					+important( 'Use solid colors', 'h4' )
@@ -66,7 +71,9 @@ block site-editor/styles
 
 				block site-editor/styles/layout
 					h4#site-editor-styles-layout
-						a.heading-anchor( href="#site-editor-styles-layout" ) Layout
+						a.heading-anchor( href="#site-editor-styles-layout" )
+							include ../../../assets/images/icons/fse-layout.svg
+							| Layout
 					block site-editor/styles/layout/top
 					p In "Layout" section it is recommended to tweak <em>content and wide width</em> if needed.
 					p Other layout options are set for the best responsiveness across multiple devices. It is not recommended to modify them in this theme.
@@ -77,5 +84,10 @@ block site-editor/styles
 				block site-editor/styles/others
 					h4#site-editor-styles-others
 						a.heading-anchor( href="#site-editor-styles-others" ) Others
-					p Additionally, you can tweak styles for each block individually. You can modify the default <strong>appearance of any block</strong> to your needs.
-					p There is also an option to add <strong>CSS styles code</strong>.
+					p Additionally, you can:
+					ul
+						li tweak styles for each block individually (modify the default <em>appearance of any block</em> to your needs),
+						li(style="margin-top:0") set website background (if your theme supports it),
+						li(style="margin-top:0") set shadow presets (if your theme supports them).
+					p There is also an option to add <strong>CSS styles code</strong> - click the "⫶" next to an eye icon:
+					+image( 'core/fse/additional-css.webp' )
