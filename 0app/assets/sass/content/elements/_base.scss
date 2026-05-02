@@ -31,7 +31,7 @@ ins {
 		font-size: .9em;
 		font-weight: 600;
 		font-style: italic;
-		border-radius: var(--border_radius)
+		border-radius: var(--border_radius);
 	}
 
 	&.is-path-featured {
@@ -50,6 +50,20 @@ ins {
 		}
 	}
 }
+
+	.nav-path {
+
+		&-arrow {
+			white-space: nowrap; // Helps to bind to subsequent `&nbsp` (@see  0app/includes/mixins/mark.pug).
+
+			svg {
+				vertical-align: middle;
+				width: 1em;
+				height: 1em;
+				margin: -.25em .125em 0;
+			}
+		}
+	}
 
 s,
 del {

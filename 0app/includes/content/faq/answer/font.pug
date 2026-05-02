@@ -6,13 +6,21 @@ block faq/answer/font
 
 	ol.is-steps
 		li
-			if true === config.compatibility.fse
-				+tip( 'Use WordPress fonts library!', 'h4' )(style="margin-bottom:1em")
-					p When using a block theme, you can upload your custom fonts using WordPress native <a href="#site-editor-styles-typography">fonts library</a>.
+			p Upload custom fonts into your website using WordPress native <a href="https://wordpress.org/documentation/article/the-font-library/">fonts library</a>:
 
-			p Use a plugin to upload font file(s) to your website, such as <a href="https://wordpress.org/plugins/custom-fonts/"><strong>Custom Fonts</strong> plugin</a>. (Or upload it by other means, such as via a <a href="#child-theme-plugin">child theme or plugin</a>.)
+			p #[+mark( 'nav', 'Appearance', 'Fonts' )]
+				if true === config.compatibility.fse
+					| <br>or #[+mark( 'nav', 'Appearance', 'Editor', 'Styles', 'Typography', 'Fonts: <img src="../0app/assets/images/icons/fse-manage-fonts.svg" style="width:1.382em" alt="" /> button' )]
+					| <br> (The <img src="../0app/assets/images/icons/fse-manage-fonts.svg" style="width:1.382em" alt="" /> button is called <em>"Manage fonts"</em> button.)
+
+			p (Or you can upload it by other means, such as via a <a href="#child-theme-plugin">child theme or a plugin</a>. But using WordPress fonts library is the easiest way.)
 
 		li
 			p Disable <strong>Appearance → Customize → Theme Options → Typography → "Enable theme Google Fonts loading"</strong> option.
+
+			p (Disabling this option is optional if you are uploading your fonts via WordPress fonts library. The theme will recognize such.)
+
 		li
 			p Set font family fields in <strong>Appearance → Customize → Theme Options → Typography</strong> to use your custom font family. <br><small><em>(These fields take a value valid for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">CSS <code>font-family</code> property</a>.)</em></small>
+
+			p (If you've uploaded your fonts via WordPress fonts library, theme will recognize such fonts and offers them to you as an option to select/set.)

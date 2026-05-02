@@ -1,16 +1,18 @@
 mixin mark( type = 'nav', ...content )
-	- var output = '';
 	case type
 		when 'nav'
 		when 'path'
-			each item in content
-				if output
-					- output = output + ' → ' + item;
-				else
-					- output = item;
-			mark.nav-path&attributes( attributes )= output
+			mark.nav-path&attributes( attributes )
+				each item, index in content
+					span.nav-path-item
+						if 0 < index
+							span.nav-path-arrow
+								include ../../assets/images/icons/arrow-right.svg
+							| &nbsp;
+						| !{item}
+					| !{' '}
 		when 'btn'
 		when 'button'
-			kbd.button.dummy&attributes( attributes )= content
+			kbd.button.dummy&attributes( attributes )!= content
 		default
-			mark&attributes( attributes )= output
+			mark&attributes( attributes )!= content

@@ -51,7 +51,26 @@
   --typography_font_secondary: var(--typography_font_primary);
   --typography_font_tertiary: var(--typography_font_primary);
   --typography_font_size_base: 16px;
+}
+@media (min-width: 1280px) {
+  :root {
+    --typography_font_size_base: 18px;
+  }
+}
+:root {
   --typography_line_height: 1.4;
+}
+@media (min-width: 672px) {
+  :root {
+    --typography_line_height: 1.5;
+  }
+}
+@media (min-width: 880px) {
+  :root {
+    --typography_line_height: 1.618;
+  }
+}
+:root {
   --typography_line_height_headings: 1.25;
   --typography_ratio: 1.2;
   --typography_ratio_pow_-2: calc( var(--typography_ratio_pow_-1) / var(--typography_ratio) );
@@ -72,6 +91,13 @@
   --typography_font_size_XXL_em: calc( var(--typography_font_size_XXL) * 1em );
   --typography_font_size_XXXL_em: calc( var(--typography_font_size_XXXL) * 1em );
   --responsive_scale: var(--typography_ratio_pow_-1);
+}
+@media (min-width: 880px) {
+  :root {
+    --responsive_scale: 1;
+  }
+}
+:root {
   --typography_heading_size_6: calc( var(--responsive_scale) * var(--typography_font_size_S) );
   --typography_heading_size_5: var(--responsive_scale);
   --typography_heading_size_4: calc( var(--responsive_scale) * var(--typography_font_size_L) );
@@ -85,31 +111,9 @@
   --typography_heading_size_2_em: calc( var(--typography_heading_size_2) * 1em );
   --typography_heading_size_1_em: calc( var(--typography_heading_size_1) * 1em );
 }
-@media (min-width: 1280px) {
-  :root {
-    --typography_font_size_base: 18px;
-  }
-}
-@media (min-width: 672px) {
-  :root {
-    --typography_line_height: 1.5;
-  }
-}
-@media (min-width: 880px) {
-  :root {
-    --typography_line_height: 1.618;
-  }
-}
-@media (min-width: 880px) {
-  :root {
-    --responsive_scale: 1;
-  }
-}
 
 h1 {
   --responsive_scale: var(--typography_ratio);
-  --typography_heading_size_1: calc( var(--responsive_scale) * var(--typography_font_size_XXXL) );
-  --typography_heading_size_1_em: calc( var(--typography_heading_size_1) * 1em );
 }
 @media (min-width: 880px) {
   h1 {
@@ -126,15 +130,15 @@ h1 {
     --responsive_scale: var(--typography_ratio_pow_4);
   }
 }
+h1 {
+  --typography_heading_size_1: calc( var(--responsive_scale) * var(--typography_font_size_XXXL) );
+  --typography_heading_size_1_em: calc( var(--typography_heading_size_1) * 1em );
+}
 
 /* FILE: _custom-properties/_box-model.scss */
 :root {
   --content_padding: 4vw;
   --white_space: 80px;
-  --content_width: 36rem;
-  --menu_width: 25%;
-  --screenshot_height: 120px;
-  --border_radius: .2rem;
 }
 @media (min-width: 880px) {
   :root {
@@ -146,6 +150,10 @@ h1 {
     --white_space: 120px;
   }
 }
+:root {
+  --content_width: 36rem;
+  --menu_width: 25%;
+}
 @media (min-width: 1280px) {
   :root {
     --menu_width: 33.33%;
@@ -156,10 +164,16 @@ h1 {
     --menu_width: 38%;
   }
 }
+:root {
+  --screenshot_height: 120px;
+}
 @media (min-width: 672px) {
   :root {
     --screenshot_height: 240px;
   }
+}
+:root {
+  --border_radius: .2rem;
 }
 
 /* FILE: _custom-properties/_others.scss */
@@ -715,6 +729,16 @@ ins.is-path-featured {
 mark.is-path-featured + .is-path-featured,
 ins.is-path-featured + .is-path-featured {
   margin-top: -1.618em;
+}
+
+.nav-path-arrow {
+  white-space: nowrap;
+}
+.nav-path-arrow svg {
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  margin: -0.25em 0.125em 0;
 }
 
 s,
