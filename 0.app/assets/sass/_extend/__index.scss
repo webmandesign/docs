@@ -3,8 +3,12 @@
 }
 
 %shaded_background {
+	//
+	// IMPORTANT:
+	//
 	// Do not use `color-mix()` here
 	// as we adapt the background color in notification boxes.
+	//
 	isolation: isolate;
 
 	&::before {

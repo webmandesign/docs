@@ -1,7 +1,7 @@
 header#intro.intro
 	div.intro-content
 		if config.screenshot
-			a( href=config.url.info ).screenshot
+			a( href=config.url.info aria-label=config.name + ' WordPress Theme' ).screenshot
 				img( src=config.screenshot alt="" aria-hidden="true" )
 
 		h1

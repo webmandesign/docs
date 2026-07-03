@@ -196,7 +196,6 @@ h1 {
 }
 
 map, .screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   position: absolute !important;
   width: 1px;
@@ -204,6 +203,7 @@ map, .screen-reader-text {
   line-height: 1px;
   overflow: hidden;
   word-wrap: normal !important;
+  word-break: normal !important;
 }
 
 .link-video, .list-questions, .list-topics, figure:not(.is-plain), .alert {
@@ -1067,9 +1067,10 @@ body:focus {
   padding: 0;
   margin: -1px;
   border: 0;
+  background-color: #36b;
+  color: #fff;
 }
 .screen-reader-text:focus {
-  clip: auto;
   clip-path: none;
   width: auto;
   height: auto;
@@ -1078,12 +1079,9 @@ body:focus {
   left: 5px;
   top: 5px;
   padding: 1em 1.5em;
-  font-size: 14px;
   font-size: 0.875rem;
   font-weight: bold;
   text-decoration: none;
-  background-color: #36b;
-  color: #fff;
   z-index: 100000;
 }
 
@@ -1126,7 +1124,6 @@ body:focus {
     width: auto;
   }
   .skip-link-site-menu:not(:focus) {
-    clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     position: absolute !important;
     width: 1px;
@@ -1134,6 +1131,7 @@ body:focus {
     line-height: 1px;
     overflow: hidden;
     word-wrap: normal !important;
+    word-break: normal !important;
   }
 }
 
