@@ -54,7 +54,7 @@ ins {
 	.nav-path {
 
 		&-arrow {
-			white-space: nowrap; // Helps to bind to subsequent `&nbsp` (@see  0app/includes/mixins/mark.pug).
+			white-space: nowrap; // Helps to bind to subsequent `&nbsp` (@see  0.app/includes/mixins/mark.pug).
 
 			svg {
 				vertical-align: middle;
