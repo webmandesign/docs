@@ -1,9 +1,9 @@
 mixin image( url, caption, attr )
 	- urlOriginal = url
-	- attrLink = ''
+	- attrLink = {}
 
 	if ! caption
-		- attrLink = { 'aria-hidden': 'true' }
+		- attrLink = { 'aria-hidden': 'true', 'aria-label': 'Related illustrative image' }
 
 	//- Allow image overrides:
 	if config.images && config.images.hasOwnProperty( url )
