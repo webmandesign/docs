@@ -1,5 +1,9 @@
 mixin image( url, caption, attr )
 	- urlOriginal = url
+	- attrLink = ''
+
+	if ! caption
+		- attrLink = { 'aria-hidden': 'true' }
 
 	//- Allow image overrides:
 	if config.images && config.images.hasOwnProperty( url )
@@ -23,8 +27,8 @@ mixin image( url, caption, attr )
 		- note = config.imageNote
 
 	figure&attributes( attributes )
-		a( href=url title="Click to open large image" )
-			img( src=url alt=caption )&attributes( attr )
+		a( href=url title="Click to open large image" )&attributes( attrLink )
+			img( src=url alt=caption ? caption : '' )&attributes( attr )
 			block
 		if caption
 			figcaption= caption
