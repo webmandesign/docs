@@ -66,6 +66,10 @@ block menu/fse
 
 			p Apply this block style on the Navigation block in site "<strong>Header</strong>" template part.
 
+			block menu/fse/mobile/tip
+				+tip( 'Toggle with theme option' )
+					p Conveniently, there is a theme option to toggle this mobile menu position at #[+mark( 'nav', 'Appearance', 'Customize', 'Theme Options', 'Accessibility', '"Fixed mobile navigation"' )].
+
 			block menu/fse/mobile/image/02
 				+image( 'core/menu/fixed-mobile-navigation.webp', 'Fixed position of mobile menu toggle button at the bottom of the screen' )
 
