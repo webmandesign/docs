@@ -1,0 +1,15 @@
+li
+	+answer( 'How to modify mobile header', 'mobile-header' )
+
+		ol.is-steps
+			li Open <em>"Header"</em> (and don't forget also about the <em>"Header: Overlaid header template"</em>) <a href="#site-editor-template-parts">template part</a> for editing.
+
+			li Narrow down the viewport until the mobile header is displayed. <br><small>(Point <strong>#1</strong> in the screenshot below.)</small>
+
+			li Now you can edit the mobile header blocks to your needs.
+
+		+image( 'mobile-header.webp', 'Displaying mobile header for editing' ).is-plain
+
+		+tip( 'Responsive block styles', 'h4' )
+			p Notice the "Only on small screens" <a href="#block-styles">block style</a> applied on the header container <a href="https://wordpress.org/documentation/article/group-block/">Group block</a> - point <strong>#2</strong> in the screenshot above.
+			p Similarly, there is "Hide on small screens" block style applied on the desktop header container.
