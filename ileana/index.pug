@@ -11,16 +11,18 @@
 		source        : 'envato', //- Available values: wporg/envato/github/other
 		compatibility : {
 			fse                   : true,
+			fse_colors_elements   : true,
 			hybrid                : true,
 			no_demo               : true,
 			block_patterns        : true,
 			block_styles          : true,
+			block_variations      : true,
 			megamenu_disable_link : true,
 			accessibility         : true,
 		},
 		version : {
-			wp  : '6.4',
-			php : '7.0',
+			wp  : '6.8',
+			php : '8.0',
 		},
 
 		url : {
@@ -55,9 +57,10 @@
 
 		//- Core FAQ object keys:
 		faq : [
+			'faq-template-parts',
 			'any-page-builder',
-			'image-sizes',
 			'css-classes',
+			'image-sizes',
 			'seo',
 			'font',
 			'speed',
@@ -79,7 +82,7 @@
 
 		//- Core image overrides:
 		images : {
-			'core/menu/fixed-mobile-navigation.webp'                   : 'mobile-menu.png',
+			// 'core/menu/fixed-mobile-navigation.webp'                   : 'mobile-menu.png',
 			'https://easycaptures.com/fs/uploaded/1625/7456394390.jpg' : 'megamenu.jpg',
 		},
 		imageNote  : 'core',

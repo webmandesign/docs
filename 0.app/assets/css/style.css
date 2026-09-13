@@ -297,8 +297,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -666,6 +665,10 @@ h5,
 h6,
 .h6 {
   font-size: var(--typography_heading_size_6_em);
+}
+
+h4[id^=site-editor-styles-] {
+  margin-top: calc(var(--white_space) * 0.618);
 }
 
 /* FILE: content/elements/__index.scss */
