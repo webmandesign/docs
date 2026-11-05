@@ -37,6 +37,11 @@ block append posts
 	include post-toc.pug
 	include post-blog-styles.pug
 
+block append cpt/products
+	+tip( 'How to display products on pages?' )
+		p You can display products in the content of pages on your website using <a href="https://woocommerce.com/document/woocommerce-shortcodes/">WooCommerce shortcodes</a>.
+		p In <a href="#beaver-builder">Beaver Builder</a> page builder layout use <a href="https://easycaptures.com/fs/uploaded/2108/1016336490.jpg" title="Open example screenshot"><strong>HTML</strong> module</a>.
+
 block menu/list
 	include menus.pug
 
